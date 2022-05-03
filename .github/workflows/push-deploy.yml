@@ -23,12 +23,16 @@ jobs:
       run: |
         sudo dpkg -i hugo_extended_0.98.0_Linux-64bit.deb
         hugo -t LoveIt
-        rm -rf ../docs/*
-        cp -r public/* ../docs
+      working-directory: site-build
+
+    - name: clean out and copy files
+      run: |
+        rm -rf docs/*
+        cp -r site-build/public/* docs
         git add --all
         git commit -m "deploy site" || echo "No changes to commit"
         git push
-      working-directory: site-build
+
 
 #    - name: Push contents of `site-build/public` to gh-pages branch
 #      run: |
