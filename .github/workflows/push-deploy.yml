@@ -27,6 +27,8 @@ jobs:
 
     - name: clean out and copy files
       run: |
+        git config user.name "github-action"
+        git config user.email "github-action"
         rm -rf docs/*
         cp -r site-build/public/* docs
         git add --all
