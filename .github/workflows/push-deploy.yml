@@ -23,13 +23,10 @@ jobs:
       run: |
         sudo dpkg -i hugo_extended_0.98.0_Linux-64bit.deb
         hugo -t LoveIt
-      working-directory: site-build
-
-    - name: send site files to docs and push
-      run: |
-        rm -rf docs/*
-	cp -rT site-build/public/* docs
-        git add .
+        rm -rf ../docs/*
+	cp -rT public/* ../docs
+        git add --all
         git commit -m "deploy site" || echo "No changes to commit"
         git push
+      working-directory: site-build
 
