@@ -22,7 +22,7 @@ comment:
 ---
 
 ### Using outputs as inputs
-
+bob
 This page will cover some more advanced ways of using the command line, in particular how to link different commands together. Firstly we will cover a concept called "redirection". Move into the folder `example_files`. We can see, for example, the first three lines of `plants.txt` with the command
 
 ```
