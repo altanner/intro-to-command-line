@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/Users/at9362/Coding/intro-to-command-line/site-build",
+	"sourceRoot": "/home/runner/work/intro-to-command-line/intro-to-command-line/site-build",
 	"sources": [
 		"themes/LoveIt/assets/css/style.scss",
 		"themes/LoveIt/assets/css/_variables.scss",
