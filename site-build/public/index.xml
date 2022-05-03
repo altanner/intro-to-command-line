@@ -1,0 +1,71 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Introduction to the Command Line</title>
+        <link>https://altanner.github.io/intro-to-command-line-deploy/</link>
+        <description>Introduction to the Command Line</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 07 Jan 2022 00:00:00 &#43;0100</lastBuildDate>
+            <atom:link href="https://altanner.github.io/intro-to-command-line-deploy/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Redirection</title>
+    <link>https://altanner.github.io/intro-to-command-line-deploy/posts/06redirects/</link>
+    <pubDate>Fri, 07 Jan 2022 00:00:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://altanner.github.io/intro-to-command-line-deploy/posts/06redirects/</guid>
+    <description><![CDATA[Using outputs as inputs This page will cover some more advanced ways of using the command line, in particular how to link different commands together. Firstly we will cover a concept called &ldquo;redirection&rdquo;. Move into the folder example_files. We can see, for example, the first three lines of plants.txt with the command
+head -3 plants.txt But what if, instead of printing the output to the terminal, we wanted to put it into a file?]]></description>
+</item><item>
+    <title>Searching</title>
+    <link>https://altanner.github.io/intro-to-command-line-deploy/posts/05searching/</link>
+    <pubDate>Thu, 06 Jan 2022 00:00:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://altanner.github.io/intro-to-command-line-deploy/posts/05searching/</guid>
+    <description><![CDATA[Searching for files We can use the program find as our search command, but it has some strange syntax&hellip; if you are a little confused, you are not alone! The syntax is
+ find [where to look] [what type of file] [&quot;the match you are looking for, in quotes&quot;]  Let&rsquo;s go back to your folder command_line_files, and try each of these commands.
+find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find .]]></description>
+</item><item>
+    <title>Editing files</title>
+    <link>https://altanner.github.io/intro-to-command-line-deploy/posts/04editing_files/</link>
+    <pubDate>Wed, 05 Jan 2022 00:00:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://altanner.github.io/intro-to-command-line-deploy/posts/04editing_files/</guid>
+    <description><![CDATA[Text editors We can create and modify files on the command line using text editors. These are like very minimal word-processors, with no formatting options, but with many powerful ways of editing that are not available in word-processors. There are lots of different command line editors, which range from user-friendly (but less powerful), to more difficult (but powerful and fast, once learned).
+Info  Here are some common editors you might come across, or choose to learn:]]></description>
+</item><item>
+    <title>Viewing the contents of files</title>
+    <link>https://altanner.github.io/intro-to-command-line-deploy/posts/03viewing_files/</link>
+    <pubDate>Tue, 04 Jan 2022 00:00:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://altanner.github.io/intro-to-command-line-deploy/posts/03viewing_files/</guid>
+    <description><![CDATA[Viewing files There are two main ways of viewing the contents of files on the command line: &ldquo;printing&rdquo; the output to the terminal window, and viewing file contents with a &ldquo;pager&rdquo;.
+cat Let&rsquo;s look at outputting first with a command called cat. Sadly, this has nothing to do with small furry felines. Move into the folder called example_files, and run this command
+cat meaning_of_life.txt which means &ldquo;output the contents of of the file &ldquo;meaning_of_life.]]></description>
+</item><item>
+    <title>Working with files</title>
+    <link>https://altanner.github.io/intro-to-command-line-deploy/posts/02manipulation/</link>
+    <pubDate>Mon, 03 Jan 2022 00:00:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://altanner.github.io/intro-to-command-line-deploy/posts/02manipulation/</guid>
+    <description><![CDATA[Learn more  We give some warnings on this page, but don&rsquo;t be intimidated! Mistakes are only human, and you won&rsquo;t be able to damage your computer through any of these commands.
+To improve your skills in backing up, version control, and minimising risk in computing, look for our courses on Best Practices in Software Engineering.
+   From this point forward, we will be working with the course materials (this is the same file as linked on the home page of this course).]]></description>
+</item><item>
+    <title>File system navigation</title>
+    <link>https://altanner.github.io/intro-to-command-line-deploy/posts/01navigation/</link>
+    <pubDate>Sun, 02 Jan 2022 00:00:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://altanner.github.io/intro-to-command-line-deploy/posts/01navigation/</guid>
+    <description><![CDATA[Where am I? Let&rsquo;s run our first command:
+pwd With pwd we are asking &ldquo;print my current working directory / where am I?&rdquo; You will then get some output to the terminal window, something like
+/home/at9362 This is your current location, here shown as an &ldquo;absolute path&rdquo; - the full description for what folder you are in. The sign ~ is an abbreviation for &ldquo;your home folder&rdquo;.
+Tip  There are five abbreviations for locations that you might come across]]></description>
+</item><item>
+    <title>Welcome to the command line!</title>
+    <link>https://altanner.github.io/intro-to-command-line-deploy/posts/00intro/</link>
+    <pubDate>Sat, 01 Jan 2022 00:00:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://altanner.github.io/intro-to-command-line-deploy/posts/00intro/</guid>
+    <description><![CDATA[The prompt When you open a terminal, you will be provided with a prompt. This tells you where you are, and provides a line where you will type your commands. Here is what a typical prompt looks like:
+[at9362@dc2-d0:~] $ Your prompt will look different, but here is what it means
+[ your-name @ computer-name : the-current-folder ] $ Here, the computer name (also known as the &ldquo;hostname&rdquo;) is dc2-d0, but yours might be more friendly, like Megans_iMac or ubuntu, for example.]]></description>
+</item></channel>
+</rss>

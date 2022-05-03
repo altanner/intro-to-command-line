@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Editing files - Introduction to the Command Line</title><meta name="Description" content=""><meta property="og:title" content="Editing files" />
+<meta property="og:description" content="Text editors We can create and modify files on the command line using text editors. These are like very minimal word-processors, with no formatting options, but with many powerful ways of editing that are not available in word-processors. There are lots of different command line editors, which range from user-friendly (but less powerful), to more difficult (but powerful and fast, once learned).
+Info  Here are some common editors you might come across, or choose to learn:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://altanner.github.io/intro-to-command-line-deploy/posts/04editing_files/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-01-05T00:00:00+01:00" />
+<meta property="article:modified_time" content="2022-01-05T00:00:00+01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Editing files"/>
+<meta name="twitter:description" content="Text editors We can create and modify files on the command line using text editors. These are like very minimal word-processors, with no formatting options, but with many powerful ways of editing that are not available in word-processors. There are lots of different command line editors, which range from user-friendly (but less powerful), to more difficult (but powerful and fast, once learned).
+Info  Here are some common editors you might come across, or choose to learn:"/>
+<meta name="application-name" content="Introduction to the Command Line">
+<meta name="apple-mobile-web-app-title" content="Introduction to the Command Line"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://altanner.github.io/intro-to-command-line-deploy/posts/04editing_files/" /><link rel="prev" href="https://altanner.github.io/intro-to-command-line-deploy/posts/03viewing_files/" /><link rel="next" href="https://altanner.github.io/intro-to-command-line-deploy/posts/05searching/" /><link rel="stylesheet" href="/intro-to-command-line-deploy/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/intro-to-command-line-deploy/css/style.min.css"><link rel="stylesheet" href="/intro-to-command-line-deploy/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/intro-to-command-line-deploy/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Editing files",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/altanner.github.io\/intro-to-command-line-deploy\/posts\/04editing_files\/"
+        },"genre": "posts","wordcount":  453 ,
+        "url": "https:\/\/altanner.github.io\/intro-to-command-line-deploy\/posts\/04editing_files\/","datePublished": "2022-01-05T00:00:00+01:00","dateModified": "2022-01-05T00:00:00+01:00","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/intro-to-command-line-deploy/" title="Introduction to the Command Line"><span class="header-title-pre"><i class="fa fa-dollar-sign"></i><i class="fa fa-chevron-right"></i></span>Introduction to the Command Line</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/intro-to-command-line-deploy/posts"> Sections </a><a class="menu-item" href="/intro-to-command-line-deploy/about"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/intro-to-command-line-deploy/" title="Introduction to the Command Line"><span class="header-title-pre"><i class="fa fa-dollar-sign"></i><i class="fa fa-chevron-right"></i></span>Introduction to the Command Line</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/intro-to-command-line-deploy/posts" title="">Sections</a><a class="menu-item" href="/intro-to-command-line-deploy/about" title="">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Editing files</h1><h2 class="single-subtitle">How to create and modify files</h2><div class="post-meta">
+            <div class="post-meta-line">
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;453 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#text-editors">Text editors</a></li>
+        <li><a href="#editing-a-file-with-nano">Editing a file with <code>nano</code></a></li>
+        <li><a href="#creating-a-new-file">Creating a new file</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="text-editors">Text editors</h3>
+<p>We can create and modify files on the command line using text editors. These are like very minimal word-processors, with no formatting options, but with many powerful ways of editing that are not available in word-processors. There are lots of different command line editors, which range from user-friendly (but less powerful), to more difficult (but powerful and fast, once learned).</p>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Here are some common editors you might come across, or choose to learn:</p>
+<ul>
+<li><code>nano</code> an easy to use and widely-available editor</li>
+<li><code>micro</code> a more modern version of nano, but less common</li>
+<li><code>emacs</code> a hugely-powerful editor, jokingly referred to as an operating system in itself. Medium learning-curve.</li>
+<li><code>jove</code> a minimal version of emacs, but not widely available (this is my favourite ;)</li>
+<li><code>vim</code> is mythical as the &ldquo;coder&rsquo;s editor&rdquo;, being very powerful, very fast, but having a steep learning curve and heavy reliance on keyboard shortcuts. Very widely available - almost all systems have <code>vim</code> installed.</li>
+</ul>
+</div>
+        </div>
+    </div>
+<h3 id="editing-a-file-with-nano">Editing a file with <code>nano</code></h3>
+<p>We will learn the basics with <code>nano</code>. Run this command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">nano animals.txt
+</span></span></code></pre></div><p>The screen will look a little different: just like with <code>less</code>, <em>you are now not on the command line</em>, but running the program called <code>nano</code>. Try making some changes to the file with your keyboard (remember the mouse cannot move your cursor).</p>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>There are many commands that <code>nano</code> can do, but here are a few you will need to know</p>
+<ul>
+<li><code>ctrl-o</code> is save (&ldquo;output a file&rdquo;)</li>
+<li><code>ctrl-w</code> is search (&ldquo;where?&rdquo;)</li>
+<li><code>ctrl-x</code> is used to exit <code>nano</code>.</li>
+</ul>
+<p>Note that there is a basic cheatsheet along the bottom of the screen for some common commands inside <code>nano</code>.</p>
+</div>
+        </div>
+    </div>
+<h3 id="creating-a-new-file">Creating a new file</h3>
+<p>Have a play. Exit back to the command line. Now we are going to make a new file. You can call it whatever you like - as long as that file name doesn&rsquo;t already exist here, it will make an empty file.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">nano my_new_file
+</span></span></code></pre></div><p>Note that in Linux systems and MacOS, the file extensions (for example <code>.txt</code> or <code>.mp3</code> or <code>.pdf</code>) are entirely optional. You can even have multiple extensions, like <code>file.txt.new.extension</code>, which to Linux system is all just the name. In Windows, file extensions are important! They are also useful for humans too, so where it is appropriate, best to stick to convention. Calling an <code>.mp3</code> file a <code>.docx</code> file is valid, but highly confusing :)</p>
+<p>If you try to leave <code>nano</code> (<code>ctrl-x</code>) when there are unsaved changes, it will ask to <code>save modified buffer?</code>. So, save or not with <code>y</code> or <code>n</code>, and let&rsquo;s look at examining files back on the command line.</p>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">&ldquo;Buffer&rdquo;, in computing speak, is information that exists on your screen, or in your RAM, but does not exist in storage memory.</div>
+        </div>
+    </div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-01-05</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/intro-to-command-line-deploy/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/intro-to-command-line-deploy/posts/03viewing_files/" class="prev" rel="prev" title="Viewing the contents of files"><i class="fas fa-angle-left fa-fw"></i>Viewing the contents of files</a>
+            <a href="/intro-to-command-line-deploy/posts/05searching/" class="next" rel="next" title="Searching">Searching<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.98.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/intro-to-command-line-deploy/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/intro-to-command-line-deploy/lib/katex/katex.min.css"><script type="text/javascript" src="/intro-to-command-line-deploy/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/intro-to-command-line-deploy/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/intro-to-command-line-deploy/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/intro-to-command-line-deploy/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/intro-to-command-line-deploy/lib/katex/katex.min.js"></script><script type="text/javascript" src="/intro-to-command-line-deploy/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false}};</script><script type="text/javascript" src="/intro-to-command-line-deploy/js/theme.min.js"></script></body>
+</html>

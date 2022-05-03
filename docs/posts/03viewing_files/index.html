@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Viewing the contents of files - Introduction to the Command Line</title><meta name="Description" content=""><meta property="og:title" content="Viewing the contents of files" />
+<meta property="og:description" content="Viewing files There are two main ways of viewing the contents of files on the command line: &ldquo;printing&rdquo; the output to the terminal window, and viewing file contents with a &ldquo;pager&rdquo;.
+cat Let&rsquo;s look at outputting first with a command called cat. Sadly, this has nothing to do with small furry felines. Move into the folder called example_files, and run this command
+cat meaning_of_life.txt which means &ldquo;output the contents of of the file &ldquo;meaning_of_life." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://altanner.github.io/intro-to-command-line-deploy/posts/03viewing_files/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-01-04T00:00:00+01:00" />
+<meta property="article:modified_time" content="2022-01-04T00:00:00+01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Viewing the contents of files"/>
+<meta name="twitter:description" content="Viewing files There are two main ways of viewing the contents of files on the command line: &ldquo;printing&rdquo; the output to the terminal window, and viewing file contents with a &ldquo;pager&rdquo;.
+cat Let&rsquo;s look at outputting first with a command called cat. Sadly, this has nothing to do with small furry felines. Move into the folder called example_files, and run this command
+cat meaning_of_life.txt which means &ldquo;output the contents of of the file &ldquo;meaning_of_life."/>
+<meta name="application-name" content="Introduction to the Command Line">
+<meta name="apple-mobile-web-app-title" content="Introduction to the Command Line"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://altanner.github.io/intro-to-command-line-deploy/posts/03viewing_files/" /><link rel="prev" href="https://altanner.github.io/intro-to-command-line-deploy/posts/02manipulation/" /><link rel="next" href="https://altanner.github.io/intro-to-command-line-deploy/posts/04editing_files/" /><link rel="stylesheet" href="/intro-to-command-line-deploy/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/intro-to-command-line-deploy/css/style.min.css"><link rel="stylesheet" href="/intro-to-command-line-deploy/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/intro-to-command-line-deploy/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Viewing the contents of files",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/altanner.github.io\/intro-to-command-line-deploy\/posts\/03viewing_files\/"
+        },"genre": "posts","wordcount":  557 ,
+        "url": "https:\/\/altanner.github.io\/intro-to-command-line-deploy\/posts\/03viewing_files\/","datePublished": "2022-01-04T00:00:00+01:00","dateModified": "2022-01-04T00:00:00+01:00","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/intro-to-command-line-deploy/" title="Introduction to the Command Line"><span class="header-title-pre"><i class="fa fa-dollar-sign"></i><i class="fa fa-chevron-right"></i></span>Introduction to the Command Line</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/intro-to-command-line-deploy/posts"> Sections </a><a class="menu-item" href="/intro-to-command-line-deploy/about"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/intro-to-command-line-deploy/" title="Introduction to the Command Line"><span class="header-title-pre"><i class="fa fa-dollar-sign"></i><i class="fa fa-chevron-right"></i></span>Introduction to the Command Line</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/intro-to-command-line-deploy/posts" title="">Sections</a><a class="menu-item" href="/intro-to-command-line-deploy/about" title="">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Viewing the contents of files</h1><h2 class="single-subtitle">Different ways to see what is inside a file</h2><div class="post-meta">
+            <div class="post-meta-line">
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;557 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#viewing-files">Viewing files</a></li>
+        <li><a href="#cat"><code>cat</code></a></li>
+        <li><a href="#head-and-tail"><code>head</code> and <code>tail</code></a></li>
+        <li><a href="#more-ways-of-printing-files">More ways of printing files</a></li>
+        <li><a href="#introducing-wildcards-">Introducing wildcards <code>*</code></a></li>
+        <li><a href="#the-strangely-named-less">The strangely-named <code>less</code></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="viewing-files">Viewing files</h3>
+<p>There are two main ways of viewing the contents of files on the command line: &ldquo;printing&rdquo; the output to the terminal window, and viewing file contents with a &ldquo;pager&rdquo;.</p>
+<h3 id="cat"><code>cat</code></h3>
+<p>Let&rsquo;s look at outputting first with a command called <code>cat</code>. Sadly, this has nothing to do with small furry felines. Move into the folder called <code>example_files</code>, and run this command</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">cat meaning_of_life.txt
+</span></span></code></pre></div><p>which means &ldquo;output the contents of of the file &ldquo;meaning_of_life.txt&rdquo;. <code>cat</code> is short for &ldquo;conCATenate&rdquo;, which means &ldquo;join files end to end&rdquo;, but it is commonly used for looking at a single file. The output is to the terminal itself, is useful for seeing what is in short files. Using <code>cat</code> for longer files, it is less useful.</p>
+<p>Try this and see for yourself:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">cat the-tempest.txt
+</span></span></code></pre></div><div class="details admonition question open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw"></i>Questions<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>What happened to the terminal?</li>
+<li>What would happen if the file was several megabytes?</li>
+<li>Remember that <code>ctrl-c</code> is <code>cancel</code> on the command line.</li>
+</ul>
+</div>
+        </div>
+    </div>
+<h3 id="head-and-tail"><code>head</code> and <code>tail</code></h3>
+<p>We might want to just see the start or the end of the file, so experiment with these commands:</p>
+<pre tabindex="0"><code>head the-tempest.txt
+tail the-tempest.txt
+</code></pre><p><code>head</code> and <code>tail</code> are common both on the command line, and in programming languages like Python and R. We can change how many lines we see using the flag <code>-n</code> followed by a number.</p>
+<h3 id="more-ways-of-printing-files">More ways of printing files</h3>
+<p>Here are some more commands for outputting file contents in a variety of ways. Try them on the example files and work out what they do. You might wand to run these commands on shorter files to make it easier to understand the output, <code>animals.txt</code>, back in the  might be useful here.</p>
+<pre tabindex="0"><code>tac
+rev
+uniq
+sort
+shuf
+</code></pre><p>These might seem trivial (maybe even useless!) but these are powerful building blocks for arranging data.</p>
+<h3 id="introducing-wildcards-">Introducing wildcards <code>*</code></h3>
+<p>We will cover this in more detail later, but let&rsquo;s look at using the asterisk, <code>*</code>, as a wildcard. Experiment with a command like these</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">head -n <span class="m">3</span> numbers*
+</span></span><span class="line"><span class="cl">tail -n <span class="m">4</span> w*
+</span></span><span class="line"><span class="cl">head -n <span class="m">2</span> *
+</span></span><span class="line"><span class="cl">head -n <span class="m">3</span> *ea*
+</span></span></code></pre></div><h3 id="the-strangely-named-less">The strangely-named <code>less</code></h3>
+<p>Now let&rsquo;s look at using a pager. A pager does not put the file contents to the terminal output, but <em>instead shows it to you in a piece of dedicated software</em>. It might not look like it, since it is still just plain text in your terminal window! But when using a pager, you are <em>no longer on the command line</em>. We will use the command <code>less</code>, which will open a pager to view a file. (Why this program is called &ldquo;less&rdquo; is a story for another time :)</p>
+<pre tabindex="0"><code>less the-temptest.txt
+</code></pre><div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>You can scroll down and up with <code>space</code> and <code>b</code></li>
+<li><code>Page up</code> and <code>page down</code> keys will also work.</li>
+<li>To exit the pager, press <code>q</code>.</li>
+<li>It can be confusing using a pager, to begin with. It looks a lot like the command line. But if you don&rsquo;t see a prompt, you are not on the command line!</li>
+</ul>
+</div>
+        </div>
+    </div>
+<p>Programs like <code>less</code> are useful for viewing large files, since it does not need to load the whole file into memory to show it to you. There are many things that <code>less</code> can do, but for now I will mention that you can search by pressing <code>/</code> and typing what you are looking for, and you can start <code>less</code> at the bottom of the file with <code>less +G [filename]</code>.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-01-04</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/intro-to-command-line-deploy/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/intro-to-command-line-deploy/posts/02manipulation/" class="prev" rel="prev" title="Working with files"><i class="fas fa-angle-left fa-fw"></i>Working with files</a>
+            <a href="/intro-to-command-line-deploy/posts/04editing_files/" class="next" rel="next" title="Editing files">Editing files<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.98.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/intro-to-command-line-deploy/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/intro-to-command-line-deploy/lib/katex/katex.min.css"><script type="text/javascript" src="/intro-to-command-line-deploy/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/intro-to-command-line-deploy/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/intro-to-command-line-deploy/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/intro-to-command-line-deploy/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/intro-to-command-line-deploy/lib/katex/katex.min.js"></script><script type="text/javascript" src="/intro-to-command-line-deploy/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false}};</script><script type="text/javascript" src="/intro-to-command-line-deploy/js/theme.min.js"></script></body>
+</html>
