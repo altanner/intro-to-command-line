@@ -1,4 +1,4 @@
-baseURL = "https://altanner.github.io/intro-to-command-line-deploy/"
+baseURL = "https://altanner.github.io/intro-to-command-line/"
 languageCode = "en-us"
 title = "Introduction to the Command Line"
 theme = "LoveIt"
