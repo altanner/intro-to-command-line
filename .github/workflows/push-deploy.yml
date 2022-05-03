@@ -23,15 +23,20 @@ jobs:
       run: |
         sudo dpkg -i hugo_extended_0.98.0_Linux-64bit.deb
         hugo -t LoveIt
-      working-directory: site-build
-
-    - name: Push contents of `site-build/public` to gh-pages branch
-      run: |
-        git config user.name "github-action"
-        git config user.email "github-action"
-        git checkout gh-pages
-        rm -rf docs/*
-        cp -rT site-build/public docs
-        git add .
+        rm -rf ../docs/*
+        cp -r public/* ../docs
+        git add --all
         git commit -m "deploy site" || echo "No changes to commit"
         git push
+      working-directory: site-build
+
+#    - name: Push contents of `site-build/public` to gh-pages branch
+#      run: |
+#        git config user.name "github-action"
+#        git config user.email "github-action"
+#        git checkout gh-pages
+#        rm -rf docs/*
+#        cp -rT site-build/public docs
+#        git add .
+#        git commit -m "deploy site" || echo "No changes to commit"
+#        git push
