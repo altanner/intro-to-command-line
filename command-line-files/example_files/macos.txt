@@ -1,0 +1,9 @@
+macOS (previously Mac OS X and later OS X) is a proprietary graphical operating system developed and marketed by Apple Inc. since 2001. It is the primary operating system for Apple's Mac computers. Within the market of desktop, laptop and home computers, and by web usage, it is the second most widely used desktop OS, after Windows NT.
+
+macOS succeeded the classic Mac OS, a Macintosh operating system with nine releases from 1984 to 1999. During this time, Apple cofounder Steve Jobs had left Apple and started another company, NeXT, developing the NeXTSTEP platform that would later be acquired by Apple to form the basis of macOS.
+
+The first desktop version, Mac OS X 10.0, was released in March 2001, with its first update, 10.1, arriving later that year. Releases from Mac OS X 10.5 Leopard and thereafter are UNIX 03 certified. Apple's mobile operating system, iOS, has been considered a variant of macOS.
+
+A prominent part of macOS's original brand identity was the use of Roman numeral X, pronounced "ten" as in Mac OS X and also the iPhone X. Apple began naming its releases after big cats, which lasted until OS X 10.8 Mountain Lion. Since OS X 10.9 Mavericks, releases have been named after locations in California. Apple shortened the name to "OS X" in 2012 and then changed it to "macOS" in 2016, adopting the nomenclature that they were using for their other operating systems, iOS, watchOS, and tvOS. After sixteen distinct versions of macOS 10, macOS Big Sur was presented as version 11 in 2020, and macOS Monterey was presented as version 12 in 2021.
+
+macOS has supported three major processor architectures, beginning with PowerPC-based Macs in 1999. In 2006, Apple transitioned to the Intel architecture with a line of Macs using Intel Core processors. In 2020, Apple began the Apple silicon transition, using self-designed, 64-bit ARM-based Apple M1 processors on new Mac computers. 

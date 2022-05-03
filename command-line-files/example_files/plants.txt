@@ -1,0 +1,8 @@
+oak
+elder
+hawthorn
+apple
+cherry
+elm
+beech
+birch

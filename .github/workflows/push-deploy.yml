@@ -1,0 +1,35 @@
+name: Create static pages and send them to deploy repo
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+
+  build-and-deploy:
+
+    runs-on: ubuntu-20.04
+
+    steps:
+
+    - name: checkout repo & submodules
+      uses: actions/checkout@v2
+      with:
+        submodules: true
+        fetch-depth: 0
+
+    - name: Build website with hugo
+      run: |
+        sudo dpkg -i hugo_extended_0.98.0_Linux-64bit.deb
+        hugo -t LoveIt
+      working-directory: site-build
+
+    - name: send site files to docs and push
+      run: |
+        rm -rf docs/*
+	cp -rT site-build/public/* docs
+        git add .
+        git commit -m "deploy site" || echo "No changes to commit"
+        git push
+
