@@ -1,4 +1,4 @@
-name: Create static pages and send them to deploy repo
+name: Create static pages and send them docs folder
 
 on:
   push:
