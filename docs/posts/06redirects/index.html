@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Redirection - Introduction to the Command Line</title><meta name="Description" content=""><meta property="og:title" content="Redirection" />
+<meta property="og:description" content="Using outputs as inputs This page will cover some more advanced ways of using the command line, in particular how to link different commands together. Firstly we will cover a concept called &ldquo;redirection&rdquo;. Move into the folder example_files. We can see, for example, the first three lines of plants.txt with the command
+head -3 plants.txt But what if, instead of printing the output to the terminal, we wanted to put it into a file?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://altanner.github.io/intro-to-command-line/posts/06redirects/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-01-07T00:00:00+01:00" />
+<meta property="article:modified_time" content="2022-01-07T00:00:00+01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Redirection"/>
+<meta name="twitter:description" content="Using outputs as inputs This page will cover some more advanced ways of using the command line, in particular how to link different commands together. Firstly we will cover a concept called &ldquo;redirection&rdquo;. Move into the folder example_files. We can see, for example, the first three lines of plants.txt with the command
+head -3 plants.txt But what if, instead of printing the output to the terminal, we wanted to put it into a file?"/>
+<meta name="application-name" content="Introduction to the Command Line">
+<meta name="apple-mobile-web-app-title" content="Introduction to the Command Line"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://altanner.github.io/intro-to-command-line/posts/06redirects/" /><link rel="prev" href="https://altanner.github.io/intro-to-command-line/posts/05searching/" /><link rel="stylesheet" href="/intro-to-command-line/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/intro-to-command-line/css/style.min.css"><link rel="stylesheet" href="/intro-to-command-line/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/intro-to-command-line/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Redirection",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/06redirects\/"
+        },"genre": "posts","wordcount":  560 ,
+        "url": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/06redirects\/","datePublished": "2022-01-07T00:00:00+01:00","dateModified": "2022-01-07T00:00:00+01:00","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/intro-to-command-line/" title="Introduction to the Command Line"><span class="header-title-pre"><i class="fa fa-dollar-sign"></i><i class="fa fa-chevron-right"></i></span>Introduction to the Command Line</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/intro-to-command-line/posts"> Sections </a><a class="menu-item" href="/intro-to-command-line/about"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/intro-to-command-line/" title="Introduction to the Command Line"><span class="header-title-pre"><i class="fa fa-dollar-sign"></i><i class="fa fa-chevron-right"></i></span>Introduction to the Command Line</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/intro-to-command-line/posts" title="">Sections</a><a class="menu-item" href="/intro-to-command-line/about" title="">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Redirection</h1><h2 class="single-subtitle">Using command outputs to create new files</h2><div class="post-meta">
+            <div class="post-meta-line">
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;560 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#using-outputs-as-inputs">Using outputs as inputs</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="using-outputs-as-inputs">Using outputs as inputs</h3>
+<p>This page will cover some more advanced ways of using the command line, in particular how to link different commands together. Firstly we will cover a concept called &ldquo;redirection&rdquo;. Move into the folder <code>example_files</code>. We can see, for example, the first three lines of <code>plants.txt</code> with the command</p>
+<pre tabindex="0"><code>head -3 plants.txt
+</code></pre><p>But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called &ldquo;redirecting&rdquo;, and is done with the symbol <code>&gt;</code></p>
+<pre tabindex="0"><code>head -3 plants.txt &gt; first_three_plants.txt
+</code></pre><p>The terminal will not give you any output, but what is inside the file <code>first_three_plants.txt</code>? Let&rsquo;s expand on this by using wildcards. Try this command, and examine the contents of the output file:</p>
+<pre tabindex="0"><code>head -3 * &gt; my_new_file
+</code></pre><p><strong>Be careful! Redirects will overwrite the target file!! If <code>my_new_file</code> already existed, it would be permanently overwritten by the above command!</strong> If we want to <strong>append</strong> to a file, we use a double arrow, for example we can go:</p>
+<pre tabindex="0"><code>tail -10 romeo-and-juliet.txt &gt;&gt; another_file
+tail -10 king-lear.txt &gt;&gt; another_file
+</code></pre><p>Finally, we will look at how to make one command take the output from another command. This is called a &ldquo;pipe&rdquo;, <code>|</code>. That is the &ldquo;bar symbol&rdquo;, on Mac keyboards it is next to <code>enter</code>, on Windows it is usually by the left shift key, and on Linux it is usually to the left of the 1 key. Move to the folder <code>some_plays</code>, and let&rsquo;s use a new command, <code>wc</code></p>
+<pre tabindex="0"><code>wc -l macbeth.txt
+</code></pre><p><code>wc</code> is &ldquo;word count&rdquo;, but here we are asking for the number of lines with the flag <code>-l</code>. We can use a wildcard to see how many lines are in all of the plays, with</p>
+<pre tabindex="0"><code>wc -l *
+</code></pre><p>But what if we wanted these in order? We can use the output of <code>wc</code> as the input for <code>sort</code>. Try these commands</p>
+<pre tabindex="0"><code>wc -l * | sort
+wc -l * | sort -r
+</code></pre><p>Combining redirects and pipes can make powerful scripts, here is a simple example where we pipe one command to another, then send the output of the next command into a file:</p>
+<pre tabindex="0"><code>wc -l * | sort -r &gt; ordered_by_line
+</code></pre><p>Understanding this kind of flow is essentially the first step towards programming. While the command line is a whole scripting language in itself, as things get more sophisticated we start to use proper programming languages. This aids in compatibility, portability, allows you to use purpose-built tools.</p>
+<p>Further useful commands to explore for yourself (there are thousands, so here are just a handful!). Some of these will run by themselves, some of them will need files to work on. (Some of these might not be available on your particular system.)</p>
+<pre tabindex="0"><code>history
+man
+file
+cut
+sed
+tr
+du
+df
+who
+w
+whoami
+tree
+exit
+</code></pre><p>If you have got this far, then you have covered the most useful commands for the command line interface! Although there are many commands, the ones mentioned in this workshop make up 90% of what most people need to do on the command line. Congratulations!</p>
+<p>All pages: <a href="https://altanner.github.io/intro_to_CLI" target="_blank" rel="noopener noreffer">Introduction</a> • [Navigation]({{ site.baseurl }}{% link 01_navigation.md %}) • [Copying, moving and deleting]({{ site.baseurl }}{% link 02_manipulation.md %}) • [Viewing file contents]({{ site.baseurl }}{% link 03_viewing_files.md %}) • [Editing files]({{ site.baseurl }}{% link 04_editing_files.md %}) • [Searching]({{ site.baseurl }}{% link 05_searching.md %}) • [Further skills]({{ site.baseurl }}{% link 06_further.md %})</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-01-07</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/intro-to-command-line/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/intro-to-command-line/posts/05searching/" class="prev" rel="prev" title="Searching"><i class="fas fa-angle-left fa-fw"></i>Searching</a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.98.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/intro-to-command-line/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/intro-to-command-line/lib/katex/katex.min.css"><script type="text/javascript" src="/intro-to-command-line/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/intro-to-command-line/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/intro-to-command-line/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/intro-to-command-line/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/intro-to-command-line/lib/katex/katex.min.js"></script><script type="text/javascript" src="/intro-to-command-line/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false}};</script><script type="text/javascript" src="/intro-to-command-line/js/theme.min.js"></script></body>
+</html>

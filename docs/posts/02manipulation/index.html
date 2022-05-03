@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Working with files - Introduction to the Command Line</title><meta name="Description" content=""><meta property="og:title" content="Working with files" />
+<meta property="og:description" content="Learn more  We give some warnings on this page, but don&rsquo;t be intimidated! Mistakes are only human, and you won&rsquo;t be able to damage your computer through any of these commands.
+To improve your skills in backing up, version control, and minimising risk in computing, look for our courses on Best Practices in Software Engineering.
+   From this point forward, we will be working with the course materials (this is the same file as linked on the home page of this course)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://altanner.github.io/intro-to-command-line/posts/02manipulation/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-01-03T00:00:00+01:00" />
+<meta property="article:modified_time" content="2022-01-03T00:00:00+01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Working with files"/>
+<meta name="twitter:description" content="Learn more  We give some warnings on this page, but don&rsquo;t be intimidated! Mistakes are only human, and you won&rsquo;t be able to damage your computer through any of these commands.
+To improve your skills in backing up, version control, and minimising risk in computing, look for our courses on Best Practices in Software Engineering.
+   From this point forward, we will be working with the course materials (this is the same file as linked on the home page of this course)."/>
+<meta name="application-name" content="Introduction to the Command Line">
+<meta name="apple-mobile-web-app-title" content="Introduction to the Command Line"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://altanner.github.io/intro-to-command-line/posts/02manipulation/" /><link rel="prev" href="https://altanner.github.io/intro-to-command-line/posts/01navigation/" /><link rel="next" href="https://altanner.github.io/intro-to-command-line/posts/03viewing_files/" /><link rel="stylesheet" href="/intro-to-command-line/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/intro-to-command-line/css/style.min.css"><link rel="stylesheet" href="/intro-to-command-line/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/intro-to-command-line/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Working with files",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/02manipulation\/"
+        },"genre": "posts","wordcount":  728 ,
+        "url": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/02manipulation\/","datePublished": "2022-01-03T00:00:00+01:00","dateModified": "2022-01-03T00:00:00+01:00","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/intro-to-command-line/" title="Introduction to the Command Line"><span class="header-title-pre"><i class="fa fa-dollar-sign"></i><i class="fa fa-chevron-right"></i></span>Introduction to the Command Line</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/intro-to-command-line/posts"> Sections </a><a class="menu-item" href="/intro-to-command-line/about"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/intro-to-command-line/" title="Introduction to the Command Line"><span class="header-title-pre"><i class="fa fa-dollar-sign"></i><i class="fa fa-chevron-right"></i></span>Introduction to the Command Line</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/intro-to-command-line/posts" title="">Sections</a><a class="menu-item" href="/intro-to-command-line/about" title="">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Working with files</h1><h2 class="single-subtitle">How to delete, rename and copy files (and folders)</h2><div class="post-meta">
+            <div class="post-meta-line">
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;728 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#copying">Copying</a></li>
+        <li><a href="#deleting">Deleting</a></li>
+        <li><a href="#moving">Moving</a></li>
+        <li><a href="#exercise">Exercise</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><div class="details admonition success open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw"></i>Learn more<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>We give some warnings on this page, but don&rsquo;t be intimidated! Mistakes are only human, and you won&rsquo;t be able to damage your computer through any of these commands.</p>
+<p>To improve your skills in backing up, version control, and minimising risk in computing, look for our courses on <em>Best Practices in Software Engineering</em>.</p>
+</div>
+        </div>
+    </div>
+<p>From this point forward, we will be working with the <a href="https://github.com/altanner/intro-to-command-line/raw/master/command-line-files.zip" target="_blank" rel="noopener noreffer">course materials</a> (this is the same file as linked on the home page of this course). Download this file, and using your GUI, move this file into the folder we made in the last section. This might be in your home folder, or your desktop - it doesn&rsquo;t matter where, as long as it makes sense to you! Then unzip the file - double click it, or right-click and &ldquo;open&rdquo; it. You will then have a new folder called <code>command_line_files</code>.</p>
+<p>In our terminal, use the command line to move into the course materials folder, <code>command_line_files</code>. When you run <code>ls</code> in this folder, you should see the list of contents looking like</p>
+<pre tabindex="0"><code>example_files sandbox       some_plays
+</code></pre><p>Personally, I don&rsquo;t find that clear to look at, so let&rsquo;s use our first <em>flag</em>, running <code>ls -l</code>.</p>
+<div class="details admonition question open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw"></i>Questions<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>What do you think the <code>-l</code> is short for?</li>
+<li>What extra information are you given?</li>
+</ul>
+</div>
+        </div>
+    </div>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>Flags are also known as &ldquo;arguments&rdquo; and &ldquo;options&rdquo; - you will have to get used to this!</li>
+<li>Flags start with a <code>-</code>, a dash.</li>
+<li>Spoken, the command <code>ls -l</code> might be said &ldquo;L S dash L&rdquo;&hellip; but sometimes people say &ldquo;minus&rdquo;, or &ldquo;hyphen&rdquo; instead of &ldquo;dash&rdquo;. These all mean the same thing: the key to the left of the <code>=+</code> key.</li>
+</ul>
+</div>
+        </div>
+    </div>
+<h3 id="copying">Copying</h3>
+<p>Let&rsquo;s move into the folder called <code>sandbox</code> and play with some files. Firstly, let&rsquo;s copy a file:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">cp data1 data3
+</span></span></code></pre></div><p>Here we are saying &ldquo;copy the file called data1 to a new file called data3&rdquo;. We now have two identical copies of the same file, only different by name.</p>
+<div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw"></i>Warning<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>The command line will overwrite files with <strong>no warning!</strong> If, for example, <code>data3</code> already exists, the command <code>cp data1 data3</code> would overwrite <code>data3</code> with the contents of <code>data1</code> - permanently deleting the contents of <code>data3</code>!</li>
+<li>With great power comes great responsibility! :)</li>
+</ul>
+</div>
+        </div>
+    </div>
+<h3 id="deleting">Deleting</h3>
+<p>Now let&rsquo;s try to delete, or &ldquo;remove&rdquo;, the file we just made:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">rm data3
+</span></span></code></pre></div><p>Here we said &ldquo;remove the file called data3&rdquo;.
+<div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw"></i>Warning<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li><code>rm</code>, &ldquo;remove&rdquo; is the same as delete. But <strong>without a recycle bin, undo, back button, or any other safety-nets.</strong></li>
+<li><code>rm</code>, <code>cp</code> and <code>mv</code> commands all have the potential to cause permanent data loss!</li>
+</ul>
+</div>
+        </div>
+    </div></p>
+<p>Now let&rsquo;s try copying, moving and removing folders. There are some folders in the sandbox to play with. Have a go at using <code>cp</code> and <code>rm</code> on there, and notice what it will and will not let you do. For folders that are not empty, we will need to use another <em>flag</em>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">cp -r folder_with_files_inside folder_copy
+</span></span></code></pre></div><p>Here we asked the computer to &ldquo;copy, recursively, this folder to that folder&rdquo;. Empty folders can be copied, moved and removed, but you will need to use <code>-r</code> if there are items insides. <code>-r</code> is a common flag which we will use again later.</p>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Not all flags mean the same, when applied to other commands! <code>-r</code> does the same thing for <code>cp</code> and <code>mv</code> and <code>rm</code>, but don&rsquo;t assume it does the same thing for all commands!</div>
+        </div>
+    </div>
+<p>Try moving into the folder with files inside.</p>
+<div class="details admonition question open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw"></i>Question<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Can you <code>cp</code> a file to the folder <em>containing</em> the one you are in?</div>
+        </div>
+    </div>
+<h3 id="moving">Moving</h3>
+<p>Finally, let&rsquo;s look at moving files.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mv data1 data4
+</span></span></code></pre></div><p>Which means, &ldquo;move the file called to data1 to a file called data4&rdquo;. Move is essentially &ldquo;rename&rdquo; (although it is doing exactly the same as moving items in your graphical interface).</p>
+<div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw"></i>Warning<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>As such, if <code>data4</code> already existed, it would be <em>deleted</em> by the command <code>mv data1 data4</code>! Be very careful with <code>mv</code>!</li>
+<li>OK, that is my last warning for now :)</li>
+</ul>
+</div>
+        </div>
+    </div>
+<h3 id="exercise">Exercise</h3>
+<p>Have a play in the sandpit, using <code>cd</code>, <code>ls</code>, and the file manipulation commands <code>cp</code>, <code>rm</code> and <code>mv</code>.
+<div class="details admonition question open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw"></i>Questions<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>Can you <code>mv</code> one file to more than one destination?</li>
+<li>What happens if you give <code>cp</code> no destination?</li>
+<li>Can you <code>cp</code>, but without being inside the folder it is located in?</li>
+<li>Can you move a folder?</li>
+<li>How does moving a <em>file</em> onto a <em>folder</em> behave?</li>
+<li>Can you <code>mv</code> the folder you are actually in?</li>
+</ul>
+</div>
+        </div>
+    </div></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-01-03</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/intro-to-command-line/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/intro-to-command-line/posts/01navigation/" class="prev" rel="prev" title="File system navigation"><i class="fas fa-angle-left fa-fw"></i>File system navigation</a>
+            <a href="/intro-to-command-line/posts/03viewing_files/" class="next" rel="next" title="Viewing the contents of files">Viewing the contents of files<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.98.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/intro-to-command-line/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/intro-to-command-line/lib/katex/katex.min.css"><script type="text/javascript" src="/intro-to-command-line/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/intro-to-command-line/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/intro-to-command-line/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/intro-to-command-line/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/intro-to-command-line/lib/katex/katex.min.js"></script><script type="text/javascript" src="/intro-to-command-line/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false}};</script><script type="text/javascript" src="/intro-to-command-line/js/theme.min.js"></script></body>
+</html>

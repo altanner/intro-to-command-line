@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Searching - Introduction to the Command Line</title><meta name="Description" content=""><meta property="og:title" content="Searching" />
+<meta property="og:description" content="Searching for files We can use the program find as our search command, but it has some strange syntax&hellip; if you are a little confused, you are not alone! The syntax is
+ find [where to look] [what type of file] [&quot;the match you are looking for, in quotes&quot;]  Let&rsquo;s go back to your folder command_line_files, and try each of these commands.
+find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://altanner.github.io/intro-to-command-line/posts/05searching/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-01-06T00:00:00+01:00" />
+<meta property="article:modified_time" content="2022-01-06T00:00:00+01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Searching"/>
+<meta name="twitter:description" content="Searching for files We can use the program find as our search command, but it has some strange syntax&hellip; if you are a little confused, you are not alone! The syntax is
+ find [where to look] [what type of file] [&quot;the match you are looking for, in quotes&quot;]  Let&rsquo;s go back to your folder command_line_files, and try each of these commands.
+find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ."/>
+<meta name="application-name" content="Introduction to the Command Line">
+<meta name="apple-mobile-web-app-title" content="Introduction to the Command Line"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://altanner.github.io/intro-to-command-line/posts/05searching/" /><link rel="prev" href="https://altanner.github.io/intro-to-command-line/posts/04editing_files/" /><link rel="next" href="https://altanner.github.io/intro-to-command-line/posts/06redirects/" /><link rel="stylesheet" href="/intro-to-command-line/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/intro-to-command-line/css/style.min.css"><link rel="stylesheet" href="/intro-to-command-line/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/intro-to-command-line/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Searching",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/05searching\/"
+        },"genre": "posts","wordcount":  1086 ,
+        "url": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/05searching\/","datePublished": "2022-01-06T00:00:00+01:00","dateModified": "2022-01-06T00:00:00+01:00","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/intro-to-command-line/" title="Introduction to the Command Line"><span class="header-title-pre"><i class="fa fa-dollar-sign"></i><i class="fa fa-chevron-right"></i></span>Introduction to the Command Line</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/intro-to-command-line/posts"> Sections </a><a class="menu-item" href="/intro-to-command-line/about"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/intro-to-command-line/" title="Introduction to the Command Line"><span class="header-title-pre"><i class="fa fa-dollar-sign"></i><i class="fa fa-chevron-right"></i></span>Introduction to the Command Line</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/intro-to-command-line/posts" title="">Sections</a><a class="menu-item" href="/intro-to-command-line/about" title="">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Searching</h1><h2 class="single-subtitle">Find what you are looking for, both in folders, and inside files</h2><div class="post-meta">
+            <div class="post-meta-line">
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1086 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#searching-for-files">Searching for files</a></li>
+        <li><a href="#searching-in-files">Searching in files</a></li>
+        <li><a href="#exercise">Exercise</a></li>
+        <li><a href="#recursive-searching">Recursive searching</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="searching-for-files">Searching for files</h3>
+<p>We can use the program <code>find</code> as our search command, but it has some strange syntax&hellip; if you are a little confused, you are not alone! The syntax is</p>
+<ul>
+<li><code>find [where to look] [what type of file] [&quot;the match you are looking for, in quotes&quot;]</code></li>
+</ul>
+<p>Let&rsquo;s go back to your folder <code>command_line_files</code>, and try each of these commands.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">find . -iname <span class="s2">&#34;data1&#34;</span>
+</span></span><span class="line"><span class="cl">find . -iname <span class="s2">&#34;data*&#34;</span>
+</span></span><span class="line"><span class="cl">find . -iname <span class="s2">&#34;*txt&#34;</span>
+</span></span><span class="line"><span class="cl">find . -iname <span class="s2">&#34;*a*&#34;</span>
+</span></span><span class="line"><span class="cl">find . -iname <span class="s2">&#34;parakeet&#34;</span>
+</span></span></code></pre></div><p>Here we are using <code>.</code> (the current location) as the starting point, and <code>find</code> will look in all the containing folders below that location. To search a whole file system, we could go <code>find / -iname &quot;my_file&quot;</code>, but just like doing this in a GUI, it is very slow. <code>find</code> will also, unhelpfully, tell you all the folders you do not have access to.</p>
+<p>The flag <code>-iname</code> is saying &ldquo;the file or folder has this name, case insensitive&rdquo; (you can do <code>-name</code> too, if you are sure of the case). In the name, we can have wildcards to say &ldquo;anything&rdquo;, and 💙 it is common to put <code>*</code> at both ends of your query, just in case you are forgetting part of the name. (More on wildcards later.) Notice the last query, for <code>&quot;parakeet&quot;</code>, does not find anything, but the command line doesn&rsquo;t tell you that. It just finishes and gives you your prompt back. ❗ This is standard for the command line - unless you get an error, your command did run correctly - sometime with no output at all!</p>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">If you are on MacOS or Linux, you may have a command installed called <code>fzf</code> - &ldquo;fuzzy find&rdquo;. This is a more modern search command than <code>find</code>, which will find matches and similiar matches (without having to use wildcards), and give you a list of the closest matches. Give it a try with just <code>fzf</code> (and <code>enter</code> without a search query), then start typing your query and it will search as you type, a little like a browser can. You can scroll the results with your arrow keys, and press <code>enter</code> to print results to the terminal.</div>
+        </div>
+    </div>
+<h3 id="searching-in-files">Searching in files</h3>
+<p>A strength of the command line is being able to easily search inside files. Here we will use a command called <code>grep</code>. Strange name I agree, but apparenly back in the depths of time it stood for &ldquo;global regular expression print&rdquo;. Don&rsquo;t worry about what that means! Although, in programming &ldquo;global&rdquo; means &ldquo;everywhere&rdquo; - nothing to do with the world!</p>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Think of <code>grep</code> as <code>ctrl-f</code> (&ldquo;find&rdquo;), that you might use in a document or a browser, to find particular words.</div>
+        </div>
+    </div>
+<p>Move into the folder <code>some_plays</code> and try this command:</p>
+<pre tabindex="0"><code>grep fish king-lear.txt
+</code></pre><p>Here we are saying &ldquo;Run grep, searching for the word <em>fish</em>, in the file called king-lear.txt&rdquo;. <code>grep</code> will show you the lines with exact matches. Be careful that grep is case sensitive, and it will do exactly what you asked - &ldquo;fish&rdquo; will match words with those letters in, not just the word &ldquo;fish&rdquo;.</p>
+<p><code>grep</code> can take many useful flags.</p>
+<div class="details admonition question open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw"></i>Questions<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Try changing what <code>grep</code> is searching for.</p>
+<ul>
+<li>What is the most common noun you can find in King Lear?</li>
+<li>Can you find a word which appears only once?</li>
+<li>Can you search for more than one word? (for example the phrase &ldquo;and such&rdquo;)</li>
+</ul>
+</div>
+        </div>
+    </div>
+<h3 id="exercise">Exercise</h3>
+<p>Try each of these commands with flags, and work out what they do:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">grep faith king-lear.txt
+</span></span><span class="line"><span class="cl">grep Faith king-lear.txt
+</span></span><span class="line"><span class="cl">grep -i faith king-lear.txt
+</span></span><span class="line"><span class="cl">grep -n faith king-lear.txt
+</span></span><span class="line"><span class="cl">grep -c faith king-lear.txt
+</span></span><span class="line"><span class="cl">grep -c Faith king-lear.txt
+</span></span><span class="line"><span class="cl">grep -ci faith king-lear.txt
+</span></span><span class="line"><span class="cl">grep faith king-lear.txt julius-caesar.txt
+</span></span></code></pre></div><div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Note that we can combine multiple flags, as in that <code>-ci</code> command above.</div>
+        </div>
+    </div>
+<p>Also, that final command doesn&rsquo;t have flags, but is asking to search two files for the same match. Note that if you want to search for something with a space in it, you will need quotes around your query, for example</p>
+<pre tabindex="0"><code>grep &#34;this scattered kingdom&#34; king-lear.txt
+</code></pre><div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw"></i>Warning<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">If the quotes were absent, <code>grep this scattered kingdom king-lear.txt</code>, the command line would think you want to find the word &ldquo;this&rdquo;, in the files called &ldquo;scattered&rdquo;, &ldquo;kingdom&rdquo;, and &ldquo;king-lear.txt&rdquo;.</div>
+        </div>
+    </div>
+<h3 id="recursive-searching">Recursive searching</h3>
+<p>Now let&rsquo;s search multiple files. We can do this in a couple of way. First, let&rsquo;s move out of the folder <code>some_plays</code>, back one level with <code>cd ..</code>. From here, let&rsquo;s recursively search for something inside <code>some_plays</code> with a couple of commands</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">grep -r sparrow some_plays
+</span></span><span class="line"><span class="cl">grep -rc sparrow some_plays
+</span></span></code></pre></div><p>Often, when referring to the file we want to search (or apply any command to), we can use <em>wildcards</em> to specify files with similarities in name. Move back into the folder called <code>some_plays</code>, and use this command</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">grep sparrow *
+</span></span></code></pre></div><p>Here, <code>*</code> means &ldquo;every file and folder in this location&rdquo;. We could also specify just part of the filename - try these commands:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">grep sparrow t*
+</span></span><span class="line"><span class="cl">grep sparrow the*
+</span></span><span class="line"><span class="cl">grep dog *night*
+</span></span></code></pre></div><p>We won&rsquo;t go into it here, but <code>grep</code> can search in very sophisticated ways not possible with <code>ctrl-f</code>, for example finding ambiguous spellings, returning matches a certain number of lines from the actual match, or being able to look ahead or behind to conditionally match. If you are wondering what the command line version of &ldquo;find and replace&rdquo; is, look up a command called <code>sed</code> (&ldquo;string editor&rdquo;) - this command is beyond the scope of this course, but is a commonly-used command for automating modification to files.</p>
+<p>To use wildcards in the search query itself, we have to use regular expressions (&ldquo;regex&rdquo;). For example searching for variations of spelling, or when a word is near another match, or not showing the match but the word after the match, or the line after the match.</p>
+<div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw"></i>Warning<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">One more note on <code>grep</code>: when counting, it only counts the number of <em>lines</em> that the match appears on. If the same match occurs twice on the same line, it will only count as 1 match. <code>grep</code> can count all matches, rather than lines - try looking this up.</div>
+        </div>
+    </div>
+<p>Have a bit more of practice with wildcards, by going back a folder (you should be in <code>command_line_files</code>) - what do you get if you run these commands?</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ls *
+</span></span><span class="line"><span class="cl">tail -3 some_plays/*
+</span></span><span class="line"><span class="cl">head -10 some_plays/king*
+</span></span></code></pre></div><div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Remember that anything ending with a <code>/</code> character is a folder, not a file.</div>
+        </div>
+    </div>
+<p>We could also use the <em>absolute path</em>, ie the path that will work from any location in the filesystem. For me, that would be <code>/Users/at9362/Code/intro_to_CLI/command_line_files</code>, but for you it will be something different.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-01-06</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/intro-to-command-line/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/intro-to-command-line/posts/04editing_files/" class="prev" rel="prev" title="Editing files"><i class="fas fa-angle-left fa-fw"></i>Editing files</a>
+            <a href="/intro-to-command-line/posts/06redirects/" class="next" rel="next" title="Redirection">Redirection<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.98.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/intro-to-command-line/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/intro-to-command-line/lib/katex/katex.min.css"><script type="text/javascript" src="/intro-to-command-line/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/intro-to-command-line/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/intro-to-command-line/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/intro-to-command-line/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/intro-to-command-line/lib/katex/katex.min.js"></script><script type="text/javascript" src="/intro-to-command-line/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false}};</script><script type="text/javascript" src="/intro-to-command-line/js/theme.min.js"></script></body>
+</html>
