@@ -3,9 +3,16 @@
         <title>Introduction to the Command Line</title>
         <link>https://altanner.github.io/intro-to-command-line/</link>
         <description>Introduction to the Command Line</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 08 Jan 2022 00:00:00 &#43;0100</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 09 Jan 2022 00:00:00 &#43;0100</lastBuildDate>
             <atom:link href="https://altanner.github.io/intro-to-command-line/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Shell scripts</title>
+    <link>https://altanner.github.io/intro-to-command-line/posts/08scripts/</link>
+    <pubDate>Sun, 09 Jan 2022 00:00:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://altanner.github.io/intro-to-command-line/posts/08scripts/</guid>
+    <description><![CDATA[Scripts A &ldquo;script&rdquo; is]]></description>
+</item><item>
     <title>Pipes</title>
     <link>https://altanner.github.io/intro-to-command-line/posts/07pipes/</link>
     <pubDate>Sat, 08 Jan 2022 00:00:00 &#43;0100</pubDate>
