@@ -22,7 +22,7 @@ comment:
 ---
 
 ### Searching for files
-ksdafdlsk
+
 We can use the program `find` as our search command, but it has some strange syntax... if you are a little confused, you are not alone! The syntax is
 - `find [where to look] [what type of file] ["the match you are looking for, in quotes"]`
 

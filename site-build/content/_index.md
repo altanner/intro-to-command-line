@@ -6,6 +6,8 @@ Understanding the command line is an important foundation for all kinds of compu
 
 This course is designed and delivered by Dr Alastair Tanner and the Research Software Engineering team, University of Bristol.
 
+Please see below for each of the sections that we will be working through.
+
 {{< admonition type="info" title="Useful links" open=true >}}
 - [Bristol Research Software Engineering](https://www.bristol.ac.uk/acrc/research-software-engineering/)
 - [Jean Golding Institute Code of Conduct](https://www.bristol.ac.uk/golding/what-we-do/people/code-of-conduct-/)
@@ -24,8 +26,7 @@ By the end of this workshop, you will be able to
 {{< /admonition >}}
 
 {{< admonition type="info" title="Course materials" open=true >}}
-- [Please download this file](https://github.com/altanner/intro-to-command-line/raw/master/command-line-files.zip), move it to a suitable place, and unzip it. We will work with this later in the session.
-- See below for the sections we will be working through.
+[Please download this file](https://github.com/altanner/intro-to-command-line/raw/master/command-line-files.zip), move it to a suitable place, and unzip it. We will work with this later in the session.
 {{< /admonition >}}
 
 
