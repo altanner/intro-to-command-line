@@ -21,9 +21,9 @@ comment:
   enable: true
 ---
 
-### Using outputs as inputs
+### Sending outputs to files
 
-This page will cover some more advanced ways of using the command line, in particular how to link different commands together. Firstly we will cover a concept called "redirection". Move into the folder `example_files`. We can see, for example, the first three lines of `plants.txt` with the command
+Move into the folder `example_files`. We can see, for example, the first three lines of `plants.txt` with the command
 
 ```
 head -3 plants.txt
@@ -31,53 +31,61 @@ head -3 plants.txt
 
 But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called "redirecting", and is done with the symbol `>`
 
-```
+```shell
 head -3 plants.txt > first_three_plants.txt
 ```
 
 The terminal will not give you any output, but what is inside the file `first_three_plants.txt`? Let's expand on this by using wildcards. Try this command, and examine the contents of the output file:
 
-```
+```shell
 head -3 * > my_new_file
 ```
 
-**Be careful! Redirects will overwrite the target file!! If `my_new_file` already existed, it would be permanently overwritten by the above command!** If we want to **append** to a file, we use a double arrow, for example we can go:
+{{< admonition type="warning" open=true >}}
+Be careful! Redirects will overwrite the target file!! If `my_new_file` already existed, it would be permanently overwritten by the above command!
+{{< /admonition >}}
 
-```
+Using `>` will create a new file, or overwrite a file if it already exists. We might want to append instead, and we do that with a double arrow, `>>`, for example
+
+```shell
 tail -10 romeo-and-juliet.txt >> another_file
 tail -10 king-lear.txt >> another_file
 ```
 
-Finally, we will look at how to make one command take the output from another command. This is called a "pipe", `|`. That is the "bar symbol", on Mac keyboards it is next to `enter`, on Windows it is usually by the left shift key, and on Linux it is usually to the left of the 1 key. Move to the folder `some_plays`, and let's use a new command, `wc`
+### Exercise
+Try these redirection and appending tasks, in the folder `example_files`.
+{{< admonition type="question" title="Exercise" open=true >}}
+- Make a new file of the last 50 lines of Romeo and Juliet.
+- Make a new file of all the first 2 lines of any file starting with "number".
+- Make a new file containing the the final line of all files with the letter "nim" or "num" in their name.
+- Add the final 100 lines of The Tempest to this file.
+{{< /admonition >}}
 
-```
-wc -l macbeth.txt
-```
+### Getting help on the command line
 
-`wc` is "word count", but here we are asking for the number of lines with the flag `-l`. We can use a wildcard to see how many lines are in all of the plays, with
+Much of your knowledge about commands will of course come from the internet, but you can also look up help and manuals on the command line itself.
 
-```
-wc -l *
-```
+### `man` pages
+`man` is short for "manual". When you run this command, for example
 
-But what if we wanted these in order? We can use the output of `wc` as the input for `sort`. Try these commands
-
-```
-wc -l * | sort
-wc -l * | sort -r
-```
-
-Combining redirects and pipes can make powerful scripts, here is a simple example where we pipe one command to another, then send the output of the next command into a file:
-
-```
-wc -l * | sort -r > ordered_by_line
+```shell
+man ls
 ```
 
-Understanding this kind of flow is essentially the first step towards programming. While the command line is a whole scripting language in itself, as things get more sophisticated we start to use proper programming languages. This aids in compatibility, portability, allows you to use purpose-built tools.
+You will get description and instructions on what the command does, how to use it, and what flags it can take. Some `man` pages are better than others, but it is good to get familiar with them, and get a feel for how documentation is structured. When you search for a command on the internet, often the best results are just the `man` pages, presented in a webpage, which might be easier to understand and search through.
 
-Further useful commands to explore for yourself (there are thousands, so here are just a handful!). Some of these will run by themselves, some of them will need files to work on. (Some of these might not be available on your particular system.)
+{{< admonition type="info" open=true >}}
+- Note that `man` pages are presented in a _pager_: you are not on the command line while viewing `man` pages.
+- Just like with `less`, you can leave a `man` page with `q`.
+{{< /admonition >}}
 
-```
+{{< admonition type="question" title="Exercise" open=true >}}
+- Use `man` to look up the command `wc`
+- Use `wc`, plus a flag, to count the number of lines in Macbeth, in the folder "some_plays"
+- Use `wc` to count the characters in A Midsummer Night's Dream.
+- Use `wc` to count the number of lines in all of the plays in this folder.
+- Use `man` to look up the following commands. And give the commands themselves a try
+```shell
 history
 man
 file
@@ -89,10 +97,6 @@ df
 who
 w
 whoami
-tree
-exit
 ```
+{{< /admonition >}}
 
-If you have got this far, then you have covered the most useful commands for the command line interface! Although there are many commands, the ones mentioned in this workshop make up 90% of what most people need to do on the command line. Congratulations!
-
-All pages: [Introduction](https://altanner.github.io/intro_to_CLI) • [Navigation]({{ site.baseurl }}{% link 01_navigation.md %}) • [Copying, moving and deleting]({{ site.baseurl }}{% link 02_manipulation.md %}) • [Viewing file contents]({{ site.baseurl }}{% link 03_viewing_files.md %}) • [Editing files]({{ site.baseurl }}{% link 04_editing_files.md %}) • [Searching]({{ site.baseurl }}{% link 05_searching.md %}) • [Further skills]({{ site.baseurl }}{% link 06_further.md %})

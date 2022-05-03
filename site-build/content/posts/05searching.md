@@ -26,7 +26,7 @@ comment:
 We can use the program `find` as our search command, but it has some strange syntax... if you are a little confused, you are not alone! The syntax is
 - `find [where to look] [what type of file] ["the match you are looking for, in quotes"]`
 
-Let's go back to your folder `command_line_files`, and try each of these commands.
+Let's go back to your folder `command-line-files`, and try each of these commands.
 
 ```shell
 find . -iname "data1"
@@ -127,7 +127,7 @@ To use wildcards in the search query itself, we have to use regular expressions 
 One more note on `grep`: when counting, it only counts the number of _lines_ that the match appears on. If the same match occurs twice on the same line, it will only count as 1 match. `grep` can count all matches, rather than lines - try looking this up.
 {{< /admonition >}}
 
-Have a bit more of practice with wildcards, by going back a folder (you should be in `command_line_files`) - what do you get if you run these commands?
+Have a bit more of practice with wildcards, by going back a folder (you should be in `command-line-files`) - what do you get if you run these commands?
 
 ```shell
 ls *
@@ -139,4 +139,5 @@ head -10 some_plays/king*
 Remember that anything ending with a `/` character is a folder, not a file.
 {{< /admonition >}}
 
-We could also use the *absolute path*, ie the path that will work from any location in the filesystem. For me, that would be `/Users/at9362/Code/intro_to_CLI/command_line_files`, but for you it will be something different.
+We could also use the *absolute path*, ie the path that will work from any location in the filesystem.
+
