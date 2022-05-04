@@ -1,0 +1,77 @@
+==> animals.txt <==
+possum
+camel
+
+==> another_file <==
+==> animals.txt <==
+shrew
+
+==> dugong.txt <==
+The dugong (Dugong dugon) is a medium-sized marine mammal. It is one of four living species of the order Sirenia, which also includes three species of manatees. It is the only living representative of the once-diverse family Dugongidae; its closest modern relative, Steller's sea cow (Hydrodamalis gigas), was hunted to extinction in the 18th century.
+
+
+==> file_42 <==
+information!
+
+
+==> file_43 <==
+file 43 contents!
+
+==> first10lines <==
+==> animals.txt <==
+possum
+
+==> linux.txt <==
+Linux (LEEN-uuks or LIN-uuks) is a family of open-source Unix-like operating systems based on the Linux kernel, an operating system kernel first released on September 17, 1991, by Linus Torvalds. Linux is typically packaged in a Linux distribution.
+
+
+==> macos.txt <==
+macOS (previously Mac OS X and later OS X) is a proprietary graphical operating system developed and marketed by Apple Inc. since 2001. It is the primary operating system for Apple's Mac computers. Within the market of desktop, laptop and home computers, and by web usage, it is the second most widely used desktop OS, after Windows NT.
+
+
+==> meaning_of_life.txt <==
+all we see and all we seem is but a dream within a dream
+
+==> numbers.txt <==
+line 1 
+line 2 
+
+==> numbers2.txt <==
+entry 1 
+entry 2 
+
+==> numbers3.txt <==
+number 1 
+number 2 
+
+==> oryx.txt <==
+Oryx is a genus consisting of four large antelope species called oryxes. Their fur is pale with contrasting dark markings in the face and on the legs, and their long horns are almost straight. The exception is the scimitar oryx, which lacks dark markings on the legs, only has faint dark markings on the head, has an ochre neck, and horns that are clearly decurved.
+
+
+==> plants.txt <==
+oak
+elder
+
+==> romeo-and-juliet.txt <==
+	ROMEO AND JULIET
+
+
+==> the-tempest.txt <==
+The Tempest
+by William Shakespeare
+
+==> thisisanewfile <==
+oak
+elder
+
+==> weasel.txt <==
+Weasels are mammals of the genus Mustela of the family Mustelidae. The genus Mustela includes the least weasels, polecats, stoats, ferrets and mink. Members of this genus are small, active predators, with long and slender bodies and short legs. The family Mustelidae, or mustelids, (which also includes badgers, otters, and wolverines) is often referred to as the "weasel family". In the UK, the term "weasel" usually refers to the smallest species, the least weasel (M. nivalis), the smallest carnivoran species.
+
+
+==> windows.txt <==
+Microsoft Windows, commonly referred to as Windows, is a group of several proprietary graphical operating system families, all of which are developed and marketed by Microsoft. Each family caters to a certain sector of the computing industry. Active Microsoft Windows families include Windows NT and Windows IoT; these may encompass subfamilies, (e.g. Windows Server or Windows Embedded Compact) (Windows CE). Defunct Microsoft Windows families include Windows 9x, Windows Mobile, and Windows Phone.
+
+
+==> words.txt <==
+one 
+two 

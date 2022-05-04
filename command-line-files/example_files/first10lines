@@ -1,0 +1,160 @@
+==> animals.txt <==
+possum
+camel
+rhino
+cow
+trout
+hawk
+cow
+rhino
+elephant
+shrew
+
+==> dugong.txt <==
+The dugong (Dugong dugon) is a medium-sized marine mammal. It is one of four living species of the order Sirenia, which also includes three species of manatees. It is the only living representative of the once-diverse family Dugongidae; its closest modern relative, Steller's sea cow (Hydrodamalis gigas), was hunted to extinction in the 18th century.
+
+The dugong is the only sirenian in its range, which spans the waters of some 40 countries and territories throughout the Indo-West Pacific. The dugong is largely dependent on seagrass communities for subsistence and is thus restricted to the coastal habitats which support seagrass meadows, with the largest dugong concentrations typically occurring in wide, shallow, protected areas such as bays, mangrove channels, the waters of large inshore islands and inter-reefal waters. The northern waters of Australia between Shark Bay and Moreton Bay are believed to be the dugong's contemporary stronghold.
+
+Like all modern sirenians, the dugong has a fusiform body with no dorsal fin or hind limbs. The forelimbs or flippers are paddle-like. The dugong is easily distinguished from the manatees by its fluked, dolphin-like tail, but also possesses a unique skull and teeth. Its snout is sharply downturned, an adaptation for feeding in benthic seagrass communities. The molar teeth are simple and peg-like unlike the more elaborate molar dentition of manatees.
+
+The dugong has been hunted for thousands of years for its meat and oil. Traditional hunting still has great cultural significance in several countries in its modern range, particularly northern Australia and the Pacific Islands. The dugong's current distribution is fragmented, and many populations are believed to be close to extinction. The IUCN lists the dugong as a species vulnerable to extinction, while the Convention on International Trade in Endangered Species limits or bans the trade of derived products. Despite being legally protected in many countries, the main causes of population decline remain anthropogenic and include fishing-related fatalities, habitat degradation and hunting. With its long lifespan of 70 years or more, and slow rate of reproduction, the dugong is especially vulnerable to extinction. 
+
+==> file_42 <==
+information!
+
+
+==> file_43 <==
+file 43 contents!
+
+==> linux.txt <==
+Linux (LEEN-uuks or LIN-uuks) is a family of open-source Unix-like operating systems based on the Linux kernel, an operating system kernel first released on September 17, 1991, by Linus Torvalds. Linux is typically packaged in a Linux distribution.
+
+Distributions include the Linux kernel and supporting system software and libraries, many of which are provided by the GNU Project. Many Linux distributions use the word "Linux" in their name, but the Free Software Foundation uses the name "GNU/Linux" to emphasize the importance of GNU software, causing some controversy.
+
+Popular Linux distributions include Debian, Fedora, and Ubuntu. Commercial distributions include Red Hat Enterprise Linux and SUSE Linux Enterprise Server. Desktop Linux distributions include a windowing system such as X11 or Wayland, and a desktop environment such as GNOME or KDE Plasma. Distributions intended for servers may omit graphics altogether, or include a solution stack such as LAMP. Because Linux is freely redistributable, anyone may create a distribution for any purpose.
+
+Linux was originally developed for personal computers based on the Intel x86 architecture, but has since been ported to more platforms than any other operating system. Because of the dominance of the Linux-based Android on smartphones, Linux also has the largest installed base of all general-purpose operating systems. Although it is used by only around 2.3 percent of desktop computers, the Chromebook, which runs the Linux kernel-based Chrome OS, dominates the US K–12 education market and represents nearly 20 percent of sub-$300 notebook sales in the US. Linux is the leading operating system on servers (over 96.4% of the top 1 million web servers' operating systems are Linux), leads other big iron systems such as mainframe computers, and is the only OS used on TOP500 supercomputers (since November 2017, having gradually eliminated all competitors).
+
+Linux also runs on embedded systems, i.e. devices whose operating system is typically built into the firmware and is highly tailored to the system. This includes routers, automation controls, smart home technology (like Google Nest), televisions (Samsung and LG Smart TVs use Tizen and WebOS, respectively), automobiles (for example, Tesla, Audi, Mercedes-Benz, Hyundai, and Toyota all rely on Linux), digital video recorders, video game consoles, and smartwatches. The Falcon 9's and the Dragon 2's avionics use a customized version of Linux.
+
+
+==> macos.txt <==
+macOS (previously Mac OS X and later OS X) is a proprietary graphical operating system developed and marketed by Apple Inc. since 2001. It is the primary operating system for Apple's Mac computers. Within the market of desktop, laptop and home computers, and by web usage, it is the second most widely used desktop OS, after Windows NT.
+
+macOS succeeded the classic Mac OS, a Macintosh operating system with nine releases from 1984 to 1999. During this time, Apple cofounder Steve Jobs had left Apple and started another company, NeXT, developing the NeXTSTEP platform that would later be acquired by Apple to form the basis of macOS.
+
+The first desktop version, Mac OS X 10.0, was released in March 2001, with its first update, 10.1, arriving later that year. Releases from Mac OS X 10.5 Leopard and thereafter are UNIX 03 certified. Apple's mobile operating system, iOS, has been considered a variant of macOS.
+
+A prominent part of macOS's original brand identity was the use of Roman numeral X, pronounced "ten" as in Mac OS X and also the iPhone X. Apple began naming its releases after big cats, which lasted until OS X 10.8 Mountain Lion. Since OS X 10.9 Mavericks, releases have been named after locations in California. Apple shortened the name to "OS X" in 2012 and then changed it to "macOS" in 2016, adopting the nomenclature that they were using for their other operating systems, iOS, watchOS, and tvOS. After sixteen distinct versions of macOS 10, macOS Big Sur was presented as version 11 in 2020, and macOS Monterey was presented as version 12 in 2021.
+
+macOS has supported three major processor architectures, beginning with PowerPC-based Macs in 1999. In 2006, Apple transitioned to the Intel architecture with a line of Macs using Intel Core processors. In 2020, Apple began the Apple silicon transition, using self-designed, 64-bit ARM-based Apple M1 processors on new Mac computers. 
+
+==> meaning_of_life.txt <==
+all we see and all we seem is but a dream within a dream
+
+==> numbers.txt <==
+line 1 
+line 2 
+line 3 
+line 4 
+line 5 
+line 6 
+line 7 
+line 8 
+line 9 
+
+==> numbers2.txt <==
+entry 1 
+entry 2 
+entry 3 
+entry 4 
+entry 5 
+entry 6 
+entry 7 
+entry 8 
+entry 9 
+
+==> numbers3.txt <==
+number 1 
+number 2 
+number 3 
+number 4 
+number 5 
+number 6 
+number 7 
+number 8 
+number 9 
+
+==> oryx.txt <==
+Oryx is a genus consisting of four large antelope species called oryxes. Their fur is pale with contrasting dark markings in the face and on the legs, and their long horns are almost straight. The exception is the scimitar oryx, which lacks dark markings on the legs, only has faint dark markings on the head, has an ochre neck, and horns that are clearly decurved.
+
+The Arabian oryx was only saved from extinction through a captive breeding program and reintroduction to the wild. The scimitar oryx, which is now listed as extinct in the wild, also relies on a captive breeding program for its survival.
+
+The term "oryx" comes from the Greek word, óryx, for a type of antelope. The Greek plural form is óryges, although oryxes has been established in English. Herodotus mentions a type of gazelle in Libya called "Orus", probably related to the verb "oruttoo" or "orussoo", meaning "to dig". White oryxes are known to dig holes in the sand for the sake of coolness. 
+
+==> plants.txt <==
+oak
+elder
+hawthorn
+apple
+cherry
+elm
+beech
+birch
+
+==> romeo-and-juliet.txt <==
+	ROMEO AND JULIET
+
+	DRAMATIS PERSONAE
+
+ESCALUS	prince of Verona. (PRINCE:)
+
+PARIS	a young nobleman, kinsman to the prince.
+
+MONTAGUE	|
+	|  heads of two houses at variance with each other.
+
+==> the-tempest.txt <==
+The Tempest
+by William Shakespeare
+
+Characters in the Play
+======================
+PROSPERO, the former duke of Milan, now a magician on a Mediterranean island
+MIRANDA, Prospero's daughter
+ARIEL, a spirit, servant to Prospero
+CALIBAN, an inhabitant of the island, servant to Prospero
+FERDINAND, prince of Naples
+
+==> thisisanewfile <==
+oak
+elder
+hawthorn
+
+==> weasel.txt <==
+Weasels are mammals of the genus Mustela of the family Mustelidae. The genus Mustela includes the least weasels, polecats, stoats, ferrets and mink. Members of this genus are small, active predators, with long and slender bodies and short legs. The family Mustelidae, or mustelids, (which also includes badgers, otters, and wolverines) is often referred to as the "weasel family". In the UK, the term "weasel" usually refers to the smallest species, the least weasel (M. nivalis), the smallest carnivoran species.
+
+Weasels vary in length from 173 to 217 mm (6+3⁄4 to 8+1⁄2 in), females being smaller than the males, and usually have red or brown upper coats and white bellies; some populations of some species moult to a wholly white coat in winter. They have long, slender bodies, which enable them to follow their prey into burrows. Their tails may be from 34 to 52 mm (1+1⁄4 to 2 in) long.
+
+Weasels feed on small mammals and have from time to time been considered vermin because some species took poultry from farms or rabbits from commercial warrens. They do, on the other hand, eat large numbers of rodents. They can be found all across the world except for Africa (outside Egypt), the Middle East, the Indian Subcontinent, Australia, the Caribbean, Antarctica, and the neighbouring islands. 
+
+==> windows.txt <==
+Microsoft Windows, commonly referred to as Windows, is a group of several proprietary graphical operating system families, all of which are developed and marketed by Microsoft. Each family caters to a certain sector of the computing industry. Active Microsoft Windows families include Windows NT and Windows IoT; these may encompass subfamilies, (e.g. Windows Server or Windows Embedded Compact) (Windows CE). Defunct Microsoft Windows families include Windows 9x, Windows Mobile, and Windows Phone.
+
+Microsoft introduced an operating environment named Windows on November 20, 1985, as a graphical operating system shell for MS-DOS in response to the growing interest in graphical user interfaces (GUIs). Microsoft Windows came to dominate the world's personal computer (PC) market with over 90% market share, overtaking Mac OS, which had been introduced in 1984.
+
+Apple came to see Windows as an unfair encroachment on their innovation in GUI development as implemented on products such as the Lisa and Macintosh (eventually settled in court in Microsoft's favor in 1993). On PCs, Windows is still the most popular operating system in all countries. However, in 2014, Microsoft admitted losing the majority of the overall operating system market to Android, because of the massive growth in sales of Android smartphones. In 2014, the number of Windows devices sold was less than 25% that of Android devices sold. This comparison, however, may not be fully relevant, as the two operating systems traditionally target different platforms. Still, numbers for server use of Windows (that are comparable to competitors) show one third market share, similar to that for end user use.
+
+As of October 2020, the most recent version of Windows for PCs, tablets and embedded devices is Windows 10, version 21H1. The most recent version for server computers is Windows Server, version 21H1. A specialized version of Windows also runs on the Xbox One and Xbox Series X/S video game consoles.
+
+==> words.txt <==
+one 
+two 
+three 
+four 
+five 
+six 
+seven 
+eight 
+nine 
+

@@ -28,10 +28,10 @@ We can create and modify files on the command line using text editors. These are
 {{< admonition type="info" open=true >}}
 Here are some common editors you might come across, or choose to learn:
 - `nano` an easy to use and widely-available editor
-- `micro` a more modern version of nano, but less common
+- `micro` a more modern version of nano
 - `emacs` a hugely-powerful editor, jokingly referred to as an operating system in itself. Medium learning-curve.
-- `jove` a minimal version of emacs, but not widely available (this is my favourite ;)
-- `vim` is mythical as the "coder's editor", being very powerful, very fast, but having a steep learning curve and heavy reliance on keyboard shortcuts. Very widely available - almost all systems have `vim` installed.
+- `jove` a minimal version of emacs (this is my favourite ;)
+- `vim` is legendary as the "coder's editor", being very powerful, very fast, but having a steep learning curve and heavy reliance on keyboard shortcuts. Very widely available - almost all systems have `vim` installed.
 {{< /admonition >}}
 
 

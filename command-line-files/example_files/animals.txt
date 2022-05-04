@@ -1,4 +1,5 @@
 possum
+camel
 rhino
 cow
 trout
