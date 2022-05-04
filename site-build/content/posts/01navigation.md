@@ -37,7 +37,7 @@ With `pwd` we are asking "print my current working directory / where am I?" You 
 
 This is your current location, here shown as an "absolute path" - the full description for what folder you are in. The sign `~` is an abbreviation for "your home folder".
 
-{{< admonition type="tip" open=true >}}
+{{< admonition type="info" open=true >}}
 There are five abbreviations for locations that you might come across
 - `~` "tilde", your home folder
 - `.` "dot", your current working folder
@@ -57,7 +57,7 @@ ls
 For me, I get this output, a list of what is here.
 
 ```
-1jun_logfile  6jan  credentials.txt  creds  data_depot  git
+logfile  records_january  credentials.txt  creds  data_depot  git
 ```
 
 Yours will be different. Each of these things are the items (files and folders) in your current working directory. For most terminals, items in white are files, and items in blue are folders. The first thing we are going to do is make a new folder, where we will be doing our work. We will use the command `mkdir`, and this command needs an *argument*:
@@ -72,7 +72,7 @@ mkdir intro-to-command-line
 
 This command is asking "make a new folder here, called intro-to-command-line". You'll be getting used to the names of commands being abbreviations! Run `ls` again, and see what has changed. Hopefully you will see a new folder, appropriately named.
 
-{{< admonition type="tip" open=true >}}
+{{< admonition type="info" open=true >}}
 "Folder" and "directory" are different words for the same thing! I prefer "folder" myself.
 {{< /admonition >}}
 
@@ -90,7 +90,7 @@ cd ..
 
 This means "change folder to the one above this one". Going `cd ..` will always move you "backwards" in your folders, unless you are in the root folder `/`. If you are ever lost, remember you can just go `cd` to go back to your home folder.
 
-{{< admonition type="tip" open=true >}}
+{{< admonition type="info" open=true >}}
 There are actually three ways we could move back to our home folder from here.
 `cd ..` as above,
 `cd -`, and just

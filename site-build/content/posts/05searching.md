@@ -24,7 +24,10 @@ comment:
 ### Searching for files
 
 We can use the program `find` as our search command, but it has some strange syntax... if you are a little confused, you are not alone! The syntax is
-- `find [where to look] [what type of file] ["the match you are looking for, in quotes"]`
+
+```
+find [where to look] [what type of file] ["the match you are looking for, in quotes"]
+```
 
 Let's go back to your folder `command-line-files`, and try each of these commands.
 
@@ -38,7 +41,7 @@ find . -iname "parakeet"
 
 Here we are using `.` (the current location) as the starting point, and `find` will look in all the containing folders below that location. To search a whole file system, we could go `find / -iname "my_file"`, but just like doing this in a GUI, it is very slow. `find` will also, unhelpfully, tell you all the folders you do not have access to.
 
-The flag `-iname` is saying "the file or folder has this name, case insensitive" (you can do `-name` too, if you are sure of the case). In the name, we can have wildcards to say "anything", and 💙 it is common to put `*` at both ends of your query, just in case you are forgetting part of the name. (More on wildcards later.) Notice the last query, for `"parakeet"`, does not find anything, but the command line doesn't tell you that. It just finishes and gives you your prompt back. ❗ This is standard for the command line - unless you get an error, your command did run correctly - sometime with no output at all!
+The flag `-iname` is saying "the file or folder has this name, case insensitive" (you can do `-name` too, if you are sure of the case). In the name, we can have wildcards to say "anything". (More on wildcards later.) Notice the last query, for `"parakeet"`, does not find anything, but the command line doesn't tell you that. It just finishes and gives you your prompt back. This is standard for the command line - unless you get an error, your command did run correctly - sometime with no output at all!
 
 {{< admonition type="info" open=true >}}
 If you are on MacOS or Linux, you may have a command installed called `fzf` - "fuzzy find". This is a more modern search command than `find`, which will find matches and similiar matches (without having to use wildcards), and give you a list of the closest matches. Give it a try with just `fzf` (and `enter` without a search query), then start typing your query and it will search as you type, a little like a browser can. You can scroll the results with your arrow keys, and press `enter` to print results to the terminal.

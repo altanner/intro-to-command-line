@@ -91,6 +91,7 @@ man
 file
 cut
 sed
+echo
 tr
 du
 df

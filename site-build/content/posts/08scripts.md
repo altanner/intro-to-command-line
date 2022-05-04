@@ -1,6 +1,6 @@
 ---
 title: "Shell scripts"
-subtitle: "Commands as files, files as commands"
+subtitle: "Files as a series of commands"
 
 date: 2022-01-09T00:00:00+01:00
 
@@ -37,17 +37,30 @@ echo "That is all of the files with \"part\" in that I could find here."
 - Think of `echo` as `print`, used commonly in programming languages.
 {{< /admonition >}}
 
-Save the file and exit `nano`. Now, we are going to run this file, in the folder `some_plays`. To do this, we are going to ask the program `sh` ("shell") to run it, with
+Save the file and exit `nano`. Now, we are going to run this file, in the folder `some_plays`. To do this, we are going to ask the program `bash` ("Bourne Again shell", a widely-used shell program) to run it, with
 ```shell
-sh my-first-script.sh
+bash my-first-script.sh
 ```
 
-Let's use all of the skills we have learned today to build a script to complete a task. The goal here is to
+### Exercise
+Let's use all of the skills we have learned today to build a script to complete a task. Be in the folder `some_plays`. Use `nano` to start a new, empty file. Create a script that will:
 
 {{< admonition type="question" title="Exercise" open=true >}}
-- Use `nano` to start a new, empty file.
-- Write your commands, each on a new line.
-- Save and exit, and run the script.
+- Print the final line of _Macbeth_
+- Count how many time the word "merry" occurs in all plays starting with the letter "m"
+- Count how many times Hamlet speaks in _Hamlet_
+- Print the line of who edited each play
+- Use `head` and `tail` to print _just_ the 500th line of _All's Well That Ends Well_
+- Make a new file containing _just_ the 1000th line of _A Midsummer Night's Dream_ **backwards**!
+{{< admonition type="tip" open=true >}}
+Test each of your commands individually on the command line, before building them into your script.
+{{< /admonition >}}
 {{< /admonition >}}
 
 Learn more box here - intro to hpc etc.
+{{< admonition type="success" title="Learn more" open=true >}}
+When learning to use computer clusters and high-performance computers, we often run jobs using "submission scripts". These are just the same as a shell script - they are not magic, merely running commands one after another, just like you could on the command line itself.
+
+You can learn these skills in our course *Introduction to HPC*, do an internet search for our current courses.
+{{< /admonition >}}
+

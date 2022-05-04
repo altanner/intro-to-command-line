@@ -44,7 +44,7 @@ The space after the prompt is where you enter your instructions of what you want
 - The command line is case-sensitive. The letter `H` is entirely different from `h`, for example! So if you are having issues, always check your capitalisation is correct.
 - You can select, cut etc with the mouse cursor, but you *cannot* move the position of your typing cursor with the mouse! You can only do that with the arrow keys.
 {{< /admonition >}}
-{{< admonition type="tip" open=true >}}
+{{< admonition type="info" open=true >}}
 - You can use `tab` to auto-complete: try this wherever you can, it will save you lots of time and typos.
 - You can scroll back through your previous commands with the `up arrow` (and `down arrow`) - another big time-saver.
 - If it looks like the terminal is stuck, or you want to cancel a command, it is `ctrl-c`.
