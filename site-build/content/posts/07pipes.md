@@ -25,17 +25,18 @@ comment:
 
 In the last section, we counted the number of lines in our folder of Shakespeare plays. But what if we wanted these in order? This is where pipes come in to play. The pipe symbol is `|` - to the left of the enter key on MacOS, and to the left of the number row on Windows.
 
-We can use the output of `wc` as the input for `sort`. Try these commands
+We can use the output of `wc` as the input for `sort`. Try these commands in the folder `some_plays`
 
 ```shell
 wc -l * | sort
 ```
 
-Here the _output_ of the command `wc -l *` is being _piped_ into the command `sort`. Building up commands with pipes can lead to some very powerful automation in creating files,
+Here the _output_ of the command `wc -l *` is being _piped_ into the command `sort`. Building up commands with pipes can lead to some very powerful automation.
 
 {{< admonition type="question" title="Exercise" open=true >}}
+- Pipe the output of `ls` into `grep` to count the number of `.txt` files present
 - Use the `man` page of `sort`, and find a way of reversing the order of the above command.
-- Pipe `wc` into `sort` into `head` to get the three shortest plays in our folder of plays.
+- Pipe the output of `wc` into `sort` into `head` to get the three shortest plays in our folder of plays.
 {{< /admonition >}}
 
 ### Using pipes and redirects together

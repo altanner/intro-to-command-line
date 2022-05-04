@@ -52,13 +52,13 @@ Let's use all of the skills we have learned today to build a script to complete 
 - Print the line of who edited each play
 - Use `head` and `tail` to print _just_ the 500th line of _All's Well That Ends Well_
 - Make a new file containing _just_ the 1000th line of _A Midsummer Night's Dream_ **backwards**!
-- Make a new file, in the folder _containing_ `some_plays`, of the total count of the letter "e" in all of the plays.
+- Make a new file, in the folder _containing_ `some_plays`, of the total count of the lines containing the word "love" in all of the plays (combined - ie a single number).
 {{< admonition type="tip" open=true >}}
 Test each of your commands individually on the command line, before building them into your script.
 {{< /admonition >}}
 {{< /admonition >}}
 
-If you can complete this task - congratulations, you now know
+If you can complete this task - congratulations, you now know all of the important ways of navigating the file system, of searching files, and the basics of shell scripting.
 
 {{< admonition type="success" title="Learn more" open=true >}}
 When learning to use computer clusters and high-performance computers, we often run jobs using "submission scripts". These are just the same as a shell script - they are not magic, merely running commands one after another, just like you could on the command line itself.
