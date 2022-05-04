@@ -65,5 +65,5 @@ Note that in Linux systems and MacOS, the file extensions (for example `.txt` or
 If you try to leave `nano` (`ctrl-x`) when there are unsaved changes, it will ask to `save modified buffer?`. So, save or not with `y` or `n`, and let's look at examining files back on the command line.
 
 {{< admonition type="info" open=true >}}
-"Buffer", in computing speak, is information that exists on your screen, or in your RAM, but does not exist in storage memory.
+"Buffer", in computing speak, is information that exists on your screen, or in your RAM, but does not exist in storage memory. In other words, stuff you have not saved yet.
 {{< /admonition >}}
