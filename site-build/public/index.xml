@@ -64,7 +64,7 @@ cat meaning_of_life.txt which means &ldquo;output the contents of of the file &l
     <guid>https://altanner.github.io/intro-to-command-line/posts/02manipulation/</guid>
     <description><![CDATA[Learn more  We give some warnings on this page, but don&rsquo;t be intimidated! Mistakes are only human, and you won&rsquo;t be able to damage your computer through any of these commands.
 To improve your skills in backing up, version control, and minimising risk in computing, look for our courses on Best Practices in Software Engineering.
-   From this point forward, we will be working with the course materials (this is the same file as linked on the home page of this course).]]></description>
+   In our terminal, use the command line to move into the course materials folder, command_line_files.]]></description>
 </item><item>
     <title>File system navigation</title>
     <link>https://altanner.github.io/intro-to-command-line/posts/01navigation/</link>

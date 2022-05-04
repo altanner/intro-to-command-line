@@ -132,7 +132,6 @@ find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ."/>
 <p>Move into the folder <code>some_plays</code> and try this command:</p>
 <pre tabindex="0"><code>grep fish king-lear.txt
 </code></pre><p>Here we are saying &ldquo;Run grep, searching for the word <em>fish</em>, in the file called king-lear.txt&rdquo;. <code>grep</code> will show you the lines with exact matches. Be careful that grep is case sensitive, and it will do exactly what you asked - &ldquo;fish&rdquo; will match words with those letters in, not just the word &ldquo;fish&rdquo;.</p>
-<p><code>grep</code> can take many useful flags.</p>
 <div class="details admonition question open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-question-circle fa-fw"></i>Questions<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -148,7 +147,7 @@ find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ."/>
         </div>
     </div>
 <h3 id="exercise">Exercise</h3>
-<p>Try each of these commands with flags, and work out what they do:</p>
+<p><code>grep</code> can take many useful flags. Try each of these commands with flags, and work out what they do:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">grep faith king-lear.txt
 </span></span><span class="line"><span class="cl">grep Faith king-lear.txt
 </span></span><span class="line"><span class="cl">grep -i faith king-lear.txt
