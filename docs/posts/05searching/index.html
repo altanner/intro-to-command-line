@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Searching - Introduction to the Command Line</title><meta name="Description" content=""><meta property="og:title" content="Searching" />
 <meta property="og:description" content="Searching for files We can use the program find as our search command, but it has some strange syntax&hellip; if you are a little confused, you are not alone! The syntax is
- find [where to look] [what type of file] [&quot;the match you are looking for, in quotes&quot;]  Let&rsquo;s go back to your folder command-line-files, and try each of these commands.
+find [where to look] [what type of file] [&#34;the match you are looking for, in quotes&#34;] Let&rsquo;s go back to your folder command-line-files, and try each of these commands.
 find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://altanner.github.io/intro-to-command-line/posts/05searching/" /><meta property="article:section" content="posts" />
@@ -17,7 +17,7 @@ find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ." />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Searching"/>
 <meta name="twitter:description" content="Searching for files We can use the program find as our search command, but it has some strange syntax&hellip; if you are a little confused, you are not alone! The syntax is
- find [where to look] [what type of file] [&quot;the match you are looking for, in quotes&quot;]  Let&rsquo;s go back to your folder command-line-files, and try each of these commands.
+find [where to look] [what type of file] [&#34;the match you are looking for, in quotes&#34;] Let&rsquo;s go back to your folder command-line-files, and try each of these commands.
 find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ."/>
 <meta name="application-name" content="Introduction to the Command Line">
 <meta name="apple-mobile-web-app-title" content="Introduction to the Command Line"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -31,7 +31,7 @@ find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ."/>
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/05searching\/"
-        },"genre": "posts","wordcount":  1072 ,
+        },"genre": "posts","wordcount":  1047 ,
         "url": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/05searching\/","datePublished": "2022-01-06T00:00:00+01:00","dateModified": "2022-01-06T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -81,8 +81,8 @@ find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ."/>
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Searching</h1><h2 class="single-subtitle">Find what you are looking for, both in folders, and inside files</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1072 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1047 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -102,17 +102,15 @@ find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ."/>
 </nav></div>
             </div><div class="content" id="content"><h3 id="searching-for-files">Searching for files</h3>
 <p>We can use the program <code>find</code> as our search command, but it has some strange syntax&hellip; if you are a little confused, you are not alone! The syntax is</p>
-<ul>
-<li><code>find [where to look] [what type of file] [&quot;the match you are looking for, in quotes&quot;]</code></li>
-</ul>
-<p>Let&rsquo;s go back to your folder <code>command-line-files</code>, and try each of these commands.</p>
+<pre tabindex="0"><code>find [where to look] [what type of file] [&#34;the match you are looking for, in quotes&#34;]
+</code></pre><p>Let&rsquo;s go back to your folder <code>command-line-files</code>, and try each of these commands.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">find . -iname <span class="s2">&#34;data1&#34;</span>
 </span></span><span class="line"><span class="cl">find . -iname <span class="s2">&#34;data*&#34;</span>
 </span></span><span class="line"><span class="cl">find . -iname <span class="s2">&#34;*txt&#34;</span>
 </span></span><span class="line"><span class="cl">find . -iname <span class="s2">&#34;*a*&#34;</span>
 </span></span><span class="line"><span class="cl">find . -iname <span class="s2">&#34;parakeet&#34;</span>
 </span></span></code></pre></div><p>Here we are using <code>.</code> (the current location) as the starting point, and <code>find</code> will look in all the containing folders below that location. To search a whole file system, we could go <code>find / -iname &quot;my_file&quot;</code>, but just like doing this in a GUI, it is very slow. <code>find</code> will also, unhelpfully, tell you all the folders you do not have access to.</p>
-<p>The flag <code>-iname</code> is saying &ldquo;the file or folder has this name, case insensitive&rdquo; (you can do <code>-name</code> too, if you are sure of the case). In the name, we can have wildcards to say &ldquo;anything&rdquo;, and 💙 it is common to put <code>*</code> at both ends of your query, just in case you are forgetting part of the name. (More on wildcards later.) Notice the last query, for <code>&quot;parakeet&quot;</code>, does not find anything, but the command line doesn&rsquo;t tell you that. It just finishes and gives you your prompt back. ❗ This is standard for the command line - unless you get an error, your command did run correctly - sometime with no output at all!</p>
+<p>The flag <code>-iname</code> is saying &ldquo;the file or folder has this name, case insensitive&rdquo; (you can do <code>-name</code> too, if you are sure of the case). In the name, we can have wildcards to say &ldquo;anything&rdquo;. (More on wildcards later.) Notice the last query, for <code>&quot;parakeet&quot;</code>, does not find anything, but the command line doesn&rsquo;t tell you that. It just finishes and gives you your prompt back. This is standard for the command line - unless you get an error, your command did run correctly - sometime with no output at all!</p>
 <div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
