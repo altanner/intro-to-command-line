@@ -27,11 +27,9 @@ We give some warnings on this page, but don't be intimidated! Mistakes are only 
 To improve your skills in backing up, version control, and minimising risk in computing, look for our courses on *Best Practices in Software Engineering*.
 {{< /admonition >}}
 
-From this point forward, we will be working with the [course materials](https://github.com/altanner/intro-to-command-line/raw/master/command-line-files.zip) (this is the same file as linked on the home page of this course). Download this file, and using your GUI, move this file into the folder we made in the last section. This might be in your home folder, or your desktop - it doesn't matter where, as long as it makes sense to you! Then unzip the file - double click it, or right-click and "open" it. You will then have a new folder called `command_line_files`.
-
 In our terminal, use the command line to move into the course materials folder, `command_line_files`. When you run `ls` in this folder, you should see the list of contents looking like
 ```
-example_files sandbox       some_plays
+example_files     sandbox    some_plays
 ```
 Personally, I don't find that clear to look at, so let's use our first *flag*, running `ls -l`.
 

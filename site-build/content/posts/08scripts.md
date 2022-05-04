@@ -52,12 +52,14 @@ Let's use all of the skills we have learned today to build a script to complete 
 - Print the line of who edited each play
 - Use `head` and `tail` to print _just_ the 500th line of _All's Well That Ends Well_
 - Make a new file containing _just_ the 1000th line of _A Midsummer Night's Dream_ **backwards**!
+- Make a new file, in the folder _containing_ `some_plays`, of the total count of the letter "e" in all of the plays.
 {{< admonition type="tip" open=true >}}
 Test each of your commands individually on the command line, before building them into your script.
 {{< /admonition >}}
 {{< /admonition >}}
 
-Learn more box here - intro to hpc etc.
+If you can complete this task - congratulations, you now know
+
 {{< admonition type="success" title="Learn more" open=true >}}
 When learning to use computer clusters and high-performance computers, we often run jobs using "submission scripts". These are just the same as a shell script - they are not magic, merely running commands one after another, just like you could on the command line itself.
 

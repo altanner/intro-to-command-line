@@ -63,8 +63,6 @@ grep fish king-lear.txt
 
 Here we are saying "Run grep, searching for the word *fish*, in the file called king-lear.txt". `grep` will show you the lines with exact matches. Be careful that grep is case sensitive, and it will do exactly what you asked - "fish" will match words with those letters in, not just the word "fish".
 
-`grep` can take many useful flags.
-
 {{< admonition type="question" title="Questions" open=true >}}
 Try changing what `grep` is searching for.
 - What is the most common noun you can find in King Lear?
@@ -73,7 +71,7 @@ Try changing what `grep` is searching for.
 {{< /admonition >}}
 
 ### Exercise
-Try each of these commands with flags, and work out what they do:
+`grep` can take many useful flags. Try each of these commands with flags, and work out what they do:
 
 ```shell
 grep faith king-lear.txt

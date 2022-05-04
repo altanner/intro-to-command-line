@@ -29,7 +29,7 @@ By the end of this workshop, you will be able to
 [Please download this file](https://github.com/altanner/intro-to-command-line/raw/master/command-line-files.zip), move it to a suitable place, and unzip it. We will work with this later in the session.
 - If you are using GitBash on Windows, copy and run this command
 ```shell
-git clone https://github.com/altanner/intro-to-command-line.git ; cd intro-to-command-line/command-line-files;
+git clone https://github.com/altanner/intro-to-command-line.git
 {{< /admonition >}}
 
 
