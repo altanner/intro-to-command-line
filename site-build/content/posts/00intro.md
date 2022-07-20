@@ -21,6 +21,9 @@ comment:
   enable: true
 ---
 
+### Starting a terminal
+If you are using MacOS or Linux, you will have "Terminal" already installed - open this program and you will be presented with a terminal session. To open a suitable terminal session on Windows, install and run *GitBash*, or use *Windows Subsystem for Linux (WSL)* to install a Linux distribution (we recommend Ubuntu or Debian) - then open that program. The Windows-native *PowerShell* is not a "UNIX-like" terminal, and is not compatible with this course.
+
 ### The prompt
 When you open a terminal, you will be provided with a *prompt*. This tells you where you are, and provides a line where you will type your commands. Here is what a typical prompt looks like:
 
