@@ -81,8 +81,6 @@ Info  There are five abbreviations for locations that you might come across]]></
     <pubDate>Sat, 01 Jan 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
     <guid>https://altanner.github.io/intro-to-command-line/posts/00intro/</guid>
-    <description><![CDATA[The prompt When you open a terminal, you will be provided with a prompt. This tells you where you are, and provides a line where you will type your commands. Here is what a typical prompt looks like:
-[at9362@dc2-d0:~] $ Your prompt will look different, but here is what it means
-[ your-name @ computer-name : the-current-folder ] $ Here, the computer name (also known as the &ldquo;hostname&rdquo;) is dc2-d0, but yours might be more friendly, like Megans_iMac or ubuntu, for example.]]></description>
+    <description><![CDATA[Starting a terminal If you are using MacOS or Linux, you will have &ldquo;Terminal&rdquo; already installed - open this program and you will be presented with a terminal session. To open a suitable terminal session on Windows, install and run GitBash, or use Windows Subsystem for Linux (WSL) to install a Linux distribution (we recommend Ubuntu or Debian) - then open that program. The Windows-native PowerShell is not a &ldquo;UNIX-like&rdquo; terminal, and is not compatible with this course.]]></description>
 </item></channel>
 </rss>
