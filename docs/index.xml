@@ -57,7 +57,7 @@ Info  Here are some common editors you might come across, or choose to learn:]]>
 cat Let&rsquo;s look at outputting first with a command called cat. Sadly, this has nothing to do with small furry felines. Move into the folder called example_files, and run this command
 cat meaning_of_life.txt which means &ldquo;output the contents of of the file &ldquo;meaning_of_life.]]></description>
 </item><item>
-    <title>• Working with files</title>
+    <title>‣ Working with files</title>
     <link>https://altanner.github.io/intro-to-command-line/posts/02manipulation/</link>
     <pubDate>Mon, 03 Jan 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
