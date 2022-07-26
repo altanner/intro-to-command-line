@@ -1,5 +1,5 @@
 ---
-title: "Welcome to the command line!"
+title: "‣ Welcome to the command line!"
 subtitle: "The keys to great power are easier to use than you think :)"
 
 date: 2022-01-01T00:00:00+01:00

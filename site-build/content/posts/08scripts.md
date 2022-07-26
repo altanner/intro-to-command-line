@@ -1,5 +1,5 @@
 ---
-title: "Shell scripts"
+title: "‣ Shell scripts"
 subtitle: "Files as a series of commands"
 
 date: 2022-01-09T00:00:00+01:00

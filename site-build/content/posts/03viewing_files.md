@@ -1,5 +1,5 @@
 ---
-title: "Viewing the contents of files"
+title: "‣ Viewing the contents of files"
 subtitle: "Different ways to see what is inside a file"
 
 date: 2022-01-04T00:00:00+01:00

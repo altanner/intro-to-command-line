@@ -6,15 +6,6 @@ Understanding the command line is an important foundation for all kinds of compu
 
 This course is designed and delivered by Dr Alastair Tanner and the Research Software Engineering team, University of Bristol.
 
-Please see below for each of the sections that we will be working through.
-
-{{< admonition type="info" title="Useful links" open=true >}}
-- [Bristol Research Software Engineering](https://www.bristol.ac.uk/acrc/research-software-engineering/)
-- [Jean Golding Institute Code of Conduct](https://www.bristol.ac.uk/golding/what-we-do/people/code-of-conduct-/)
-- [Ask the RSE team a question](ask-rse@bristol.ac.uk)
-- [Follow the RSE team on Twitter](https://twitter.com/bristolrse)
-{{< /admonition >}}
-
 {{< admonition type="example" title="Session goals" open=true >}}
 By the end of this workshop, you will be able to
 - understand the glossary relevant to the command line
@@ -25,12 +16,6 @@ By the end of this workshop, you will be able to
 - understand how the command line acts as a foundation for programming skills
 {{< /admonition >}}
 
-{{< admonition type="info" title="Course materials" open=true >}}
-[Please download this file](https://github.com/altanner/intro-to-command-line/raw/master/command-line-files.zip), move it to a suitable place, and unzip it. We will work with this later in the session.
-- If you are using GitBash on Windows, copy and run this command
-```shell
-git clone https://github.com/altanner/intro-to-command-line.git
-{{< /admonition >}}
 
 
 

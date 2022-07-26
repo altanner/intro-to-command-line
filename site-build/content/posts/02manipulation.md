@@ -1,5 +1,5 @@
 ---
-title: "Working with files"
+title: "• Working with files"
 subtitle: "How to create, delete, rename and copy files (and folders)"
 
 date: 2022-01-03T00:00:00+01:00
@@ -25,6 +25,13 @@ comment:
 We give some warnings on this page, but don't be intimidated! Mistakes are only human, and you won't be able to damage your computer through any of these commands.
 
 To improve your skills in backing up, version control, and minimising risk in computing, look for our courses on *Best Practices in Software Engineering*.
+{{< /admonition >}}
+
+{{< admonition type="info" title="Course materials" open=true >}}
+From this point forward, you will need to [download the course materials](https://github.com/altanner/intro-to-command-line/raw/master/command-line-files.zip); move this to a suitable folder, and unzip it.
+- If you are using GitBash on Windows, copy and run this command
+```shell
+git clone https://github.com/altanner/intro-to-command-line.git
 {{< /admonition >}}
 
 In our terminal, use the command line to move into the course materials folder, `command_line_files`. When you run `ls` in this folder, you should see the list of contents looking like
