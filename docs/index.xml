@@ -6,7 +6,7 @@
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 09 Jan 2022 00:00:00 &#43;0100</lastBuildDate>
             <atom:link href="https://altanner.github.io/intro-to-command-line/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Shell scripts</title>
+    <title>‣ Shell scripts</title>
     <link>https://altanner.github.io/intro-to-command-line/posts/08scripts/</link>
     <pubDate>Sun, 09 Jan 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
@@ -14,7 +14,7 @@
     <description><![CDATA[Scripts So far, we have been running things directly on the command line, &ldquo;interactively&rdquo;. However, you might want to keep your commands in a file, and be able to run, share, modify, or use files as templates. This is the gateway to coding - and is great practice for developing your reproducible work, for communicating your methods with others, and for archiving your work.
 A &ldquo;script&rdquo; is a file of instructions that can be directly read and run by a program.]]></description>
 </item><item>
-    <title>Pipes</title>
+    <title>‣ Pipes</title>
     <link>https://altanner.github.io/intro-to-command-line/posts/07pipes/</link>
     <pubDate>Sat, 08 Jan 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
@@ -22,7 +22,7 @@ A &ldquo;script&rdquo; is a file of instructions that can be directly read and r
     <description><![CDATA[Pipes In the last section, we counted the number of lines in our folder of Shakespeare plays. But what if we wanted these in order? This is where pipes come in to play. The pipe symbol is | - to the left of the enter key on MacOS, and to the left of the number row on Windows.
 We can use the output of wc as the input for sort. Try these commands in the folder some_plays]]></description>
 </item><item>
-    <title>Redirection</title>
+    <title>‣ Redirection</title>
     <link>https://altanner.github.io/intro-to-command-line/posts/06redirects/</link>
     <pubDate>Fri, 07 Jan 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
@@ -31,7 +31,7 @@ We can use the output of wc as the input for sort. Try these commands in the fol
 head -3 plants.txt But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called &ldquo;redirecting&rdquo;, and is done with the symbol &gt;
 head -3 plants.txt &gt; first_three_plants.txt The terminal will not give you any output, but what is inside the file first_three_plants.]]></description>
 </item><item>
-    <title>Searching</title>
+    <title>‣ Searching</title>
     <link>https://altanner.github.io/intro-to-command-line/posts/05searching/</link>
     <pubDate>Thu, 06 Jan 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
@@ -40,7 +40,7 @@ head -3 plants.txt &gt; first_three_plants.txt The terminal will not give you an
 find [where to look] [what type of file] [&#34;the match you are looking for, in quotes&#34;] Let&rsquo;s go back to your folder command-line-files, and try each of these commands.
 find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find .]]></description>
 </item><item>
-    <title>Editing files</title>
+    <title>‣ Editing files</title>
     <link>https://altanner.github.io/intro-to-command-line/posts/04editing_files/</link>
     <pubDate>Wed, 05 Jan 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
@@ -48,7 +48,7 @@ find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find .]]></descripti
     <description><![CDATA[Text editors We can create and modify files on the command line using text editors. These are like very minimal word-processors, with no formatting options, but with many powerful ways of editing that are not available in word-processors. There are lots of different command line editors, which range from user-friendly (but less powerful), to more difficult (but powerful and fast, once learned).
 Info  Here are some common editors you might come across, or choose to learn:]]></description>
 </item><item>
-    <title>Viewing the contents of files</title>
+    <title>‣ Viewing the contents of files</title>
     <link>https://altanner.github.io/intro-to-command-line/posts/03viewing_files/</link>
     <pubDate>Tue, 04 Jan 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
@@ -57,16 +57,16 @@ Info  Here are some common editors you might come across, or choose to learn:]]>
 cat Let&rsquo;s look at outputting first with a command called cat. Sadly, this has nothing to do with small furry felines. Move into the folder called example_files, and run this command
 cat meaning_of_life.txt which means &ldquo;output the contents of of the file &ldquo;meaning_of_life.]]></description>
 </item><item>
-    <title>Working with files</title>
+    <title>• Working with files</title>
     <link>https://altanner.github.io/intro-to-command-line/posts/02manipulation/</link>
     <pubDate>Mon, 03 Jan 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
     <guid>https://altanner.github.io/intro-to-command-line/posts/02manipulation/</guid>
     <description><![CDATA[Learn more  We give some warnings on this page, but don&rsquo;t be intimidated! Mistakes are only human, and you won&rsquo;t be able to damage your computer through any of these commands.
 To improve your skills in backing up, version control, and minimising risk in computing, look for our courses on Best Practices in Software Engineering.
-   In our terminal, use the command line to move into the course materials folder, command_line_files.]]></description>
+   Course materials  From this point forward, you will need to download the course materials; move this to a suitable folder, and unzip it.]]></description>
 </item><item>
-    <title>File system navigation</title>
+    <title>‣ File system navigation</title>
     <link>https://altanner.github.io/intro-to-command-line/posts/01navigation/</link>
     <pubDate>Sun, 02 Jan 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
@@ -76,7 +76,7 @@ pwd With pwd we are asking &ldquo;print my current working directory / where am 
 /home/at9362 This is your current location, here shown as an &ldquo;absolute path&rdquo; - the full description for what folder you are in. The sign ~ is an abbreviation for &ldquo;your home folder&rdquo;.
 Info  There are five abbreviations for locations that you might come across]]></description>
 </item><item>
-    <title>Welcome to the command line!</title>
+    <title>‣ Welcome to the command line!</title>
     <link>https://altanner.github.io/intro-to-command-line/posts/00intro/</link>
     <pubDate>Sat, 01 Jan 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
