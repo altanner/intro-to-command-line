@@ -9,8 +9,8 @@
     <pubDate>Sun, 09 Jan 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
     <guid>https://altanner.github.io/intro-to-command-line/posts/08ssh/</guid>
-    <description><![CDATA[Working &ldquo;remotely&rdquo; The original super-power of the command line is that it allows us to work on other machines. While we now have remote-desktops and screen-shares to see and work with other computers&rsquo;s GUIs, the command line has been doing this since the 1960s! In research, we often work on remote machines (&ldquo;computing clusters&rdquo;, &ldquo;supercomputers&rdquo;, &ldquo;HPC&rdquo;, or even just &ldquo;servers&rdquo;), which we need to log in to
-ssh ssh is a program for opening a command line session on a remote computer.]]></description>
+    <description><![CDATA[Working &ldquo;remotely&rdquo; The original super-power of the command line is that it allows us to work on other machines. While we now have remote-desktops and screen-shares to see and work with other computers&rsquo;s GUIs, the command line has been doing this since the 1960s! In research, we often work on remote machines (&ldquo;computing clusters&rdquo;, &ldquo;supercomputers&rdquo;, &ldquo;HPC&rdquo;, or even just &ldquo;servers&rdquo;), which we need to log in to.
+ssh and scp ssh is a program for opening a command line session on a remote computer.]]></description>
 </item><item>
     <title>‣ Shell scripts</title>
     <link>https://altanner.github.io/intro-to-command-line/posts/09scripts/</link>
