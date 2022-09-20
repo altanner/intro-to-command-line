@@ -4,7 +4,7 @@ Welcome to this workshop on the command line interface!
 
 Understanding the command line is an important foundation for many computational skills. Learning to program, how to use high-performance computers, and how to share your code with collaborators all require at least some knowledge of the command line. In this session, we will guide you through using the command line, build your confidence, and understand what we are doing, step by step!
 
-**Note: this session covers the "Linux" or "UNIX-like" command line - used in MacOS, Linux. Window's default command line is run by "Powershell", which is not compatible with this course. This is because Powershell is rarely used in research settings, or HPC work. Windows can emulate a UNIX-like terminal, so please continue to learn more.**
+**Note: this session covers the "UNIX-like" (sometimes "\*nix") command line. This is used by Linux, MacOS, most servers, as well as all HPC and computing clusters. Window's default command line is run by "Powershell", which is not compatible with this course. This is because Powershell is rarely used in research settings, or HPC work. Windows can emulate a UNIX-like terminal, so please continue to learn more.**
 
 This course is designed and delivered by Dr Alastair Tanner and the Research Software Engineering team, University of Bristol.
 
