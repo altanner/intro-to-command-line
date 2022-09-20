@@ -64,13 +64,15 @@ We do not cover job scheduling in this course, but to learn more please see our 
 ```shell
 scp macbeth.txt yt29876@bc4login.acrc.bris.ac.uk:/user/home/yt29876
 ```
-Note that the destination includes a full path. Sometimes, the remote machine will understand `~` as your home folder, and missing it out completely will also work, sending the file to your home folder. The important bit is, don't forget the `:`, or your computer will think you want to copy the file locally, and name the file the name of the remote computer! So, if you see a file hanging around called, for example `yt29876@bc4login.acrc.bris.ac.uk`, this is usually the result of a failed `scp`.
+Note that the destination includes a full path. Sometimes, the remote machine will understand `~` as your home folder, and missing it out completely will also work, sending the file to your home folder. The important bit is, don't forget the `:`, or your computer will think you want to copy the file locally, and name the file the name of the remote computer! So, if you see a file hanging around called, for example called something bizarre like `yt29876@bc4login.acrc.bris.ac.uk`, this is usually the result of a failed `scp`.
+
+Just like with `cp`, you can copy the contents of folders with the flag `-r`. See the `man` pages for more details.
 
 {{< admonition type="warning" open=true >}}
 Careless use of `scp` can result in data loss! If a file with the same name already exists in the remote machine, it will be permanently overwritten, without warning, by `scp`!
 {{< /admonition >}}
 
-Copying from the remote machine back to your local machine uses similar syntax, except you must provide the full path to the path you want to copy (and you can specify the local location with just a `.` (or any location you like)). So, the above command in reverse would be
+Copying from the remote machine back to your local machine uses similar syntax, except you must provide the full path to the file (or folder) you want to copy. You can specify the local destination of the `scp` command with the abbreviation for "here": `.` (or any location you like)). So, the above command in reverse would be
 ```shell
 scp yt29876@bc4login.acrc.bris.ac.uk:/user/home/yt29876/macbeth.txt .
 ```
