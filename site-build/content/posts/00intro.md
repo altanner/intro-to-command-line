@@ -24,8 +24,8 @@ comment:
 ### Some confusing glossary!
 * A "terminal" is a program which emulates (mimics, in software) an old piece of hardware, which provides the command line.
 * A "console" is, effectively, the same thing.
-* A "shell" is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user.
-* As far as we are concerned, **these all mean the same thing!** Being confused by this is entirely natural.
+* A "shell" is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don't need to worry about that!
+* As far as we are concerned, **these all mean the same thing: the command line!** Being confused by this is entirely natural.
 
 ### Starting a terminal
 If you are using MacOS or Linux, you will have "Terminal" already installed - open this program and you will be presented with a command line. To open a suitable terminal session on Windows, install and run *GitBash*, or use *Windows Subsystem for Linux (WSL)* to install a Linux distribution (we recommend Ubuntu or Debian) - then open that program. The Windows-native *PowerShell* is not a "UNIX-like" terminal, and is not compatible with this course.
