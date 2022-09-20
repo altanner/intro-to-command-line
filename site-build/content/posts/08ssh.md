@@ -64,28 +64,20 @@ We do not cover job scheduling in this course, but to learn more please see our 
 
 ### Copying files to and from remote machines using `scp`
 
-`scp` ("secure copy") is just like `cp`, except it can copy files and folders to and from another computer. Just like with `ssh` above, we will need to specify what computer the file or folder is on, and so `scp` uses syntax just like in a prompt to designate a location. First, let's copy a file *from* our local machine to another machine. If you have the resources from earlier in this course, try copying one of the plays to another machine. Move to the appropriate folder, and try a command similar to this (you will need to substitute a real username and hostname!)
+`scp` ("secure copy") is just like `cp`, except it can copy files and folders to and from another computer. Just like with `ssh` above, we will need to specify what computer the file or folder is on, and so `scp` uses syntax just like in a prompt to designate a location. First, let's copy a file *from* our local machine to another machine. If you have the resources from earlier in this course, try copying one of the plays to another machine. As with `cp`, the syntax is `cp [what to copy] [where to copy this to]`. Move to the appropriate folder, and try a command similar to this (you will need to substitute a real username and hostname!)
 ```shell
-scp 
-
-
-Save the file and exit `nano`. Now, we are going to run this file, in the folder `some_plays`. To do this, we are going to ask the program `bash` ("Bourne Again shell", a widely-used shell program) to run it, with
-```shell
-bash my-first-script.sh
+scp macbeth.txt yt29876@bc4login.acrc.bris.ac.uk:/user/home/yt29876
 ```
+Note that the destination includes a full path. Sometimes, the remote machine will understand `~` as your home folder, and missing it out completely will also work, sending the file to your home folder. The important bit is, don't forget the `:`, or your computer will think you want to copy the file locally, and name the file the name of the remote computer! So, if you see a file hanging around called, for example `yt29876@bc4login.acrc.bris.ac.uk`, this is usually the result of a failed `scp`.
 
-### Exercise
-Let's use all of the skills we have learned today to build a script to complete a task. Be in the folder `some_plays`. Use `nano` to start a new, empty file. Create a script that will:
-
-{{< admonition type="question" title="Exercise" open=true >}}
-- Print the final line of _Macbeth_
-- Count how many time the word "merry" occurs in all plays starting with the letter "m"
-- Count how many times Hamlet speaks in _Hamlet_
-- Print the line of who edited each play
-- Use `head` and `tail` to print _just_ the 500th line of _All's Well That Ends Well_
-- Make a new file containing _just_ the 1000th line of _A Midsummer Night's Dream_ **backwards**!
-- Make a new file, in the folder _containing_ `some_plays`, of the total count of the lines containing the word "love" in all of the plays (combined - ie a single number).
-{{< admonition type="tip" open=true >}}
-Test each of your commands individually on the command line, before building them into your script.
+{{< admonition type="Warning" open=true >}}
+Careless use of `scp` can result in data loss! If a file with the same name already exists in the remote machine, it will be permanently overwritten, without warning, by `scp`!
 {{< /admonition >}}
+
+Copying from the remote machine back to your local machine uses similar syntax, except you must provide the full path to the path you want to copy, and you can specify the local location with just a `.` (or any location you like). So, the above command in reverse would be
+```shell
+scp yt29876@bc4login.acrc.bris.ac.uk:/user/home/yt29876/macbeth.txt .
+```
+{{< admonition type="Info" open=true >}}
+Sending information back to your local machine while using `ssh` to work on another machine is not possible. The internet just doesn't work that way! A remote machine is "known" to the internet (can be looked up), has a public IP address, and has its communication channels set to be able to communicate both ways. In contrast, your own machine, typically, is not open for other computers to directly connect to it - so trying to `scp` back to your own machine won't work, as the internet has no idea what or where your own computer is!
 {{< /admonition >}}
