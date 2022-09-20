@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>‣ Redirection - Introduction to the Command Line</title><meta name="Description" content=""><meta property="og:title" content="‣ Redirection" />
 <meta property="og:description" content="Sending outputs to files Move into the folder example_files. We can see, for example, the first three lines of plants.txt with the command
-head -3 plants.txt But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called &ldquo;redirecting&rdquo;, and is done with the symbol &gt;
+head -3 plants.txt But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called &ldquo;redirecting&rdquo;, and is done with the character &gt;
 head -3 plants.txt &gt; first_three_plants.txt The terminal will not give you any output, but what is inside the file first_three_plants." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://altanner.github.io/intro-to-command-line/posts/06redirects/" /><meta property="article:section" content="posts" />
@@ -17,7 +17,7 @@ head -3 plants.txt &gt; first_three_plants.txt The terminal will not give you an
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="‣ Redirection"/>
 <meta name="twitter:description" content="Sending outputs to files Move into the folder example_files. We can see, for example, the first three lines of plants.txt with the command
-head -3 plants.txt But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called &ldquo;redirecting&rdquo;, and is done with the symbol &gt;
+head -3 plants.txt But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called &ldquo;redirecting&rdquo;, and is done with the character &gt;
 head -3 plants.txt &gt; first_three_plants.txt The terminal will not give you any output, but what is inside the file first_three_plants."/>
 <meta name="application-name" content="Introduction to the Command Line">
 <meta name="apple-mobile-web-app-title" content="Introduction to the Command Line"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -103,7 +103,7 @@ head -3 plants.txt &gt; first_three_plants.txt The terminal will not give you an
             </div><div class="content" id="content"><h3 id="sending-outputs-to-files">Sending outputs to files</h3>
 <p>Move into the folder <code>example_files</code>. We can see, for example, the first three lines of <code>plants.txt</code> with the command</p>
 <pre tabindex="0"><code>head -3 plants.txt
-</code></pre><p>But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called &ldquo;redirecting&rdquo;, and is done with the symbol <code>&gt;</code></p>
+</code></pre><p>But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called &ldquo;redirecting&rdquo;, and is done with the character <code>&gt;</code></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">head -3 plants.txt &gt; first_three_plants.txt
 </span></span></code></pre></div><p>The terminal will not give you any output, but what is inside the file <code>first_three_plants.txt</code>? Let&rsquo;s expand on this by using wildcards. Try this command, and examine the contents of the output file:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">head -3 * &gt; my_new_file
@@ -112,7 +112,7 @@ head -3 plants.txt &gt; first_three_plants.txt The terminal will not give you an
             <i class="icon fas fa-exclamation-triangle fa-fw"></i>Warning<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">Be careful! Redirects will overwrite the target file!! If <code>my_new_file</code> already existed, it would be permanently overwritten by the above command!</div>
+            <div class="admonition-content">Be careful! Redirects will <strong>overwrite</strong> the target file!! If <code>my_new_file</code> already existed, it would be permanently overwritten by the above command!</div>
         </div>
     </div>
 <p>Using <code>&gt;</code> will create a new file, or overwrite a file if it already exists. We might want to append instead, and we do that with a double arrow, <code>&gt;&gt;</code>, for example</p>

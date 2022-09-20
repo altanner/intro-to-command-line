@@ -26,7 +26,7 @@ We can use the output of wc as the input for sort. Try these commands in the fol
     <author>Author</author>
     <guid>https://altanner.github.io/intro-to-command-line/posts/06redirects/</guid>
     <description><![CDATA[Sending outputs to files Move into the folder example_files. We can see, for example, the first three lines of plants.txt with the command
-head -3 plants.txt But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called &ldquo;redirecting&rdquo;, and is done with the symbol &gt;
+head -3 plants.txt But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called &ldquo;redirecting&rdquo;, and is done with the character &gt;
 head -3 plants.txt &gt; first_three_plants.txt The terminal will not give you any output, but what is inside the file first_three_plants.]]></description>
 </item><item>
     <title>‣ Searching</title>
