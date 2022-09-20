@@ -81,6 +81,6 @@ Info  There are five abbreviations for locations that you might come across]]></
     <pubDate>Sat, 01 Jan 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
     <guid>https://altanner.github.io/intro-to-command-line/posts/00intro/</guid>
-    <description><![CDATA[Some confusing glossary!  A &ldquo;terminal&rdquo; is a program which emulates (mimics, in software) an old piece of hardware, which provides the command line. A &ldquo;console&rdquo; is, effectively, the same thing. So as far as we are concerned, the &ldquo;command line&rdquo;, &ldquo;terminal&rdquo; and &ldquo;console&rdquo; are all the same thing.  Starting a terminal If you are using MacOS or Linux, you will have &ldquo;Terminal&rdquo; already installed - open this program and you will be presented with a terminal session.]]></description>
+    <description><![CDATA[Some confusing glossary!  A &ldquo;terminal&rdquo; is a program which emulates (mimics, in software) an old piece of hardware, which provides the command line. A &ldquo;console&rdquo; is, effectively, the same thing. A &ldquo;shell&rdquo; is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. As far as we are concerned, these all mean the same thing! Being confused by this is entirely natural.]]></description>
 </item></channel>
 </rss>
