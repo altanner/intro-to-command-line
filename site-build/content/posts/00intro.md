@@ -24,10 +24,11 @@ comment:
 ### Some confusing glossary!
 * A "terminal" is a program which emulates (mimics, in software) an old piece of hardware, which provides the command line.
 * A "console" is, effectively, the same thing.
-* So as far as we are concerned, the "command line", "terminal" and "console" are all the same thing.
+* A "shell" is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user.
+* As far as we are concerned, **these all mean the same thing!** Being confused by this is entirely natural.
 
 ### Starting a terminal
-If you are using MacOS or Linux, you will have "Terminal" already installed - open this program and you will be presented with a terminal session. To open a suitable terminal session on Windows, install and run *GitBash*, or use *Windows Subsystem for Linux (WSL)* to install a Linux distribution (we recommend Ubuntu or Debian) - then open that program. The Windows-native *PowerShell* is not a "UNIX-like" terminal, and is not compatible with this course.
+If you are using MacOS or Linux, you will have "Terminal" already installed - open this program and you will be presented with a command line. To open a suitable terminal session on Windows, install and run *GitBash*, or use *Windows Subsystem for Linux (WSL)* to install a Linux distribution (we recommend Ubuntu or Debian) - then open that program. The Windows-native *PowerShell* is not a "UNIX-like" terminal, and is not compatible with this course.
 
 ### The prompt
 When you open a terminal, you will be provided with a line for entering commands, starting with a *prompt*. The prompt tells you where, in your computer you are. When on the command line, you always have a location, just like you do in graphical file managers like MacOS's "Finder", or Windows' "Explorer". Here is what a typical prompt looks like:
