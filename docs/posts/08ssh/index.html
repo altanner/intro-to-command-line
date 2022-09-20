@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/08ssh\/"
-        },"genre": "posts","wordcount":  1011 ,
+        },"genre": "posts","wordcount":  1097 ,
         "url": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/08ssh\/","datePublished": "2022-01-09T00:00:00+01:00","dateModified": "2022-01-09T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -77,8 +77,8 @@
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">‣ Logging in to remote computers using `ssh`</h1><h2 class="single-subtitle">Work with far away machines from the comfort of your own computer!</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1011 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1097 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -92,7 +92,6 @@
         <li><a href="#logging-into-a-computer-using-ssh">Logging into a computer using <code>ssh</code></a></li>
         <li><a href="#using-the-command-line-on-a-remote-machine">Using the command line on a remote machine</a></li>
         <li><a href="#copying-files-to-and-from-remote-machines-using-scp">Copying files to and from remote machines using <code>scp</code></a></li>
-        <li><a href="#exercise">Exercise</a></li>
       </ul>
     </li>
   </ul>
@@ -135,38 +134,25 @@
         </div>
     </div></p>
 <h3 id="copying-files-to-and-from-remote-machines-using-scp">Copying files to and from remote machines using <code>scp</code></h3>
-<p><code>scp</code> (&ldquo;secure copy&rdquo;) is just like <code>cp</code>, except it can copy files and folders to and from another computer. Just like with <code>ssh</code> above, we will need to specify what computer the file or folder is on, and so <code>scp</code> uses syntax just like in a prompt to designate a location. First, let&rsquo;s copy a file <em>from</em> our local machine to another machine. If you have the resources from earlier in this course, try copying one of the plays to another machine. Move to the appropriate folder, and try a command similar to this (you will need to substitute a real username and hostname!)</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">scp 
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Save the file and <span class="nb">exit</span> <span class="sb">`</span>nano<span class="sb">`</span>. Now, we are going to run this file, in the folder <span class="sb">`</span>some_plays<span class="sb">`</span>. To <span class="k">do</span> this, we are going to ask the program <span class="sb">`</span>bash<span class="sb">`</span> <span class="o">(</span><span class="s2">&#34;Bourne Again shell&#34;</span>, a widely-used shell program<span class="o">)</span> to run it, with
-</span></span><span class="line"><span class="cl"><span class="sb">```</span>shell
-</span></span><span class="line"><span class="cl">bash my-first-script.sh
-</span></span></code></pre></div><h3 id="exercise">Exercise</h3>
-<p>Let&rsquo;s use all of the skills we have learned today to build a script to complete a task. Be in the folder <code>some_plays</code>. Use <code>nano</code> to start a new, empty file. Create a script that will:</p>
-<div class="details admonition question open">
+<p><code>scp</code> (&ldquo;secure copy&rdquo;) is just like <code>cp</code>, except it can copy files and folders to and from another computer. Just like with <code>ssh</code> above, we will need to specify what computer the file or folder is on, and so <code>scp</code> uses syntax just like in a prompt to designate a location. First, let&rsquo;s copy a file <em>from</em> our local machine to another machine. If you have the resources from earlier in this course, try copying one of the plays to another machine. As with <code>cp</code>, the syntax is <code>cp [what to copy] [where to copy this to]</code>. Move to the appropriate folder, and try a command similar to this (you will need to substitute a real username and hostname!)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">scp macbeth.txt yt29876@bc4login.acrc.bris.ac.uk:/user/home/yt29876
+</span></span></code></pre></div><p>Note that the destination includes a full path. Sometimes, the remote machine will understand <code>~</code> as your home folder, and missing it out completely will also work, sending the file to your home folder. The important bit is, don&rsquo;t forget the <code>:</code>, or your computer will think you want to copy the file locally, and name the file the name of the remote computer! So, if you see a file hanging around called, for example <code>yt29876@bc4login.acrc.bris.ac.uk</code>, this is usually the result of a failed <code>scp</code>.</p>
+<div class="details admonition Warning open">
         <div class="details-summary admonition-title">
-            <i class="icon fas fa-question-circle fa-fw"></i>Exercise<i class="details-icon fas fa-angle-right fa-fw"></i>
+            <i class="icon fas fa-pencil-alt fa-fw"></i><i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><ul>
-<li>Print the final line of <em>Macbeth</em></li>
-<li>Count how many time the word &ldquo;merry&rdquo; occurs in all plays starting with the letter &ldquo;m&rdquo;</li>
-<li>Count how many times Hamlet speaks in <em>Hamlet</em></li>
-<li>Print the line of who edited each play</li>
-<li>Use <code>head</code> and <code>tail</code> to print <em>just</em> the 500th line of <em>All&rsquo;s Well That Ends Well</em></li>
-<li>Make a new file containing <em>just</em> the 1000th line of <em>A Midsummer Night&rsquo;s Dream</em> <strong>backwards</strong>!</li>
-<li>Make a new file, in the folder <em>containing</em> <code>some_plays</code>, of the total count of the lines containing the word &ldquo;love&rdquo; in all of the plays (combined - ie a single number).</li>
-</ul>
-<div class="details admonition tip open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-lightbulb fa-fw"></i>Tip<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">Test each of your commands individually on the command line, before building them into your script.</div>
+            <div class="admonition-content">Careless use of <code>scp</code> can result in data loss! If a file with the same name already exists in the remote machine, it will be permanently overwritten, without warning, by <code>scp</code>!</div>
         </div>
     </div>
-</div>
+<p>Copying from the remote machine back to your local machine uses similar syntax, except you must provide the full path to the path you want to copy, and you can specify the local location with just a <code>.</code> (or any location you like). So, the above command in reverse would be</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">scp yt29876@bc4login.acrc.bris.ac.uk:/user/home/yt29876/macbeth.txt .
+</span></span></code></pre></div><div class="details admonition Info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw"></i><i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Sending information back to your local machine while using <code>ssh</code> to work on another machine is not possible. The internet just doesn&rsquo;t work that way! A remote machine is &ldquo;known&rdquo; to the internet (can be looked up), has a public IP address, and has its communication channels set to be able to communicate both ways. In contrast, your own machine, typically, is not open for other computers to directly connect to it - so trying to <code>scp</code> back to your own machine won&rsquo;t work, as the internet has no idea what or where your own computer is!</div>
         </div>
     </div>
 </div><div class="post-footer" id="post-footer">
