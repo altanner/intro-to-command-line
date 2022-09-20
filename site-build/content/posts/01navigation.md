@@ -35,7 +35,7 @@ With `pwd` we are asking "print my current working directory / where am I?" You 
 /home/at9362
 ```
 
-This is your current location, here shown as an "absolute path" - the full description for what folder you are in. The sign `~` is an abbreviation for "your home folder".
+This is your current location, here shown as a "path" - what folder you are in, starting from the "root" folder that contains the whole file system.
 
 {{< admonition type="info" open=true >}}
 There are five abbreviations for locations that you might come across
@@ -48,7 +48,7 @@ There are five abbreviations for locations that you might come across
 
 ### What is in this folder?
 
-Now that we know where we are, let's see what is here by running a program called `ls` ("list" or "ell ess"). `ls` shows you the contents of your current folder, much like looking at the file manager window in a GUI, Finder in MacOS or Explorer on Windows:
+Now that we know where we are, let's see what is here by running a program called `ls` ("list" or "ell ess"). `ls` shows you the contents of your current folder, much like looking at the file manager window in a GUI (Finder in MacOS or Explorer on Windows):
 
 ```shell
 ls
@@ -60,7 +60,7 @@ For me, I get this output, a list of what is here.
 logfile  records_january  credentials.txt  creds  data_depot  git
 ```
 
-Yours will be different. Each of these things are the items (files and folders) in your current working directory. For most terminals, items in white are files, and items in blue are folders. The first thing we are going to do is make a new folder, where we will be doing our work. We will use the command `mkdir`, and this command needs an *argument*:
+Yours will be different. Each of these things are the items (files and folders) in your current working directory. For most terminals, items in white are files, and items in blue are folders. The first thing we are going to do is make a new folder, where we will be doing our work. We will use the command `mkdir` ("make directory"), and this command needs an *argument* (gramatically, an "object"):
 
 ### Making our first folder.
 
@@ -113,11 +113,11 @@ This folder contains the whole file system of the machine you are working on.
 You might find mysterious folders called things like `opt`, `etc`, `tmp`. Don't worry about these things for now! They are just folders holding the components of your operating system.
 {{< /admonition >}}
 
-Move back to your folder `intro-to-command-line`. From this point forward, we will be working with the [course materials](https://github.com/altanner/intro-to-command-line/raw/master/command-line-files.zip) (this is the same file as linked on the home page of this course). Download this file, and using your GUI, move this file into the folder we made in the last section. This might be in your home folder, or your desktop - it doesn't matter where, as long as it makes sense to you! Then unzip the file - double click it, or right-click and "open" it. You will then have a new folder called `command_line_files`.
+Move back to your folder `intro-to-command-line`. From this point forward, we will be working with the [course materials](https://github.com/alleetanner/intro-to-command-line/raw/master/command-line-files.zip) (this is the same file as linked on the home page of this course). Download this file, and using your GUI, move this file into the folder we made in the last section. This might be in your home folder, or your desktop - it doesn't matter where, as long as it makes sense to you! Then unzip the file - double click it, or right-click and "open" it. You will then have a new folder called `command_line_files`.
 
 If you are working on Windows, run this command (since you are using GitBash, we can directly clone the files)
 ```shell
-git clone https://github.com/altanner/intro-to-command-line.git
+git clone https://github.com/alleetanner/intro-to-command-line.git
 ```
 
 Using `cd`, move into the folder called `sandpit`. From here, look around using `ls`, move around using `cd`, and see what is in each folder.
