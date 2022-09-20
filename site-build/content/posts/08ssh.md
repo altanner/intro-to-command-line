@@ -27,19 +27,33 @@ The original super-power of the command line is that it allows us to work on oth
 
 ### `ssh` and `scp`
 
-`ssh` is a program for opening a command line session on a remote computer. It is short for "secure shell", named because it opens shell communications using an encrypted, secure connection. In other words, it uses the internet to talk to another computer, and that conversation is private, locked with encryption keys. (This happens for almost all communications on your computer and phone, for example.)
+`ssh` is a program for opening a command line session on a remote computer. The name is short for "secure shell", because it opens a shell to communicate with the remote machine, using an encrypted, secure connection. In other words, it uses the internet to talk to another computer, and that conversation is private, locked with encryption keys. (This happens for almost all communications on your computer and phone, for example.)
 
 `scp` ("secure copy") is just like `cp`, except it can copy files and folders to and from another computer.
 
 We have specific documentation for how to use `ssh` and `scp` on our [HPC training](https://www.acrc.bris.ac.uk/protected/hpc-docs/training/intro-to-hpc-slurm/logging_on.html). Here we will cover the basics of how to understand these commands, and their syntax.
 
-### edit me
+Note that University of Bristol machines will only allow you access when your connection is using the university's VPN service. See [these pages](https://uob.sharepoint.com/sites/itservices/SitePages/vpn.aspx) for more details on how to install the VPN on your computer.
 
-Let's create a very simple script - open `nano`, creating a file called "my-first-script.sh" (or anything you like!) and include two lines
+### Using the command line on a remote machine
+
+Using `ssh` from the command line will require a valid log in or user account on the machine you want to log in to. The syntax is to run `ssh` followed by your username and the hostname (just like in a prompt), for example
 ```shell
-ls -l *part*
-echo "That is all of the files with \"part\" in that I could find here."
+ssh yt29876@bc4login.acrc.bris.ac.uk
 ```
+or, you might log in using the IP address of the remote machine
+```shell
+ssh yt29876@137.222.1.10
+```
+You will then be asked to enter your password - it will not display anything or display stars (\*) as you type, it will just look empty. If the password is correct, you will then see a new prompt, including the name of the machine you are now logged in to:
+```
+[yt29876@bc4login3 ~]$
+```
+Now your command line session is running *another* command line session, on another computer. (Like in *Inception*. I expect that reference is out of date now.) You will be able to move around and run commands, just like on the machine that is actually in front of you. Obviously, other machines will be structured differently, and have security measures meaning you cannot look at other people's folders or run dangerous commands. If you are using shared computing facilities, as with all of the University of Bristol's computing clusters, keep in mind that you are in a bustling hub of colleagues and researchers, so remember to be polite!
+
+You can see who is logged on with the command `w` (yes, just a "w"). For HPC machines *make sure you do not run research work on the login nodes!* An HPC machine has a kind of "lobby" where you can arrange your work, and you send your analysis in to the proper factory-floor of powerful computers. Running "on the headnode" is like arriving at an industrial facility, then asking the receptionist to do the work meant for the facility! Not only is this slow, but it can break the whole system, which could result in the loss of work of hundreds of researchers!
+
+We do not cover job scheduling in this course, but to learn more please see our [HPC resources](https://www.acrc.bris.ac.uk/protected/hpc-docs/introduction/index.html)
 {{< admonition type="info" open=true >}}
 - If you didn't look up `echo` earlier, use `man` to work out what it does.
 - Think of `echo` as `print`, used commonly in programming languages.
