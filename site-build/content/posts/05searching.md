@@ -99,7 +99,7 @@ If the quotes were absent, `grep this scattered kingdom king-lear.txt`, the comm
 {{< /admonition >}}
 
 ### Recursive searching
-Now let's search multiple files. We can do this in a couple of way. First, let's move out of the folder `some_plays`, back one level with `cd ..`. From here, let's recursively search for something inside `some_plays` with a couple of commands
+In computer speak, "recursive" means "repeat this action for everything in the folder". So, let's search multiple files. We can do this in a couple of way. First, let's move out of the folder `some_plays`, back one level with `cd ..`. From here, let's recursively search for something inside `some_plays` with a couple of commands
 
 ```shell
 grep -r sparrow some_plays
