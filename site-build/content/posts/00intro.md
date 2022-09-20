@@ -25,20 +25,21 @@ comment:
 If you are using MacOS or Linux, you will have "Terminal" already installed - open this program and you will be presented with a terminal session. To open a suitable terminal session on Windows, install and run *GitBash*, or use *Windows Subsystem for Linux (WSL)* to install a Linux distribution (we recommend Ubuntu or Debian) - then open that program. The Windows-native *PowerShell* is not a "UNIX-like" terminal, and is not compatible with this course.
 
 ### The prompt
-When you open a terminal, you will be provided with a *prompt*. This tells you where you are, and provides a line where you will type your commands. Here is what a typical prompt looks like:
+When you open a terminal, you will be provided with a line for entering commands, starting with a *prompt*. The prompt tells you where, in your computer you are. When on the command line, you always have a location, just like you do in graphical file managers like MacOS's "Finder", or Windows' "Explorer". Here is what a typical prompt looks like:
 
 ```
-[at9362@dc2-d0:~] $
+[alleetanner@work_laptop:/Users/at9362] $
 ```
 
 Your prompt will look different, but here is what it means
 
 ```
-[ your-name @ computer-name : the-current-folder ] $
+[ your name @ the computer you are logged in to : the current folder ] $
 ```
 
-Here, the computer name (also known as the "hostname") is `dc2-d0`, but yours might be more friendly, like `Megans_iMac` or `ubuntu`, for example.
-The `$` sign means the terminal is waiting for a command. *Sometimes you will see commands on the internet which include the `$` symbol at the start of the command! You don't need to include this as part of the command, say if you cut and paste!* The name of the folder you are working in is after the `:` symbol. Here it says `~` - find out what that means in the next section.
+First is your own user name. On university computers, it might be a code like in your email address, such as `bx22657`. After the `@` comes the computer's name (also known as the "hostname"). This could be something like `Megans_iMac` or `ubuntu`, for example. Note that this is the name of the computer *that you are logged in to*! Usually, on opening a terminal, that is the actual computer in front of you. But, for example when using HPC, it will instead be another computer - a "remote" machine, that you have logged in to. However, in this course, we will only be working on your own machine, the "local" computer. Finally, we have the folder you are working in, after the `:`. Yours might say `~` ("tilde") - find out what that means in the next section.
+
+The `$` sign means the terminal is waiting for a command. *Sometimes you will see commands on the internet which include the `$` symbol at the start of the command! You don't need to include this as part of the command, say if you cut and paste!* 
 
 ### The command line
 The space after the prompt is where you enter your instructions of what you want the computer to do: your **commands**.
