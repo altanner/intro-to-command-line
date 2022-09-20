@@ -66,7 +66,7 @@ scp macbeth.txt yt29876@bc4login.acrc.bris.ac.uk:/user/home/yt29876
 ```
 Note that the destination includes a full path. Sometimes, the remote machine will understand `~` as your home folder, and missing it out completely will also work, sending the file to your home folder. The important bit is, don't forget the `:`, or your computer will think you want to copy the file locally, and name the file the name of the remote computer! So, if you see a file hanging around called, for example `yt29876@bc4login.acrc.bris.ac.uk`, this is usually the result of a failed `scp`.
 
-{{< admonition type="Warning" open=true >}}
+{{< admonition type="warning" open=true >}}
 Careless use of `scp` can result in data loss! If a file with the same name already exists in the remote machine, it will be permanently overwritten, without warning, by `scp`!
 {{< /admonition >}}
 
@@ -74,6 +74,6 @@ Copying from the remote machine back to your local machine uses similar syntax, 
 ```shell
 scp yt29876@bc4login.acrc.bris.ac.uk:/user/home/yt29876/macbeth.txt .
 ```
-{{< admonition type="Info" open=true >}}
+{{< admonition type="info" open=true >}}
 Sending information back to your local machine while using `ssh` to work on another machine is not possible. The internet just doesn't work that way! A valid remote machine is "known" to the internet (can be looked up), has a public IP address, and has its communication channels set to be able to communicate both ways. In contrast, your own private machine, typically, is not open for other computers to directly connect to it - so trying to `scp` back to your own machine won't work, as the internet has no idea what or where your own computer is!
 {{< /admonition >}}
