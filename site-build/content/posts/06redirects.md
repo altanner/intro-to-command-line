@@ -29,7 +29,7 @@ Move into the folder `example_files`. We can see, for example, the first three l
 head -3 plants.txt
 ```
 
-But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called "redirecting", and is done with the symbol `>`
+But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called "redirecting", and is done with the character `>`
 
 ```shell
 head -3 plants.txt > first_three_plants.txt
@@ -42,7 +42,7 @@ head -3 * > my_new_file
 ```
 
 {{< admonition type="warning" open=true >}}
-Be careful! Redirects will overwrite the target file!! If `my_new_file` already existed, it would be permanently overwritten by the above command!
+Be careful! Redirects will **overwrite** the target file!! If `my_new_file` already existed, it would be permanently overwritten by the above command!
 {{< /admonition >}}
 
 Using `>` will create a new file, or overwrite a file if it already exists. We might want to append instead, and we do that with a double arrow, `>>`, for example
