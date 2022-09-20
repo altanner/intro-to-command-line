@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/08ssh\/"
-        },"genre": "posts","wordcount":  504 ,
+        },"genre": "posts","wordcount":  854 ,
         "url": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/08ssh\/","datePublished": "2022-01-09T00:00:00+01:00","dateModified": "2022-01-09T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -77,8 +77,8 @@
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">‣ Logging in to remote computers using `ssh`</h1><h2 class="single-subtitle">Work with far away machines from the comfort of your own computer!</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;504 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;854 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -90,7 +90,7 @@
       <ul>
         <li><a href="#working-remotely">Working &ldquo;remotely&rdquo;</a></li>
         <li><a href="#ssh-and-scp"><code>ssh</code> and <code>scp</code></a></li>
-        <li><a href="#edit-me">edit me</a></li>
+        <li><a href="#using-the-command-line-on-a-remote-machine">Using the command line on a remote machine</a></li>
         <li><a href="#exercise">Exercise</a></li>
       </ul>
     </li>
@@ -99,14 +99,21 @@
             </div><div class="content" id="content"><h3 id="working-remotely">Working &ldquo;remotely&rdquo;</h3>
 <p>The original super-power of the command line is that it allows us to work on other machines. While we now have remote-desktops and screen-shares to see and work with other computers&rsquo;s GUIs, the command line has been doing this since the 1960s! In research, we often work on remote machines (&ldquo;computing clusters&rdquo;, &ldquo;supercomputers&rdquo;, &ldquo;HPC&rdquo;, or even just &ldquo;servers&rdquo;), which we need to log in to. Once we are logged in, the terminal will behave as if we are sitting at that machine, which might be on the other side of the world. (As such, it can be confusing to know whether a terminal is just controlling your computer, or a different computers, as the terminal will still look almost identical!)</p>
 <h3 id="ssh-and-scp"><code>ssh</code> and <code>scp</code></h3>
-<p><code>ssh</code> is a program for opening a command line session on a remote computer. It is short for &ldquo;secure shell&rdquo;, named because it opens shell communications using an encrypted, secure connection. In other words, it uses the internet to talk to another computer, and that conversation is private, locked with encryption keys. (This happens for almost all communications on your computer and phone, for example.)</p>
+<p><code>ssh</code> is a program for opening a command line session on a remote computer. The name is short for &ldquo;secure shell&rdquo;, because it opens a shell to communicate with the remote machine, using an encrypted, secure connection. In other words, it uses the internet to talk to another computer, and that conversation is private, locked with encryption keys. (This happens for almost all communications on your computer and phone, for example.)</p>
 <p><code>scp</code> (&ldquo;secure copy&rdquo;) is just like <code>cp</code>, except it can copy files and folders to and from another computer.</p>
 <p>We have specific documentation for how to use <code>ssh</code> and <code>scp</code> on our <a href="https://www.acrc.bris.ac.uk/protected/hpc-docs/training/intro-to-hpc-slurm/logging_on.html" target="_blank" rel="noopener noreffer">HPC training</a>. Here we will cover the basics of how to understand these commands, and their syntax.</p>
-<h3 id="edit-me">edit me</h3>
-<p>Let&rsquo;s create a very simple script - open <code>nano</code>, creating a file called &ldquo;my-first-script.sh&rdquo; (or anything you like!) and include two lines</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ls -l *part*
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;That is all of the files with \&#34;part\&#34; in that I could find here.&#34;</span>
-</span></span></code></pre></div><div class="details admonition info open">
+<p>Note that University of Bristol machines will only allow you access when your connection is using the university&rsquo;s VPN service. See <a href="https://uob.sharepoint.com/sites/itservices/SitePages/vpn.aspx" target="_blank" rel="noopener noreffer">these pages</a> for more details on how to install the VPN on your computer.</p>
+<h3 id="using-the-command-line-on-a-remote-machine">Using the command line on a remote machine</h3>
+<p>Using <code>ssh</code> from the command line will require a valid log in or user account on the machine you want to log in to. The syntax is to run <code>ssh</code> followed by your username and the hostname (just like in a prompt), for example</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ssh yt29876@bc4login.acrc.bris.ac.uk
+</span></span></code></pre></div><p>or, you might log in using the IP address of the remote machine</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ssh yt29876@137.222.1.10
+</span></span></code></pre></div><p>You will then be asked to enter your password - it will not display anything or display stars (*) as you type, it will just look empty. If the password is correct, you will then see a new prompt, including the name of the machine you are now logged in to:</p>
+<pre tabindex="0"><code>[yt29876@bc4login3 ~]$
+</code></pre><p>Now your command line session is running <em>another</em> command line session, on another computer. (Like in <em>Inception</em>. I expect that reference is out of date now.) You will be able to move around and run commands, just like on the machine that is actually in front of you. Obviously, other machines will be structured differently, and have security measures meaning you cannot look at other people&rsquo;s folders or run dangerous commands. If you are using shared computing facilities, as with all of the University of Bristol&rsquo;s computing clusters, keep in mind that you are in a bustling hub of colleagues and researchers, so remember to be polite!</p>
+<p>You can see who is logged on with the command <code>w</code> (yes, just a &ldquo;w&rdquo;). For HPC machines <em>make sure you do not run research work on the login nodes!</em> An HPC machine has a kind of &ldquo;lobby&rdquo; where you can arrange your work, and you send your analysis in to the proper factory-floor of powerful computers. Running &ldquo;on the headnode&rdquo; is like arriving at an industrial facility, then asking the receptionist to do the work meant for the facility! Not only is this slow, but it can break the whole system, which could result in the loss of work of hundreds of researchers!</p>
+<p>We do not cover job scheduling in this course, but to learn more please see our <a href="https://www.acrc.bris.ac.uk/protected/hpc-docs/introduction/index.html" target="_blank" rel="noopener noreffer">HPC resources</a>
+<div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
@@ -117,7 +124,7 @@
 </ul>
 </div>
         </div>
-    </div>
+    </div></p>
 <p>Save the file and exit <code>nano</code>. Now, we are going to run this file, in the folder <code>some_plays</code>. To do this, we are going to ask the program <code>bash</code> (&ldquo;Bourne Again shell&rdquo;, a widely-used shell program) to run it, with</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">bash my-first-script.sh
 </span></span></code></pre></div><h3 id="exercise">Exercise</h3>
