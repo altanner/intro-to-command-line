@@ -23,11 +23,15 @@ comment:
 
 ### Working "remotely"
 
-The original super-power of the command line is that it allows us to work on other machines. While we now have remote-desktops and screen-shares to see and work with other computers's GUIs, the command line has been doing this since the 1960s! In research, we often work on remote machines ("computing clusters", "supercomputers", "HPC", or even just "servers"), which we need to log in to
+The original super-power of the command line is that it allows us to work on other machines. While we now have remote-desktops and screen-shares to see and work with other computers's GUIs, the command line has been doing this since the 1960s! In research, we often work on remote machines ("computing clusters", "supercomputers", "HPC", or even just "servers"), which we need to log in to.
 
-### `ssh`
+### `ssh` and `scp`
 
 `ssh` is a program for opening a command line session on a remote computer. It is short for "secure shell", named this because it opens shell communications using an encrypted, secure connection. In other words, it uses the internet to talk to another computer, and that conversation is private. (This happens for almost all communications on your computer and phone, for example.)
+
+`scp` ("secure copy") is just like `cp`, except it can copy files and folders to and from another computer.
+
+We have specific documentation for how to use `ssh` and `scp` on our [HPC training](https://www.acrc.bris.ac.uk/protected/hpc-docs/training/intro-to-hpc-slurm/logging_on.html). Here we will cover the basics of how to understand these commands, and their syntax.
 
 ### edit me
 
