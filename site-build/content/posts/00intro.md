@@ -62,7 +62,7 @@ The space after the prompt is where you enter your instructions of what you want
 {{< /admonition >}}
 
 ### Anatomy of a command
-Every line you write starts with a *command*: the name of a program. Even the most basic operations (such as listing files) are small programs you are asking the computer to run. Sometimes we only need the command, but as we will see, sometimes we need to tell the program what we are doing the action to - linguistically, the *object*. At other times, we might need to ask the program to do the action *in a particular way* - think of these as *adverbs*. In any case, the syntax for a command is in this order:
+Every line you write starts with a *command*: the name of a program. Even the most basic operations (such as listing files) are small programs you are asking the computer to run. Sometimes we only need the command, but as we will see, sometimes we need to tell the program what we are doing the action to - in grammar, the *object*. At other times, we might need to ask the program to do the action *in a particular way* - think of these as *adverbs*. In any case, the syntax for a command is in this order:
 
 ```
 verb adverb object
