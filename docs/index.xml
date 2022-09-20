@@ -81,6 +81,6 @@ Info  There are five abbreviations for locations that you might come across]]></
     <pubDate>Sat, 01 Jan 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
     <guid>https://altanner.github.io/intro-to-command-line/posts/00intro/</guid>
-    <description><![CDATA[Starting a terminal If you are using MacOS or Linux, you will have &ldquo;Terminal&rdquo; already installed - open this program and you will be presented with a terminal session. To open a suitable terminal session on Windows, install and run GitBash, or use Windows Subsystem for Linux (WSL) to install a Linux distribution (we recommend Ubuntu or Debian) - then open that program. The Windows-native PowerShell is not a &ldquo;UNIX-like&rdquo; terminal, and is not compatible with this course.]]></description>
+    <description><![CDATA[Some confusing glossary!  A &ldquo;terminal&rdquo; is a program which emulates (mimics, in software) an old piece of hardware, which provides the command line. A &ldquo;console&rdquo; is, effectively, the same thing. So as far as we are concerned, the &ldquo;command line&rdquo;, &ldquo;terminal&rdquo; and &ldquo;console&rdquo; are all the same thing.  Starting a terminal If you are using MacOS or Linux, you will have &ldquo;Terminal&rdquo; already installed - open this program and you will be presented with a terminal session.]]></description>
 </item></channel>
 </rss>
