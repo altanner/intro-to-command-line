@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/08ssh\/"
-        },"genre": "posts","wordcount":  1082 ,
+        },"genre": "posts","wordcount":  1119 ,
         "url": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/08ssh\/","datePublished": "2022-01-09T00:00:00+01:00","dateModified": "2022-01-09T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -77,7 +77,7 @@
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">‣ Working with remote computers</h1><h2 class="single-subtitle">Work with far away machines from the comfort of your own computer!</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1082 words&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1119 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -140,7 +140,9 @@
             <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">Sending information back to your local machine while using <code>ssh</code> to work on another machine is not possible. The internet just doesn&rsquo;t work that way! A valid remote machine is &ldquo;known&rdquo; to the internet (can be looked up), has a public IP address, and has its communication channels set to be able to communicate both ways. In contrast, your own private machine, typically, is not open for other computers to directly connect to it - so trying to <code>scp</code> back to your own machine won&rsquo;t work, as the internet has no idea what or where your own computer is!</div>
+            <div class="admonition-content"><p>Sending files back to your local machine while using <code>ssh</code> to work on a remote machine is not possible. The internet just doesn&rsquo;t work that way! A valid remote machine is &ldquo;known&rdquo; to the internet (has a public IP address that can be looked up), and its communication channels are set to allow incoming and outgoing transfers. In contrast, your own private machine, typically, is not open for other computers to directly connect to it - so trying to <code>scp</code> back to your own machine won&rsquo;t work, as the internet has no idea what or where your own computer is!</p>
+<p>So, if your terminal is tied up with an <code>ssh</code> session but you want the data back on your own computer, you will have to open another terminal and &ldquo;request&rdquo; the files using <code>scp</code>, as above.</p>
+</div>
         </div>
     </div>
 </div><div class="post-footer" id="post-footer">
