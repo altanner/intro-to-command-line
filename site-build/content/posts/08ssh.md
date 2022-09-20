@@ -75,5 +75,7 @@ Copying from the remote machine back to your local machine uses similar syntax, 
 scp yt29876@bc4login.acrc.bris.ac.uk:/user/home/yt29876/macbeth.txt .
 ```
 {{< admonition type="info" open=true >}}
-Sending information back to your local machine while using `ssh` to work on another machine is not possible. The internet just doesn't work that way! A valid remote machine is "known" to the internet (can be looked up), has a public IP address, and has its communication channels set to be able to communicate both ways. In contrast, your own private machine, typically, is not open for other computers to directly connect to it - so trying to `scp` back to your own machine won't work, as the internet has no idea what or where your own computer is!
+Sending files back to your local machine while using `ssh` to work on a remote machine is not possible. The internet just doesn't work that way! A valid remote machine is "known" to the internet (has a public IP address that can be looked up), and its communication channels are set to allow incoming and outgoing transfers. In contrast, your own private machine, typically, is not open for other computers to directly connect to it - so trying to `scp` back to your own machine won't work, as the internet has no idea what or where your own computer is!
+
+So, if your terminal is tied up with an `ssh` session but you want the data back on your own computer, you will have to open another terminal and "request" the files using `scp`, as above.
 {{< /admonition >}}
