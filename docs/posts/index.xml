@@ -71,7 +71,7 @@ To improve your skills in backing up, version control, and minimising risk in co
     <guid>https://altanner.github.io/intro-to-command-line/posts/01navigation/</guid>
     <description><![CDATA[Where am I? Let&rsquo;s run our first command:
 pwd With pwd we are asking &ldquo;print my current working directory / where am I?&rdquo; You will then get some output to the terminal window, something like
-/home/at9362 This is your current location, here shown as an &ldquo;absolute path&rdquo; - the full description for what folder you are in. The sign ~ is an abbreviation for &ldquo;your home folder&rdquo;.
+/home/at9362 This is your current location, here shown as a &ldquo;path&rdquo; - what folder you are in, starting from the &ldquo;root&rdquo; folder that contains the whole file system.
 Info  There are five abbreviations for locations that you might come across]]></description>
 </item><item>
     <title>‣ Welcome to the command line!</title>

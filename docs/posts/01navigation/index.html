@@ -8,7 +8,7 @@
         <title>‣ File system navigation - Introduction to the Command Line</title><meta name="Description" content=""><meta property="og:title" content="‣ File system navigation" />
 <meta property="og:description" content="Where am I? Let&rsquo;s run our first command:
 pwd With pwd we are asking &ldquo;print my current working directory / where am I?&rdquo; You will then get some output to the terminal window, something like
-/home/at9362 This is your current location, here shown as an &ldquo;absolute path&rdquo; - the full description for what folder you are in. The sign ~ is an abbreviation for &ldquo;your home folder&rdquo;.
+/home/at9362 This is your current location, here shown as a &ldquo;path&rdquo; - what folder you are in, starting from the &ldquo;root&rdquo; folder that contains the whole file system.
 Info  There are five abbreviations for locations that you might come across" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://altanner.github.io/intro-to-command-line/posts/01navigation/" /><meta property="article:section" content="posts" />
@@ -19,7 +19,7 @@ Info  There are five abbreviations for locations that you might come across" />
 <meta name="twitter:title" content="‣ File system navigation"/>
 <meta name="twitter:description" content="Where am I? Let&rsquo;s run our first command:
 pwd With pwd we are asking &ldquo;print my current working directory / where am I?&rdquo; You will then get some output to the terminal window, something like
-/home/at9362 This is your current location, here shown as an &ldquo;absolute path&rdquo; - the full description for what folder you are in. The sign ~ is an abbreviation for &ldquo;your home folder&rdquo;.
+/home/at9362 This is your current location, here shown as a &ldquo;path&rdquo; - what folder you are in, starting from the &ldquo;root&rdquo; folder that contains the whole file system.
 Info  There are five abbreviations for locations that you might come across"/>
 <meta name="application-name" content="Introduction to the Command Line">
 <meta name="apple-mobile-web-app-title" content="Introduction to the Command Line"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -33,7 +33,7 @@ Info  There are five abbreviations for locations that you might come across"/>
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/01navigation\/"
-        },"genre": "posts","wordcount":  716 ,
+        },"genre": "posts","wordcount":  717 ,
         "url": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/01navigation\/","datePublished": "2022-01-02T00:00:00+01:00","dateModified": "2022-01-02T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -83,7 +83,7 @@ Info  There are five abbreviations for locations that you might come across"/>
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">‣ File system navigation</h1><h2 class="single-subtitle">Understanding where you are, and how to move around</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;716 words&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;717 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -107,7 +107,7 @@ Info  There are five abbreviations for locations that you might come across"/>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">pwd</span>
 </span></span></code></pre></div><p>With <code>pwd</code> we are asking &ldquo;print my current working directory / where am I?&rdquo; You will then get some <em>output</em> to the terminal window, something like</p>
 <pre tabindex="0"><code>/home/at9362
-</code></pre><p>This is your current location, here shown as an &ldquo;absolute path&rdquo; - the full description for what folder you are in. The sign <code>~</code> is an abbreviation for &ldquo;your home folder&rdquo;.</p>
+</code></pre><p>This is your current location, here shown as a &ldquo;path&rdquo; - what folder you are in, starting from the &ldquo;root&rdquo; folder that contains the whole file system.</p>
 <div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -125,11 +125,11 @@ Info  There are five abbreviations for locations that you might come across"/>
         </div>
     </div>
 <h3 id="what-is-in-this-folder">What is in this folder?</h3>
-<p>Now that we know where we are, let&rsquo;s see what is here by running a program called <code>ls</code> (&ldquo;list&rdquo; or &ldquo;ell ess&rdquo;). <code>ls</code> shows you the contents of your current folder, much like looking at the file manager window in a GUI, Finder in MacOS or Explorer on Windows:</p>
+<p>Now that we know where we are, let&rsquo;s see what is here by running a program called <code>ls</code> (&ldquo;list&rdquo; or &ldquo;ell ess&rdquo;). <code>ls</code> shows you the contents of your current folder, much like looking at the file manager window in a GUI (Finder in MacOS or Explorer on Windows):</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ls
 </span></span></code></pre></div><p>For me, I get this output, a list of what is here.</p>
 <pre tabindex="0"><code>logfile  records_january  credentials.txt  creds  data_depot  git
-</code></pre><p>Yours will be different. Each of these things are the items (files and folders) in your current working directory. For most terminals, items in white are files, and items in blue are folders. The first thing we are going to do is make a new folder, where we will be doing our work. We will use the command <code>mkdir</code>, and this command needs an <em>argument</em>:</p>
+</code></pre><p>Yours will be different. Each of these things are the items (files and folders) in your current working directory. For most terminals, items in white are files, and items in blue are folders. The first thing we are going to do is make a new folder, where we will be doing our work. We will use the command <code>mkdir</code> (&ldquo;make directory&rdquo;), and this command needs an <em>argument</em> (gramatically, an &ldquo;object&rdquo;):</p>
 <h3 id="making-our-first-folder">Making our first folder.</h3>
 <p>Let&rsquo;s create a folder where we can learn how to move around.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir intro-to-command-line
@@ -184,9 +184,9 @@ Info  There are five abbreviations for locations that you might come across"/>
 </div>
         </div>
     </div>
-<p>Move back to your folder <code>intro-to-command-line</code>. From this point forward, we will be working with the <a href="https://github.com/altanner/intro-to-command-line/raw/master/command-line-files.zip" target="_blank" rel="noopener noreffer">course materials</a> (this is the same file as linked on the home page of this course). Download this file, and using your GUI, move this file into the folder we made in the last section. This might be in your home folder, or your desktop - it doesn&rsquo;t matter where, as long as it makes sense to you! Then unzip the file - double click it, or right-click and &ldquo;open&rdquo; it. You will then have a new folder called <code>command_line_files</code>.</p>
+<p>Move back to your folder <code>intro-to-command-line</code>. From this point forward, we will be working with the <a href="https://github.com/alleetanner/intro-to-command-line/raw/master/command-line-files.zip" target="_blank" rel="noopener noreffer">course materials</a> (this is the same file as linked on the home page of this course). Download this file, and using your GUI, move this file into the folder we made in the last section. This might be in your home folder, or your desktop - it doesn&rsquo;t matter where, as long as it makes sense to you! Then unzip the file - double click it, or right-click and &ldquo;open&rdquo; it. You will then have a new folder called <code>command_line_files</code>.</p>
 <p>If you are working on Windows, run this command (since you are using GitBash, we can directly clone the files)</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git clone https://github.com/altanner/intro-to-command-line.git
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git clone https://github.com/alleetanner/intro-to-command-line.git
 </span></span></code></pre></div><p>Using <code>cd</code>, move into the folder called <code>sandpit</code>. From here, look around using <code>ls</code>, move around using <code>cd</code>, and see what is in each folder.</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
