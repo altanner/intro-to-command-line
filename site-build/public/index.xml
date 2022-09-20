@@ -19,7 +19,7 @@ A &ldquo;script&rdquo; is a file of instructions that can be directly read and r
     <pubDate>Sun, 09 Jan 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
     <guid>https://altanner.github.io/intro-to-command-line/posts/08ssh/</guid>
-    <description><![CDATA[Working remotely The original super-power of the command line is that it allows us to connect to other machines. While we now have remote-desktops and screen-shares to see and work with other computers&rsquo;s GUIs, the command line has been doing this since the 1960s! In research, we often work on remote machines (&ldquo;computing clusters&rdquo;, &ldquo;supercomputers&rdquo;, &ldquo;HPC&rdquo;, or even just &ldquo;servers&rdquo;), which we need to log in to. Once we are logged in, the terminal will behave as if we are sitting at that machine, which might be on the other side of the world.]]></description>
+    <description><![CDATA[Working remotely The original super-power of the command line is that it allows us to connect to other machines. While today we have remote-desktops and screen-shares to see and work with other computer&rsquo;s GUIs, the command line has been doing this since the 1960s! In research, we often work on remote machines (&ldquo;computing clusters&rdquo;, &ldquo;supercomputers&rdquo;, &ldquo;HPC&rdquo;, or even just &ldquo;servers&rdquo;), which we need to log in to. Once we are logged in, the terminal will behave as if we are sitting at that machine, which might be on the other side of the world.]]></description>
 </item><item>
     <title>‣ Pipes</title>
     <link>https://altanner.github.io/intro-to-command-line/posts/07pipes/</link>
