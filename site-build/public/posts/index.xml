@@ -5,10 +5,10 @@
         <description>All Posts | Introduction to the Command Line</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 09 Jan 2022 00:00:00 &#43;0100</lastBuildDate><atom:link href="https://altanner.github.io/intro-to-command-line/posts/" rel="self" type="application/rss+xml" /><item>
     <title>‣ Shell scripts</title>
-    <link>https://altanner.github.io/intro-to-command-line/posts/08scripts/</link>
+    <link>https://altanner.github.io/intro-to-command-line/posts/09scripts/</link>
     <pubDate>Sun, 09 Jan 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://altanner.github.io/intro-to-command-line/posts/08scripts/</guid>
+    <guid>https://altanner.github.io/intro-to-command-line/posts/09scripts/</guid>
     <description><![CDATA[Scripts So far, we have been running things directly on the command line, &ldquo;interactively&rdquo;. However, you might want to keep your commands in a file, and be able to run, share, modify, or use files as templates. This is the gateway to coding - and is great practice for developing your reproducible work, for communicating your methods with others, and for archiving your work.
 A &ldquo;script&rdquo; is a file of instructions that can be directly read and run by a program.]]></description>
 </item><item>
