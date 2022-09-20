@@ -19,8 +19,7 @@ A &ldquo;script&rdquo; is a file of instructions that can be directly read and r
     <pubDate>Sat, 08 Jan 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
     <guid>https://altanner.github.io/intro-to-command-line/posts/07pipes/</guid>
-    <description><![CDATA[Pipes In the last section, we counted the number of lines in our folder of Shakespeare plays. But what if we wanted these in order? This is where pipes come in to play. The pipe symbol is | - to the left of the enter key on MacOS, and to the left of the number row on Windows.
-We can use the output of wc as the input for sort. Try these commands in the folder some_plays]]></description>
+    <description><![CDATA[Pipes In the last section, we counted the number of lines in our folder of Shakespeare plays. But what if we wanted these in order? We could do this by using another command. This is where we would use a pipe. (The pipe symbol is | - to the left of the enter key on MacOS, and to the left of the number row on Windows.) A pipe sends the output of one command as the input for another command, linking them together, like in plumbing.]]></description>
 </item><item>
     <title>‣ Redirection</title>
     <link>https://altanner.github.io/intro-to-command-line/posts/06redirects/</link>
