@@ -25,9 +25,9 @@ comment:
 
 The original super-power of the command line is that it allows us to connect to other machines. While today we have remote-desktops and screen-shares to see and work with other computer's GUIs, the command line has been doing this since the 1960s!
 
-In research, we often work on remote machines ("computing clusters", "HPC", "supercomputers", or even just "servers"), which we need to log in to. Once we are logged in, the terminal will behave as if we are sitting at that machine, which might be on the other side of the world. (As such, it can be confusing to know whether a terminal is just controlling your computer, or a different computers, as the terminal will still look very similar!)
+In research, we often work on remote machines ("computing clusters", "HPC", "supercomputers", or even just "servers"), which we need to log in to. Once we are logged in, the terminal will behave as if we are sitting at that machine, which might be on the other side of the world. (As such, it can be confusing to know whether a terminal is just controlling your computer, or one far away, as the terminal will still look very similar!)
 
-### Logging into a computer using `ssh`
+### Using `ssh`
 
 `ssh` is a program for opening a command line session on a remote computer. The name is short for "secure shell", because it opens a shell to communicate with a remote machine on the same network, using an encrypted, secure connection. In other words, it uses the international network (also known as the internet!) to talk to another computer, and that conversation is private, locked with encryption keys.
 
@@ -37,7 +37,7 @@ Note that when you are not on University of Bristol campus or premises, you will
 
 ### Using the command line, but on a remote machine
 
-Using `ssh` from the command line will require a valid log in or user account on the machine you want to log in to. The syntax is to run `ssh` followed by your username and the hostname (just like in a prompt), for example
+To successfully connect to another machine using `ssh`, the machine needs to know who you are: you will need a username and a password (although other authorisation methods exist, which we will not cover here). The syntax is the command `ssh`, followed by your username and the hostname (just like you see in a prompt), for example
 ```shell
 ssh yt29876@bc4login.acrc.bris.ac.uk
 ```
@@ -79,7 +79,7 @@ Copying from the remote machine back to your local machine uses similar syntax, 
 scp yt29876@bc4login.acrc.bris.ac.uk:/user/home/yt29876/macbeth.txt .
 ```
 {{< admonition type="info" open=true >}}
-Sending files back to your local machine while using `ssh` to work on a remote machine is not possible. The internet just doesn't work that way! A valid remote machine is "known" to the internet (has a public IP address that can be looked up), and its communication channels are set to allow incoming and outgoing transfers. In contrast, your own private machine, typically, is not open for other computers to directly connect to it - so trying to `scp` back to your own machine won't work, as the internet has no idea what or where your own computer is!
+Sending files back to your local machine while using `ssh` to work on a remote machine is not usually possible. The internet just doesn't work that way! A valid remote machine is "known" to the internet (has a public IP address that can be looked up), and its communication channels are set to allow incoming and outgoing transfers. In contrast, your own private machine, typically, is not open for other computers to directly connect to it - so trying to `scp` back to your own machine won't work, as the internet has no idea what or where your own computer is!
 
 So, if your terminal is tied up with an `ssh` session but you want the data back on your own computer, you will have to open another terminal and "request" the files using `scp`, as above.
 {{< /admonition >}}
