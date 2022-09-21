@@ -51,7 +51,7 @@ You will then be asked to enter your password - it will not display anything or 
 ```
 {{< admonition type="tip" title="Useful tip!" open=true >}}
 If you forget your `ssh` login commands, remember that all your previous commands are stored in `history`. Perfect use of a pipe! To list your previous `ssh` commands, we can pipe the output of `history` into `grep`, searching for `ssh`, with
-```history | grep ssh```
+```history | grep "ssh"```
 {{< /admonition >}}
 
 Now your command line session is running *another* command line session, on another computer. (Like in *Inception*. I expect that cultural reference is out of date now.) Just like with a local command line, you can leave using the command `exit`. You will be able to move around and run commands, just like on the machine that is actually in front of you. Of course, other machines will be structured differently, and have security measures meaning you cannot look at other people's folders or run dangerous commands. If you are using shared computing facilities, as with all of the University of Bristol's computing clusters, keep in mind that you are in a bustling hub of colleagues and researchers - you can see who is logged on with the command `w` (yes, just a "w").
