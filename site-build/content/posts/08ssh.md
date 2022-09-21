@@ -23,15 +23,17 @@ comment:
 
 ### Working remotely
 
-The original super-power of the command line is that it allows us to connect to other machines. While today we have remote-desktops and screen-shares to see and work with other computer's GUIs, the command line has been doing this since the 1960s! In research, we often work on remote machines ("computing clusters", "supercomputers", "HPC", or even just "servers"), which we need to log in to. Once we are logged in, the terminal will behave as if we are sitting at that machine, which might be on the other side of the world. (As such, it can be confusing to know whether a terminal is just controlling your computer, or a different computers, as the terminal will still look very similar!)
+The original super-power of the command line is that it allows us to connect to other machines. While today we have remote-desktops and screen-shares to see and work with other computer's GUIs, the command line has been doing this since the 1960s!
+
+In research, we often work on remote machines ("computing clusters", "HPC", "supercomputers", or even just "servers"), which we need to log in to. Once we are logged in, the terminal will behave as if we are sitting at that machine, which might be on the other side of the world. (As such, it can be confusing to know whether a terminal is just controlling your computer, or a different computers, as the terminal will still look very similar!)
 
 ### Logging into a computer using `ssh`
 
-`ssh` is a program for opening a command line session on a remote computer. The name is short for "secure shell", because it opens a shell to communicate with a remote machine on the same network, using an encrypted, secure connection. In other words, it uses the international network (also known as the internet!) to talk to another computer, and that conversation is private, locked with encryption keys. (This happens for almost all communications on your computer and phone, for example.)
+`ssh` is a program for opening a command line session on a remote computer. The name is short for "secure shell", because it opens a shell to communicate with a remote machine on the same network, using an encrypted, secure connection. In other words, it uses the international network (also known as the internet!) to talk to another computer, and that conversation is private, locked with encryption keys.
 
 We have specific documentation for how to use `ssh` (and `scp`) on our [HPC training](https://www.acrc.bris.ac.uk/protected/hpc-docs/training/intro-to-hpc-slurm/logging_on.html). Here we will cover the basics of how to understand these commands, and their syntax.
 
-Note that University of Bristol machines will only allow you access when your connection is using the university's VPN service. See [these pages](https://uob.sharepoint.com/sites/itservices/SitePages/vpn.aspx) for more details on how to install the VPN on your computer.
+Note that when you are not on University of Bristol campus or premises, you will need to use the university's VPN service to successfully `ssh` into computing facilities. See [these pages](https://uob.sharepoint.com/sites/itservices/SitePages/vpn.aspx) for more details on how to install the VPN on your computer.
 
 ### Using the command line, but on a remote machine
 
@@ -43,13 +45,13 @@ or, you might log in using the IP address of the remote machine
 ```shell
 ssh yt29876@137.222.1.10
 ```
-You will then be asked to enter your password - it will not display anything or display stars (\*) as you type, it will just look empty. If the password is correct, you will then see a new prompt, including the name of the machine you are now logged in to:
+You will then be asked to enter your password - it will not display anything or display stars (\*) as you type, it will just look empty. If the password is correct, you will then see a new prompt, including the name of the machine you are now logged in to, for example:
 ```
 [yt29876@bc4login3 ~]$
 ```
 {{< admonition type="tip" title="Useful tip!" open=true >}}
-If you forget your `ssh` logins, remember that all your commands are stored in `history`. Perfect use of a pipe! To get your previous `ssh` commands, we can pipe the output of `history` into `grep`, searching for `ssh`, with
-`history | grep ssh`
+If you forget your `ssh` login commands, remember that all your previous commands are stored in `history`. Perfect use of a pipe! To list your previous `ssh` commands, we can pipe the output of `history` into `grep`, searching for `ssh`, with
+```history | grep ssh```
 {{< /admonition >}}
 
 Now your command line session is running *another* command line session, on another computer. (Like in *Inception*. I expect that cultural reference is out of date now.) Just like with a local command line, you can leave using the command `exit`. You will be able to move around and run commands, just like on the machine that is actually in front of you. Obviously, other machines will be structured differently, and have security measures meaning you cannot look at other people's folders or run dangerous commands. If you are using shared computing facilities, as with all of the University of Bristol's computing clusters, keep in mind that you are in a bustling hub of colleagues and researchers - you can see who is logged on with the command `w` (yes, just a "w").
