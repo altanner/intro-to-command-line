@@ -29,7 +29,7 @@ In research, we often work on remote machines (&ldquo;computing clusters&rdquo;,
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/08ssh\/"
-        },"genre": "posts","wordcount":  1161 ,
+        },"genre": "posts","wordcount":  1171 ,
         "url": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/08ssh\/","datePublished": "2022-01-09T00:00:00+01:00","dateModified": "2022-01-09T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -79,7 +79,7 @@ In research, we often work on remote machines (&ldquo;computing clusters&rdquo;,
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">‣ Working with remote computers</h1><h2 class="single-subtitle">Work with far away machines from the comfort of your own computer!</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1161 words&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1171 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -91,7 +91,7 @@ In research, we often work on remote machines (&ldquo;computing clusters&rdquo;,
     <li>
       <ul>
         <li><a href="#working-remotely">Working remotely</a></li>
-        <li><a href="#logging-into-a-computer-using-ssh">Logging into a computer using <code>ssh</code></a></li>
+        <li><a href="#using-ssh">Using <code>ssh</code></a></li>
         <li><a href="#using-the-command-line-but-on-a-remote-machine">Using the command line, but on a remote machine</a></li>
         <li><a href="#copying-files-to-and-from-remote-machines-using-scp">Copying files to and from remote machines using <code>scp</code></a></li>
       </ul>
@@ -100,13 +100,13 @@ In research, we often work on remote machines (&ldquo;computing clusters&rdquo;,
 </nav></div>
             </div><div class="content" id="content"><h3 id="working-remotely">Working remotely</h3>
 <p>The original super-power of the command line is that it allows us to connect to other machines. While today we have remote-desktops and screen-shares to see and work with other computer&rsquo;s GUIs, the command line has been doing this since the 1960s!</p>
-<p>In research, we often work on remote machines (&ldquo;computing clusters&rdquo;, &ldquo;HPC&rdquo;, &ldquo;supercomputers&rdquo;, or even just &ldquo;servers&rdquo;), which we need to log in to. Once we are logged in, the terminal will behave as if we are sitting at that machine, which might be on the other side of the world. (As such, it can be confusing to know whether a terminal is just controlling your computer, or a different computers, as the terminal will still look very similar!)</p>
-<h3 id="logging-into-a-computer-using-ssh">Logging into a computer using <code>ssh</code></h3>
+<p>In research, we often work on remote machines (&ldquo;computing clusters&rdquo;, &ldquo;HPC&rdquo;, &ldquo;supercomputers&rdquo;, or even just &ldquo;servers&rdquo;), which we need to log in to. Once we are logged in, the terminal will behave as if we are sitting at that machine, which might be on the other side of the world. (As such, it can be confusing to know whether a terminal is just controlling your computer, or one far away, as the terminal will still look very similar!)</p>
+<h3 id="using-ssh">Using <code>ssh</code></h3>
 <p><code>ssh</code> is a program for opening a command line session on a remote computer. The name is short for &ldquo;secure shell&rdquo;, because it opens a shell to communicate with a remote machine on the same network, using an encrypted, secure connection. In other words, it uses the international network (also known as the internet!) to talk to another computer, and that conversation is private, locked with encryption keys.</p>
 <p>We have specific documentation for how to use <code>ssh</code> (and <code>scp</code>) on our <a href="https://www.acrc.bris.ac.uk/protected/hpc-docs/training/intro-to-hpc-slurm/logging_on.html" target="_blank" rel="noopener noreffer">HPC training</a>. Here we will cover the basics of how to understand these commands, and their syntax.</p>
 <p>Note that when you are not on University of Bristol campus or premises, you will need to use the university&rsquo;s VPN service to successfully <code>ssh</code> into computing facilities. See <a href="https://uob.sharepoint.com/sites/itservices/SitePages/vpn.aspx" target="_blank" rel="noopener noreffer">these pages</a> for more details on how to install the VPN on your computer.</p>
 <h3 id="using-the-command-line-but-on-a-remote-machine">Using the command line, but on a remote machine</h3>
-<p>Using <code>ssh</code> from the command line will require a valid log in or user account on the machine you want to log in to. The syntax is to run <code>ssh</code> followed by your username and the hostname (just like in a prompt), for example</p>
+<p>To successfully connect to another machine using <code>ssh</code>, the machine needs to know who you are: you will need a username and a password (although other authorisation methods exist, which we will not cover here). The syntax is the command <code>ssh</code>, followed by your username and the hostname (just like you see in a prompt), for example</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ssh yt29876@bc4login.acrc.bris.ac.uk
 </span></span></code></pre></div><p>or, you might log in using the IP address of the remote machine</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ssh yt29876@137.222.1.10
@@ -144,7 +144,7 @@ In research, we often work on remote machines (&ldquo;computing clusters&rdquo;,
             <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>Sending files back to your local machine while using <code>ssh</code> to work on a remote machine is not possible. The internet just doesn&rsquo;t work that way! A valid remote machine is &ldquo;known&rdquo; to the internet (has a public IP address that can be looked up), and its communication channels are set to allow incoming and outgoing transfers. In contrast, your own private machine, typically, is not open for other computers to directly connect to it - so trying to <code>scp</code> back to your own machine won&rsquo;t work, as the internet has no idea what or where your own computer is!</p>
+            <div class="admonition-content"><p>Sending files back to your local machine while using <code>ssh</code> to work on a remote machine is not usually possible. The internet just doesn&rsquo;t work that way! A valid remote machine is &ldquo;known&rdquo; to the internet (has a public IP address that can be looked up), and its communication channels are set to allow incoming and outgoing transfers. In contrast, your own private machine, typically, is not open for other computers to directly connect to it - so trying to <code>scp</code> back to your own machine won&rsquo;t work, as the internet has no idea what or where your own computer is!</p>
 <p>So, if your terminal is tied up with an <code>ssh</code> session but you want the data back on your own computer, you will have to open another terminal and &ldquo;request&rdquo; the files using <code>scp</code>, as above.</p>
 </div>
         </div>
