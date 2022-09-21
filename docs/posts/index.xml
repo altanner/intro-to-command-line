@@ -12,6 +12,13 @@
     <description><![CDATA[Scripts So far, we have been running things directly on the command line, &ldquo;interactively&rdquo;. However, you might want to keep your commands in a file, and be able to run, share, modify, or use files as templates. This is the gateway to coding - and is great practice for developing your reproducible work, for communicating your methods with others, and for archiving your work.
 A &ldquo;script&rdquo; is a file of instructions that can be directly read and run by a program.]]></description>
 </item><item>
+    <title>‣ Understanding errors</title>
+    <link>https://altanner.github.io/intro-to-command-line/posts/sfgdsg/</link>
+    <pubDate>Sun, 09 Jan 2022 00:00:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://altanner.github.io/intro-to-command-line/posts/sfgdsg/</guid>
+    <description><![CDATA[Don&rsquo;t be afraid of error messages :) The command line can seem an unfriendly place, especially for beginners. When you get things wrong, the command line will tell you, but to begin with what it is saying can be hard to understand. Understanding these error messages is an important part of building your confidence, so in this section we will cover how to read and respond to XXXXXXXX in which you can learn more when the command line says &ldquo;you It can just be quite minimal, but this is just the philosophy of computing and programming.]]></description>
+</item><item>
     <title>‣ Working with remote computers</title>
     <link>https://altanner.github.io/intro-to-command-line/posts/08ssh/</link>
     <pubDate>Sun, 09 Jan 2022 00:00:00 &#43;0100</pubDate>
@@ -80,12 +87,5 @@ To improve your skills in backing up, version control, and minimising risk in co
 pwd With pwd we are asking &ldquo;print my current working directory / where am I?&rdquo; You will then get some output to the terminal window, something like
 /home/at9362 This is your current location, here shown as a &ldquo;path&rdquo; - what folder you are in, starting from the &ldquo;root&rdquo; folder that contains the whole file system.
 Info  There are five abbreviations for locations that you might come across]]></description>
-</item><item>
-    <title>‣ Welcome to the command line!</title>
-    <link>https://altanner.github.io/intro-to-command-line/posts/00intro/</link>
-    <pubDate>Sat, 01 Jan 2022 00:00:00 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://altanner.github.io/intro-to-command-line/posts/00intro/</guid>
-    <description><![CDATA[Some confusing glossary!  A &ldquo;terminal&rdquo; is a program which emulates (mimics, in software) an old piece of hardware, which provides the command line. A &ldquo;console&rdquo; is, effectively, the same thing. A &ldquo;shell&rdquo; is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don&rsquo;t need to worry about that!]]></description>
 </item></channel>
 </rss>
