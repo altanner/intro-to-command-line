@@ -58,7 +58,7 @@ Now your command line session is running *another* command line session, on anot
 
 For HPC machines *make sure you do not run research work on the login nodes!* An HPC machine has a "headnode", a kind of "lobby" where you can arrange your work, and you send your analysis in to the proper factory-floor of powerful computers using submission scripts. Running "on the headnode" is like walking into an industrial facility, then asking the receptionist to do the industrial work! Not only is this slow, but it can break the whole system, which could result in the loss of work of many of researchers! Avoid this at all costs :)
 
-We do not cover job scheduling in this course, but to learn more please see our [HPC resources](https://www.acrc.bris.ac.uk/protected/hpc-docs/introduction/index.html)
+We do not cover job scheduling in this course, but to learn more please see our [HPC resources](https://www.acrc.bris.ac.uk/protected/hpc-docs/introduction/index.html).
 
 ### Copying files to and from remote machines using `scp`
 
