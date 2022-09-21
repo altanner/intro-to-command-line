@@ -54,15 +54,17 @@ If you forget your `ssh` login commands, remember that all your previous command
 ```history | grep ssh```
 {{< /admonition >}}
 
-Now your command line session is running *another* command line session, on another computer. (Like in *Inception*. I expect that cultural reference is out of date now.) Just like with a local command line, you can leave using the command `exit`. You will be able to move around and run commands, just like on the machine that is actually in front of you. Obviously, other machines will be structured differently, and have security measures meaning you cannot look at other people's folders or run dangerous commands. If you are using shared computing facilities, as with all of the University of Bristol's computing clusters, keep in mind that you are in a bustling hub of colleagues and researchers - you can see who is logged on with the command `w` (yes, just a "w").
+Now your command line session is running *another* command line session, on another computer. (Like in *Inception*. I expect that cultural reference is out of date now.) Just like with a local command line, you can leave using the command `exit`. You will be able to move around and run commands, just like on the machine that is actually in front of you. Of course, other machines will be structured differently, and have security measures meaning you cannot look at other people's folders or run dangerous commands. If you are using shared computing facilities, as with all of the University of Bristol's computing clusters, keep in mind that you are in a bustling hub of colleagues and researchers - you can see who is logged on with the command `w` (yes, just a "w").
 
-For HPC machines *make sure you do not run research work on the login nodes!* An HPC machine has a "headnode", a kind of "lobby" where you can arrange your work, and you send your analysis in to the proper factory-floor of powerful computers using submission scripts. Running "on the headnode" is like walking into an industrial facility, then asking the receptionist to do the industrial work! Not only is this slow, but it can break the whole system, which could result in the loss of work of many of researchers! Avoid this at all costs :)
+For HPC machines *do not run research work on the login nodes!* An HPC machine has a "headnode", a kind of "lobby" where you can arrange your work in your home folder. But, you send your analysis in to the high-performance computers using "submission scripts". Running work "on the headnode" is like walking into a factory, then asking the receptionist to do the industrial work! Not only is this slow, but it can break the whole system, which could result in the loss of work for others! Avoid this at all costs :)
 
-We do not cover job scheduling in this course, but to learn more please see our [HPC resources](https://www.acrc.bris.ac.uk/protected/hpc-docs/introduction/index.html).
+We do not cover submission scripts in this course, but to learn more please see our [HPC resources](https://www.acrc.bris.ac.uk/protected/hpc-docs/introduction/index.html).
 
 ### Copying files to and from remote machines using `scp`
 
-`scp` ("secure copy") is just like `cp`, except it can copy files and folders to and from another computer. Just like with `ssh` above, we will need to specify what computer the file or folder is on, and so `scp` uses syntax just like in a prompt to designate a location. First, let's copy a file *from* our local machine to another machine. If you have the resources from earlier in this course, try copying one of the plays to another machine. As with `cp`, the syntax is `cp [what to copy] [where to copy this to]`. Move to the appropriate folder, and try a command similar to this (you will need to substitute a real username and hostname!)
+`scp` ("secure copy") is just like `cp`, except it can copy files and folders to and from another computer. Just like with `ssh` above, we will need to specify what computer the file or folder is on. To do this, `scp` needs to know the address of the machine it is working with.
+
+First, let's copy a file *from* our local machine *to* another machine. If you have the resources from earlier in this course, try copying one of the plays to another machine. As with `cp`, the syntax is `cp [what to copy] [where to copy this to]`. Move to the appropriate folder, and try a command similar to this (you will need to substitute a real username and hostname!)
 ```shell
 scp macbeth.txt yt29876@bc4login.acrc.bris.ac.uk:/user/home/yt29876
 ```
@@ -71,15 +73,17 @@ Note that the destination includes a full path. Sometimes, the remote machine wi
 Just like with `cp`, you can copy the contents of folders with the flag `-r`. See the `man` pages for more details.
 
 {{< admonition type="warning" open=true >}}
-Careless use of `scp` can result in data loss! If a file with the same name already exists in the remote machine, it will be permanently overwritten, without warning, by `scp`!
+Careless use of `scp` can result in data loss! If a file with the same name already exists in the remote machine in the destination folder, it will be permanently overwritten, without warning, by `scp`!
 {{< /admonition >}}
 
-Copying from the remote machine back to your local machine uses similar syntax, except you must provide the full path to the file (or folder) you want to copy. You can specify the local destination of the `scp` command with the abbreviation for "here": `.` (or any location you like)). So, the above command in reverse would be
+Copying *from* the remote machine back to your local machine uses similar syntax, except you must provide the full path to the file (or folder) you want to copy. Often, you specify the local destination of the `scp` command with the abbreviation for "here": `.`. Alternatively, you can provide an absolute or relative path, or a different filename as the destination.
+
+So, the above command, but to copy *back* to your own machine would be
 ```shell
 scp yt29876@bc4login.acrc.bris.ac.uk:/user/home/yt29876/macbeth.txt .
 ```
 {{< admonition type="info" open=true >}}
-Sending files back to your local machine while using `ssh` to work on a remote machine is not usually possible. The internet just doesn't work that way! A valid remote machine is "known" to the internet (has a public IP address that can be looked up), and its communication channels are set to allow incoming and outgoing transfers. In contrast, your own private machine, typically, is not open for other computers to directly connect to it - so trying to `scp` back to your own machine won't work, as the internet has no idea what or where your own computer is!
+If you are already `ssh`ed into another computer, you might think you can `scp` a file from there, back to your own computer. However, the internet just doesn't work that way! A valid remote machine is "known" to the internet (has a public IP address that can be looked up), and its communication channels are set to allow incoming and outgoing transfers. In contrast, your own private machine, typically, is not open for other computers to directly connect to it - trying to `scp` back to your own machine won't work, as the internet has no idea what or where your own computer is!
 
 So, if your terminal is tied up with an `ssh` session but you want the data back on your own computer, you will have to open another terminal and "request" the files using `scp`, as above.
 {{< /admonition >}}
