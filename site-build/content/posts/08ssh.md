@@ -37,7 +37,7 @@ Note that when you are not on University of Bristol campus or premises, you will
 
 ### Using the command line, but on a remote machine
 
-To successfully connect to another machine using `ssh`, the machine needs to know who you are: you will need a username and a password (although other authorisation methods exist, which we will not cover here). The syntax is the command `ssh`, followed by your username and the hostname (just like you see in a prompt), for example
+To successfully connect to another machine using `ssh`, that machine needs to know who you are: you will need a username and a password (although other authorisation methods exist, which we will not cover here). The syntax is the command `ssh`, followed by your username and the hostname (just like you see in a prompt), for example
 ```shell
 ssh yt29876@bc4login.acrc.bris.ac.uk
 ```
