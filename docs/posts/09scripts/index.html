@@ -100,9 +100,9 @@ A &ldquo;script&rdquo; is a file of instructions that can be directly read and r
 <p>So far, we have been running things directly on the command line, &ldquo;interactively&rdquo;. However, you might want to keep your commands in a file, and be able to run, share, modify, or use files as templates. This is the gateway to coding - and is great practice for developing your reproducible work, for communicating your methods with others, and for archiving your work.</p>
 <p>A &ldquo;script&rdquo; is a file of instructions that can be directly read and run by a program. For example, a file of Python code is a script, since it does not need to be compiled into binary - this is done by the Python interpreter, working as it goes along. In our case, we are going to make a script, but the language will be shell (all of the commands we have been using so far are shell commands).</p>
 <p>Let&rsquo;s create a very simple script - open <code>nano</code>, creating a file called &ldquo;my-first-script.sh&rdquo; (or anything you like!) and include two lines</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ls -l *part*
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;That is all of the files with \&#34;part\&#34; in that I could find here.&#34;</span>
-</span></span></code></pre></div><div class="details admonition info open">
+<pre tabindex="0"><code>ls -l *part*
+echo &#34;That is all of the files with \&#34;part\&#34; in that I could find here.&#34;
+</code></pre><div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
@@ -115,8 +115,8 @@ A &ldquo;script&rdquo; is a file of instructions that can be directly read and r
         </div>
     </div>
 <p>Save the file and exit <code>nano</code>. Now, we are going to run this file, in the folder <code>some_plays</code>. To do this, we are going to ask the program <code>bash</code> (&ldquo;Bourne Again shell&rdquo;, a widely-used shell program) to run it, with</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">bash my-first-script.sh
-</span></span></code></pre></div><h3 id="exercise">Exercise</h3>
+<pre tabindex="0"><code>bash my-first-script.sh
+</code></pre><h3 id="exercise">Exercise</h3>
 <p>Let&rsquo;s use all of the skills we have learned today to build a script to complete a task. Be in the folder <code>some_plays</code>. Use <code>nano</code> to start a new, empty file. Create a script that will:</p>
 <div class="details admonition question open">
         <div class="details-summary admonition-title">
