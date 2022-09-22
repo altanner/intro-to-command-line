@@ -1,6 +1,6 @@
-### University of Bristol ∙ Research Software Engineering
+### University of Bristol ∙ Research Computing Training
 
-Welcome to this workshop on the command line interface!
+Welcome to our pages on the command line interface! These can be followed in your own time, but also guide our training workshops.
 
 Understanding the command line is an important foundation for many computational skills. Learning to program, how to use high-performance computers, and how to share your code with collaborators all require at least some knowledge of the command line. In this session, we will guide you through using the command line, build your confidence, and understand what we are doing, step by step!
 
