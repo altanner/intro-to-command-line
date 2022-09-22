@@ -104,12 +104,12 @@ find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ."/>
 <p>We can use the program <code>find</code> as our search command, but it has some strange syntax&hellip; if you are a little confused, you are not alone! The syntax is</p>
 <pre tabindex="0"><code>find [where to look] [what type of file] [&#34;the match you are looking for, in quotes&#34;]
 </code></pre><p>Let&rsquo;s go back to your folder <code>command-line-files</code>, and try each of these commands.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">find . -iname <span class="s2">&#34;data1&#34;</span>
-</span></span><span class="line"><span class="cl">find . -iname <span class="s2">&#34;data*&#34;</span>
-</span></span><span class="line"><span class="cl">find . -iname <span class="s2">&#34;*txt&#34;</span>
-</span></span><span class="line"><span class="cl">find . -iname <span class="s2">&#34;*a*&#34;</span>
-</span></span><span class="line"><span class="cl">find . -iname <span class="s2">&#34;parakeet&#34;</span>
-</span></span></code></pre></div><p>Here we are using <code>.</code> (the current location) as the starting point, and <code>find</code> will look in all the containing folders below that location. To search a whole file system, we could go <code>find / -iname &quot;my_file&quot;</code>, but just like doing this in a GUI, it is very slow. <code>find</code> will also, unhelpfully, tell you all the folders you do not have access to.</p>
+<pre tabindex="0"><code>find . -iname &#34;data1&#34;
+find . -iname &#34;data*&#34;
+find . -iname &#34;*txt&#34;
+find . -iname &#34;*a*&#34;
+find . -iname &#34;parakeet&#34;
+</code></pre><p>Here we are using <code>.</code> (the current location) as the starting point, and <code>find</code> will look in all the containing folders below that location. To search a whole file system, we could go <code>find / -iname &quot;my_file&quot;</code>, but just like doing this in a GUI, it is very slow. <code>find</code> will also, unhelpfully, tell you all the folders you do not have access to.</p>
 <p>The flag <code>-iname</code> is saying &ldquo;the file or folder has this name, case insensitive&rdquo; (you can do <code>-name</code> too, if you are sure of the case). In the name, we can have wildcards to say &ldquo;anything&rdquo;. (More on wildcards later.) Notice the last query, for <code>&quot;parakeet&quot;</code>, does not find anything, but the command line doesn&rsquo;t tell you that. It just finishes and gives you your prompt back. This is standard for the command line - unless you get an error, your command did run correctly - sometime with no output at all!</p>
 <div class="details admonition info open">
         <div class="details-summary admonition-title">
@@ -148,15 +148,15 @@ find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ."/>
     </div>
 <h3 id="exercise">Exercise</h3>
 <p><code>grep</code> can take many useful flags. Try each of these commands with flags, and work out what they do:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">grep faith king-lear.txt
-</span></span><span class="line"><span class="cl">grep Faith king-lear.txt
-</span></span><span class="line"><span class="cl">grep -i faith king-lear.txt
-</span></span><span class="line"><span class="cl">grep -n faith king-lear.txt
-</span></span><span class="line"><span class="cl">grep -c faith king-lear.txt
-</span></span><span class="line"><span class="cl">grep -c Faith king-lear.txt
-</span></span><span class="line"><span class="cl">grep -ci faith king-lear.txt
-</span></span><span class="line"><span class="cl">grep faith king-lear.txt julius-caesar.txt
-</span></span></code></pre></div><div class="details admonition info open">
+<pre tabindex="0"><code>grep faith king-lear.txt
+grep Faith king-lear.txt
+grep -i faith king-lear.txt
+grep -n faith king-lear.txt
+grep -c faith king-lear.txt
+grep -c Faith king-lear.txt
+grep -ci faith king-lear.txt
+grep faith king-lear.txt julius-caesar.txt
+</code></pre><div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
@@ -176,15 +176,15 @@ find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ."/>
     </div>
 <h3 id="recursive-searching">Recursive searching</h3>
 <p>In computer speak, &ldquo;recursive&rdquo; means &ldquo;repeat this action for everything in the folder&rdquo;. So, let&rsquo;s search multiple files. We can do this in a couple of way. First, let&rsquo;s move out of the folder <code>some_plays</code>, back one level with <code>cd ..</code>. From here, let&rsquo;s recursively search for something inside <code>some_plays</code> with a couple of commands</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">grep -r sparrow some_plays
-</span></span><span class="line"><span class="cl">grep -rc sparrow some_plays
-</span></span></code></pre></div><p>Often, when referring to the file we want to search (or apply any command to), we can use <em>wildcards</em> to specify files with similarities in name. Move back into the folder called <code>some_plays</code>, and use this command</p>
+<pre tabindex="0"><code>grep -r sparrow some_plays
+grep -rc sparrow some_plays
+</code></pre><p>Often, when referring to the file we want to search (or apply any command to), we can use <em>wildcards</em> to specify files with similarities in name. Move back into the folder called <code>some_plays</code>, and use this command</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">grep sparrow *
 </span></span></code></pre></div><p>Here, <code>*</code> means &ldquo;every file and folder in this location&rdquo;. We could also specify just part of the filename - try these commands:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">grep sparrow t*
-</span></span><span class="line"><span class="cl">grep sparrow the*
-</span></span><span class="line"><span class="cl">grep dog *night*
-</span></span></code></pre></div><p>We won&rsquo;t go into it here, but <code>grep</code> can search in very sophisticated ways not possible with <code>ctrl-f</code>, for example finding ambiguous spellings, returning matches a certain number of lines from the actual match, or being able to look ahead or behind to conditionally match. If you are wondering what the command line version of &ldquo;find and replace&rdquo; is, look up a command called <code>sed</code> (&ldquo;string editor&rdquo;) - this command is beyond the scope of this course, but is a commonly-used command for automating modification to files.</p>
+<pre tabindex="0"><code>grep sparrow t*
+grep sparrow the*
+grep dog *night*
+</code></pre><p>We won&rsquo;t go into it here, but <code>grep</code> can search in very sophisticated ways not possible with <code>ctrl-f</code>, for example finding ambiguous spellings, returning matches a certain number of lines from the actual match, or being able to look ahead or behind to conditionally match. If you are wondering what the command line version of &ldquo;find and replace&rdquo; is, look up a command called <code>sed</code> (&ldquo;string editor&rdquo;) - this command is beyond the scope of this course, but is a commonly-used command for automating modification to files.</p>
 <p>To use wildcards in the search query itself, we have to use regular expressions (&ldquo;regex&rdquo;). For example searching for variations of spelling, or when a word is near another match, or not showing the match but the word after the match, or the line after the match.</p>
 <div class="details admonition warning open">
         <div class="details-summary admonition-title">
@@ -195,10 +195,10 @@ find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ."/>
         </div>
     </div>
 <p>Have a bit more of practice with wildcards, by going back a folder (you should be in <code>command-line-files</code>) - what do you get if you run these commands?</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ls *
-</span></span><span class="line"><span class="cl">tail -3 some_plays/*
-</span></span><span class="line"><span class="cl">head -10 some_plays/king*
-</span></span></code></pre></div><div class="details admonition info open">
+<pre tabindex="0"><code>ls *
+tail -3 some_plays/*
+head -10 some_plays/king*
+</code></pre><div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
