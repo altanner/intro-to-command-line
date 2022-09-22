@@ -31,13 +31,13 @@ head -3 plants.txt
 
 But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called "redirecting", and is done with the character `>`
 
-```shell
+```
 head -3 plants.txt > first_three_plants.txt
 ```
 
 The terminal will not give you any output, but what is inside the file `first_three_plants.txt`? Let's expand on this by using wildcards. Try this command, and examine the contents of the output file:
 
-```shell
+```
 head -3 * > my_new_file
 ```
 
@@ -47,7 +47,7 @@ Be careful! Redirects will **overwrite** the target file!! If `my_new_file` alre
 
 Using `>` will create a new file, or overwrite a file if it already exists. We might want to append instead, and we do that with a double arrow, `>>`, for example
 
-```shell
+```
 tail -10 romeo-and-juliet.txt >> another_file
 tail -10 king-lear.txt >> another_file
 ```
@@ -68,7 +68,7 @@ Much of your knowledge about commands will of course come from the internet, but
 ### `man` pages
 `man` is short for "manual". When you run this command, for example
 
-```shell
+```
 man ls
 ```
 
@@ -85,7 +85,7 @@ You will get description and instructions on what the command does, how to use i
 - Use `wc` to count the characters in A Midsummer Night's Dream.
 - Use `wc` to count the number of lines in all of the plays in this folder.
 - Use `man` to look up the following commands. And give the commands themselves a try
-```shell
+```
 history
 man
 file
