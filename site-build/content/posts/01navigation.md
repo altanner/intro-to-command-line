@@ -2,7 +2,7 @@
 title: "‣ File system navigation"
 subtitle: "Understanding where you are, and how to move around"
 
-date: 2022-01-02T00:00:00+01:00
+date: 2022-09-11T00:00:00+01:00
 
 fontawesome: true
 linkToMarkdown: true
