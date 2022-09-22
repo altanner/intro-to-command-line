@@ -27,7 +27,7 @@ In the last section, we counted the number of lines in our folder of Shakespeare
 
 We can use the output of `wc` as the input for `sort`. Try these commands in the folder `some_plays`
 
-```shell
+```
 wc -l * | sort
 ```
 
@@ -43,7 +43,7 @@ Here the _output_ of the command `wc -l *` is being *piped* into the command `so
 
 Combining redirects and pipes can be very useful. here is a simple example where we pipe one command to another, then send the output of the next command into a file:
 
-```shell
+```
 wc -l * | sort -r > ordered_by_line
 ```
 
