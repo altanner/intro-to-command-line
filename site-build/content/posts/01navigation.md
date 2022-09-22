@@ -25,7 +25,7 @@ comment:
 
 Let's run our first command:
 
-```shell
+```
 pwd
 ```
 
@@ -50,7 +50,7 @@ There are five abbreviations for locations that you might come across
 
 Now that we know where we are, let's see what is here by running a program called `ls` ("list" or "ell ess"). `ls` shows you the contents of your current folder, much like looking at the file manager window in a GUI (Finder in MacOS or Explorer on Windows):
 
-```shell
+```
 ls
 ```
 
@@ -66,7 +66,7 @@ Yours will be different. Each of these things are the items (files and folders) 
 
 Let's create a folder where we can learn how to move around.
 
-```shell
+```
 mkdir intro-to-command-line
 ```
 
@@ -78,7 +78,7 @@ This command is asking "make a new folder here, called intro-to-command-line". Y
 
 We can then move into the folder we have made with
 
-```shell
+```
 cd intro-to-command-line
 ```
 
@@ -116,7 +116,7 @@ You might find mysterious folders called things like `opt`, `etc`, `tmp`. Don't 
 Move back to your folder `intro-to-command-line`. From this point forward, we will be working with the [course materials](https://github.com/alleetanner/intro-to-command-line/raw/master/command-line-files.zip) (this is the same file as linked on the home page of this course). Download this file, and using your GUI, move this file into the folder we made in the last section. This might be in your home folder, or your desktop - it doesn't matter where, as long as it makes sense to you! Then unzip the file - double click it, or right-click and "open" it. You will then have a new folder called `command_line_files`.
 
 If you are working on Windows, run this command (since you are using GitBash, we can directly clone the files)
-```shell
+```
 git clone https://github.com/alleetanner/intro-to-command-line.git
 ```
 
