@@ -104,8 +104,8 @@ Info  There are five abbreviations for locations that you might come across"/>
 </nav></div>
             </div><div class="content" id="content"><h3 id="where-am-i">Where am I?</h3>
 <p>Let&rsquo;s run our first command:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">pwd</span>
-</span></span></code></pre></div><p>With <code>pwd</code> we are asking &ldquo;print my current working directory / where am I?&rdquo; You will then get some <em>output</em> to the terminal window, something like</p>
+<pre tabindex="0"><code>pwd
+</code></pre><p>With <code>pwd</code> we are asking &ldquo;print my current working directory / where am I?&rdquo; You will then get some <em>output</em> to the terminal window, something like</p>
 <pre tabindex="0"><code>/home/at9362
 </code></pre><p>This is your current location, here shown as a &ldquo;path&rdquo; - what folder you are in, starting from the &ldquo;root&rdquo; folder that contains the whole file system.</p>
 <div class="details admonition info open">
@@ -126,14 +126,14 @@ Info  There are five abbreviations for locations that you might come across"/>
     </div>
 <h3 id="what-is-in-this-folder">What is in this folder?</h3>
 <p>Now that we know where we are, let&rsquo;s see what is here by running a program called <code>ls</code> (&ldquo;list&rdquo; or &ldquo;ell ess&rdquo;). <code>ls</code> shows you the contents of your current folder, much like looking at the file manager window in a GUI (Finder in MacOS or Explorer on Windows):</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ls
-</span></span></code></pre></div><p>For me, I get this output, a list of what is here.</p>
+<pre tabindex="0"><code>ls
+</code></pre><p>For me, I get this output, a list of what is here.</p>
 <pre tabindex="0"><code>logfile  records_january  credentials.txt  creds  data_depot  git
 </code></pre><p>Yours will be different. Each of these things are the items (files and folders) in your current working directory. For most terminals, items in white are files, and items in blue are folders. The first thing we are going to do is make a new folder, where we will be doing our work. We will use the command <code>mkdir</code> (&ldquo;make directory&rdquo;), and this command needs an <em>argument</em> (gramatically, an &ldquo;object&rdquo;):</p>
 <h3 id="making-our-first-folder">Making our first folder.</h3>
 <p>Let&rsquo;s create a folder where we can learn how to move around.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir intro-to-command-line
-</span></span></code></pre></div><p>This command is asking &ldquo;make a new folder here, called intro-to-command-line&rdquo;. You&rsquo;ll be getting used to the names of commands being abbreviations! Run <code>ls</code> again, and see what has changed. Hopefully you will see a new folder, appropriately named.</p>
+<pre tabindex="0"><code>mkdir intro-to-command-line
+</code></pre><p>This command is asking &ldquo;make a new folder here, called intro-to-command-line&rdquo;. You&rsquo;ll be getting used to the names of commands being abbreviations! Run <code>ls</code> again, and see what has changed. Hopefully you will see a new folder, appropriately named.</p>
 <div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -143,8 +143,8 @@ Info  There are five abbreviations for locations that you might come across"/>
         </div>
     </div>
 <p>We can then move into the folder we have made with</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> intro-to-command-line
-</span></span></code></pre></div><p>Here we are asking to &ldquo;change my working folder to intro-to-command-line&rdquo;. This is the same as double-clicking a folder in your GUI, to move into that folder. Try doing <code>ls</code> and <code>pwd</code> here, to see how the output changes. We can go back to your home folder by going</p>
+<pre tabindex="0"><code>cd intro-to-command-line
+</code></pre><p>Here we are asking to &ldquo;change my working folder to intro-to-command-line&rdquo;. This is the same as double-clicking a folder in your GUI, to move into that folder. Try doing <code>ls</code> and <code>pwd</code> here, to see how the output changes. We can go back to your home folder by going</p>
 <pre tabindex="0"><code>cd ..
 </code></pre><p>This means &ldquo;change folder to the one above this one&rdquo;. Going <code>cd ..</code> will always move you &ldquo;backwards&rdquo; in your folders, unless you are in the root folder <code>/</code>. If you are ever lost, remember you can just go <code>cd</code> to go back to your home folder.</p>
 <div class="details admonition info open">
@@ -186,8 +186,8 @@ Info  There are five abbreviations for locations that you might come across"/>
     </div>
 <p>Move back to your folder <code>intro-to-command-line</code>. From this point forward, we will be working with the <a href="https://github.com/alleetanner/intro-to-command-line/raw/master/command-line-files.zip" target="_blank" rel="noopener noreffer">course materials</a> (this is the same file as linked on the home page of this course). Download this file, and using your GUI, move this file into the folder we made in the last section. This might be in your home folder, or your desktop - it doesn&rsquo;t matter where, as long as it makes sense to you! Then unzip the file - double click it, or right-click and &ldquo;open&rdquo; it. You will then have a new folder called <code>command_line_files</code>.</p>
 <p>If you are working on Windows, run this command (since you are using GitBash, we can directly clone the files)</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git clone https://github.com/alleetanner/intro-to-command-line.git
-</span></span></code></pre></div><p>Using <code>cd</code>, move into the folder called <code>sandpit</code>. From here, look around using <code>ls</code>, move around using <code>cd</code>, and see what is in each folder.</p>
+<pre tabindex="0"><code>git clone https://github.com/alleetanner/intro-to-command-line.git
+</code></pre><p>Using <code>cd</code>, move into the folder called <code>sandpit</code>. From here, look around using <code>ls</code>, move around using <code>cd</code>, and see what is in each folder.</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
