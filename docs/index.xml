@@ -3,9 +3,18 @@
         <title>Introduction to the Command Line</title>
         <link>https://altanner.github.io/intro-to-command-line/</link>
         <description>Introduction to the Command Line</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 14 Sep 2022 00:00:00 &#43;0100</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 15 Sep 2022 00:00:00 &#43;0100</lastBuildDate>
             <atom:link href="https://altanner.github.io/intro-to-command-line/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>‣ Searching</title>
+    <link>https://altanner.github.io/intro-to-command-line/posts/05searching/</link>
+    <pubDate>Thu, 15 Sep 2022 00:00:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://altanner.github.io/intro-to-command-line/posts/05searching/</guid>
+    <description><![CDATA[Searching for files We can use the program find as our search command, but it has some strange syntax&hellip; if you are a little confused, you are not alone! The syntax is
+find [where to look] [what type of file] [&#34;the match you are looking for, in quotes&#34;] Let&rsquo;s go back to your folder command-line-files, and try each of these commands.
+find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find .]]></description>
+</item><item>
     <title>‣ Editing files</title>
     <link>https://altanner.github.io/intro-to-command-line/posts/04editing_files/</link>
     <pubDate>Wed, 14 Sep 2022 00:00:00 &#43;0100</pubDate>
@@ -80,14 +89,5 @@ In research, we often work on remote machines (&ldquo;computing clusters&rdquo;,
     <description><![CDATA[Sending outputs to files Move into the folder example_files. We can see, for example, the first three lines of plants.txt with the command
 head -3 plants.txt But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called &ldquo;redirecting&rdquo;, and is done with the character &gt;
 head -3 plants.txt &gt; first_three_plants.txt The terminal will not give you any output, but what is inside the file first_three_plants.]]></description>
-</item><item>
-    <title>‣ Searching</title>
-    <link>https://altanner.github.io/intro-to-command-line/posts/05searching/</link>
-    <pubDate>Thu, 06 Jan 2022 00:00:00 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://altanner.github.io/intro-to-command-line/posts/05searching/</guid>
-    <description><![CDATA[Searching for files We can use the program find as our search command, but it has some strange syntax&hellip; if you are a little confused, you are not alone! The syntax is
-find [where to look] [what type of file] [&#34;the match you are looking for, in quotes&#34;] Let&rsquo;s go back to your folder command-line-files, and try each of these commands.
-find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find .]]></description>
 </item></channel>
 </rss>
