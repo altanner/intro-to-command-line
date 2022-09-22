@@ -28,7 +28,7 @@ So far, we have been running things directly on the command line, "interactively
 A "script" is a file of instructions that can be directly read and run by a program. For example, a file of Python code is a script, since it does not need to be compiled into binary - this is done by the Python interpreter, working as it goes along. In our case, we are going to make a script, but the language will be shell (all of the commands we have been using so far are shell commands).
 
 Let's create a very simple script - open `nano`, creating a file called "my-first-script.sh" (or anything you like!) and include two lines
-```shell
+```
 ls -l *part*
 echo "That is all of the files with \"part\" in that I could find here."
 ```
@@ -38,7 +38,7 @@ echo "That is all of the files with \"part\" in that I could find here."
 {{< /admonition >}}
 
 Save the file and exit `nano`. Now, we are going to run this file, in the folder `some_plays`. To do this, we are going to ask the program `bash` ("Bourne Again shell", a widely-used shell program) to run it, with
-```shell
+```
 bash my-first-script.sh
 ```
 
