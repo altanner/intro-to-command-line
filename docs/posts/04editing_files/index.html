@@ -29,7 +29,7 @@ Info  Here are some common editors you might come across, or choose to learn:"/>
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/04editing_files\/"
-        },"genre": "posts","wordcount":  455 ,
+        },"genre": "posts","wordcount":  666 ,
         "url": "https:\/\/altanner.github.io\/intro-to-command-line\/posts\/04editing_files\/","datePublished": "2022-01-05T00:00:00+01:00","dateModified": "2022-01-05T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -79,8 +79,8 @@ Info  Here are some common editors you might come across, or choose to learn:"/>
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">‣ Editing files</h1><h2 class="single-subtitle">How to create and modify files</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;455 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;666 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -138,13 +138,27 @@ Info  Here are some common editors you might come across, or choose to learn:"/>
 <p>Have a play. Exit back to the command line. Now we are going to make a new file. You can call it whatever you like - as long as that file name doesn&rsquo;t already exist here, it will make an empty file.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">nano my_new_file
 </span></span></code></pre></div><p>Note that in Linux systems and MacOS, the file extensions (for example <code>.txt</code> or <code>.mp3</code> or <code>.pdf</code>) are entirely optional. You can even have multiple extensions, like <code>file.txt.new.extension</code>, which to Linux system is all just the name. In Windows, file extensions are important! They are also useful for humans too, so where it is appropriate, best to stick to convention. Calling an <code>.mp3</code> file a <code>.docx</code> file is valid, but highly confusing :)</p>
-<p>If you try to leave <code>nano</code> (<code>ctrl-x</code>) when there are unsaved changes, it will ask to <code>save modified buffer?</code>. So, save or not with <code>y</code> or <code>n</code>, and let&rsquo;s look at examining files back on the command line.</p>
+<p>If you try to leave <code>nano</code> (<code>ctrl-x</code>) when there are unsaved changes, it will ask to <code>save modified buffer?</code>. So, save or not with <code>y</code> or <code>n</code>, and let&rsquo;s look at examining files back on the command line. (A &ldquo;buffer&rdquo; is information that exists on your screen, or in your RAM, but does not exist in storage memory. In other words, stuff you have not saved yet.)</p>
 <div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">&ldquo;Buffer&rdquo;, in computing speak, is information that exists on your screen, or in your RAM, but does not exist in storage memory. In other words, stuff you have not saved yet.</div>
+            <div class="admonition-content"><p>Don&rsquo;t be afraid of error messages :)</p>
+<p>When you get things wrong, the command line will tell you, but messages can seem hard to understand. Most commonly, the message will tell you what went wrong, or how to use a command. For example, if I try to copy a file which does not exist:
+<code>cp file99999 file3</code>
+the computer responds with
+<code>cp: file99999: No such file or directory</code>
+Think of this as a speech bubble, with <code>cp:</code> being who is speaking, here saying that a file doesn&rsquo;t exist, at least not in this folder. Here is another example
+<code>lf</code>
+and the shell itself (<code>zsh</code> in this case) tells you it doesn&rsquo;t know what <code>lf</code> means:
+<code>zsh: command not found: lf</code>
+Some commands will give you very brief instructions on how it is used as an error message. For example, if we ask <code>mv</code> to run, but not actually move anything,
+<code>mv</code>
+we get a couple of <code>usage</code> instructions:</p>
+<pre tabindex="0"><code class="language-usage:" data-lang="usage:">      mv [-f | -i | -n] [-v] source ... directory```
+The items in the square brackets are flags that `mv` can take, and `source target` tells you the order of arguments. The `...` means that you can copy multiple items to a single target location (typically, when you `mv` multiple items into the same folder).
+</code></pre></div>
         </div>
     </div>
 </div><div class="post-footer" id="post-footer">
