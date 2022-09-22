@@ -3,9 +3,33 @@
         <title>Introduction to the Command Line</title>
         <link>https://altanner.github.io/intro-to-command-line/</link>
         <description>Introduction to the Command Line</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 15 Sep 2022 00:00:00 &#43;0100</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 18 Sep 2022 00:00:00 &#43;0100</lastBuildDate>
             <atom:link href="https://altanner.github.io/intro-to-command-line/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>‣ Working with remote computers</title>
+    <link>https://altanner.github.io/intro-to-command-line/posts/08ssh/</link>
+    <pubDate>Sun, 18 Sep 2022 00:00:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://altanner.github.io/intro-to-command-line/posts/08ssh/</guid>
+    <description><![CDATA[Working remotely The original super-power of the command line is that it allows us to connect to other machines. While today we have remote-desktops and screen-shares to see and work with other computer&rsquo;s GUIs, the command line has been doing this since the 1960s!
+In research, we often work on remote machines (&ldquo;computing clusters&rdquo;, &ldquo;HPC&rdquo;, &ldquo;supercomputers&rdquo;, or even just &ldquo;servers&rdquo;), which we need to log in to. Once we are logged in, the terminal will behave as if we are sitting at that machine, which might be on the other side of the world.]]></description>
+</item><item>
+    <title>‣ Pipes</title>
+    <link>https://altanner.github.io/intro-to-command-line/posts/07pipes/</link>
+    <pubDate>Sat, 17 Sep 2022 00:00:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://altanner.github.io/intro-to-command-line/posts/07pipes/</guid>
+    <description><![CDATA[Pipes In the last section, we counted the number of lines in our folder of Shakespeare plays. But what if we wanted these in order? We could do this by using another command. This is where we would use a pipe. (The pipe symbol is | - to the left of the enter key on MacOS, and to the left of the number row on Windows.) A pipe sends the output of one command as the input for another command, linking them together, like in plumbing.]]></description>
+</item><item>
+    <title>‣ Redirection</title>
+    <link>https://altanner.github.io/intro-to-command-line/posts/06redirects/</link>
+    <pubDate>Fri, 16 Sep 2022 00:00:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://altanner.github.io/intro-to-command-line/posts/06redirects/</guid>
+    <description><![CDATA[Sending outputs to files Move into the folder example_files. We can see, for example, the first three lines of plants.txt with the command
+head -3 plants.txt But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called &ldquo;redirecting&rdquo;, and is done with the character &gt;
+head -3 plants.txt &gt; first_three_plants.txt The terminal will not give you any output, but what is inside the file first_three_plants.]]></description>
+</item><item>
     <title>‣ Searching</title>
     <link>https://altanner.github.io/intro-to-command-line/posts/05searching/</link>
     <pubDate>Thu, 15 Sep 2022 00:00:00 &#43;0100</pubDate>
@@ -65,29 +89,5 @@ Info  There are five abbreviations for locations that you might come across]]></
     <guid>https://altanner.github.io/intro-to-command-line/posts/09scripts/</guid>
     <description><![CDATA[Scripts So far, we have been running things directly on the command line, &ldquo;interactively&rdquo;. However, you might want to keep your commands in a file, and be able to run, share, modify, or use files as templates. This is the gateway to coding - and is great practice for developing your reproducible work, for communicating your methods with others, and for archiving your work.
 A &ldquo;script&rdquo; is a file of instructions that can be directly read and run by a program.]]></description>
-</item><item>
-    <title>‣ Working with remote computers</title>
-    <link>https://altanner.github.io/intro-to-command-line/posts/08ssh/</link>
-    <pubDate>Sun, 09 Jan 2022 00:00:00 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://altanner.github.io/intro-to-command-line/posts/08ssh/</guid>
-    <description><![CDATA[Working remotely The original super-power of the command line is that it allows us to connect to other machines. While today we have remote-desktops and screen-shares to see and work with other computer&rsquo;s GUIs, the command line has been doing this since the 1960s!
-In research, we often work on remote machines (&ldquo;computing clusters&rdquo;, &ldquo;HPC&rdquo;, &ldquo;supercomputers&rdquo;, or even just &ldquo;servers&rdquo;), which we need to log in to. Once we are logged in, the terminal will behave as if we are sitting at that machine, which might be on the other side of the world.]]></description>
-</item><item>
-    <title>‣ Pipes</title>
-    <link>https://altanner.github.io/intro-to-command-line/posts/07pipes/</link>
-    <pubDate>Sat, 08 Jan 2022 00:00:00 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://altanner.github.io/intro-to-command-line/posts/07pipes/</guid>
-    <description><![CDATA[Pipes In the last section, we counted the number of lines in our folder of Shakespeare plays. But what if we wanted these in order? We could do this by using another command. This is where we would use a pipe. (The pipe symbol is | - to the left of the enter key on MacOS, and to the left of the number row on Windows.) A pipe sends the output of one command as the input for another command, linking them together, like in plumbing.]]></description>
-</item><item>
-    <title>‣ Redirection</title>
-    <link>https://altanner.github.io/intro-to-command-line/posts/06redirects/</link>
-    <pubDate>Fri, 07 Jan 2022 00:00:00 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://altanner.github.io/intro-to-command-line/posts/06redirects/</guid>
-    <description><![CDATA[Sending outputs to files Move into the folder example_files. We can see, for example, the first three lines of plants.txt with the command
-head -3 plants.txt But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called &ldquo;redirecting&rdquo;, and is done with the character &gt;
-head -3 plants.txt &gt; first_three_plants.txt The terminal will not give you any output, but what is inside the file first_three_plants.]]></description>
 </item></channel>
 </rss>
