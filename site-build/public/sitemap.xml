@@ -2,9 +2,10 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://altanner.github.io/intro-to-command-line/</loc><lastmod>2022-09-18T00:00:00&#43;01:00</lastmod><priority>1</priority></url><url>
+            <loc>https://altanner.github.io/intro-to-command-line/</loc><lastmod>2022-09-19T00:00:00&#43;01:00</lastmod><priority>1</priority></url><url>
+            <loc>https://altanner.github.io/intro-to-command-line/posts/09scripts/</loc><lastmod>2022-09-19T00:00:00&#43;01:00</lastmod></url><url>
+            <loc>https://altanner.github.io/intro-to-command-line/posts/</loc><lastmod>2022-09-19T00:00:00&#43;01:00</lastmod></url><url>
             <loc>https://altanner.github.io/intro-to-command-line/posts/08ssh/</loc><lastmod>2022-09-18T00:00:00&#43;01:00</lastmod></url><url>
-            <loc>https://altanner.github.io/intro-to-command-line/posts/</loc><lastmod>2022-09-18T00:00:00&#43;01:00</lastmod></url><url>
             <loc>https://altanner.github.io/intro-to-command-line/posts/07pipes/</loc><lastmod>2022-09-17T00:00:00&#43;01:00</lastmod></url><url>
             <loc>https://altanner.github.io/intro-to-command-line/posts/06redirects/</loc><lastmod>2022-09-16T00:00:00&#43;01:00</lastmod></url><url>
             <loc>https://altanner.github.io/intro-to-command-line/posts/05searching/</loc><lastmod>2022-09-15T00:00:00&#43;01:00</lastmod></url><url>
@@ -13,7 +14,6 @@
             <loc>https://altanner.github.io/intro-to-command-line/posts/02manipulation/</loc><lastmod>2022-09-12T00:00:00&#43;01:00</lastmod></url><url>
             <loc>https://altanner.github.io/intro-to-command-line/posts/01navigation/</loc><lastmod>2022-09-11T00:00:00&#43;01:00</lastmod></url><url>
             <loc>https://altanner.github.io/intro-to-command-line/posts/00intro/</loc><lastmod>2022-09-10T00:00:00&#43;01:00</lastmod></url><url>
-            <loc>https://altanner.github.io/intro-to-command-line/posts/09scripts/</loc><lastmod>2022-01-09T00:00:00&#43;01:00</lastmod></url><url>
             <loc>https://altanner.github.io/intro-to-command-line/about/</loc><priority>0</priority></url><url>
             <loc>https://altanner.github.io/intro-to-command-line/categories/</loc></url><url>
             <loc>https://altanner.github.io/intro-to-command-line/tags/</loc></url></urlset>
