@@ -30,8 +30,9 @@ To improve your skills in backing up, version control, and minimising risk in co
 {{< admonition type="info" title="Course materials" open=true >}}
 From this point forward, you will need to [download the course materials](https://github.com/altanner/intro-to-command-line/raw/master/command-line-files.zip); move this to a suitable folder, and unzip it.
 - If you are using GitBash on Windows, copy and run this command
-```shell
+```
 git clone https://github.com/altanner/intro-to-command-line.git
+```
 {{< /admonition >}}
 
 In our terminal, use the command line to move into the course materials folder, `command_line_files`. When you run `ls` in this folder, you should see the list of contents looking like
@@ -53,11 +54,9 @@ Personally, I don't find that clear to look at, so let's use our first *flag*, r
 
 ### Copying
 Let's move into the folder called `sandbox` and play with some files. Firstly, let's copy a file:
-
-```shell
+```
 cp data1 data3
 ```
-
 Here we are saying "copy the file called data1 to a new file called data3". We now have two identical copies of the same file, only different by name.
 
 {{< admonition type="warning" open=true >}}
@@ -67,23 +66,18 @@ Here we are saying "copy the file called data1 to a new file called data3". We n
 
 ### Deleting
 Now let's try to delete, or "remove", the file we just made:
-
-```shell
+```
 rm data3
 ```
-
 Here we said "remove the file called data3".
 {{< admonition type="warning" open=true >}}
 - `rm`, "remove" is the same as delete. But **without a recycle bin, undo, back button, or any other safety-nets.**
 - `rm`, `cp` and `mv` commands all have the potential to cause permanent data loss!
 {{< /admonition >}}
-
 Now let's try copying, moving and removing folders. There are some folders in the sandbox to play with. Have a go at using `cp` and `rm` on there, and notice what it will and will not let you do. For folders that are not empty, we will need to use another *flag*:
-
-```shell
+```
 cp -r folder_with_files_inside folder_copy
 ```
-
 Here we asked the computer to "copy, recursively, this folder to that folder". Empty folders can be copied, moved and removed, but you will need to use `-r` if there are items insides. `-r` is a common flag which we will use again later.
 
 {{< admonition type="info" open=true >}}
@@ -98,10 +92,9 @@ Can you `cp` a file to the folder *containing* the one you are in?
 
 ### Moving
 Finally, let's look at moving files.
-```shell
+```
 mv data1 data4
 ```
-
 Which means, "move the file called to data1 to a file called data4". Move is essentially "rename" (although it is doing exactly the same as moving items in your graphical interface).
 
 {{< admonition type="warning" open=true >}}
