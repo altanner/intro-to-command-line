@@ -2,7 +2,7 @@
 title: "‣ Redirection"
 subtitle: "Using command outputs to create new files"
 
-date: 2022-01-07T00:00:00+01:00
+date: 2022-09-16T00:00:00+01:00
 
 fontawesome: true
 linkToMarkdown: true
