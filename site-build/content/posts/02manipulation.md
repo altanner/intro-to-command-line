@@ -2,7 +2,7 @@
 title: "‣ Working with files"
 subtitle: "How to create, delete, rename and copy files (and folders)"
 
-date: 2022-01-03T00:00:00+01:00
+date: 2022-09-12T00:00:00+01:00
 
 fontawesome: true
 linkToMarkdown: true
