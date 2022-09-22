@@ -38,7 +38,7 @@ Here are some common editors you might come across, or choose to learn:
 ### Editing a file with `nano`
 We will learn the basics with `nano`. Run this command:
 
-```shell
+```
 nano animals.txt
 ```
 
@@ -56,7 +56,7 @@ Note that there is a basic cheatsheet along the bottom of the screen for some co
 ### Creating a new file
 Have a play. Exit back to the command line. Now we are going to make a new file. You can call it whatever you like - as long as that file name doesn't already exist here, it will make an empty file.
 
-```shell
+```
 nano my_new_file
 ```
 
@@ -68,17 +68,29 @@ If you try to leave `nano` (`ctrl-x`) when there are unsaved changes, it will as
 Don't be afraid of error messages :)
 
 When you get things wrong, the command line will tell you, but messages can seem hard to understand. Most commonly, the message will tell you what went wrong, or how to use a command. For example, if I try to copy a file which does not exist:
-```cp file99999 file3```
+```
+cp file99999 file3
+```
 the computer responds with
-```cp: file99999: No such file or directory```
+```
+cp: file99999: No such file or directory
+```
 Think of this as a speech bubble, with `cp:` being who is speaking, here saying that a file doesn't exist, at least not in this folder. Here is another example
-```lf```
+```
+lf
+```
 and the shell itself (`zsh` in this case) tells you it doesn't know what `lf` means:
-```zsh: command not found: lf```
+```
+zsh: command not found: lf
+```
 Some commands will give you very brief instructions on how it is used as an error message. For example, if we ask `mv` to run, but not actually move anything,
-```mv```
+```
+mv
+```
 we get a couple of `usage` instructions:
-```usage: mv [-f | -i | -n] [-v] source target
-      mv [-f | -i | -n] [-v] source ... directory```
+```
+usage: mv [-f | -i | -n] [-v] source target
+      mv [-f | -i | -n] [-v] source ... directory
+```
 The items in the square brackets are flags that `mv` can take, and `source target` tells you the order of arguments. The `...` means that you can copy multiple items to a single target location (typically, when you `mv` multiple items into the same folder).
 {{< /admonition >}}
