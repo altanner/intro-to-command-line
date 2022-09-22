@@ -62,8 +62,23 @@ nano my_new_file
 
 Note that in Linux systems and MacOS, the file extensions (for example `.txt` or `.mp3` or `.pdf`) are entirely optional. You can even have multiple extensions, like `file.txt.new.extension`, which to Linux system is all just the name. In Windows, file extensions are important! They are also useful for humans too, so where it is appropriate, best to stick to convention. Calling an `.mp3` file a `.docx` file is valid, but highly confusing :)
 
-If you try to leave `nano` (`ctrl-x`) when there are unsaved changes, it will ask to `save modified buffer?`. So, save or not with `y` or `n`, and let's look at examining files back on the command line.
+If you try to leave `nano` (`ctrl-x`) when there are unsaved changes, it will ask to `save modified buffer?`. So, save or not with `y` or `n`, and let's look at examining files back on the command line. (A "buffer" is information that exists on your screen, or in your RAM, but does not exist in storage memory. In other words, stuff you have not saved yet.)
 
 {{< admonition type="info" open=true >}}
-"Buffer", in computing speak, is information that exists on your screen, or in your RAM, but does not exist in storage memory. In other words, stuff you have not saved yet.
+Don't be afraid of error messages :)
+
+When you get things wrong, the command line will tell you, but messages can seem hard to understand. Most commonly, the message will tell you what went wrong, or how to use a command. For example, if I try to copy a file which does not exist:
+```cp file99999 file3```
+the computer responds with
+```cp: file99999: No such file or directory```
+Think of this as a speech bubble, with `cp:` being who is speaking, here saying that a file doesn't exist, at least not in this folder. Here is another example
+```lf```
+and the shell itself (`zsh` in this case) tells you it doesn't know what `lf` means:
+```zsh: command not found: lf```
+Some commands will give you very brief instructions on how it is used as an error message. For example, if we ask `mv` to run, but not actually move anything,
+```mv```
+we get a couple of `usage` instructions:
+```usage: mv [-f | -i | -n] [-v] source target
+      mv [-f | -i | -n] [-v] source ... directory```
+The items in the square brackets are flags that `mv` can take, and `source target` tells you the order of arguments. The `...` means that you can copy multiple items to a single target location (typically, when you `mv` multiple items into the same folder).
 {{< /admonition >}}
