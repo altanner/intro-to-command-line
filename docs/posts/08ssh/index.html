@@ -107,10 +107,10 @@ In research, we often work on remote machines (&ldquo;computing clusters&rdquo;,
 <p>Note that when you are not on University of Bristol campus or premises, you will need to use the university&rsquo;s VPN service to successfully <code>ssh</code> into computing facilities. See <a href="https://uob.sharepoint.com/sites/itservices/SitePages/vpn.aspx" target="_blank" rel="noopener noreffer">these pages</a> for more details on how to install the VPN on your computer.</p>
 <h3 id="using-the-command-line-but-on-a-remote-machine">Using the command line, but on a remote machine</h3>
 <p>To successfully connect to another machine using <code>ssh</code>, that machine needs to know who you are: you will need a username and a password (although other authorisation methods exist, which we will not cover here). The syntax is the command <code>ssh</code>, followed by your username and the hostname (just like you see in a prompt), for example</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ssh yt29876@bc4login.acrc.bris.ac.uk
-</span></span></code></pre></div><p>or, you might log in using the IP address of the remote machine</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ssh yt29876@137.222.1.10
-</span></span></code></pre></div><p>You will then be asked to enter your password - it will not display anything or display stars (*) as you type, it will just look empty. If the password is correct, you will then see a new prompt, including the name of the machine you are now logged in to, for example:</p>
+<pre tabindex="0"><code>ssh yt29876@bc4login.acrc.bris.ac.uk
+</code></pre><p>or, you might log in using the IP address of the remote machine</p>
+<pre tabindex="0"><code>ssh yt29876@137.222.1.10
+</code></pre><p>You will then be asked to enter your password - it will not display anything or display stars (*) as you type, it will just look empty. If the password is correct, you will then see a new prompt, including the name of the machine you are now logged in to, for example:</p>
 <pre tabindex="0"><code>[yt29876@bc4login3 ~]$
 </code></pre><div class="details admonition tip open">
         <div class="details-summary admonition-title">
@@ -127,8 +127,8 @@ In research, we often work on remote machines (&ldquo;computing clusters&rdquo;,
 <h3 id="copying-files-to-and-from-remote-machines-using-scp">Copying files to and from remote machines using <code>scp</code></h3>
 <p><code>scp</code> (&ldquo;secure copy&rdquo;) is just like <code>cp</code>, except it can copy files and folders to and from another computer. Just like with <code>ssh</code> above, we will need to specify what computer the file or folder is on. To do this, <code>scp</code> needs to know the address of the machine it is working with.</p>
 <p>First, let&rsquo;s copy a file <em>from</em> our local machine <em>to</em> another machine. If you have the resources from earlier in this course, try copying one of the plays to another machine. As with <code>cp</code>, the syntax is <code>cp [what to copy] [where to copy this to]</code>. Move to the appropriate folder, and try a command similar to this (you will need to substitute a real username and hostname!)</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">scp macbeth.txt yt29876@bc4login.acrc.bris.ac.uk:/user/home/yt29876
-</span></span></code></pre></div><p>Note that the destination includes a full path. Sometimes, the remote machine will understand <code>~</code> as your home folder, and missing it out completely will also work, sending the file to your home folder. The important bit is, don&rsquo;t forget the <code>:</code>, or your computer will think you want to copy the file locally, and name the file the name of the remote computer! So, if you see a file hanging around called something bizarre like <code>yt29876@bc4login.acrc.bris.ac.uk</code>, this is usually the result of a failed <code>scp</code>.</p>
+<pre tabindex="0"><code>scp macbeth.txt yt29876@bc4login.acrc.bris.ac.uk:/user/home/yt29876
+</code></pre><p>Note that the destination includes a full path. Sometimes, the remote machine will understand <code>~</code> as your home folder, and missing it out completely will also work, sending the file to your home folder. The important bit is, don&rsquo;t forget the <code>:</code>, or your computer will think you want to copy the file locally, and name the file the name of the remote computer! So, if you see a file hanging around called something bizarre like <code>yt29876@bc4login.acrc.bris.ac.uk</code>, this is usually the result of a failed <code>scp</code>.</p>
 <p>Just like with <code>cp</code>, you can copy the contents of folders with the flag <code>-r</code>. See the <code>man</code> pages for more details.</p>
 <div class="details admonition warning open">
         <div class="details-summary admonition-title">
@@ -140,8 +140,8 @@ In research, we often work on remote machines (&ldquo;computing clusters&rdquo;,
     </div>
 <p>Copying <em>from</em> the remote machine back to your local machine uses similar syntax, except you must provide the full path to the file (or folder) you want to copy. Often, you specify the local destination of the <code>scp</code> command with the abbreviation for &ldquo;here&rdquo;: <code>.</code>. Alternatively, you can provide an absolute or relative path, or a different filename as the destination.</p>
 <p>So, the above command, but to copy <em>back</em> to your own machine would be</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">scp yt29876@bc4login.acrc.bris.ac.uk:/user/home/yt29876/macbeth.txt .
-</span></span></code></pre></div><div class="details admonition info open">
+<pre tabindex="0"><code>scp yt29876@bc4login.acrc.bris.ac.uk:/user/home/yt29876/macbeth.txt .
+</code></pre><div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
