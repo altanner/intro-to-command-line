@@ -2,7 +2,7 @@
 title: "‣ Viewing the contents of files"
 subtitle: "Different ways to see what is inside a file"
 
-date: 2022-01-04T00:00:00+01:00
+date: 2022-09-13T00:00:00+01:00
 
 fontawesome: true
 linkToMarkdown: true
