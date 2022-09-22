@@ -49,7 +49,7 @@ You will then be asked to enter your password - it will not display anything or 
 ```
 [yt29876@bc4login3 ~]$
 ```
-{{< admonition type="tip" title="Useful tip!" open=true >}}
+{{< admonition type="tip" open=true >}}
 If you forget your `ssh` login commands, remember that all your previous commands are stored in `history`. Perfect use of a pipe! To list your previous `ssh` commands, we can pipe the output of `history` into `grep`, searching for `ssh`, with
 ```history | grep "ssh"```
 {{< /admonition >}}
