@@ -31,7 +31,7 @@ find [where to look] [what type of file] ["the match you are looking for, in quo
 
 Let's go back to your folder `command-line-files`, and try each of these commands.
 
-```shell
+```
 find . -iname "data1"
 find . -iname "data*"
 find . -iname "*txt"
@@ -73,7 +73,7 @@ Try changing what `grep` is searching for.
 ### Exercise
 `grep` can take many useful flags. Try each of these commands with flags, and work out what they do:
 
-```shell
+```
 grep faith king-lear.txt
 grep Faith king-lear.txt
 grep -i faith king-lear.txt
@@ -101,7 +101,7 @@ If the quotes were absent, `grep this scattered kingdom king-lear.txt`, the comm
 ### Recursive searching
 In computer speak, "recursive" means "repeat this action for everything in the folder". So, let's search multiple files. We can do this in a couple of way. First, let's move out of the folder `some_plays`, back one level with `cd ..`. From here, let's recursively search for something inside `some_plays` with a couple of commands
 
-```shell
+```
 grep -r sparrow some_plays
 grep -rc sparrow some_plays
 ```
@@ -114,7 +114,7 @@ grep sparrow *
 
 Here, `*` means "every file and folder in this location". We could also specify just part of the filename - try these commands:
 
-```shell
+```
 grep sparrow t*
 grep sparrow the*
 grep dog *night*
@@ -130,7 +130,7 @@ One more note on `grep`: when counting, it only counts the number of _lines_ tha
 
 Have a bit more of practice with wildcards, by going back a folder (you should be in `command-line-files`) - what do you get if you run these commands?
 
-```shell
+```
 ls *
 tail -3 some_plays/*
 head -10 some_plays/king*
