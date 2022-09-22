@@ -104,10 +104,10 @@ head -3 plants.txt &gt; first_three_plants.txt The terminal will not give you an
 <p>Move into the folder <code>example_files</code>. We can see, for example, the first three lines of <code>plants.txt</code> with the command</p>
 <pre tabindex="0"><code>head -3 plants.txt
 </code></pre><p>But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called &ldquo;redirecting&rdquo;, and is done with the character <code>&gt;</code></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">head -3 plants.txt &gt; first_three_plants.txt
-</span></span></code></pre></div><p>The terminal will not give you any output, but what is inside the file <code>first_three_plants.txt</code>? Let&rsquo;s expand on this by using wildcards. Try this command, and examine the contents of the output file:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">head -3 * &gt; my_new_file
-</span></span></code></pre></div><div class="details admonition warning open">
+<pre tabindex="0"><code>head -3 plants.txt &gt; first_three_plants.txt
+</code></pre><p>The terminal will not give you any output, but what is inside the file <code>first_three_plants.txt</code>? Let&rsquo;s expand on this by using wildcards. Try this command, and examine the contents of the output file:</p>
+<pre tabindex="0"><code>head -3 * &gt; my_new_file
+</code></pre><div class="details admonition warning open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-exclamation-triangle fa-fw"></i>Warning<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
@@ -116,9 +116,9 @@ head -3 plants.txt &gt; first_three_plants.txt The terminal will not give you an
         </div>
     </div>
 <p>Using <code>&gt;</code> will create a new file, or overwrite a file if it already exists. We might want to append instead, and we do that with a double arrow, <code>&gt;&gt;</code>, for example</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">tail -10 romeo-and-juliet.txt &gt;&gt; another_file
-</span></span><span class="line"><span class="cl">tail -10 king-lear.txt &gt;&gt; another_file
-</span></span></code></pre></div><h3 id="exercise">Exercise</h3>
+<pre tabindex="0"><code>tail -10 romeo-and-juliet.txt &gt;&gt; another_file
+tail -10 king-lear.txt &gt;&gt; another_file
+</code></pre><h3 id="exercise">Exercise</h3>
 <p>Try these redirection and appending tasks, in the folder <code>example_files</code>.
 <div class="details admonition question open">
         <div class="details-summary admonition-title">
@@ -138,8 +138,8 @@ head -3 plants.txt &gt; first_three_plants.txt The terminal will not give you an
 <p>Much of your knowledge about commands will of course come from the internet, but you can also look up help and manuals on the command line itself.</p>
 <h3 id="man-pages"><code>man</code> pages</h3>
 <p><code>man</code> is short for &ldquo;manual&rdquo;. When you run this command, for example</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">man ls
-</span></span></code></pre></div><p>You will get description and instructions on what the command does, how to use it, and what flags it can take. Some <code>man</code> pages are better than others, but it is good to get familiar with them, and get a feel for how documentation is structured. When you search for a command on the internet, often the best results are just the <code>man</code> pages, presented in a webpage, which might be easier to understand and search through.</p>
+<pre tabindex="0"><code>man ls
+</code></pre><p>You will get description and instructions on what the command does, how to use it, and what flags it can take. Some <code>man</code> pages are better than others, but it is good to get familiar with them, and get a feel for how documentation is structured. When you search for a command on the internet, often the best results are just the <code>man</code> pages, presented in a webpage, which might be easier to understand and search through.</p>
 <div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -164,19 +164,19 @@ head -3 plants.txt &gt; first_three_plants.txt The terminal will not give you an
 <li>Use <code>wc</code> to count the number of lines in all of the plays in this folder.</li>
 <li>Use <code>man</code> to look up the following commands. And give the commands themselves a try</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">history</span>
-</span></span><span class="line"><span class="cl">man
-</span></span><span class="line"><span class="cl">file
-</span></span><span class="line"><span class="cl">cut
-</span></span><span class="line"><span class="cl">sed
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span>
-</span></span><span class="line"><span class="cl">tr
-</span></span><span class="line"><span class="cl">du
-</span></span><span class="line"><span class="cl">df
-</span></span><span class="line"><span class="cl">who
-</span></span><span class="line"><span class="cl">w
-</span></span><span class="line"><span class="cl">whoami
-</span></span></code></pre></div></div>
+<pre tabindex="0"><code>history
+man
+file
+cut
+sed
+echo
+tr
+du
+df
+who
+w
+whoami
+</code></pre></div>
         </div>
     </div>
 </div><div class="post-footer" id="post-footer">
