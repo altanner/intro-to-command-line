@@ -3,9 +3,26 @@
         <title>Introduction to the Command Line</title>
         <link>https://altanner.github.io/intro-to-command-line/</link>
         <description>Introduction to the Command Line</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 09 Jan 2022 00:00:00 &#43;0100</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 11 Sep 2022 00:00:00 &#43;0100</lastBuildDate>
             <atom:link href="https://altanner.github.io/intro-to-command-line/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>‣ File system navigation</title>
+    <link>https://altanner.github.io/intro-to-command-line/posts/01navigation/</link>
+    <pubDate>Sun, 11 Sep 2022 00:00:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://altanner.github.io/intro-to-command-line/posts/01navigation/</guid>
+    <description><![CDATA[Where am I? Let&rsquo;s run our first command:
+pwd With pwd we are asking &ldquo;print my current working directory / where am I?&rdquo; You will then get some output to the terminal window, something like
+/home/at9362 This is your current location, here shown as a &ldquo;path&rdquo; - what folder you are in, starting from the &ldquo;root&rdquo; folder that contains the whole file system.
+Info  There are five abbreviations for locations that you might come across]]></description>
+</item><item>
+    <title>‣ Welcome to the command line!</title>
+    <link>https://altanner.github.io/intro-to-command-line/posts/00intro/</link>
+    <pubDate>Sat, 10 Sep 2022 00:00:00 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://altanner.github.io/intro-to-command-line/posts/00intro/</guid>
+    <description><![CDATA[Some confusing glossary!  A &ldquo;terminal&rdquo; is a program which emulates (mimics, in software) an old piece of hardware, which provides the command line. A &ldquo;console&rdquo; is, effectively, the same thing. A &ldquo;shell&rdquo; is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don&rsquo;t need to worry about that!]]></description>
+</item><item>
     <title>‣ Shell scripts</title>
     <link>https://altanner.github.io/intro-to-command-line/posts/09scripts/</link>
     <pubDate>Sun, 09 Jan 2022 00:00:00 &#43;0100</pubDate>
@@ -72,22 +89,5 @@ cat meaning_of_life.txt which means &ldquo;output the contents of of the file &l
     <description><![CDATA[Learn more  We give some warnings on this page, but don&rsquo;t be intimidated! Mistakes are only human, and you won&rsquo;t be able to damage your computer through any of these commands.
 To improve your skills in backing up, version control, and minimising risk in computing, look for our courses on Best Practices in Software Engineering.
    Course materials  From this point forward, you will need to download the course materials; move this to a suitable folder, and unzip it.]]></description>
-</item><item>
-    <title>‣ File system navigation</title>
-    <link>https://altanner.github.io/intro-to-command-line/posts/01navigation/</link>
-    <pubDate>Sun, 02 Jan 2022 00:00:00 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://altanner.github.io/intro-to-command-line/posts/01navigation/</guid>
-    <description><![CDATA[Where am I? Let&rsquo;s run our first command:
-pwd With pwd we are asking &ldquo;print my current working directory / where am I?&rdquo; You will then get some output to the terminal window, something like
-/home/at9362 This is your current location, here shown as a &ldquo;path&rdquo; - what folder you are in, starting from the &ldquo;root&rdquo; folder that contains the whole file system.
-Info  There are five abbreviations for locations that you might come across]]></description>
-</item><item>
-    <title>‣ Welcome to the command line!</title>
-    <link>https://altanner.github.io/intro-to-command-line/posts/00intro/</link>
-    <pubDate>Sat, 01 Jan 2022 00:00:00 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://altanner.github.io/intro-to-command-line/posts/00intro/</guid>
-    <description><![CDATA[Some confusing glossary!  A &ldquo;terminal&rdquo; is a program which emulates (mimics, in software) an old piece of hardware, which provides the command line. A &ldquo;console&rdquo; is, effectively, the same thing. A &ldquo;shell&rdquo; is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don&rsquo;t need to worry about that!]]></description>
 </item></channel>
 </rss>
