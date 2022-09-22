@@ -1,91 +1,91 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>All Posts - Introduction to the Command Line</title>
-        <link>https://altanner.github.io/intro-to-command-line/posts/</link>
+        <link>https://alleetanner.github.io/intro-to-command-line/posts/</link>
         <description>All Posts | Introduction to the Command Line</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 19 Sep 2022 00:00:00 &#43;0100</lastBuildDate><atom:link href="https://altanner.github.io/intro-to-command-line/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 19 Sep 2022 00:00:00 &#43;0100</lastBuildDate><atom:link href="https://alleetanner.github.io/intro-to-command-line/posts/" rel="self" type="application/rss+xml" /><item>
     <title>‣ Shell scripts</title>
-    <link>https://altanner.github.io/intro-to-command-line/posts/09scripts/</link>
+    <link>https://alleetanner.github.io/intro-to-command-line/posts/09scripts/</link>
     <pubDate>Mon, 19 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://altanner.github.io/intro-to-command-line/posts/09scripts/</guid>
+    <guid>https://alleetanner.github.io/intro-to-command-line/posts/09scripts/</guid>
     <description><![CDATA[Scripts So far, we have been running things directly on the command line, &ldquo;interactively&rdquo;. However, you might want to keep your commands in a file, and be able to run, share, modify, or use files as templates. This is the gateway to coding - and is great practice for developing your reproducible work, for communicating your methods with others, and for archiving your work.
 A &ldquo;script&rdquo; is a file of instructions that can be directly read and run by a program.]]></description>
 </item><item>
     <title>‣ Working with remote computers</title>
-    <link>https://altanner.github.io/intro-to-command-line/posts/08ssh/</link>
+    <link>https://alleetanner.github.io/intro-to-command-line/posts/08ssh/</link>
     <pubDate>Sun, 18 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://altanner.github.io/intro-to-command-line/posts/08ssh/</guid>
+    <guid>https://alleetanner.github.io/intro-to-command-line/posts/08ssh/</guid>
     <description><![CDATA[Working remotely The original super-power of the command line is that it allows us to connect to other machines. While today we have remote-desktops and screen-shares to see and work with other computer&rsquo;s GUIs, the command line has been doing this since the 1960s!
 In research, we often work on remote machines (&ldquo;computing clusters&rdquo;, &ldquo;HPC&rdquo;, &ldquo;supercomputers&rdquo;, or even just &ldquo;servers&rdquo;), which we need to log in to. Once we are logged in, the terminal will behave as if we are sitting at that machine, which might be on the other side of the world.]]></description>
 </item><item>
     <title>‣ Pipes</title>
-    <link>https://altanner.github.io/intro-to-command-line/posts/07pipes/</link>
+    <link>https://alleetanner.github.io/intro-to-command-line/posts/07pipes/</link>
     <pubDate>Sat, 17 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://altanner.github.io/intro-to-command-line/posts/07pipes/</guid>
+    <guid>https://alleetanner.github.io/intro-to-command-line/posts/07pipes/</guid>
     <description><![CDATA[Pipes In the last section, we counted the number of lines in our folder of Shakespeare plays. But what if we wanted these in order? We could do this by using another command. This is where we would use a pipe. (The pipe symbol is | - to the left of the enter key on MacOS, and to the left of the number row on Windows.) A pipe sends the output of one command as the input for another command, linking them together, like in plumbing.]]></description>
 </item><item>
     <title>‣ Redirection</title>
-    <link>https://altanner.github.io/intro-to-command-line/posts/06redirects/</link>
+    <link>https://alleetanner.github.io/intro-to-command-line/posts/06redirects/</link>
     <pubDate>Fri, 16 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://altanner.github.io/intro-to-command-line/posts/06redirects/</guid>
+    <guid>https://alleetanner.github.io/intro-to-command-line/posts/06redirects/</guid>
     <description><![CDATA[Sending outputs to files Move into the folder example_files. We can see, for example, the first three lines of plants.txt with the command
 head -3 plants.txt But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called &ldquo;redirecting&rdquo;, and is done with the character &gt;
 head -3 plants.txt &gt; first_three_plants.txt The terminal will not give you any output, but what is inside the file first_three_plants.]]></description>
 </item><item>
     <title>‣ Searching</title>
-    <link>https://altanner.github.io/intro-to-command-line/posts/05searching/</link>
+    <link>https://alleetanner.github.io/intro-to-command-line/posts/05searching/</link>
     <pubDate>Thu, 15 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://altanner.github.io/intro-to-command-line/posts/05searching/</guid>
+    <guid>https://alleetanner.github.io/intro-to-command-line/posts/05searching/</guid>
     <description><![CDATA[Searching for files We can use the program find as our search command, but it has some strange syntax&hellip; if you are a little confused, you are not alone! The syntax is
 find [where to look] [what type of file] [&#34;the match you are looking for, in quotes&#34;] Let&rsquo;s go back to your folder command-line-files, and try each of these commands.
 find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find .]]></description>
 </item><item>
     <title>‣ Editing files</title>
-    <link>https://altanner.github.io/intro-to-command-line/posts/04editing_files/</link>
+    <link>https://alleetanner.github.io/intro-to-command-line/posts/04editing_files/</link>
     <pubDate>Wed, 14 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://altanner.github.io/intro-to-command-line/posts/04editing_files/</guid>
+    <guid>https://alleetanner.github.io/intro-to-command-line/posts/04editing_files/</guid>
     <description><![CDATA[Text editors We can create and modify files on the command line using text editors. These are like very minimal word-processors, with no formatting options, but with many powerful ways of editing that are not available in word-processors. There are lots of different command line editors, which range from user-friendly (but less powerful), to more difficult (but powerful and fast, once learned).
 Info  Here are some common editors you might come across, or choose to learn:]]></description>
 </item><item>
     <title>‣ Viewing the contents of files</title>
-    <link>https://altanner.github.io/intro-to-command-line/posts/03viewing_files/</link>
+    <link>https://alleetanner.github.io/intro-to-command-line/posts/03viewing_files/</link>
     <pubDate>Tue, 13 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://altanner.github.io/intro-to-command-line/posts/03viewing_files/</guid>
+    <guid>https://alleetanner.github.io/intro-to-command-line/posts/03viewing_files/</guid>
     <description><![CDATA[Viewing files There are two main ways of viewing the contents of files on the command line: &ldquo;printing&rdquo; the output to the terminal window, and viewing file contents with a &ldquo;pager&rdquo;.
 cat Let&rsquo;s look at outputting first with a command called cat. Sadly, this has nothing to do with small furry felines. Move into the folder called example_files, and run this command
 cat meaning_of_life.txt which means &ldquo;output the contents of of the file &ldquo;meaning_of_life.]]></description>
 </item><item>
     <title>‣ Working with files</title>
-    <link>https://altanner.github.io/intro-to-command-line/posts/02manipulation/</link>
+    <link>https://alleetanner.github.io/intro-to-command-line/posts/02manipulation/</link>
     <pubDate>Mon, 12 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://altanner.github.io/intro-to-command-line/posts/02manipulation/</guid>
+    <guid>https://alleetanner.github.io/intro-to-command-line/posts/02manipulation/</guid>
     <description><![CDATA[Learn more  We give some warnings on this page, but don&rsquo;t be intimidated! Mistakes are only human, and you won&rsquo;t be able to damage your computer through any of these commands.
 To improve your skills in backing up, version control, and minimising risk in computing, look for our courses on Best Practices in Software Engineering.
    Course materials  From this point forward, you will need to download the course materials; move this to a suitable folder, and unzip it.]]></description>
 </item><item>
     <title>‣ File system navigation</title>
-    <link>https://altanner.github.io/intro-to-command-line/posts/01navigation/</link>
+    <link>https://alleetanner.github.io/intro-to-command-line/posts/01navigation/</link>
     <pubDate>Sun, 11 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://altanner.github.io/intro-to-command-line/posts/01navigation/</guid>
+    <guid>https://alleetanner.github.io/intro-to-command-line/posts/01navigation/</guid>
     <description><![CDATA[Where am I? Let&rsquo;s run our first command:
 pwd With pwd we are asking &ldquo;print my current working directory / where am I?&rdquo; You will then get some output to the terminal window, something like
 /home/at9362 This is your current location, here shown as a &ldquo;path&rdquo; - what folder you are in, starting from the &ldquo;root&rdquo; folder that contains the whole file system.
 Info  There are five abbreviations for locations that you might come across]]></description>
 </item><item>
     <title>‣ Welcome to the command line!</title>
-    <link>https://altanner.github.io/intro-to-command-line/posts/00intro/</link>
+    <link>https://alleetanner.github.io/intro-to-command-line/posts/00intro/</link>
     <pubDate>Sat, 10 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://altanner.github.io/intro-to-command-line/posts/00intro/</guid>
+    <guid>https://alleetanner.github.io/intro-to-command-line/posts/00intro/</guid>
     <description><![CDATA[Some confusing glossary!  A &ldquo;terminal&rdquo; is a program which emulates (mimics, in software) an old piece of hardware, which provides the command line. A &ldquo;console&rdquo; is, effectively, the same thing. A &ldquo;shell&rdquo; is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don&rsquo;t need to worry about that!]]></description>
 </item></channel>
 </rss>
