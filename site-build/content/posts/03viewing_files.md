@@ -28,7 +28,7 @@ There are two main ways of viewing the contents of files on the command line: "p
 ### `cat`
 Let's look at outputting first with a command called `cat`. Sadly, this has nothing to do with small furry felines. Move into the folder called `example_files`, and run this command
 
-```shell
+```
 cat meaning_of_life.txt
 ```
 
@@ -36,7 +36,7 @@ which means "output the contents of of the file "meaning_of_life.txt". `cat` is 
 
 Try this and see for yourself:
 
-```shell
+```
 cat the-tempest.txt
 ```
 
@@ -70,7 +70,7 @@ shuf
 These might seem trivial (maybe even useless!) but these are powerful building blocks for arranging data.
 ### Introducing wildcards `*`
 We will cover this in more detail later, but let's look at using the asterisk, `*`, as a wildcard. Experiment with a command like these
-```shell
+```
 head -n 3 numbers*
 tail -n 4 w*
 head -n 2 *
