@@ -38,11 +38,11 @@ Note that when you are not on University of Bristol campus or premises, you will
 ### Using the command line, but on a remote machine
 
 To successfully connect to another machine using `ssh`, that machine needs to know who you are: you will need a username and a password (although other authorisation methods exist, which we will not cover here). The syntax is the command `ssh`, followed by your username and the hostname (just like you see in a prompt), for example
-```shell
+```
 ssh yt29876@bc4login.acrc.bris.ac.uk
 ```
 or, you might log in using the IP address of the remote machine
-```shell
+```
 ssh yt29876@137.222.1.10
 ```
 You will then be asked to enter your password - it will not display anything or display stars (\*) as you type, it will just look empty. If the password is correct, you will then see a new prompt, including the name of the machine you are now logged in to, for example:
@@ -65,7 +65,7 @@ We do not cover submission scripts in this course, but to learn more please see 
 `scp` ("secure copy") is just like `cp`, except it can copy files and folders to and from another computer. Just like with `ssh` above, we will need to specify what computer the file or folder is on. To do this, `scp` needs to know the address of the machine it is working with.
 
 First, let's copy a file *from* our local machine *to* another machine. If you have the resources from earlier in this course, try copying one of the plays to another machine. As with `cp`, the syntax is `cp [what to copy] [where to copy this to]`. Move to the appropriate folder, and try a command similar to this (you will need to substitute a real username and hostname!)
-```shell
+```
 scp macbeth.txt yt29876@bc4login.acrc.bris.ac.uk:/user/home/yt29876
 ```
 Note that the destination includes a full path. Sometimes, the remote machine will understand `~` as your home folder, and missing it out completely will also work, sending the file to your home folder. The important bit is, don't forget the `:`, or your computer will think you want to copy the file locally, and name the file the name of the remote computer! So, if you see a file hanging around called something bizarre like `yt29876@bc4login.acrc.bris.ac.uk`, this is usually the result of a failed `scp`.
@@ -79,7 +79,7 @@ Careless use of `scp` can result in data loss! If a file with the same name alre
 Copying *from* the remote machine back to your local machine uses similar syntax, except you must provide the full path to the file (or folder) you want to copy. Often, you specify the local destination of the `scp` command with the abbreviation for "here": `.`. Alternatively, you can provide an absolute or relative path, or a different filename as the destination.
 
 So, the above command, but to copy *back* to your own machine would be
-```shell
+```
 scp yt29876@bc4login.acrc.bris.ac.uk:/user/home/yt29876/macbeth.txt .
 ```
 {{< admonition type="info" open=true >}}
