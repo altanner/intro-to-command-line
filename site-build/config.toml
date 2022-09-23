@@ -23,6 +23,14 @@ theme = "LoveIt"
     url = "about"
     title = ""
     weight = 3
+  [[menu.main]]
+    weight = 6
+    identifier = "github"
+    pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
+    post = ""
+    name = ""
+    url = "https://github.com/alleetanner/intro-to-command-line"
+    title = "GitHub"
 
 # Markup related configuration in Hugo
 [markup]
