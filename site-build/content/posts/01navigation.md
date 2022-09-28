@@ -22,8 +22,7 @@ comment:
 ---
 
 ### Where am I?
-
-Let's run our first command:
+Let's run our first command!
 
 ```
 pwd
