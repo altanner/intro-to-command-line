@@ -76,7 +76,7 @@ To improve your skills in backing up, version control, and minimising risk in co
     <pubDate>Sun, 11 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
     <guid>https://alleetanner.github.io/intro-to-command-line/posts/01navigation/</guid>
-    <description><![CDATA[Where am I? Let&rsquo;s run our first command:
+    <description><![CDATA[Where am I? Let&rsquo;s run our first command!
 pwd With pwd we are asking &ldquo;print my current working directory / where am I?&rdquo; You will then get some output to the terminal window, something like
 /home/at9362 This is your current location, here shown as a &ldquo;path&rdquo; - what folder you are in, starting from the &ldquo;root&rdquo; folder that contains the whole file system.
 Info  There are five abbreviations for locations that you might come across]]></description>
