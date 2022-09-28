@@ -37,12 +37,12 @@ git clone https://github.com/altanner/intro-to-command-line.git
 
 ### The grammar of a command
 Thinking about the grammar - the structure - of a command helps us understand what we are doing. Luckily, command grammar is much simpler than English grammar, with just three things to remember.
-## Verbs
+#### Verbs
 Every line you write starts with a *command* - the name of a program. Even the most basic operations (such as listing files) are small programs you are asking the computer to run, or to *do*. So, in grammatical terms, the command is a *verb*.
-## Adverbs
-We can ask the computer to run a command, *in a particular way* - these are *adverbs*. In computing speak, these are known as a *flag*, and usually start with a `-` symbol. 
-## Objects
-Sometimes we only need a verb, but more often we need to tell the program *what we are doing the action to* - the *object*. These are also known as an *argument* (yes, more strange words, I agree!).
+#### Adverbs
+We can ask the computer to run a command, *in a particular way* - these are *adverbs*. In computing speak, these are known as *flags*, and usually start with a `-` symbol. 
+#### Objects
+Often we need to tell the program *what we are doing the action to* - the *object*. These are also known as an *argument* (yes, more strange words, I agree!).
 
 Just like in spoken language, a sentence must have a verb. Adverbs are optional. And most verbs require an object to act upon. So the correct grammatical order for a command is
 ```
