@@ -22,9 +22,9 @@ comment:
 ---
 
 {{< admonition type="note" title="Some confusing glossary!" open=true >}}
-* *terminal* - a program which emulates (mimics, in software) an old piece of hardware, which provides the command line.
-* *console* - effectively, the same thing as a terminal.
-* *shell* is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don't need to worry about that!
+* **terminal** - a program which emulates (mimics, in software) an old piece of hardware, which provides the command line.
+* **console** - effectively, the same thing as a terminal.
+* **shell** is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don't need to worry about that!
 * As far as we are concerned, **these all mean the same thing: the command line!** Being confused by this is entirely natural.
 {{< /admonition >}}
 
