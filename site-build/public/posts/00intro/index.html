@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>‣ Welcome to the command line! - Introduction to the Command Line</title><meta name="Description" content=""><meta property="og:title" content="‣ Welcome to the command line!" />
-<meta property="og:description" content="Some confusing glossary!  A &ldquo;terminal&rdquo; is a program which emulates (mimics, in software) an old piece of hardware, which provides the command line. A &ldquo;console&rdquo; is, effectively, the same thing. A &ldquo;shell&rdquo; is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don&rsquo;t need to worry about that!" />
+<meta property="og:description" content="Some confusing glossary!   A &ldquo;terminal&rdquo; is a program which emulates (mimics, in software) an old piece of hardware, which provides the command line. A &ldquo;console&rdquo; is, effectively, the same thing. A &ldquo;shell&rdquo; is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don&rsquo;t need to worry about that!" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://alleetanner.github.io/intro-to-command-line/posts/00intro/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-10T00:00:00+01:00" />
@@ -14,7 +14,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="‣ Welcome to the command line!"/>
-<meta name="twitter:description" content="Some confusing glossary!  A &ldquo;terminal&rdquo; is a program which emulates (mimics, in software) an old piece of hardware, which provides the command line. A &ldquo;console&rdquo; is, effectively, the same thing. A &ldquo;shell&rdquo; is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don&rsquo;t need to worry about that!"/>
+<meta name="twitter:description" content="Some confusing glossary!   A &ldquo;terminal&rdquo; is a program which emulates (mimics, in software) an old piece of hardware, which provides the command line. A &ldquo;console&rdquo; is, effectively, the same thing. A &ldquo;shell&rdquo; is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don&rsquo;t need to worry about that!"/>
 <meta name="application-name" content="Introduction to the Command Line">
 <meta name="apple-mobile-web-app-title" content="Introduction to the Command Line"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/00intro\/"
-        },"genre": "posts","wordcount":  730 ,
+        },"genre": "posts","wordcount":  622 ,
         "url": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/00intro\/","datePublished": "2022-09-10T00:00:00+01:00","dateModified": "2022-09-10T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -77,8 +77,8 @@
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">‣ Welcome to the command line!</h1><h2 class="single-subtitle">The keys to great power are easier to use than you think :)</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;730 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;622 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -88,34 +88,39 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#some-confusing-glossary">Some confusing glossary!</a></li>
         <li><a href="#starting-a-terminal">Starting a terminal</a></li>
         <li><a href="#the-prompt">The prompt</a></li>
         <li><a href="#the-command-line">The command line</a></li>
-        <li><a href="#anatomy-of-a-command">Anatomy of a command</a></li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h3 id="some-confusing-glossary">Some confusing glossary!</h3>
-<ul>
+            </div><div class="content" id="content"><div class="details admonition note">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw"></i>Some confusing glossary!<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
 <li>A &ldquo;terminal&rdquo; is a program which emulates (mimics, in software) an old piece of hardware, which provides the command line.</li>
 <li>A &ldquo;console&rdquo; is, effectively, the same thing.</li>
 <li>A &ldquo;shell&rdquo; is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don&rsquo;t need to worry about that!</li>
 <li>As far as we are concerned, <strong>these all mean the same thing: the command line!</strong> Being confused by this is entirely natural.</li>
 </ul>
+</div>
+        </div>
+    </div>
 <h3 id="starting-a-terminal">Starting a terminal</h3>
-<p>If you are using MacOS or Linux, you will have &ldquo;Terminal&rdquo; already installed - open this program and you will be presented with a command line. To open a suitable terminal session on Windows, install and run <em>GitBash</em>, or use <em>Windows Subsystem for Linux (WSL)</em> to install a Linux distribution (we recommend Ubuntu or Debian) - then open that program. The Windows-native <em>PowerShell</em> is not a &ldquo;UNIX-like&rdquo; terminal, and is not compatible with this course.</p>
+<p>If you are using MacOS or Linux, you will have <em>Terminal</em> already installed - open this program and you will be presented with a command line. To open a suitable terminal session on Windows, install and run <em>GitBash</em>, or use <em>Windows Subsystem for Linux (WSL)</em> to install a Linux distribution (we recommend Ubuntu or Debian) - then open that program. The Windows-native <em>PowerShell</em> is not a &ldquo;UNIX-like&rdquo; terminal, and is not compatible with this course.</p>
 <h3 id="the-prompt">The prompt</h3>
 <p>When you open a terminal, you will be provided with a line for entering commands, starting with a <em>prompt</em>. The prompt tells you where, in your computer you are. When on the command line, you always have a location, just like you do in graphical file managers like MacOS&rsquo;s &ldquo;Finder&rdquo;, or Windows&rsquo; &ldquo;Explorer&rdquo;. Here is what a typical prompt looks like:</p>
 <pre tabindex="0"><code>[alleetanner@work_laptop:/Users/at9362] $
 </code></pre><p>Your prompt will look different, but here is what it means</p>
 <pre tabindex="0"><code>[ your name @ the computer you are logged in to : the current folder ] $
 </code></pre><p>First is your own user name. On university computers, it might be a code like in your email address, such as <code>bx22657</code>. After the <code>@</code> comes the computer&rsquo;s name (also known as the &ldquo;hostname&rdquo;). This could be something like <code>Megans_iMac</code> or <code>ubuntu</code>, for example. Note that this is the name of the computer <em>that you are logged in to</em>! Usually, on opening a terminal, that is the actual computer in front of you. But, for example when using HPC, it will instead be another computer - a &ldquo;remote&rdquo; machine, that you have logged in to. However, in this course, we will only be working on your own machine, the &ldquo;local&rdquo; computer. Finally, we have the folder you are working in, after the <code>:</code>. Yours might say <code>~</code> (&ldquo;tilde&rdquo;) - find out what that means in the next section.</p>
-<p>The <code>$</code> sign means the terminal is waiting for a command. <em>Sometimes you will see commands on the internet which include the <code>$</code> symbol at the start of the command! You don&rsquo;t need to include this as part of the command, say if you cut and paste!</em></p>
+<p>The <code>$</code> (or you might have a <code>%</code>) symbol means the terminal is waiting for a command. <em>Sometimes you will see commands on the internet which include the <code>$</code> symbol at the start of the command - you don&rsquo;t need to include this as part of the command, say if you cut and paste!</em></p>
 <h3 id="the-command-line">The command line</h3>
 <p>The space after the prompt is where you enter your instructions of what you want the computer to do: your <strong>commands</strong>.</p>
-<p><div class="details admonition warning open">
+<div class="details admonition warning open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-exclamation-triangle fa-fw"></i>Warning<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
@@ -140,11 +145,7 @@
 </ul>
 </div>
         </div>
-    </div></p>
-<h3 id="anatomy-of-a-command">Anatomy of a command</h3>
-<p>Every line you write starts with a <em>command</em>: the name of a program. Even the most basic operations (such as listing files) are small programs you are asking the computer to run. Sometimes we only need the command, but as we will see, sometimes we need to tell the program what we are doing the action to - in grammar, the <em>object</em>. At other times, we might need to ask the program to do the action <em>in a particular way</em> - think of these as <em>adverbs</em>. In any case, the syntax for a command is in this order:</p>
-<pre tabindex="0"><code>verb adverb object
-</code></pre><p>In the next section we will run our first commands!</p>
+    </div>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">

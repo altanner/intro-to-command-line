@@ -88,6 +88,6 @@ Info  There are five abbreviations for locations that you might come across]]></
     <pubDate>Sat, 10 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
     <guid>https://alleetanner.github.io/intro-to-command-line/posts/00intro/</guid>
-    <description><![CDATA[Some confusing glossary!  A &ldquo;terminal&rdquo; is a program which emulates (mimics, in software) an old piece of hardware, which provides the command line. A &ldquo;console&rdquo; is, effectively, the same thing. A &ldquo;shell&rdquo; is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don&rsquo;t need to worry about that!]]></description>
+    <description><![CDATA[Some confusing glossary!   A &ldquo;terminal&rdquo; is a program which emulates (mimics, in software) an old piece of hardware, which provides the command line. A &ldquo;console&rdquo; is, effectively, the same thing. A &ldquo;shell&rdquo; is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don&rsquo;t need to worry about that!]]></description>
 </item></channel>
 </rss>
