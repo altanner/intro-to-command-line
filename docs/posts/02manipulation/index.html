@@ -31,7 +31,7 @@ To improve your skills in backing up, version control, and minimising risk in co
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/02manipulation\/"
-        },"genre": "posts","wordcount":  676 ,
+        },"genre": "posts","wordcount":  898 ,
         "url": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/02manipulation\/","datePublished": "2022-09-12T00:00:00+01:00","dateModified": "2022-09-12T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -81,8 +81,8 @@ To improve your skills in backing up, version control, and minimising risk in co
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">‣ Working with files</h1><h2 class="single-subtitle">How to create, delete, rename and copy files (and folders)</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;676 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;898 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -91,6 +91,13 @@ To improve your skills in backing up, version control, and minimising risk in co
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li>
+      <ul>
+        <li><a href="#the-grammar-of-a-command">The grammar of a command</a></li>
+      </ul>
+    </li>
+    <li><a href="#verbs">Verbs</a></li>
+    <li><a href="#adverbs">Adverbs</a></li>
+    <li><a href="#objects">Objects</a>
       <ul>
         <li><a href="#copying">Copying</a></li>
         <li><a href="#deleting">Deleting</a></li>
@@ -123,7 +130,19 @@ To improve your skills in backing up, version control, and minimising risk in co
 </code></pre></div>
         </div>
     </div>
-<p>In our terminal, use the command line to move into the course materials folder, <code>command_line_files</code>. When you run <code>ls</code> in this folder, you should see the list of contents looking like</p>
+<h3 id="the-grammar-of-a-command">The grammar of a command</h3>
+<p>Thinking about the grammar - the structure - of a command helps us understand what we are doing. Luckily, command grammar is much simpler than English grammar, with just three things to remember.</p>
+<h2 id="verbs">Verbs</h2>
+<p>Every line you write starts with a <em>command</em> - the name of a program. Even the most basic operations (such as listing files) are small programs you are asking the computer to run, or to <em>do</em>. So, in grammatical terms, the command is a <em>verb</em>.</p>
+<h2 id="adverbs">Adverbs</h2>
+<p>We can ask the computer to run a command, <em>in a particular way</em> - these are <em>adverbs</em>. In computing speak, these are known as a <em>flag</em>, and usually start with a <code>-</code> symbol.</p>
+<h2 id="objects">Objects</h2>
+<p>Sometimes we only need a verb, but more often we need to tell the program <em>what we are doing the action to</em> - the <em>object</em>. These are also known as an <em>argument</em> (yes, more strange words, I agree!).</p>
+<p>Just like in spoken language, a sentence must have a verb. Adverbs are optional. And most verbs require an object to act upon. So the correct grammatical order for a command is</p>
+<pre tabindex="0"><code>verb adverb object
+</code></pre><p>or</p>
+<pre tabindex="0"><code>[program to run] [how to run it] [what to run it on]
+</code></pre><p>In our terminal, use the command line to move into the course materials folder, <code>command_line_files</code>. When you run <code>ls</code> in this folder, you should see the list of contents looking like</p>
 <pre tabindex="0"><code>example_files     sandbox    some_plays
 </code></pre><p>Personally, I don&rsquo;t find that clear to look at, so let&rsquo;s use our first <em>flag</em>, running <code>ls -l</code>.</p>
 <div class="details admonition question open">
@@ -134,6 +153,8 @@ To improve your skills in backing up, version control, and minimising risk in co
             <div class="admonition-content"><ul>
 <li>What do you think the <code>-l</code> is short for?</li>
 <li>What extra information are you given?</li>
+<li>Try some more flags and work out what they do: <code>-s</code>, <code>-t</code>, <code>r</code></li>
+<li>And some flag combinations: <code>-ls</code>, <code>-lrt</code></li>
 </ul>
 </div>
         </div>
@@ -144,7 +165,7 @@ To improve your skills in backing up, version control, and minimising risk in co
         </div>
         <div class="details-content">
             <div class="admonition-content"><ul>
-<li>Flags are also known as &ldquo;arguments&rdquo; and &ldquo;options&rdquo; - you will have to get used to this!</li>
+<li>Flags are also known as &ldquo;options&rdquo; - you will have to get used to this!</li>
 <li>Flags start with a <code>-</code>, a dash.</li>
 <li>Spoken, the command <code>ls -l</code> might be said &ldquo;L S dash L&rdquo;&hellip; but sometimes people say &ldquo;minus&rdquo;, or &ldquo;hyphen&rdquo; instead of &ldquo;dash&rdquo;. These all mean the same thing: the key to the left of the <code>=+</code> key.</li>
 </ul>
