@@ -6,7 +6,8 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>‣ Welcome to the command line! - Introduction to the Command Line</title><meta name="Description" content=""><meta property="og:title" content="‣ Welcome to the command line!" />
-<meta property="og:description" content="Some confusing glossary!   terminal - a program which emulates (mimics, in software) an old piece of hardware, which provides the command line. console - effectively, the same thing as a terminal. shell is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don&rsquo;t need to worry about that!" />
+<meta property="og:description" content="Glossary  It it entirely normal to be confused about these words!
+ terminal - a program which emulates (mimics, in software) an old piece of hardware, which provides the command line. console - effectively, the same thing as a terminal. shell is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don&rsquo;t need to worry about that!" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://alleetanner.github.io/intro-to-command-line/posts/00intro/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-10T00:00:00+01:00" />
@@ -14,7 +15,8 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="‣ Welcome to the command line!"/>
-<meta name="twitter:description" content="Some confusing glossary!   terminal - a program which emulates (mimics, in software) an old piece of hardware, which provides the command line. console - effectively, the same thing as a terminal. shell is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don&rsquo;t need to worry about that!"/>
+<meta name="twitter:description" content="Glossary  It it entirely normal to be confused about these words!
+ terminal - a program which emulates (mimics, in software) an old piece of hardware, which provides the command line. console - effectively, the same thing as a terminal. shell is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don&rsquo;t need to worry about that!"/>
 <meta name="application-name" content="Introduction to the Command Line">
 <meta name="apple-mobile-web-app-title" content="Introduction to the Command Line"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -27,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/00intro\/"
-        },"genre": "posts","wordcount":  633 ,
+        },"genre": "posts","wordcount":  836 ,
         "url": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/00intro\/","datePublished": "2022-09-10T00:00:00+01:00","dateModified": "2022-09-10T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -77,8 +79,8 @@
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">‣ Welcome to the command line!</h1><h2 class="single-subtitle">The keys to great power are easier to use than you think :)</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;633 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;836 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -91,16 +93,18 @@
         <li><a href="#starting-a-terminal">Starting a terminal</a></li>
         <li><a href="#the-prompt">The prompt</a></li>
         <li><a href="#the-command-line">The command line</a></li>
+        <li><a href="#the-grammar-of-a-command">The grammar of a command</a></li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><div class="details admonition note open">
+            </div><div class="content" id="content"><div class="details admonition note">
         <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw"></i>Some confusing glossary!<i class="details-icon fas fa-angle-right fa-fw"></i>
+            <i class="icon fas fa-pencil-alt fa-fw"></i>Glossary<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><ul>
+            <div class="admonition-content"><p>It it entirely normal to be confused about these words!</p>
+<ul>
 <li><strong>terminal</strong> - a program which emulates (mimics, in software) an old piece of hardware, which provides the command line.</li>
 <li><strong>console</strong> - effectively, the same thing as a terminal.</li>
 <li><strong>shell</strong> is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don&rsquo;t need to worry about that!</li>
@@ -120,24 +124,14 @@
 <p>The <code>$</code> (or you might have a <code>%</code>) symbol means the terminal is waiting for a command. <em>Sometimes you will see commands on the internet which include the <code>$</code> symbol at the start of the command - you don&rsquo;t need to include this as part of the command, say if you cut and paste!</em></p>
 <h3 id="the-command-line">The command line</h3>
 <p>The space after the prompt is where you enter your instructions of what you want the computer to do: your <strong>commands</strong>.</p>
-<div class="details admonition warning open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-exclamation-triangle fa-fw"></i>Warning<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><ul>
-<li>The command line is case-sensitive. The letter <code>H</code> is entirely different from <code>h</code>, for example! So if you are having issues, always check your capitalisation is correct.</li>
-<li>You can select, cut etc with the mouse cursor, but you <em>cannot</em> move the position of your typing cursor with the mouse! You can only do that with the arrow keys. This is because a remote machine can only understand plain text, not communications from your mouse.</li>
-</ul>
-</div>
-        </div>
-    </div>
 <div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
             <div class="admonition-content"><ul>
+<li>The command line is case-sensitive. The letter <code>H</code> is entirely different from <code>h</code>, for example! So if you are having issues, always check your capitalisation is correct.</li>
+<li>You can select, cut etc with the mouse cursor, but you <em>cannot</em> move the position of your typing cursor with the mouse! You can only do that with the arrow keys. This is because a remote machine can only understand plain text, not communications from your mouse.</li>
 <li>You can use <code>tab</code> to auto-complete: <em>try this wherever you can!</em>, it will save you lots of time and typos.</li>
 <li>You can scroll back through your previous commands with the <code>up arrow</code> (and <code>down arrow</code>) - another big time-saver.</li>
 <li>If it looks like the terminal is stuck, or you want to cancel a command, it is <code>ctrl-c</code>.</li>
@@ -146,7 +140,19 @@
 </div>
         </div>
     </div>
-<p>Let&rsquo;s get started with our first commands in the next section!</p>
+<h3 id="the-grammar-of-a-command">The grammar of a command</h3>
+<p>Thinking about the grammar - the structure - of a command helps us understand what we are doing. Luckily, command grammar is much simpler than English grammar, with just three things to remember.</p>
+<h5 id="verbs">Verbs</h5>
+<p>Every line you write starts with a <em>command</em> - the name of a program. Even the most basic operations (such as listing files) are small programs you are asking the computer to run, or to <em>do</em>. So, in grammatical terms, the command is a <em>verb</em>.</p>
+<h5 id="adverbs">Adverbs</h5>
+<p>We can ask the computer to run a command, <em>in a particular way</em> - these are <em>adverbs</em>. In computing speak, these are known as <em>flags</em>, and usually start with a <code>-</code> symbol.</p>
+<h5 id="objects">Objects</h5>
+<p>Often we need to tell the program <em>what we are doing the action to</em> - the <em>object</em>. These are also known as an <em>argument</em> (yes, more strange words, I agree!).</p>
+<p>Just like in spoken language, a sentence must have a verb. Adverbs are optional. And most verbs require an object to act upon. So the correct grammatical order for a command is</p>
+<pre tabindex="0"><code>verb adverb object
+</code></pre><p>or</p>
+<pre tabindex="0"><code>[program to run] [how to run it] [what to run it on]
+</code></pre><p>Let&rsquo;s get started with our first commands in the next section!</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
