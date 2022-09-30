@@ -21,7 +21,8 @@ comment:
   enable: true
 ---
 
-{{< admonition type="note" title="Some confusing glossary!" open=true >}}
+{{< admonition type="note" title="Glossary" open=false >}}
+It it entirely normal to be confused about these words!
 * **terminal** - a program which emulates (mimics, in software) an old piece of hardware, which provides the command line.
 * **console** - effectively, the same thing as a terminal.
 * **shell** is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don't need to worry about that!
@@ -51,17 +52,32 @@ The `$` (or you might have a `%`) symbol means the terminal is waiting for a com
 ### The command line
 The space after the prompt is where you enter your instructions of what you want the computer to do: your **commands**.
 
-{{< admonition type="warning" open=true >}}
+{{< admonition type="info" open=true >}}
 - The command line is case-sensitive. The letter `H` is entirely different from `h`, for example! So if you are having issues, always check your capitalisation is correct.
 - You can select, cut etc with the mouse cursor, but you *cannot* move the position of your typing cursor with the mouse! You can only do that with the arrow keys. This is because a remote machine can only understand plain text, not communications from your mouse.
-{{< /admonition >}}
-
-{{< admonition type="info" open=true >}}
 - You can use `tab` to auto-complete: *try this wherever you can!*, it will save you lots of time and typos.
 - You can scroll back through your previous commands with the `up arrow` (and `down arrow`) - another big time-saver.
 - If it looks like the terminal is stuck, or you want to cancel a command, it is `ctrl-c`.
 - To exit a terminal session, type `exit`.
 {{< /admonition >}}
+
+### The grammar of a command
+Thinking about the grammar - the structure - of a command helps us understand what we are doing. Luckily, command grammar is much simpler than English grammar, with just three things to remember.
+##### Verbs
+Every line you write starts with a *command* - the name of a program. Even the most basic operations (such as listing files) are small programs you are asking the computer to run, or to *do*. So, in grammatical terms, the command is a *verb*.
+##### Adverbs
+We can ask the computer to run a command, *in a particular way* - these are *adverbs*. In computing speak, these are known as *flags*, and usually start with a `-` symbol. 
+##### Objects
+Often we need to tell the program *what we are doing the action to* - the *object*. These are also known as an *argument* (yes, more strange words, I agree!).
+
+Just like in spoken language, a sentence must have a verb. Adverbs are optional. And most verbs require an object to act upon. So the correct grammatical order for a command is
+```
+verb adverb object
+```
+or
+```
+[program to run] [how to run it] [what to run it on]
+```
 
 Let's get started with our first commands in the next section!
 
