@@ -4,7 +4,7 @@ Welcome to this introduction to the command line interface! These pages can be f
 
 Understanding the command line is an important foundation for many computational skills. Learning to program, how to use high-performance computers, and how to share your code with collaborators all require at least some knowledge of the command line. In this session, we welcome even total beginners, will build your confidence, and help you to understand what we are doing, step by step!
 
-{{< admonition type="info" title="Info: the UNIX command line" open=false >}}
+{{< admonition type="warning" title="Info: the UNIX command line" open=false >}}
 This session covers the "UNIX-like" (sometimes "\*nix") command line. This is used by Linux, MacOS, most servers, as well as all HPC and computing clusters. Window's default command line is run by "Powershell", which we do not cover in this course. Windows can emulate a UNIX-like terminal, so please continue to learn more.
 {{< /admonition >}}
 
