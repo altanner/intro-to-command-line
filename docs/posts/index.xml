@@ -86,7 +86,7 @@ Info  There are five abbreviations for locations that you might come across]]></
     <pubDate>Sat, 10 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
     <guid>https://alleetanner.github.io/intro-to-command-line/posts/00intro/</guid>
-    <description><![CDATA[Glossary  It it entirely normal to be confused about these words!
- terminal - a program which emulates (mimics, in software) an old piece of hardware, which provides the command line. console - effectively, the same thing as a terminal. shell is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don&rsquo;t need to worry about that!]]></description>
+    <description><![CDATA[Glossary  It it entirely normal to be confused about these words:
+ terminal - a program which emulates (mimics, in software) a (now redundant) piece of hardware, which provides the command line. console - effectively, the same thing as a terminal. Note that we also say &ldquo;console&rdquo; when referring to an interactive session of a programming language, for example Python. shell is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user.]]></description>
 </item></channel>
 </rss>
