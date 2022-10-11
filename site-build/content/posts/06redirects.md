@@ -53,12 +53,13 @@ tail -10 king-lear.txt >> another_file
 ```
 
 ### Exercise
-Try these redirection and appending tasks, in the folder `example_files`.
+Try these redirection and appending tasks, in the folder `some_plays`.
 {{< admonition type="question" title="Exercise" open=true >}}
-- Make a new file of the last 50 lines of Romeo and Juliet.
-- Make a new file of all the first 2 lines of any file starting with "number".
-- Make a new file containing the the final line of all files with the letter "nim" or "num" in their name.
-- Add the final 100 lines of The Tempest to this file.
+- Make a new file called "last_50_lines.txt" of the last 50 lines of *Romeo and Juliet*.
+- Make another new file, containing the last 86 lines, of *all* the plays.
+- Make a file containing all the lines, from all the plays, containing the word "Queen".
+- Create a file containing the total *number* of lines spoken by Theseus, Oberon and Lysander in *A Midsummer Night's Dream*. 
+- Add the final 100 lines of *The Tempest* to this file.
 {{< /admonition >}}
 
 ### Getting help on the command line
