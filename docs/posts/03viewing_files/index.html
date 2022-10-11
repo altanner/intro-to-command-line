@@ -7,8 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>‣ Viewing the contents of files - Introduction to the Command Line</title><meta name="Description" content=""><meta property="og:title" content="‣ Viewing the contents of files" />
 <meta property="og:description" content="Viewing files There are two main ways of viewing the contents of files on the command line: &ldquo;printing&rdquo; the output to the terminal window, and viewing file contents with a &ldquo;pager&rdquo;.
-cat Let&rsquo;s look at outputting first with a command called cat. Sadly, this has nothing to do with small furry felines. Move into the folder called example_files, and run this command
-cat meaning_of_life.txt which means &ldquo;output the contents of of the file &ldquo;meaning_of_life." />
+cat Let&rsquo;s look at outputting first with a command called cat. Sadly, this has nothing to do with small furry felines. cat is short for &ldquo;conCATenate&rdquo;, which means &ldquo;join files end to end&rdquo;, but it is commonly used for looking at a single file." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://alleetanner.github.io/intro-to-command-line/posts/03viewing_files/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-13T00:00:00+01:00" />
@@ -17,8 +16,7 @@ cat meaning_of_life.txt which means &ldquo;output the contents of of the file &l
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="‣ Viewing the contents of files"/>
 <meta name="twitter:description" content="Viewing files There are two main ways of viewing the contents of files on the command line: &ldquo;printing&rdquo; the output to the terminal window, and viewing file contents with a &ldquo;pager&rdquo;.
-cat Let&rsquo;s look at outputting first with a command called cat. Sadly, this has nothing to do with small furry felines. Move into the folder called example_files, and run this command
-cat meaning_of_life.txt which means &ldquo;output the contents of of the file &ldquo;meaning_of_life."/>
+cat Let&rsquo;s look at outputting first with a command called cat. Sadly, this has nothing to do with small furry felines. cat is short for &ldquo;conCATenate&rdquo;, which means &ldquo;join files end to end&rdquo;, but it is commonly used for looking at a single file."/>
 <meta name="application-name" content="Introduction to the Command Line">
 <meta name="apple-mobile-web-app-title" content="Introduction to the Command Line"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -31,7 +29,7 @@ cat meaning_of_life.txt which means &ldquo;output the contents of of the file &l
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/03viewing_files\/"
-        },"genre": "posts","wordcount":  557 ,
+        },"genre": "posts","wordcount":  562 ,
         "url": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/03viewing_files\/","datePublished": "2022-09-13T00:00:00+01:00","dateModified": "2022-09-13T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -81,7 +79,7 @@ cat meaning_of_life.txt which means &ldquo;output the contents of of the file &l
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">‣ Viewing the contents of files</h1><h2 class="single-subtitle">Different ways to see what is inside a file</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;557 words&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;562 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -105,11 +103,11 @@ cat meaning_of_life.txt which means &ldquo;output the contents of of the file &l
             </div><div class="content" id="content"><h3 id="viewing-files">Viewing files</h3>
 <p>There are two main ways of viewing the contents of files on the command line: &ldquo;printing&rdquo; the output to the terminal window, and viewing file contents with a &ldquo;pager&rdquo;.</p>
 <h3 id="cat"><code>cat</code></h3>
-<p>Let&rsquo;s look at outputting first with a command called <code>cat</code>. Sadly, this has nothing to do with small furry felines. Move into the folder called <code>example_files</code>, and run this command</p>
+<p>Let&rsquo;s look at outputting first with a command called <code>cat</code>. Sadly, this has nothing to do with small furry felines. <code>cat</code> is short for &ldquo;conCATenate&rdquo;, which means &ldquo;join files end to end&rdquo;, but it is commonly used for looking at a single file. Move into the folder called <code>example_files</code>, and run this command</p>
 <pre tabindex="0"><code>cat meaning_of_life.txt
-</code></pre><p>which means &ldquo;output the contents of of the file &ldquo;meaning_of_life.txt&rdquo;. <code>cat</code> is short for &ldquo;conCATenate&rdquo;, which means &ldquo;join files end to end&rdquo;, but it is commonly used for looking at a single file. The output is to the terminal itself, is useful for seeing what is in short files. Using <code>cat</code> for longer files, it is less useful.</p>
-<p>Try this and see for yourself:</p>
-<pre tabindex="0"><code>cat the-tempest.txt
+</code></pre><p>which means &ldquo;output the contents of of the file <code>meaning_of_life.txt</code> to the terminal&rdquo;. This is useful for seeing what is in short files. Using <code>cat</code> for longer files, it is less useful.</p>
+<p>Move into the folder called <code>alexandre-dumas</code> and try this and see for yourself:</p>
+<pre tabindex="0"><code>cat The-Count-Of-Monte-Cristo.txt
 </code></pre><div class="details admonition question open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-question-circle fa-fw"></i>Questions<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -117,7 +115,7 @@ cat meaning_of_life.txt which means &ldquo;output the contents of of the file &l
         <div class="details-content">
             <div class="admonition-content"><ul>
 <li>What happened to the terminal?</li>
-<li>What would happen if the file was several megabytes?</li>
+<li>What would happen if the file was several gigabytes?</li>
 <li>Remember that <code>ctrl-c</code> is <code>cancel</code> on the command line.</li>
 </ul>
 </div>
@@ -125,16 +123,15 @@ cat meaning_of_life.txt which means &ldquo;output the contents of of the file &l
     </div>
 <h3 id="head-and-tail"><code>head</code> and <code>tail</code></h3>
 <p>We might want to just see the start or the end of the file, so experiment with these commands:</p>
-<pre tabindex="0"><code>head the-tempest.txt
-tail the-tempest.txt
-</code></pre><p><code>head</code> and <code>tail</code> are common both on the command line, and in programming languages like Python and R. We can change how many lines we see using the flag <code>-n</code> followed by a number.</p>
+<pre tabindex="0"><code>head The-Count-Of-Monte-Cristo.txt
+tail The-Count-Of-Monte-Cristo.txt
+</code></pre><p><code>head</code> and <code>tail</code> are common both on the command line, and in programming languages like <code>Python</code> and <code>R</code>. We can change how many lines we see using the flag <code>-n</code> followed by a number.</p>
 <h3 id="more-ways-of-printing-files">More ways of printing files</h3>
-<p>Here are some more commands for outputting file contents in a variety of ways. Try them on the example files and work out what they do. You might wand to run these commands on shorter files to make it easier to understand the output, <code>animals.txt</code>, back in the  might be useful here.</p>
+<p>Here are some more commands for outputting file contents in a variety of ways. Try them on the example files and work out what they do. You might want to run these commands on shorter files to make it easier to understand the output, <code>animals.txt</code>, back in the <code>sandbox</code> folder might be useful here.</p>
 <pre tabindex="0"><code>tac
 rev
 uniq
 sort
-shuf
 </code></pre><p>These might seem trivial (maybe even useless!) but these are powerful building blocks for arranging data.</p>
 <h3 id="introducing-wildcards-">Introducing wildcards <code>*</code></h3>
 <p>We will cover this in more detail later, but let&rsquo;s look at using the asterisk, <code>*</code>, as a wildcard. Experiment with a command like these</p>
@@ -144,7 +141,7 @@ head -n 2 *
 head -n 3 *ea*
 </code></pre><h3 id="the-strangely-named-less">The strangely-named <code>less</code></h3>
 <p>Now let&rsquo;s look at using a pager. A pager does not put the file contents to the terminal output, but <em>instead shows it to you in a piece of dedicated software</em>. It might not look like it, since it is still just plain text in your terminal window! But when using a pager, you are <em>no longer on the command line</em>. We will use the command <code>less</code>, which will open a pager to view a file. (Why this program is called &ldquo;less&rdquo; is a story for another time :)</p>
-<pre tabindex="0"><code>less the-temptest.txt
+<pre tabindex="0"><code>less The-Count-Of-Monte-Cristo.txt
 </code></pre><div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>

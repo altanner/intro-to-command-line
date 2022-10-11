@@ -61,8 +61,7 @@ Info  Here are some common editors you might come across, or choose to learn:]]>
     <author>Author</author>
     <guid>https://alleetanner.github.io/intro-to-command-line/posts/03viewing_files/</guid>
     <description><![CDATA[Viewing files There are two main ways of viewing the contents of files on the command line: &ldquo;printing&rdquo; the output to the terminal window, and viewing file contents with a &ldquo;pager&rdquo;.
-cat Let&rsquo;s look at outputting first with a command called cat. Sadly, this has nothing to do with small furry felines. Move into the folder called example_files, and run this command
-cat meaning_of_life.txt which means &ldquo;output the contents of of the file &ldquo;meaning_of_life.]]></description>
+cat Let&rsquo;s look at outputting first with a command called cat. Sadly, this has nothing to do with small furry felines. cat is short for &ldquo;conCATenate&rdquo;, which means &ldquo;join files end to end&rdquo;, but it is commonly used for looking at a single file.]]></description>
 </item><item>
     <title>‣ Working with files</title>
     <link>https://alleetanner.github.io/intro-to-command-line/posts/02manipulation/</link>
