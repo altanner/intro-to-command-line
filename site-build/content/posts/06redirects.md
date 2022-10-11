@@ -54,8 +54,9 @@ tail -10 king-lear.txt >> another_file
 
 ### Exercise
 Try these redirection and appending tasks, in the folder `some_plays`.
+
 {{< admonition type="question" title="Exercise" open=true >}}
-- Make a new file called "last_50_lines.txt" of the last 50 lines of *Romeo and Juliet*.
+- Make a new file called "first_50_lines.txt" of the first 50 lines of *Romeo and Juliet*.
 - Make another new file, containing the last 86 lines, of *all* the plays.
 - Make a file containing all the lines, from all the plays, containing the word "Queen".
 - Create a file containing the total *number* of lines spoken by Theseus, Oberon and Lysander in *A Midsummer Night's Dream*. 
@@ -82,8 +83,8 @@ You will get description and instructions on what the command does, how to use i
 
 {{< admonition type="question" title="Exercise" open=true >}}
 - Use `man` to look up the command `wc`
-- Use `wc`, plus a flag, to count the number of lines in Macbeth, in the folder "some_plays"
-- Use `wc` to count the characters in A Midsummer Night's Dream.
+- Use `wc`, plus a flag, to count the number of lines in *Macbeth*, in the folder "some_plays"
+- Use `wc` to count the characters in *A Midsummer Night's Dream*.
 - Use `wc` to count the number of lines in all of the plays in this folder.
 - Use `man` to look up the following commands. And give the commands themselves a try
 ```
