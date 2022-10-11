@@ -58,7 +58,7 @@ Think of `grep` as `ctrl-f` ("find"), that you might use in a document or a brow
 Move into the folder `some_plays` and try this command:
 
 ```
-grep fish king-lear.txt
+grep "fish" king-lear.txt
 ```
 
 Here we are saying "Run grep, searching for the word *fish*, in the file called king-lear.txt". `grep` will show you the lines with exact matches. Be careful that grep is case sensitive, and it will do exactly what you asked - "fish" will match words with those letters in, not just the word "fish".
@@ -74,9 +74,9 @@ Try changing what `grep` is searching for.
 `grep` can take many useful flags. Try each of these commands with flags, and work out what they do:
 
 ```
-grep faith king-lear.txt
-grep Faith king-lear.txt
-grep -i faith king-lear.txt
+grep "faith" king-lear.txt
+grep "Faith" king-lear.txt
+grep -i "faith" king-lear.txt
 grep -n faith king-lear.txt
 grep -c faith king-lear.txt
 grep -c Faith king-lear.txt
@@ -108,16 +108,22 @@ grep -rc sparrow some_plays
 
 Often, when referring to the file we want to search (or apply any command to), we can use *wildcards* to specify files with similarities in name. Move back into the folder called `some_plays`, and use this command
 
-```shell
+```
 grep sparrow *
 ```
 
-Here, `*` means "every file and folder in this location". We could also specify just part of the filename - try these commands:
+Here, `*` means "every file and folder in this location". We could also specify just part of the filename, for example `a*` would mean all files starting with the letter `a`.
 
+### Exercise
 ```
-grep sparrow t*
-grep sparrow the*
-grep dog *night*
+Use `grep` to answer these questions:
+- Which plays have the word "squirrel" in?
+- How many plays have the word "apple" in?
+- How many plays have the word "beach" in?
+- Which plays, with the word "and" in their title, have the word "asleep" in them?
+- How many lines does Lady Macbeth have in *Macbeth*?
+- Which act has the most scenes in *Henry VI Part 2*?
+- What is the combined line count for both Juliet and Romeo in their play? (Bonus: Can you run this `grep` as a single command?)
 ```
 
 We won't go into it here, but `grep` can search in very sophisticated ways not possible with `ctrl-f`, for example finding ambiguous spellings, returning matches a certain number of lines from the actual match, or being able to look ahead or behind to conditionally match. If you are wondering what the command line version of "find and replace" is, look up a command called `sed` ("string editor") - this command is beyond the scope of this course, but is a commonly-used command for automating modification to files.
