@@ -23,7 +23,7 @@ comment:
 
 ### Pipes
 
-In the last section, we counted the number of lines in our folder of Shakespeare plays. But what if we wanted these in order? We could do this by using another command. This is where we would use a *pipe*. (The pipe symbol is `|` - to the left of the enter key on MacOS, and to the left of the number row on Windows.) A pipe sends the output of one command as the input for another command, linking them together, like in plumbing. A series of pipe and command operations is known as a "pipeline" (these might be saved as a small program, or a "script").
+The pipe operator, looks like this `|` (to the left of the enter key on MacOS, and to the left of the number row on Windows). A pipe allows us to take the output of one command, and use it as the input for another command. For example, we can count the number of lines of each file in our folder of Shakespeare plays, using `wc`. But what if we wanted these in order, numerically? This is where we could use a *pipe*. A series of pipe and command operations is known as a "pipeline" (these might be saved as a small program, or a "script").
 
 We can use the output of `wc` as the input for `sort`. Try these commands in the folder `some_plays`
 
@@ -31,17 +31,23 @@ We can use the output of `wc` as the input for `sort`. Try these commands in the
 wc -l * | sort
 ```
 
-Here the _output_ of the command `wc -l *` is being *piped* into the command `sort`. Building up commands with pipes can lead to some very powerful automation.
+Here the *output* of the command `wc -l *` is being *piped* into the command `sort`. Building up commands with pipes can lead to some very powerful automation.
 
 {{< admonition type="question" title="Exercise" open=true >}}
-- Pipe the output of `ls` into `grep` to count the number of `.txt` files present
-- Look at the `man` page of `sort`, and find a way of reversing the order of the above command.
-- Pipe the output of `wc` into `sort` into `head` to get the three shortest plays in our folder of plays.
+Use pipes to answer these questions:
+- How many `.txt` files are in the `some_plays` folder? (hint: use `ls` and `grep`)
+- Which play has exactly 5730 lines? (hint: use `grep` and `wc`)
+- How many lines, in all the plays, have *both* the words "true" and "love" in?
+- What is the total line count of every file in the folder? (A single number)
+- What is the 629th line of *Pericles*? (use `head` and `tail`)
+- What is the 97th line of *Othello*, backwards?
+- What is the 107th from last line of *Antony and Cleopatra*?
+- What are the five longest plays, in order of line count? (Don't include the total from `sort`)
 {{< /admonition >}}
 
 ### Using pipes and redirects together
 
-Combining redirects and pipes can be very useful. here is a simple example where we pipe one command to another, then send the output of the next command into a file:
+Combining redirects and pipes can be very powerful. Here is a simple example where we pipe one command to another, then send the output of the next command into a file:
 
 ```
 wc -l * | sort -r > ordered_by_line
