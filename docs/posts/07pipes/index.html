@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>‣ Pipes - Introduction to the Command Line</title><meta name="Description" content=""><meta property="og:title" content="‣ Pipes" />
-<meta property="og:description" content="Pipes In the last section, we counted the number of lines in our folder of Shakespeare plays. But what if we wanted these in order? We could do this by using another command. This is where we would use a pipe. (The pipe symbol is | - to the left of the enter key on MacOS, and to the left of the number row on Windows.) A pipe sends the output of one command as the input for another command, linking them together, like in plumbing." />
+<meta property="og:description" content="Pipes The pipe operator, looks like this | (to the left of the enter key on MacOS, and to the left of the number row on Windows). A pipe allows us to take the output of one command, and use it as the input for another command. For example, we can count the number of lines of each file in our folder of Shakespeare plays, using wc. But what if we wanted these in order, numerically?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://alleetanner.github.io/intro-to-command-line/posts/07pipes/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-17T00:00:00+01:00" />
@@ -14,7 +14,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="‣ Pipes"/>
-<meta name="twitter:description" content="Pipes In the last section, we counted the number of lines in our folder of Shakespeare plays. But what if we wanted these in order? We could do this by using another command. This is where we would use a pipe. (The pipe symbol is | - to the left of the enter key on MacOS, and to the left of the number row on Windows.) A pipe sends the output of one command as the input for another command, linking them together, like in plumbing."/>
+<meta name="twitter:description" content="Pipes The pipe operator, looks like this | (to the left of the enter key on MacOS, and to the left of the number row on Windows). A pipe allows us to take the output of one command, and use it as the input for another command. For example, we can count the number of lines of each file in our folder of Shakespeare plays, using wc. But what if we wanted these in order, numerically?"/>
 <meta name="application-name" content="Introduction to the Command Line">
 <meta name="apple-mobile-web-app-title" content="Introduction to the Command Line"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/07pipes\/"
-        },"genre": "posts","wordcount":  354 ,
+        },"genre": "posts","wordcount":  406 ,
         "url": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/07pipes\/","datePublished": "2022-09-17T00:00:00+01:00","dateModified": "2022-09-17T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -77,7 +77,7 @@
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">‣ Pipes</h1><h2 class="single-subtitle">Using command outputs as command inputs</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;354 words&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;406 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -95,7 +95,7 @@
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h3 id="pipes">Pipes</h3>
-<p>In the last section, we counted the number of lines in our folder of Shakespeare plays. But what if we wanted these in order? We could do this by using another command. This is where we would use a <em>pipe</em>. (The pipe symbol is <code>|</code> - to the left of the enter key on MacOS, and to the left of the number row on Windows.) A pipe sends the output of one command as the input for another command, linking them together, like in plumbing. A series of pipe and command operations is known as a &ldquo;pipeline&rdquo; (these might be saved as a small program, or a &ldquo;script&rdquo;).</p>
+<p>The pipe operator, looks like this <code>|</code> (to the left of the enter key on MacOS, and to the left of the number row on Windows). A pipe allows us to take the output of one command, and use it as the input for another command. For example, we can count the number of lines of each file in our folder of Shakespeare plays, using <code>wc</code>. But what if we wanted these in order, numerically? This is where we could use a <em>pipe</em>. A series of pipe and command operations is known as a &ldquo;pipeline&rdquo; (these might be saved as a small program, or a &ldquo;script&rdquo;).</p>
 <p>We can use the output of <code>wc</code> as the input for <code>sort</code>. Try these commands in the folder <code>some_plays</code></p>
 <pre tabindex="0"><code>wc -l * | sort
 </code></pre><p>Here the <em>output</em> of the command <code>wc -l *</code> is being <em>piped</em> into the command <code>sort</code>. Building up commands with pipes can lead to some very powerful automation.</p>
@@ -104,16 +104,22 @@
             <i class="icon fas fa-question-circle fa-fw"></i>Exercise<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><ul>
-<li>Pipe the output of <code>ls</code> into <code>grep</code> to count the number of <code>.txt</code> files present</li>
-<li>Look at the <code>man</code> page of <code>sort</code>, and find a way of reversing the order of the above command.</li>
-<li>Pipe the output of <code>wc</code> into <code>sort</code> into <code>head</code> to get the three shortest plays in our folder of plays.</li>
+            <div class="admonition-content"><p>Use pipes to answer these questions:</p>
+<ul>
+<li>How many <code>.txt</code> files are in the <code>some_plays</code> folder? (hint: use <code>ls</code> and <code>grep</code>)</li>
+<li>Which play has exactly 5730 lines? (hint: use <code>grep</code> and <code>wc</code>)</li>
+<li>How many lines, in all the plays, have <em>both</em> the words &ldquo;true&rdquo; and &ldquo;love&rdquo; in?</li>
+<li>What is the total line count of every file in the folder? (A single number)</li>
+<li>What is the 629th line of <em>Pericles</em>? (use <code>head</code> and <code>tail</code>)</li>
+<li>What is the 97th line of <em>Othello</em>, backwards?</li>
+<li>What is the 107th from last line of <em>Antony and Cleopatra</em>?</li>
+<li>What are the five longest plays, in order of line count? (Don&rsquo;t include the total from <code>sort</code>)</li>
 </ul>
 </div>
         </div>
     </div>
 <h3 id="using-pipes-and-redirects-together">Using pipes and redirects together</h3>
-<p>Combining redirects and pipes can be very useful. here is a simple example where we pipe one command to another, then send the output of the next command into a file:</p>
+<p>Combining redirects and pipes can be very powerful. Here is a simple example where we pipe one command to another, then send the output of the next command into a file:</p>
 <pre tabindex="0"><code>wc -l * | sort -r &gt; ordered_by_line
 </code></pre><p>Understanding this kind of flow is essentially the first step towards programming. While the command line is a whole scripting language in itself, as things get more sophisticated we start to use proper programming languages. This aids in compatibility, portability, and allows you to use purpose-built tools.</p>
 <div class="details admonition question open">

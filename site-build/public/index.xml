@@ -27,7 +27,7 @@ In research, we often work on remote machines (&ldquo;computing clusters&rdquo;,
     <pubDate>Sat, 17 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
     <guid>https://alleetanner.github.io/intro-to-command-line/posts/07pipes/</guid>
-    <description><![CDATA[Pipes In the last section, we counted the number of lines in our folder of Shakespeare plays. But what if we wanted these in order? We could do this by using another command. This is where we would use a pipe. (The pipe symbol is | - to the left of the enter key on MacOS, and to the left of the number row on Windows.) A pipe sends the output of one command as the input for another command, linking them together, like in plumbing.]]></description>
+    <description><![CDATA[Pipes The pipe operator, looks like this | (to the left of the enter key on MacOS, and to the left of the number row on Windows). A pipe allows us to take the output of one command, and use it as the input for another command. For example, we can count the number of lines of each file in our folder of Shakespeare plays, using wc. But what if we wanted these in order, numerically?]]></description>
 </item><item>
     <title>‣ Redirection</title>
     <link>https://alleetanner.github.io/intro-to-command-line/posts/06redirects/</link>
