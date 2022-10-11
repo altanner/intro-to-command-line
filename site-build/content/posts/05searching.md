@@ -116,13 +116,15 @@ Here, `*` means "every file and folder in this location". We could also specify 
 ### Exercise
 {{< admonition type="question" title="Questions" open=true >}}
 Use `grep` to answer these questions:
-1. Which plays have the word "squirrel" in?
-2. How many plays have the word "apple" in?
-3. How many plays have the word "beach" in?
-4. Which plays, with the word "and" in their title, have the word "asleep" in them?
-5. How many lines does Lady Macbeth have in *Macbeth*?
-6. Which act has the most scenes in *Henry VI Part 2*?
-7. What is the total line count for *both* Juliet and Romeo in their play? (Bonus: Can you run this `grep` as a single command?)
+- Which plays have the word "squirrel" in?
+- How many plays have the word "confidence" in?
+- How many plays have the word "beach" in?
+- Which line number does the word "folly" appear *Hamlet*?
+- Which plays, with the word "and" in their title, have the word "asleep" in them?
+- How many lines does Lady Macbeth have in *Macbeth*?
+- Which act has the most scenes in *Henry VI Part 2*?
+- How many lines, in total, do *both* Juliet and Romeo have in their play? (Bonus: Can you run this `grep` as a single command?)
+- Which play has the word "dog" in the most times? (Don't match "dogs", or any other word containing "dog")
 {{< /admonition >}}
 
 We won't go into it here, but `grep` can search in very sophisticated ways not possible with `ctrl-f`, for example finding ambiguous spellings, returning matches a certain number of lines from the actual match, or being able to look ahead or behind to conditionally match. If you are wondering what the command line version of "find and replace" is, look up a command called `sed` ("string editor") - this command is beyond the scope of this course, but is a commonly-used command for automating modification to files.
