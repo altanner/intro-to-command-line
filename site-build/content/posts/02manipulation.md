@@ -21,7 +21,7 @@ comment:
   enable: true
 ---
 
-{{< admonition type="success" title="Learn more" open=true >}}
+{{< admonition type="success" title="Learn more" open=false >}}
 We give some warnings on this page, but don't be intimidated! Mistakes are only human, and you won't be able to damage your computer through any of these commands.
 
 To improve your skills in backing up, version control, and minimising risk in computing, look for our courses on *Best Practices in Software Engineering*.
