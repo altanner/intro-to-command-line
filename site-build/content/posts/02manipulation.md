@@ -105,7 +105,7 @@ Which means, "move the file called to data1 to a file called data4". Move is ess
 {{< /admonition >}}
 
 ### Exercise
-Have a play in the sandpit, using `cd`, `ls`, and the file manipulation commands `cp`, `rm` and `mv`.
+Have a play in the sandpit, using `cd`, `ls`, `mkdir` and the file manipulation commands `cp`, `rm` and `mv`.
 {{< admonition type="question" title="Exercise" open=true >}}
 - Can you `mv` one file to more than one destination?
 - What happens if you give `cp` no destination?
