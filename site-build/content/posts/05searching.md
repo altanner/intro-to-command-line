@@ -121,9 +121,9 @@ Use `grep` to answer these questions:
 - How many plays have the words "toasted cheese" in?
 - Which line number does the word "folly" appear in *Hamlet*?
 - Which plays, with the word "and" in their title, have the word "asleep" in them?
-- How many lines does Lady Macbeth have in *Macbeth*?
+- How many times does Lady Macbeth speak in *Macbeth*?
 - Which act has the most scenes in *Henry VI Part 2*?
-- How many lines, in total, do *both* Juliet and Romeo have in their play? (Bonus: Can you run this `grep` as a single command?)
+- How many times, in total, do *both* Juliet and Romeo speak in their play? (Bonus: Can you run this `grep` as a single command?)
 - Which play has the word "dog" in the most times? (Don't match "dogs", or any other word containing "dog")
 {{< /admonition >}}
 
