@@ -117,8 +117,8 @@ Here, `*` means "every file and folder in this location". We could also specify 
 {{< admonition type="question" title="Questions" open=true >}}
 Use `grep` to answer these questions:
 - Which plays have the word "squirrel" in?
+- Which plays have the words "toasted cheese" in?
 - How many plays have the word "confidence" in?
-- How many plays have the words "toasted cheese" in?
 - Which line number does the word "folly" appear in *Hamlet*?
 - Which plays, with the word "and" in their title, have the word "asleep" in them?
 - How many times does Lady Macbeth speak in *Macbeth*?
