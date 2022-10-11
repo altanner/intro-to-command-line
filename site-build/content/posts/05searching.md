@@ -70,18 +70,17 @@ Try changing what `grep` is searching for.
 - Can you search for more than one word? (for example the phrase "and such")
 {{< /admonition >}}
 
-### Exercise
 `grep` can take many useful flags. Try each of these commands with flags, and work out what they do:
 
 ```
 grep "faith" king-lear.txt
 grep "Faith" king-lear.txt
 grep -i "faith" king-lear.txt
-grep -n faith king-lear.txt
-grep -c faith king-lear.txt
-grep -c Faith king-lear.txt
-grep -ci faith king-lear.txt
-grep faith king-lear.txt julius-caesar.txt
+grep -n "faith" king-lear.txt
+grep -c "faith" king-lear.txt
+grep -c "Faith" king-lear.txt
+grep -ci "faith" king-lear.txt
+grep "faith" king-lear.txt julius-caesar.txt
 ```
 
 {{< admonition type="info" open=true >}}
@@ -115,7 +114,7 @@ grep sparrow *
 Here, `*` means "every file and folder in this location". We could also specify just part of the filename, for example `a*` would mean all files starting with the letter `a`.
 
 ### Exercise
-```
+{{< admonition type="Questions" open=true >}}
 Use `grep` to answer these questions:
 - Which plays have the word "squirrel" in?
 - How many plays have the word "apple" in?
@@ -123,8 +122,8 @@ Use `grep` to answer these questions:
 - Which plays, with the word "and" in their title, have the word "asleep" in them?
 - How many lines does Lady Macbeth have in *Macbeth*?
 - Which act has the most scenes in *Henry VI Part 2*?
-- What is the combined line count for both Juliet and Romeo in their play? (Bonus: Can you run this `grep` as a single command?)
-```
+- What is the total line count for *both* Juliet and Romeo in their play? (Bonus: Can you run this `grep` as a single command?)
+{{< /admonition >}}
 
 We won't go into it here, but `grep` can search in very sophisticated ways not possible with `ctrl-f`, for example finding ambiguous spellings, returning matches a certain number of lines from the actual match, or being able to look ahead or behind to conditionally match. If you are wondering what the command line version of "find and replace" is, look up a command called `sed` ("string editor") - this command is beyond the scope of this course, but is a commonly-used command for automating modification to files.
 
