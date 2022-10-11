@@ -22,9 +22,9 @@ comment:
 ---
 
 {{< admonition type="note" title="Glossary" open=false >}}
-It it entirely normal to be confused about these words!
-* **terminal** - a program which emulates (mimics, in software) an old piece of hardware, which provides the command line.
-* **console** - effectively, the same thing as a terminal.
+It it entirely normal to be confused about these words:
+* **terminal** - a program which emulates (mimics, in software) a (now redundant) piece of hardware, which provides the command line.
+* **console** - effectively, the same thing as a terminal. Note that we also say "console" when referring to an interactive session of a programming language, for example Python.
 * **shell** is a program that sends our commands to the operating system (OS), and sends responses from the OS back to the user. Technically, we are using a shell language on the command line, but you don't need to worry about that!
 * As far as we are concerned, **these all mean the same thing: the command line!** Being confused by this is entirely natural.
 {{< /admonition >}}
@@ -70,7 +70,7 @@ We can ask the computer to run a command, *in a particular way* - these are *adv
 ##### Objects
 Often we need to tell the program *what we are doing the action to* - the *object*. These are also known as an *argument* (yes, more strange words, I agree!).
 
-Just like in spoken language, a sentence must have a verb. Adverbs are optional. And most verbs require an object to act upon. So the correct grammatical order for a command is
+Just like in spoken language, where a sentence must have a verb to be complete, a command must have at the very least the name of a program to run. Adverbs are optional. And many verbs require an object to act upon. So the correct grammatical order for a command is
 ```
 verb adverb object
 ```
