@@ -31,7 +31,7 @@ find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ."/>
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/05searching\/"
-        },"genre": "posts","wordcount":  1155 ,
+        },"genre": "posts","wordcount":  1147 ,
         "url": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/05searching\/","datePublished": "2022-09-15T00:00:00+01:00","dateModified": "2022-09-15T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -81,7 +81,7 @@ find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ."/>
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">‣ Searching</h1><h2 class="single-subtitle">Find what you are looking for, both in folders, and inside files</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1155 words&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1147 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -94,9 +94,8 @@ find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ."/>
       <ul>
         <li><a href="#searching-for-files">Searching for files</a></li>
         <li><a href="#searching-in-files">Searching in files</a></li>
-        <li><a href="#exercise">Exercise</a></li>
         <li><a href="#recursive-searching">Recursive searching</a></li>
-        <li><a href="#exercise-1">Exercise</a></li>
+        <li><a href="#exercise">Exercise</a></li>
       </ul>
     </li>
   </ul>
@@ -147,16 +146,15 @@ find . -iname &#34;parakeet&#34;
 </div>
         </div>
     </div>
-<h3 id="exercise">Exercise</h3>
 <p><code>grep</code> can take many useful flags. Try each of these commands with flags, and work out what they do:</p>
 <pre tabindex="0"><code>grep &#34;faith&#34; king-lear.txt
 grep &#34;Faith&#34; king-lear.txt
 grep -i &#34;faith&#34; king-lear.txt
-grep -n faith king-lear.txt
-grep -c faith king-lear.txt
-grep -c Faith king-lear.txt
-grep -ci faith king-lear.txt
-grep faith king-lear.txt julius-caesar.txt
+grep -n &#34;faith&#34; king-lear.txt
+grep -c &#34;faith&#34; king-lear.txt
+grep -c &#34;Faith&#34; king-lear.txt
+grep -ci &#34;faith&#34; king-lear.txt
+grep &#34;faith&#34; king-lear.txt julius-caesar.txt
 </code></pre><div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -182,16 +180,26 @@ grep -rc sparrow some_plays
 </code></pre><p>Often, when referring to the file we want to search (or apply any command to), we can use <em>wildcards</em> to specify files with similarities in name. Move back into the folder called <code>some_plays</code>, and use this command</p>
 <pre tabindex="0"><code>grep sparrow *
 </code></pre><p>Here, <code>*</code> means &ldquo;every file and folder in this location&rdquo;. We could also specify just part of the filename, for example <code>a*</code> would mean all files starting with the letter <code>a</code>.</p>
-<h3 id="exercise-1">Exercise</h3>
-<pre tabindex="0"><code>Use `grep` to answer these questions:
-- Which plays have the word &#34;squirrel&#34; in?
-- How many plays have the word &#34;apple&#34; in?
-- How many plays have the word &#34;beach&#34; in?
-- Which plays, with the word &#34;and&#34; in their title, have the word &#34;asleep&#34; in them?
-- How many lines does Lady Macbeth have in *Macbeth*?
-- Which act has the most scenes in *Henry VI Part 2*?
-- What is the combined line count for both Juliet and Romeo in their play? (Bonus: Can you run this `grep` as a single command?)
-</code></pre><p>We won&rsquo;t go into it here, but <code>grep</code> can search in very sophisticated ways not possible with <code>ctrl-f</code>, for example finding ambiguous spellings, returning matches a certain number of lines from the actual match, or being able to look ahead or behind to conditionally match. If you are wondering what the command line version of &ldquo;find and replace&rdquo; is, look up a command called <code>sed</code> (&ldquo;string editor&rdquo;) - this command is beyond the scope of this course, but is a commonly-used command for automating modification to files.</p>
+<h3 id="exercise">Exercise</h3>
+<div class="details admonition Questions open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw"></i><i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Use <code>grep</code> to answer these questions:</p>
+<ul>
+<li>Which plays have the word &ldquo;squirrel&rdquo; in?</li>
+<li>How many plays have the word &ldquo;apple&rdquo; in?</li>
+<li>How many plays have the word &ldquo;beach&rdquo; in?</li>
+<li>Which plays, with the word &ldquo;and&rdquo; in their title, have the word &ldquo;asleep&rdquo; in them?</li>
+<li>How many lines does Lady Macbeth have in <em>Macbeth</em>?</li>
+<li>Which act has the most scenes in <em>Henry VI Part 2</em>?</li>
+<li>What is the total line count for <em>both</em> Juliet and Romeo in their play? (Bonus: Can you run this <code>grep</code> as a single command?)</li>
+</ul>
+</div>
+        </div>
+    </div>
+<p>We won&rsquo;t go into it here, but <code>grep</code> can search in very sophisticated ways not possible with <code>ctrl-f</code>, for example finding ambiguous spellings, returning matches a certain number of lines from the actual match, or being able to look ahead or behind to conditionally match. If you are wondering what the command line version of &ldquo;find and replace&rdquo; is, look up a command called <code>sed</code> (&ldquo;string editor&rdquo;) - this command is beyond the scope of this course, but is a commonly-used command for automating modification to files.</p>
 <p>To use wildcards in the search query itself, we have to use regular expressions (&ldquo;regex&rdquo;). For example searching for variations of spelling, or when a word is near another match, or not showing the match but the word after the match, or the line after the match.</p>
 <div class="details admonition warning open">
         <div class="details-summary admonition-title">
