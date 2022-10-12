@@ -11,8 +11,7 @@
     <pubDate>Tue, 20 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
     <guid>https://alleetanner.github.io/intro-to-command-line/posts/10bioinformatics/</guid>
-    <description><![CDATA[Scripts So far, we have been running things directly on the command line, &ldquo;interactively&rdquo;. However, you might want to keep your commands in a file, and be able to run, share, modify, or use files as templates. This is the gateway to coding - and is great practice for developing your reproducible work, for communicating your methods with others, and for archiving your work.
-A &ldquo;script&rdquo; is a file of instructions that can be directly read and run by a program.]]></description>
+    <description><![CDATA[Sequence information on the command line This section is aimed at those wanting to use the command line, and perhaps computing clusters, to work with sequence information (that is, genetic, genomic, proteomic and other bioinformatic data). We recommend using a dedicated programming language for more complex work: this is easier to share, replicate, test and collaborate on. But the command line remains a useful environment to acquire and manage data, especially as the first part of an analysis pipeline.]]></description>
 </item><item>
     <title>‣ Shell scripts</title>
     <link>https://alleetanner.github.io/intro-to-command-line/posts/09scripts/</link>
