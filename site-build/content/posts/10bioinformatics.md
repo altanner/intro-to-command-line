@@ -1,6 +1,6 @@
 ---
 title: "‣ Bioinformatics"
-subtitle: "Working with sequence information."
+subtitle: "Working with sequence information"
 
 date: 2022-09-20T00:00:00+01:00
 
@@ -21,26 +21,16 @@ comment:
   enable: true
 ---
 
-### Scripts
+### Sequence information on the command line
 
-So far, we have been running things directly on the command line, "interactively". However, you might want to keep your commands in a file, and be able to run, share, modify, or use files as templates. This is the gateway to coding - and is great practice for developing your reproducible work, for communicating your methods with others, and for archiving your work.
+This section is aimed at those wanting to use the command line, and perhaps computing clusters, to work with sequence information (that is, genetic, genomic, proteomic and other bioinformatic data). We recommend using a dedicated programming language for more complex work: this is easier to share, replicate, test and collaborate on. But the command line remains a useful environment to acquire and manage data, especially as the first part of an analysis pipeline.
 
-A "script" is a file of instructions that can be directly read and run by a program. For example, a file of Python code is a script, since it does not need to be compiled into binary - this is done by the Python interpreter, working as it goes along. In our case, we are going to make a script, but the language will be shell (all of the commands we have been using so far are shell commands).
+Here we are going to use the command line to download some sequence information from a major genomic information repository, called NCBI. We will be asking the repo for a particular gene sequence from a range of organisms, and then cleaning the data ready for downstream work.
 
-Let's create a very simple script - open `nano`, creating a file called "my-first-script.sh" (or anything you like!) and include two lines
-```
-ls -l *part*
-echo "That is all of the files with \"part\" in that I could find here."
-```
 {{< admonition type="info" open=true >}}
 - If you didn't look up `echo` earlier, use `man` to work out what it does.
 - Think of `echo` as `print`, used commonly in programming languages.
 {{< /admonition >}}
-
-Save the file and exit `nano`. Now, we are going to run this file, in the folder `some_plays`. To do this, we are going to ask the program `bash` ("Bourne Again shell", a widely-used shell program) to run it, with
-```
-bash my-first-script.sh
-```
 
 ### Exercise
 Let's use all of the skills we have learned today to build a script to complete a task. Be in the folder `some_plays`. Use `nano` to start a new, empty file. Create a script that will:
