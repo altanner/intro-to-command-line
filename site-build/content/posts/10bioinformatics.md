@@ -21,7 +21,7 @@ comment:
   enable: true
 ---
 
-### Sequence information on the command line
+### Managing sequence data on the command line
 
 This section is aimed at those wanting to use the command line, and perhaps computing clusters, to work with sequence information (that is, genetic, genomic, proteomic and other bioinformatic data). We recommend using a dedicated programming language for more complex work: this is easier to share, replicate, test and collaborate on. But the command line remains a useful environment to acquire and manage data, especially as the first part of an analysis pipeline.
 
@@ -33,19 +33,17 @@ Here we are going to use the command line to download some sequence information 
 {{< /admonition >}}
 
 ### Exercise
-Let's use all of the skills we have learned today to build a script to complete a task. Be in the folder `some_plays`. Use `nano` to start a new, empty file. Create a script that will:
+Let's work with some real data to answer some real research questions! Firstly, we are going to acquire a genome to work with. Go to [NCBI genbank](https://www.ncbi.nlm.nih.gov/), and in the search dropdown menu, select `Genome`. While you are here, notice the other databases that NCBI hosts. Lots of these are quite niche, but common ones to use are `Genome`, `Gene`, `Protein` and `SRA`, the latter for raw, unassembled sequence reads.
+
+With `Genome` as your search database, type "covid", and run the search. You should get one result (if you get more, choose the top result). Note the information get here, with XXXXXXX
 
 {{< admonition type="question" title="Exercise" open=true >}}
-- Print the final line of _Macbeth_
-- Count how many time the word "merry" occurs in all plays starting with the letter "m"
-- Count how many times Hamlet speaks in _Hamlet_
-- Print the line of who edited each play
-- Use `head` and `tail` to print _just_ the 500th line of _All's Well That Ends Well_
-- Make a new file containing _just_ the 1000th line of _A Midsummer Night's Dream_ **backwards**!
-- Make a new file, in the folder _containing_ `some_plays`, of the total count of the lines containing the word "love" in all of the plays (combined - ie a single number).
-{{< admonition type="tip" open=true >}}
-Test each of your commands individually on the command line, before building them into your script.
-{{< /admonition >}}
+- How long is this genome, in kilobases? 
+- What is the total nucleotide count each for A, T, C and G in this genome?
+- How many times do we see the start codon (Methionine) in the genome?
+- How many times does the motif ATGTAG occur in the genome?
+- Assume that all protein-coding genes in this genome start with the motifs ATGCTT and ATGACC. How many genes does this covid-19 genome appear to contain?
+- What limitations does this approach have?
 {{< /admonition >}}
 
 If you can complete this task - congratulations, you now know all of the important ways of navigating the file system, of searching files, and the basics of shell scripting.
