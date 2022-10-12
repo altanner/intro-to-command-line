@@ -47,6 +47,8 @@ theme = "LoveIt"
 [params]
   # LoveIt theme version
   version = "0.2.X"
+  # trying to make post count longer
+  paginate = 30
 
 [params.header]
     [params.header.title]
@@ -79,7 +81,7 @@ theme = "LoveIt"
 
 [params.page.toc]
   # whether to enable the table of the contents
-  enable = false
+  enable = true
   # LoveIt NEW | 0.2.9 whether to keep the static table of the contents in front of the post
   keepStatic = true
   # whether to make the table of the contents in the sidebar automatically collapsed
