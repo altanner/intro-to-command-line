@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/07pipes\/"
-        },"genre": "posts","wordcount":  406 ,
+        },"genre": "posts","wordcount":  516 ,
         "url": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/07pipes\/","datePublished": "2022-09-17T00:00:00+01:00","dateModified": "2022-09-17T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -77,8 +77,8 @@
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">‣ Pipes</h1><h2 class="single-subtitle">Using command outputs as command inputs</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;406 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;516 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -119,18 +119,22 @@
         </div>
     </div>
 <h3 id="using-pipes-and-redirects-together">Using pipes and redirects together</h3>
-<p>Combining redirects and pipes can be very powerful. Here is a simple example where we pipe one command to another, then send the output of the next command into a file:</p>
+<p>Combining redirects and pipes can be very powerful, as we can easily save the output of a series of commands into a new file. Here is a simple example where we pipe one command to another, then send the output of the next command into a file:</p>
 <pre tabindex="0"><code>wc -l * | sort -r &gt; ordered_by_line
-</code></pre><p>Understanding this kind of flow is essentially the first step towards programming. While the command line is a whole scripting language in itself, as things get more sophisticated we start to use proper programming languages. This aids in compatibility, portability, and allows you to use purpose-built tools.</p>
+</code></pre><p>Understanding this kind of flow is a first step towards programming. While the command line is a whole scripting language in itself, as things get more sophisticated we start to use proper programming languages rather than the command line, but the command line remains very useful and powerful. Let&rsquo;s do some exercises using pipes and redirects.</p>
 <div class="details admonition question open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-question-circle fa-fw"></i>Exercise<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><ul>
-<li>Count the total number of lines with the word &ldquo;bird&rdquo; in all the plays.</li>
-<li>Make a new file containing every line in these plays with the word &ldquo;hills&rdquo; in.</li>
-<li>Pipe <code>wc</code> into <code>sort</code> into <code>head</code> to get the three shortest plays in our folder of plays.</li>
+            <div class="admonition-content"><p>Move into the folder called <code>alexandre-dumas</code>, this contains a text file of the book <em>The Count of Monte Cristo</em>. Try these:</p>
+<ul>
+<li>Make a new file containing every line in the book with the word &ldquo;hills&rdquo; in.</li>
+<li>Make a new file containing all lines with the word &ldquo;benefactor&rdquo;, sorted alphabetically (ignoring the case).</li>
+<li>Make a new file containing the one line of text containing the word &ldquo;baroness&rdquo; and &ldquo;magistrate&rdquo;.</li>
+<li>Add to this file a single number: the total number of words in all the lines containing the word &ldquo;opportunity&rdquo;.</li>
+<li>Make a new file <em>in the folder that contains the folder <code>alexandre-dumas</code></em>, with the total character count of <em>The Count of Monte Cristo</em> (just a single number).</li>
+<li>Check the contents of that file (the character count file), without moving from the folder <code>alexandre-dumas</code>.</li>
 </ul>
 </div>
         </div>
