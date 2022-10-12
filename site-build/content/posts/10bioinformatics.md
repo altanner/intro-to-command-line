@@ -43,7 +43,11 @@ With `Genome` as your search database, type "covid", and run the search. You sho
 - How many times do we see the start codon (Methionine) in the genome?
 - How many times does the motif ATGTAG occur in the genome?
 - Assume that all protein-coding genes in this genome start with the motifs ATGCTT and ATGACC. How many genes does this covid-19 genome appear to contain?
-- What limitations does this approach have?
+- The covid nucleocapsid glycoprotein starts with the motif ATGTCTGAT and end with CAGGCCTAA
+  - What lines do the capsid gene start and end?
+  - Isolate the capsid gene and make a new file, containing just that gene.
+  - How many nucleotides long is the gene?
+- Keep in mind all the limitations that the above has!
 {{< /admonition >}}
 
 If you can complete this task - congratulations, you now know all of the important ways of navigating the file system, of searching files, and the basics of shell scripting.
