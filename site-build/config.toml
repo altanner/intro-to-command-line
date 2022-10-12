@@ -84,3 +84,5 @@ theme = "LoveIt"
   keepStatic = true
   # whether to make the table of the contents in the sidebar automatically collapsed
   auto = false
+  # trying to make post count longer
+  maxPostCount = 30
