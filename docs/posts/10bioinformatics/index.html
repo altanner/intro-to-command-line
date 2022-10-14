@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/10bioinformatics\/"
-        },"genre": "posts","wordcount":  477 ,
+        },"genre": "posts","wordcount":  507 ,
         "url": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/10bioinformatics\/","datePublished": "2022-09-20T00:00:00+01:00","dateModified": "2022-09-20T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -77,7 +77,7 @@
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">‣ Bioinformatics</h1><h2 class="single-subtitle">Working with sequence information</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;477 words&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;507 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -96,21 +96,9 @@
 </nav></div>
             </div><div class="content" id="content"><h3 id="managing-sequence-data-on-the-command-line">Managing sequence data on the command line</h3>
 <p>This section is aimed at those wanting to use the command line, and perhaps computing clusters, to work with sequence information (that is, genetic, genomic, proteomic and other bioinformatic data). We recommend using a dedicated programming language for more complex work: this is easier to share, replicate, test and collaborate on. But the command line remains a useful environment to acquire and manage data, especially as the first part of an analysis pipeline.</p>
-<p>Here we are going to use the command line to download some sequence information from a major genomic information repository, called NCBI. We will be asking the repo for a particular gene sequence from a range of organisms, and then cleaning the data ready for downstream work.</p>
-<div class="details admonition info open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><ul>
-<li>If you didn&rsquo;t look up <code>echo</code> earlier, use <code>man</code> to work out what it does.</li>
-<li>Think of <code>echo</code> as <code>print</code>, used commonly in programming languages.</li>
-</ul>
-</div>
-        </div>
-    </div>
+<p>Here we are going to use the command line to download some sequence information from a major genomic information repository, called NCBI. All publicly-funded research sequence information is required to be deposited here - so pretty much all bioinformatics papers you see will have their working data available. But also, be aware that NCBI is not flawless - given the scale of their data repository, and the varied working practices of many labs across the world, you will sometimes come across poorly-annotated, mislabeled or otherwise inaccurate data. However, just keep this in mind - well over 90% of it is accurate and well-catalogued!</p>
 <h3 id="exercise">Exercise</h3>
-<p>Let&rsquo;s work with some real data to answer some real research questions! Firstly, we are going to acquire a genome to work with. Go to <a href="https://www.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreffer">NCBI genbank</a>, and in the search dropdown menu, select <code>Genome</code>. While you are here, notice the other databases that NCBI hosts. Lots of these are quite niche, but common ones to use are <code>Genome</code>, <code>Gene</code>, <code>Protein</code> and <code>SRA</code>, the latter for raw, unassembled sequence reads.</p>
+<p>Let&rsquo;s work with some real data to answer some real research questions. Firstly, we are going to acquire a genome to work with. Go to <a href="https://www.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreffer">NCBI genbank</a>, and in the search dropdown menu, select <code>Genome</code>. While you are here, notice the other databases that NCBI hosts. Lots of these are quite niche, but common ones to use are <code>Genome</code>, <code>Gene</code>, <code>Protein</code> and <code>SRA</code>, the latter for raw, unassembled sequence reads.</p>
 <p>With <code>Genome</code> as your search database, type &ldquo;covid&rdquo;, and run the search. You should get one result (if you get more, choose the top result). Note the information get here, with XXXXXXX</p>
 <div class="details admonition question open">
         <div class="details-summary admonition-title">
