@@ -25,15 +25,10 @@ comment:
 
 This section is aimed at those wanting to use the command line, and perhaps computing clusters, to work with sequence information (that is, genetic, genomic, proteomic and other bioinformatic data). We recommend using a dedicated programming language for more complex work: this is easier to share, replicate, test and collaborate on. But the command line remains a useful environment to acquire and manage data, especially as the first part of an analysis pipeline.
 
-Here we are going to use the command line to download some sequence information from a major genomic information repository, called NCBI. We will be asking the repo for a particular gene sequence from a range of organisms, and then cleaning the data ready for downstream work.
-
-{{< admonition type="info" open=true >}}
-- If you didn't look up `echo` earlier, use `man` to work out what it does.
-- Think of `echo` as `print`, used commonly in programming languages.
-{{< /admonition >}}
+Here we are going to use the command line to download some sequence information from a major genomic information repository, called NCBI. All publicly-funded research sequence information is required to be deposited here - so pretty much all bioinformatics papers you see will have their working data available. But also, be aware that NCBI is not flawless - given the scale of their data repository, and the varied working practices of many labs across the world, you will sometimes come across poorly-annotated, mislabeled or otherwise inaccurate data. However, just keep this in mind - well over 90% of it is accurate and well-catalogued!
 
 ### Exercise
-Let's work with some real data to answer some real research questions! Firstly, we are going to acquire a genome to work with. Go to [NCBI genbank](https://www.ncbi.nlm.nih.gov/), and in the search dropdown menu, select `Genome`. While you are here, notice the other databases that NCBI hosts. Lots of these are quite niche, but common ones to use are `Genome`, `Gene`, `Protein` and `SRA`, the latter for raw, unassembled sequence reads.
+Let's work with some real data to answer some real research questions. Firstly, we are going to acquire a genome to work with. Go to [NCBI genbank](https://www.ncbi.nlm.nih.gov/), and in the search dropdown menu, select `Genome`. While you are here, notice the other databases that NCBI hosts. Lots of these are quite niche, but common ones to use are `Genome`, `Gene`, `Protein` and `SRA`, the latter for raw, unassembled sequence reads.
 
 With `Genome` as your search database, type "covid", and run the search. You should get one result (if you get more, choose the top result). Note the information get here, with XXXXXXX
 
