@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/10bioinformatics\/"
-        },"genre": "posts","wordcount":  682 ,
+        },"genre": "posts","wordcount":  695 ,
         "url": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/10bioinformatics\/","datePublished": "2022-09-20T00:00:00+01:00","dateModified": "2022-09-20T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -77,7 +77,7 @@
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">‣ Bioinformatics</h1><h2 class="single-subtitle">Managing sequence data on the command line</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;682 words&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;695 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -108,16 +108,17 @@
         <div class="details-content">
             <div class="admonition-content"><p>Use command line tools taught earlier in this course to answer these questions about the <strong>nucleotide</strong> genome:</p>
 <ul>
-<li>How long is this genome, in kilobases?</li>
-<li>What is the total nucleotide count each for A, T, C and G in the genome? Is it G-C enriched, or A-T enriched?</li>
+<li>U</li>
+<li>How long is this genome, in kilobases? (Hint: use <code>wc</code> with a flag. Remove the FASTA header line however you like: make a new file and edit it manually, or use pipes with <code>head</code> or <code>tail</code>.)</li>
+<li>What is the total nucleotide count each for A, T, C and G in the genome? Is it G-C enriched, or A-T enriched? (Hint: <code>grep</code> with a flag, and <code>wc</code> will help you here.)</li>
 <li>How many times do we see the start codon (Methionine) in the genome?</li>
-<li>How many times does the motif ATGTAG occur in the genome?</li>
-<li>Assume that all protein-coding genes in this genome start with the motifs ATGCTT and ATGACC. How many genes does this covid-19 genome appear to contain?</li>
-<li>The covid nucleocapsid glycoprotein starts with the motif ATGTCTGAT and end with CAGGCCTAA
+<li>How many times does the motif ATGTAG occur in the genome? (Ignore line-breaks for this exercise!)</li>
+<li>Assume that all protein-coding genes in this genome start with the motifs ATGCTT and ATGACC (they don&rsquo;t, this is just an exercise!). How many genes does this covid-19 genome appear to contain?</li>
+<li>The covid nucleocapsid phosphoprotein starts with the motif ATGTCTGATAAT and ends with AACTCAGGCCTA
 <ul>
 <li>What line does the capsid gene start? And end?</li>
-<li>Isolate the capsid gene and make a new file, containing just that gene. Manually trim any non-capsid sequence with a text editor. Make sure it is in FASTA, and give the sequence a name.</li>
-<li>How many nucleotides long is the nucleocapsid glycoprotein gene?</li>
+<li>Isolate the capsid gene and make a new file, containing just that gene. Manually trim any non-capsid sequence with a text editor. Make sure it is in FASTA by adding a header line, and give the sequence a name.</li>
+<li>How many nucleotides long is the nucleocapsid phosphoprotein gene?</li>
 </ul>
 </li>
 </ul>
@@ -132,7 +133,7 @@
         <div class="details-content">
             <div class="admonition-content"><p>Answer these questions about the proteome:</p>
 <ul>
-<li>How many protien-coding genes does SARS-CoV-2 contain?</li>
+<li>How many protein-coding genes does SARS-CoV-2 contain?</li>
 <li>What is the most common amino acid?</li>
 </ul>
 </div>
@@ -143,9 +144,7 @@
             <i class="icon fas fa-check-circle fa-fw"></i>Learn more<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>When learning to use computer clusters and high-performance computers, we often run jobs using &ldquo;submission scripts&rdquo;. These are just the same as a shell script - they are not magic, merely running commands one after another, just like you could on the command line itself.</p>
-<p>You can learn these skills in our course <em>Introduction to HPC</em>, do an internet search for our current courses.</p>
-</div>
+            <div class="admonition-content">You can learn these skills in our course <em>Introduction to HPC</em>, do an internet search for our current courses.</div>
         </div>
     </div>
 </div><div class="post-footer" id="post-footer">
