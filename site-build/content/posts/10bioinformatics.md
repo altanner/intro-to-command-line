@@ -35,28 +35,27 @@ We'll start with the nucleotide genome - open it with `less` to get a feel of wh
 
 {{< admonition type="question" title="Exercise 1" open=true >}}
 Use command line tools taught earlier in this course to answer these questions about the **nucleotide** genome:
-- How long is this genome, in kilobases? 
-- What is the total nucleotide count each for A, T, C and G in the genome? Is it G-C enriched, or A-T enriched?
+- U
+- How long is this genome, in kilobases? (Hint: use `wc` with a flag. Remove the FASTA header line however you like: make a new file and edit it manually, or use pipes with `head` or `tail`.)
+- What is the total nucleotide count each for A, T, C and G in the genome? Is it G-C enriched, or A-T enriched? (Hint: `grep` with a flag, and `wc` will help you here.)
 - How many times do we see the start codon (Methionine) in the genome?
-- How many times does the motif ATGTAG occur in the genome?
-- Assume that all protein-coding genes in this genome start with the motifs ATGCTT and ATGACC. How many genes does this covid-19 genome appear to contain?
-- The covid nucleocapsid glycoprotein starts with the motif ATGTCTGAT and end with CAGGCCTAA
+- How many times does the motif ATGTAG occur in the genome? (Ignore line-breaks for this exercise!)
+- Assume that all protein-coding genes in this genome start with the motifs ATGCTT and ATGACC (they don't, this is just an exercise!). How many genes does this covid-19 genome appear to contain?
+- The covid nucleocapsid phosphoprotein starts with the motif ATGTCTGATAAT and ends with AACTCAGGCCTA
   - What line does the capsid gene start? And end?
-  - Isolate the capsid gene and make a new file, containing just that gene. Manually trim any non-capsid sequence with a text editor. Make sure it is in FASTA, and give the sequence a name.
-  - How many nucleotides long is the nucleocapsid glycoprotein gene?
+  - Isolate the capsid gene and make a new file, containing just that gene. Manually trim any non-capsid sequence with a text editor. Make sure it is in FASTA by adding a header line, and give the sequence a name.
+  - How many nucleotides long is the nucleocapsid phosphoprotein gene?
 {{< /admonition >}}
 
 Now let's have a look at the proteome. Again, open it with `less` and have a look at how it is structured and annotated, noting the differences compared to the nucleotide version of this genome.
 
 {{< admonition type="question" title="Exercise 2" open=true >}}
 Answer these questions about the proteome:
-- How many protien-coding genes does SARS-CoV-2 contain?
+- How many protein-coding genes does SARS-CoV-2 contain?
 - What is the most common amino acid?
 {{< /admonition >}}
 
 {{< admonition type="success" title="Learn more" open=true >}}
-When learning to use computer clusters and high-performance computers, we often run jobs using "submission scripts". These are just the same as a shell script - they are not magic, merely running commands one after another, just like you could on the command line itself.
-
 You can learn these skills in our course *Introduction to HPC*, do an internet search for our current courses.
 {{< /admonition >}}
 
