@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>‣ Bioinformatics - Introduction to the Command Line</title><meta name="Description" content=""><meta property="og:title" content="‣ Bioinformatics" />
-<meta property="og:description" content="Managing sequence data on the command line This section is aimed at those wanting to use the command line, and perhaps computing clusters, to work with sequence information (that is, genetic, genomic, proteomic and other bioinformatic data). We recommend using a dedicated programming language for more complex work: this is easier to share, replicate, test and collaborate on. But the command line remains a useful environment to acquire and manage data, especially as the first part of an analysis pipeline." />
+<meta property="og:description" content="This section is aimed at those wanting to use the command line, and perhaps computing clusters, to work with sequence information (that is, genetic, genomic, proteomic and other bioinformatic data). While we recommend using a dedicated programming language for more complex work: this is easier to share, replicate, test and collaborate on, the command line remains a useful environment to acquire and manage data, especially as the first part of an analysis pipeline." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://alleetanner.github.io/intro-to-command-line/posts/10bioinformatics/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-20T00:00:00+01:00" />
@@ -14,7 +14,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="‣ Bioinformatics"/>
-<meta name="twitter:description" content="Managing sequence data on the command line This section is aimed at those wanting to use the command line, and perhaps computing clusters, to work with sequence information (that is, genetic, genomic, proteomic and other bioinformatic data). We recommend using a dedicated programming language for more complex work: this is easier to share, replicate, test and collaborate on. But the command line remains a useful environment to acquire and manage data, especially as the first part of an analysis pipeline."/>
+<meta name="twitter:description" content="This section is aimed at those wanting to use the command line, and perhaps computing clusters, to work with sequence information (that is, genetic, genomic, proteomic and other bioinformatic data). While we recommend using a dedicated programming language for more complex work: this is easier to share, replicate, test and collaborate on, the command line remains a useful environment to acquire and manage data, especially as the first part of an analysis pipeline."/>
 <meta name="application-name" content="Introduction to the Command Line">
 <meta name="apple-mobile-web-app-title" content="Introduction to the Command Line"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/10bioinformatics\/"
-        },"genre": "posts","wordcount":  507 ,
+        },"genre": "posts","wordcount":  493 ,
         "url": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/10bioinformatics\/","datePublished": "2022-09-20T00:00:00+01:00","dateModified": "2022-09-20T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -75,9 +75,9 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">‣ Bioinformatics</h1><h2 class="single-subtitle">Working with sequence information</h2><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">‣ Bioinformatics</h1><h2 class="single-subtitle">Managing sequence data on the command line</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;507 words&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;493 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -88,17 +88,17 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#managing-sequence-data-on-the-command-line">Managing sequence data on the command line</a></li>
+        <li><a href="#sequence-archives-and-repositories">Sequence archives and repositories</a></li>
         <li><a href="#exercise">Exercise</a></li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h3 id="managing-sequence-data-on-the-command-line">Managing sequence data on the command line</h3>
-<p>This section is aimed at those wanting to use the command line, and perhaps computing clusters, to work with sequence information (that is, genetic, genomic, proteomic and other bioinformatic data). We recommend using a dedicated programming language for more complex work: this is easier to share, replicate, test and collaborate on. But the command line remains a useful environment to acquire and manage data, especially as the first part of an analysis pipeline.</p>
-<p>Here we are going to use the command line to download some sequence information from a major genomic information repository, called NCBI. All publicly-funded research sequence information is required to be deposited here - so pretty much all bioinformatics papers you see will have their working data available. But also, be aware that NCBI is not flawless - given the scale of their data repository, and the varied working practices of many labs across the world, you will sometimes come across poorly-annotated, mislabeled or otherwise inaccurate data. However, just keep this in mind - well over 90% of it is accurate and well-catalogued!</p>
+            </div><div class="content" id="content"><p>This section is aimed at those wanting to use the command line, and perhaps computing clusters, to work with sequence information (that is, genetic, genomic, proteomic and other bioinformatic data). While we recommend using a dedicated programming language for more complex work: this is easier to share, replicate, test and collaborate on, the command line remains a useful environment to acquire and manage data, especially as the first part of an analysis pipeline.</p>
+<h3 id="sequence-archives-and-repositories">Sequence archives and repositories</h3>
+<p>All publicly-funded research creating sequence information is obliged to share their data, and this is typically done by placing it with one of the major sequence repositories, for example <a href="https://www.ncbi.nlm.nih.gov/genbank/" target="_blank" rel="noopener noreffer">GenBank</a> at the National Centre for Biotechnology Information (NCBI), or <a href="https://www.ensembl.org/index.html" target="_blank" rel="noopener noreffer">Ensembl</a> at the European Bioinformatics Institute (EBI). Given the scale of these repository, and the varied working practices of many labs across the world, you will sometimes come across poorly-annotated, mislabeled or otherwise inaccurate data. However, just keep this in mind - the vast majority of deposited data is accurate and well-catalogued!</p>
 <h3 id="exercise">Exercise</h3>
-<p>Let&rsquo;s work with some real data to answer some real research questions. Firstly, we are going to acquire a genome to work with. Go to <a href="https://www.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreffer">NCBI genbank</a>, and in the search dropdown menu, select <code>Genome</code>. While you are here, notice the other databases that NCBI hosts. Lots of these are quite niche, but common ones to use are <code>Genome</code>, <code>Gene</code>, <code>Protein</code> and <code>SRA</code>, the latter for raw, unassembled sequence reads.</p>
+<p>Let&rsquo;s work with some real data to answer some real research questions. Firstly, we are going to acquire a small genome to work with. Go to <a href="https://www.ncbi.nlm.nih.gov/genbank/" target="_blank" rel="noopener noreffer">NCBI genbank</a>, and in the search dropdown menu, select <code>Genome</code>. While you are here, notice the other databases that NCBI hosts. Many of these are quite niche, but common ones to use are <code>Genome</code>, <code>Gene</code>, <code>Protein</code> and <code>SRA</code>, the latter for raw, unassembled sequence reads.</p>
 <p>With <code>Genome</code> as your search database, type &ldquo;covid&rdquo;, and run the search. You should get one result (if you get more, choose the top result). Note the information get here, with XXXXXXX</p>
 <div class="details admonition question open">
         <div class="details-summary admonition-title">
