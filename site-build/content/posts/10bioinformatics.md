@@ -34,7 +34,7 @@ With `Genome` as your search database, enter "SARS-CoV-2", and run the search. Y
 We'll start with the nucleotide genome - view the file with `less` to get a feel of what the data looks like.
 
 {{< admonition type="question" title="Exercise 1" open=true >}}
-Use command line tools taught earlier in this course to answer these questions about the **nucleotide** genome:
+Use command line tools taught earlier in this course to answer these questions:
 - How long is this genome, in kilobases? (Hint: use `wc` with a flag. Exclude the FASTA header line however you like: you could make a new file and edit it manually, or use pipes with `head` or `tail`.)
 - What is the total nucleotide count each for A, T, C and G in the genome? Is it G-C enriched, or A-T enriched? (Hint: `grep` with a flag, and `wc` will help you here.)
 - How many times do we see the start codon (Methionine) in the genome?  (**Ignore line-breaks for this exercise, and all following questions**)
@@ -43,7 +43,6 @@ Use command line tools taught earlier in this course to answer these questions a
 - The covid nucleocapsid phosphoprotein starts with the motif ATGTCTGATAAT and ends with AACTCAGGCCTA
   - What line does the capsid gene start? And end?
   - Isolate the capsid gene and make a new file, containing just that gene. Manually trim any non-capsid sequence with a text editor. Make sure it is in FASTA by adding a header line, and give the sequence a name.
-  - How many nucleotides long is the nucleocapsid phosphoprotein gene?
 {{< /admonition >}}
 
 Now let's have a look at the proteome. Again, open it with `less` and have a look at how it is structured and annotated, noting the differences compared to the nucleotide version of this genome.
@@ -51,7 +50,10 @@ Now let's have a look at the proteome. Again, open it with `less` and have a loo
 {{< admonition type="question" title="Exercise 2" open=true >}}
 Answer these questions about the proteome:
 - How many protein-coding genes does SARS-CoV-2 contain?
-- What is the most common amino acid?
+- What is the shortest protein sequence?
+- Take this sequence (as in cut/copy it). Open [NCBI's BLAST portal](https://blast.ncbi.nlm.nih.gov/Blast.cgi) and select the protein -> protein option. On the next page, paste your AA sequence into the search box. Choose the search algorithm as "Quick BLAST-P". Run the search - this might take a minute or so.
+  - Scroll down through the results. What is the closest related gene to your sequence *not from human SARS-CoV-2*?
+  - 
 {{< /admonition >}}
 
 {{< admonition type="success" title="Learn more" open=true >}}
