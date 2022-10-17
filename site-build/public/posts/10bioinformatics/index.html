@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/10bioinformatics\/"
-        },"genre": "posts","wordcount":  705 ,
+        },"genre": "posts","wordcount":  710 ,
         "url": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/10bioinformatics\/","datePublished": "2022-09-20T00:00:00+01:00","dateModified": "2022-09-20T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -77,7 +77,7 @@
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">‣ Bioinformatics</h1><h2 class="single-subtitle">Managing sequence data on the command line</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;705 words&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;710 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -100,7 +100,7 @@
 <h3 id="exercise">Exercise</h3>
 <p>Let&rsquo;s work with some real data to answer some real research questions. Firstly, we are going to acquire a small genome to work with. Go to <a href="https://www.ncbi.nlm.nih.gov/genbank/" target="_blank" rel="noopener noreffer">NCBI genbank</a>, and in the search dropdown menu, select <code>Genome</code>. While you are here, notice the other databases that NCBI hosts (each of the items in the dropdown is a database). Many of these are quite niche, but common ones to use are <code>Genome</code>, <code>Gene</code>, <code>Protein</code> and <code>SRA</code>, the latter for raw, unassembled sequence reads.</p>
 <p>With <code>Genome</code> as your search database, enter &ldquo;SARS-CoV-2&rdquo;, and run the search. You should get one result (if you get more, choose the top result). Note the information get here, and follow the link to the reference genome by clicking &ldquo;Severe acute respiratory syndrome coronavirus 2&rdquo;, near the top of the page. On this screen, get both the nucleotide and amino acid genome, by clicking the links next to &ldquo;Download sequences in FASTA format&rdquo;. Move these two files to a suitable folder to work in, and unzip them. Note their file extensions - <code>faa</code> is &ldquo;FASTA, amino acids&rdquo;, <code>fna</code> is &ldquo;FASTA, nucleotides&rdquo;, (these are just plain text files, like almost all files we work with on the command line). FASTQ files are the same as FASTA, except with read quality scores, and are typically untrimmed.</p>
-<p>We&rsquo;ll start with the nucleotide genome - open it with <code>less</code> to get a feel of what the data looks like.</p>
+<p>We&rsquo;ll start with the nucleotide genome - view the file with <code>less</code> to get a feel of what the data looks like.</p>
 <div class="details admonition question open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-question-circle fa-fw"></i>Exercise 1<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -108,12 +108,11 @@
         <div class="details-content">
             <div class="admonition-content"><p>Use command line tools taught earlier in this course to answer these questions about the <strong>nucleotide</strong> genome:</p>
 <ul>
-<li>U</li>
 <li>How long is this genome, in kilobases? (Hint: use <code>wc</code> with a flag. Exclude the FASTA header line however you like: you could make a new file and edit it manually, or use pipes with <code>head</code> or <code>tail</code>.)</li>
 <li>What is the total nucleotide count each for A, T, C and G in the genome? Is it G-C enriched, or A-T enriched? (Hint: <code>grep</code> with a flag, and <code>wc</code> will help you here.)</li>
-<li>How many times do we see the start codon (Methionine) in the genome?</li>
-<li>How many times does the motif ATGTAG occur in the genome? (Ignore line-breaks for this exercise!)</li>
-<li>Assume that all protein-coding genes in this genome start with the motifs ATGCTT and ATGACC (they don&rsquo;t, this is just an exercise!). How many genes does this covid-19 genome appear to contain?</li>
+<li>How many times do we see the start codon (Methionine) in the genome?  (<strong>Ignore line-breaks for this exercise, and all following questions</strong>)</li>
+<li>How many times does the motif ATGTAG occur in the genome?</li>
+<li>Assume that all protein-coding genes in this genome start with the motifs ATGACC, ATGTTTTAT and ATGCTTTAA (they don&rsquo;t, this is just an exercise!). How many genes does this covid-19 genome appear to contain?</li>
 <li>The covid nucleocapsid phosphoprotein starts with the motif ATGTCTGATAAT and ends with AACTCAGGCCTA
 <ul>
 <li>What line does the capsid gene start? And end?</li>
