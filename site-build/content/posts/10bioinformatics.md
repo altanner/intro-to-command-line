@@ -31,16 +31,15 @@ Let's work with some real data to answer some real research questions. Firstly, 
 
 With `Genome` as your search database, enter "SARS-CoV-2", and run the search. You should get one result (if you get more, choose the top result). Note the information get here, and follow the link to the reference genome by clicking "Severe acute respiratory syndrome coronavirus 2", near the top of the page. On this screen, get both the nucleotide and amino acid genome, by clicking the links next to "Download sequences in FASTA format". Move these two files to a suitable folder to work in, and unzip them. Note their file extensions - `faa` is "FASTA, amino acids", `fna` is "FASTA, nucleotides", (these are just plain text files, like almost all files we work with on the command line). FASTQ files are the same as FASTA, except with read quality scores, and are typically untrimmed.
 
-We'll start with the nucleotide genome - open it with `less` to get a feel of what the data looks like.
+We'll start with the nucleotide genome - view the file with `less` to get a feel of what the data looks like.
 
 {{< admonition type="question" title="Exercise 1" open=true >}}
 Use command line tools taught earlier in this course to answer these questions about the **nucleotide** genome:
-- U
 - How long is this genome, in kilobases? (Hint: use `wc` with a flag. Exclude the FASTA header line however you like: you could make a new file and edit it manually, or use pipes with `head` or `tail`.)
 - What is the total nucleotide count each for A, T, C and G in the genome? Is it G-C enriched, or A-T enriched? (Hint: `grep` with a flag, and `wc` will help you here.)
-- How many times do we see the start codon (Methionine) in the genome?
-- How many times does the motif ATGTAG occur in the genome? (Ignore line-breaks for this exercise!)
-- Assume that all protein-coding genes in this genome start with the motifs ATGCTT and ATGACC (they don't, this is just an exercise!). How many genes does this covid-19 genome appear to contain?
+- How many times do we see the start codon (Methionine) in the genome?  (**Ignore line-breaks for this exercise, and all following questions**)
+- How many times does the motif ATGTAG occur in the genome?
+- Assume that all protein-coding genes in this genome start with the motifs ATGACC, ATGTTTTAT and ATGCTTTAA (they don't, this is just an exercise!). How many genes does this covid-19 genome appear to contain?
 - The covid nucleocapsid phosphoprotein starts with the motif ATGTCTGATAAT and ends with AACTCAGGCCTA
   - What line does the capsid gene start? And end?
   - Isolate the capsid gene and make a new file, containing just that gene. Manually trim any non-capsid sequence with a text editor. Make sure it is in FASTA by adding a header line, and give the sequence a name.
