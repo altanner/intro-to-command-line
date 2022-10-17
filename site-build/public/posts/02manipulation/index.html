@@ -124,7 +124,7 @@ To improve your skills in backing up, version control, and minimising risk in co
         </div>
     </div>
 <p>In our terminal, use the command line to move into the course materials folder, <code>command_line_files</code>. When you run <code>ls</code> in this folder, you should see the list of contents looking like</p>
-<pre tabindex="0"><code>example_files     sandbox    some_plays
+<pre tabindex="0"><code>example_files     sandpit    some_plays
 </code></pre><p>Personally, I don&rsquo;t find that clear to look at, so let&rsquo;s use our first <em>flag</em>, running <code>ls -l</code>.</p>
 <div class="details admonition question open">
         <div class="details-summary admonition-title">
@@ -154,7 +154,7 @@ To improve your skills in backing up, version control, and minimising risk in co
         </div>
     </div>
 <h3 id="copying">Copying</h3>
-<p>Let&rsquo;s move into the folder called <code>sandbox</code> and play with some files. Firstly, let&rsquo;s copy a file:</p>
+<p>Let&rsquo;s move into the folder called <code>sandpit</code> and play with some files. Firstly, let&rsquo;s copy a file:</p>
 <pre tabindex="0"><code>cp data1 data3
 </code></pre><p>Here we are saying &ldquo;copy the file called data1 to a new file called data3&rdquo;. We now have two identical copies of the same file, only different by name.</p>
 <div class="details admonition warning open">
@@ -185,7 +185,7 @@ To improve your skills in backing up, version control, and minimising risk in co
 </div>
         </div>
     </div>
-Now let&rsquo;s try copying, moving and removing folders. There are some folders in the sandbox to play with. Have a go at using <code>cp</code> and <code>rm</code> on there, and notice what it will and will not let you do. For folders that are not empty, we will need to use another <em>flag</em>:</p>
+Now let&rsquo;s try copying, moving and removing folders. There are some folders in the sandpit to play with. Have a go at using <code>cp</code> and <code>rm</code> on there, and notice what it will and will not let you do. For folders that are not empty, we will need to use another <em>flag</em>:</p>
 <pre tabindex="0"><code>cp -r folder_with_files_inside folder_copy
 </code></pre><p>Here we asked the computer to &ldquo;copy, recursively, this folder to that folder&rdquo;. Empty folders can be copied, moved and removed, but you will need to use <code>-r</code> if there are items insides. <code>-r</code> is a common flag which we will use again later.</p>
 <div class="details admonition info open">
