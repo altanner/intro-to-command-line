@@ -37,7 +37,7 @@ git clone https://github.com/altanner/intro-to-command-line.git
 
 In our terminal, use the command line to move into the course materials folder, `command_line_files`. When you run `ls` in this folder, you should see the list of contents looking like
 ```
-example_files     sandbox    some_plays
+example_files     sandpit    some_plays
 ```
 Personally, I don't find that clear to look at, so let's use our first *flag*, running `ls -l`.
 
@@ -55,7 +55,7 @@ Personally, I don't find that clear to look at, so let's use our first *flag*, r
 {{< /admonition >}}
 
 ### Copying
-Let's move into the folder called `sandbox` and play with some files. Firstly, let's copy a file:
+Let's move into the folder called `sandpit` and play with some files. Firstly, let's copy a file:
 ```
 cp data1 data3
 ```
@@ -76,7 +76,7 @@ Here we said "remove the file called data3".
 - `rm`, "remove" is the same as delete. But **without a recycle bin, undo, back button, or any other safety-nets.**
 - `rm`, `cp` and `mv` commands all have the potential to cause permanent data loss!
 {{< /admonition >}}
-Now let's try copying, moving and removing folders. There are some folders in the sandbox to play with. Have a go at using `cp` and `rm` on there, and notice what it will and will not let you do. For folders that are not empty, we will need to use another *flag*:
+Now let's try copying, moving and removing folders. There are some folders in the sandpit to play with. Have a go at using `cp` and `rm` on there, and notice what it will and will not let you do. For folders that are not empty, we will need to use another *flag*:
 ```
 cp -r folder_with_files_inside folder_copy
 ```
