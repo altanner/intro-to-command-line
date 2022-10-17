@@ -57,7 +57,7 @@ tail The-Count-Of-Monte-Cristo.txt
 `head` and `tail` are common both on the command line, and in programming languages like `Python` and `R`. We can change how many lines we see using the flag `-n` followed by a number.
 
 ### More ways of printing files
-Here are some more commands for outputting file contents in a variety of ways. Try them on the example files and work out what they do. You might want to run these commands on shorter files to make it easier to understand the output, `animals.txt`, back in the `sandbox` folder might be useful here.
+Here are some more commands for outputting file contents in a variety of ways. Try them on the example files and work out what they do. You might want to run these commands on shorter files to make it easier to understand the output, `animals.txt`, back in the `sandpit` folder might be useful here.
 ```
 tac
 rev
