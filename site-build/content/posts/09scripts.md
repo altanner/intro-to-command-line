@@ -47,7 +47,7 @@ Let's use all of the skills we have learned today to build a script to complete 
 
 {{< admonition type="question" title="Exercise" open=true >}}
 - Print the final line of _Macbeth_
-- Count how many time the word "merry" occurs in all plays starting with the letter "M"
+- Count how many time the word "merry" occurs in all plays starting with the letter "m"
 - Count how many times Hamlet speaks in _Hamlet_
 - Print the line of who edited each play
 - Use `head` and `tail` to print _just_ the 500th line of _All's Well That Ends Well_
