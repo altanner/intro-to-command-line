@@ -51,12 +51,12 @@ Now let's have a look at the proteome. Again, open it with `less` and have a loo
 Answer these questions about the proteome:
 - How many protein-coding genes does SARS-CoV-2 contain?
 - What is the shortest protein sequence?
-- Take this sequence (as in cut/copy it). Open [NCBI's BLAST portal](https://blast.ncbi.nlm.nih.gov/Blast.cgi) and select the protein -> protein option. On the next page, paste your AA sequence into the search box. Choose the program selection (near the bottom) as "Quick BLASTP". Run the search - this might take a minute or so.
-  - Scroll down through the results. What is the closest related gene to your sequence *not from human SARS-CoV-2*?
+The following questions are to introduce you to genomic repositories, and encourage you to read and search the archives.
+- Take this sequence for the shortest protein (as in cut/copy it). Open [NCBI's BLAST portal](https://blast.ncbi.nlm.nih.gov/Blast.cgi) and select the protein -> protein option. On the next page, paste your AA sequence into the search box. Choose the program selection (near the bottom) as "Quick BLASTP". Run the search - this might take a minute or so.
+  - Scroll down through the results. From *what species of host organism* is the closest related gene to your sequence *not from human SARS-CoV-2*?
   - What is the name of the paper in which this sequence was generated?
+  - What are the differences in amino acid composition for this sequence?
+  - In the codon responsible for this change, which nucleotide position are subject to a SNP? (ie, 1st, 2nd or 3rd?)
 {{< /admonition >}}
 
-{{< admonition type="success" title="Learn more" open=true >}}
-You can learn these skills in our course *Introduction to HPC*, do an internet search for our current courses.
-{{< /admonition >}}
 
