@@ -47,11 +47,10 @@ Let's use all of the skills we have learned today to build a script to complete 
 
 {{< admonition type="question" title="Exercise" open=true >}}
 - Print the final line of _Macbeth_
-- Count how many time the word "merry" occurs in all plays starting with the letter "m"
+- Count how many time the word "merry" occurs in all plays starting with the letter "M"
 - Count how many times Hamlet speaks in _Hamlet_
 - Print the line of who edited each play
 - Use `head` and `tail` to print _just_ the 500th line of _All's Well That Ends Well_
-- Make a new file containing _just_ the 1000th line of _A Midsummer Night's Dream_ **backwards**!
 - Make a new file, in the folder _containing_ `some_plays`, of the total count of the lines containing the word "love" in all of the plays (combined - ie a single number).
 {{< admonition type="tip" open=true >}}
 Test each of your commands individually on the command line, before building them into your script.
