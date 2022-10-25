@@ -48,9 +48,8 @@ head -3 plants.txt &gt; first_three_plants.txt The terminal will not give you an
     <pubDate>Thu, 15 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
     <guid>https://alleetanner.github.io/intro-to-command-line/posts/05searching/</guid>
-    <description><![CDATA[Searching for files We can use the program find as our search command, but it has some strange syntax&hellip; if you are a little confused, you are not alone! The syntax is
-find [where to look] [what type of file] [&#34;the match you are looking for, in quotes&#34;] Let&rsquo;s go back to your folder command-line-files, and try each of these commands.
-find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find .]]></description>
+    <description><![CDATA[Searching in files A strength of the command line is being able to easily search inside files. Here we will use a command called grep. Strange name I agree, but apparenly back in the depths of time it stood for &ldquo;global regular expression print&rdquo;. Don&rsquo;t worry about what that means! Although, in programming &ldquo;global&rdquo; means &ldquo;everywhere&rdquo; - nothing to do with the world!
+Info  Think of grep as ctrl-f (&ldquo;find&rdquo;), that you might use in a document or a browser, to find particular words.]]></description>
 </item><item>
     <title>‣ Editing files</title>
     <link>https://alleetanner.github.io/intro-to-command-line/posts/04editing_files/</link>

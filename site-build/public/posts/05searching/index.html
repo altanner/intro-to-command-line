@@ -6,9 +6,8 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>‣ Searching - Introduction to the Command Line</title><meta name="Description" content=""><meta property="og:title" content="‣ Searching" />
-<meta property="og:description" content="Searching for files We can use the program find as our search command, but it has some strange syntax&hellip; if you are a little confused, you are not alone! The syntax is
-find [where to look] [what type of file] [&#34;the match you are looking for, in quotes&#34;] Let&rsquo;s go back to your folder command-line-files, and try each of these commands.
-find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ." />
+<meta property="og:description" content="Searching in files A strength of the command line is being able to easily search inside files. Here we will use a command called grep. Strange name I agree, but apparenly back in the depths of time it stood for &ldquo;global regular expression print&rdquo;. Don&rsquo;t worry about what that means! Although, in programming &ldquo;global&rdquo; means &ldquo;everywhere&rdquo; - nothing to do with the world!
+Info  Think of grep as ctrl-f (&ldquo;find&rdquo;), that you might use in a document or a browser, to find particular words." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://alleetanner.github.io/intro-to-command-line/posts/05searching/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-15T00:00:00+01:00" />
@@ -16,9 +15,8 @@ find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ." />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="‣ Searching"/>
-<meta name="twitter:description" content="Searching for files We can use the program find as our search command, but it has some strange syntax&hellip; if you are a little confused, you are not alone! The syntax is
-find [where to look] [what type of file] [&#34;the match you are looking for, in quotes&#34;] Let&rsquo;s go back to your folder command-line-files, and try each of these commands.
-find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ."/>
+<meta name="twitter:description" content="Searching in files A strength of the command line is being able to easily search inside files. Here we will use a command called grep. Strange name I agree, but apparenly back in the depths of time it stood for &ldquo;global regular expression print&rdquo;. Don&rsquo;t worry about what that means! Although, in programming &ldquo;global&rdquo; means &ldquo;everywhere&rdquo; - nothing to do with the world!
+Info  Think of grep as ctrl-f (&ldquo;find&rdquo;), that you might use in a document or a browser, to find particular words."/>
 <meta name="application-name" content="Introduction to the Command Line">
 <meta name="apple-mobile-web-app-title" content="Introduction to the Command Line"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -31,7 +29,7 @@ find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ."/>
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/05searching\/"
-        },"genre": "posts","wordcount":  1177 ,
+        },"genre": "posts","wordcount":  1201 ,
         "url": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/05searching\/","datePublished": "2022-09-15T00:00:00+01:00","dateModified": "2022-09-15T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -81,7 +79,7 @@ find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ."/>
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">‣ Searching</h1><h2 class="single-subtitle">Find what you are looking for, both in folders, and inside files</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1177 words&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1201 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -92,34 +90,15 @@ find . -iname &#34;data1&#34; find . -iname &#34;data*&#34; find ."/>
   <ul>
     <li>
       <ul>
-        <li><a href="#searching-for-files">Searching for files</a></li>
         <li><a href="#searching-in-files">Searching in files</a></li>
         <li><a href="#recursive-searching">Recursive searching</a></li>
         <li><a href="#exercise">Exercise</a></li>
+        <li><a href="#searching-for-files">Searching for files</a></li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h3 id="searching-for-files">Searching for files</h3>
-<p>We can use the program <code>find</code> as our search command, but it has some strange syntax&hellip; if you are a little confused, you are not alone! The syntax is</p>
-<pre tabindex="0"><code>find [where to look] [what type of file] [&#34;the match you are looking for, in quotes&#34;]
-</code></pre><p>Let&rsquo;s go back to your folder <code>command-line-files</code>, and try each of these commands.</p>
-<pre tabindex="0"><code>find . -iname &#34;data1&#34;
-find . -iname &#34;data*&#34;
-find . -iname &#34;*txt&#34;
-find . -iname &#34;*a*&#34;
-find . -iname &#34;parakeet&#34;
-</code></pre><p>Here we are using <code>.</code> (the current location) as the starting point, and <code>find</code> will look in all the containing folders below that location. To search a whole file system, we could go <code>find / -iname &quot;my_file&quot;</code>, but just like doing this in a GUI, it is very slow. <code>find</code> will also, unhelpfully, tell you all the folders you do not have access to.</p>
-<p>The flag <code>-iname</code> is saying &ldquo;the file or folder has this name, case insensitive&rdquo; (you can do <code>-name</code> too, if you are sure of the case). In the name, we can have wildcards to say &ldquo;anything&rdquo;. (More on wildcards later.) Notice the last query, for <code>&quot;parakeet&quot;</code>, does not find anything, but the command line doesn&rsquo;t tell you that. It just finishes and gives you your prompt back. This is standard for the command line - unless you get an error, your command did run correctly - sometime with no output at all!</p>
-<div class="details admonition info open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">If you are on MacOS or Linux, you may have a command installed called <code>fzf</code> - &ldquo;fuzzy find&rdquo;. This is a more modern search command than <code>find</code>, which will find matches and similiar matches (without having to use wildcards), and give you a list of the closest matches. Give it a try with just <code>fzf</code> (and <code>enter</code> without a search query), then start typing your query and it will search as you type, a little like a browser can. You can scroll the results with your arrow keys, and press <code>enter</code> to print results to the terminal.</div>
-        </div>
-    </div>
-<h3 id="searching-in-files">Searching in files</h3>
+            </div><div class="content" id="content"><h3 id="searching-in-files">Searching in files</h3>
 <p>A strength of the command line is being able to easily search inside files. Here we will use a command called <code>grep</code>. Strange name I agree, but apparenly back in the depths of time it stood for &ldquo;global regular expression print&rdquo;. Don&rsquo;t worry about what that means! Although, in programming &ldquo;global&rdquo; means &ldquo;everywhere&rdquo; - nothing to do with the world!</p>
 <div class="details admonition info open">
         <div class="details-summary admonition-title">
@@ -131,8 +110,9 @@ find . -iname &#34;parakeet&#34;
     </div>
 <p>Move into the folder <code>some_plays</code> and try this command:</p>
 <pre tabindex="0"><code>grep &#34;fish&#34; king-lear.txt
-</code></pre><p>Here we are saying &ldquo;Run grep, searching for the word <em>fish</em>, in the file called king-lear.txt&rdquo;. <code>grep</code> will show you the lines with exact matches. Be careful that grep is case sensitive, and it will do exactly what you asked - &ldquo;fish&rdquo; will match words with those letters in, not just the word &ldquo;fish&rdquo;.</p>
-<div class="details admonition question open">
+</code></pre><p>Here we are saying &ldquo;Run grep, searching for the word <em>fish</em>, in the file called king-lear.txt&rdquo;. <code>grep</code> will show you the lines with exact matches. Be careful that grep is case sensitive, and it will do exactly what you asked - &ldquo;fish&rdquo; will match words with those letters in, not just the word &ldquo;fish&rdquo;. Let&rsquo;s run <code>grep</code> with a flag, in this case, to count the number of lines where there is a match:</p>
+<pre tabindex="0"><code>grep -c &#34;fish&#34; king-lear.txt
+</code></pre><div class="details admonition question open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-question-circle fa-fw"></i>Questions<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
@@ -224,6 +204,25 @@ head -10 some_plays/king*
         </div>
     </div>
 <p>We could also use the <em>absolute path</em>, ie the path that will work from any location in the filesystem.</p>
+<h3 id="searching-for-files">Searching for files</h3>
+<p>We can use the program <code>find</code> as our search command, but it has some strange syntax&hellip; if you are a little confused, you are not alone! The syntax is</p>
+<pre tabindex="0"><code>find [where to look] [what type of file] [&#34;the match you are looking for, in quotes&#34;]
+</code></pre><p>Let&rsquo;s go back to your folder <code>command-line-files</code>, and try each of these commands.</p>
+<pre tabindex="0"><code>find . -iname &#34;data1&#34;
+find . -iname &#34;data*&#34;
+find . -iname &#34;*txt&#34;
+find . -iname &#34;*a*&#34;
+find . -iname &#34;parakeet&#34;
+</code></pre><p>Here we are using <code>.</code> (the current location) as the starting point, and <code>find</code> will look in all the containing folders below that location. To search a whole file system, we could go <code>find / -iname &quot;my_file&quot;</code>, but just like doing this in a GUI, it is very slow. <code>find</code> will also, unhelpfully, tell you all the folders you do not have access to.</p>
+<p>The flag <code>-iname</code> is saying &ldquo;the file or folder has this name, case insensitive&rdquo; (you can do <code>-name</code> too, if you are sure of the case). In the name, we can have wildcards to say &ldquo;anything&rdquo;. (More on wildcards later.) Notice the last query, for <code>&quot;parakeet&quot;</code>, does not find anything, but the command line doesn&rsquo;t tell you that. It just finishes and gives you your prompt back. This is standard for the command line - unless you get an error, your command did run correctly - sometime with no output at all!</p>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">If you are on MacOS or Linux, you may have a command installed called <code>fzf</code> - &ldquo;fuzzy find&rdquo;. This is a more modern search command than <code>find</code>, which will find matches and similiar matches (without having to use wildcards), and give you a list of the closest matches. Give it a try with just <code>fzf</code> (and <code>enter</code> without a search query), then start typing your query and it will search as you type, a little like a browser can. You can scroll the results with your arrow keys, and press <code>enter</code> to print results to the terminal.</div>
+        </div>
+    </div>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
