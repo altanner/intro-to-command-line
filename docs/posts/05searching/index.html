@@ -29,7 +29,7 @@ Info  Think of grep as ctrl-f (&ldquo;find&rdquo;), that you might use in a docu
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/05searching\/"
-        },"genre": "posts","wordcount":  1201 ,
+        },"genre": "posts","wordcount":  1216 ,
         "url": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/05searching\/","datePublished": "2022-09-15T00:00:00+01:00","dateModified": "2022-09-15T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -79,7 +79,7 @@ Info  Think of grep as ctrl-f (&ldquo;find&rdquo;), that you might use in a docu
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">‣ Searching</h1><h2 class="single-subtitle">Find what you are looking for, both in folders, and inside files</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1201 words&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1216 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -110,7 +110,7 @@ Info  Think of grep as ctrl-f (&ldquo;find&rdquo;), that you might use in a docu
     </div>
 <p>Move into the folder <code>some_plays</code> and try this command:</p>
 <pre tabindex="0"><code>grep &#34;fish&#34; king-lear.txt
-</code></pre><p>Here we are saying &ldquo;Run grep, searching for the word <em>fish</em>, in the file called king-lear.txt&rdquo;. <code>grep</code> will show you the lines with exact matches. Be careful that grep is case sensitive, and it will do exactly what you asked - &ldquo;fish&rdquo; will match words with those letters in, not just the word &ldquo;fish&rdquo;. Let&rsquo;s run <code>grep</code> with a flag, in this case, to count the number of lines where there is a match:</p>
+</code></pre><p>Here we are saying &ldquo;Run grep, searching for the word <em>fish</em>, in the file called king-lear.txt&rdquo;. <code>grep</code> will show you the lines with exact matches. As with everything on the command line, <code>grep</code> is case sensitive, and it will do exactly what you asked - &ldquo;fish&rdquo; will match words with those letters in, not just the word &ldquo;fish&rdquo;. Let&rsquo;s run <code>grep</code> with a flag, in this case, to count the number of lines where there is a match:</p>
 <pre tabindex="0"><code>grep -c &#34;fish&#34; king-lear.txt
 </code></pre><div class="details admonition question open">
         <div class="details-summary admonition-title">
@@ -126,31 +126,41 @@ Info  Think of grep as ctrl-f (&ldquo;find&rdquo;), that you might use in a docu
 </div>
         </div>
     </div>
-<p><code>grep</code> can take many useful flags. Try each of these commands with flags, and work out what they do:</p>
-<pre tabindex="0"><code>grep &#34;faith&#34; king-lear.txt
-grep &#34;Faith&#34; king-lear.txt
-grep -i &#34;faith&#34; king-lear.txt
+<p><code>grep</code> can take many useful flags.</p>
+<div class="details admonition Exercise open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw"></i><i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Try each of these commands flags, and work out what they do:</p>
+<pre tabindex="0"><code>grep -i &#34;faith&#34; king-lear.txt
 grep -n &#34;faith&#34; king-lear.txt
-grep -c &#34;faith&#34; king-lear.txt
-grep -c &#34;Faith&#34; king-lear.txt
-grep -ci &#34;faith&#34; king-lear.txt
-grep &#34;faith&#34; king-lear.txt julius-caesar.txt
+grep -c &#34;villain&#34; king-lear.txt julius-caesar.txt
+grep -c &#34;and&#34; king-lear.txt
+grep -ci &#34;and&#34; king-lear.txt
+grep -ci &#34;and&#34; king-lear.txt romeo-and-juliet.txt much-ado-about-nothing.txt 
+grep -cih &#34;and&#34; king-lear.txt romeo-and-juliet.txt much-ado-about-nothing.txt
+grep -A2 &#34;fish&#34; king-lear.txt
+grep -B5 &#34;fish&#34; king-lear.txt
+grep &#34;scattered kingdom&#34; king-lear.txt
+grep -A1 -B1 &#34;scattered kingdom&#34; king-lear.txt
 </code></pre><div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">Note that we can combine multiple flags, as in that <code>-ci</code> command above.</div>
+            <div class="admonition-content">Note that we can combine multiple flags, as in the <code>-ci</code> command above, and we can have multiple search targets (ie, more than one file to search in)</div>
         </div>
     </div>
-<p>Also, that final command doesn&rsquo;t have flags, but is asking to search two files for the same match. Note that if you want to search for something with a space in it, you will need quotes around your query, for example</p>
-<pre tabindex="0"><code>grep &#34;this scattered kingdom&#34; king-lear.txt
-</code></pre><div class="details admonition warning open">
+<div class="details admonition warning open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-exclamation-triangle fa-fw"></i>Warning<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">If the quotes were absent, <code>grep this scattered kingdom king-lear.txt</code>, the command line would think you want to find the word &ldquo;this&rdquo;, in the files called &ldquo;scattered&rdquo;, &ldquo;kingdom&rdquo;, and &ldquo;king-lear.txt&rdquo;.</div>
+            <div class="admonition-content">If the quotes were absent, in <code>grep scattered kingdom king-lear.txt</code>, the command line would think you want to find the word &ldquo;this&rdquo;, in two different files called <code>kingdom</code>, and <code>king-lear.txt</code>. Because there are no files called &ldquo;kingdom&rdquo; in this folder, you will see it reports an error, before successfully seaching in <code>king-lear.txt</code>.</div>
+        </div>
+    </div>
+</div>
         </div>
     </div>
 <h3 id="recursive-searching">Recursive searching</h3>
