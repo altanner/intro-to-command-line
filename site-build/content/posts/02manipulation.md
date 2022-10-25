@@ -28,14 +28,14 @@ To improve your skills in backing up, version control, and minimising risk in co
 {{< /admonition >}}
 
 {{< admonition type="info" title="Course materials" open=true >}}
-From this point forward, you will need to [download the course materials](https://github.com/altanner/intro-to-command-line/raw/master/command-line-files.zip); move this to a suitable folder, and unzip it.
+From this point forward, you will need to [download the course materials](https://github.com/alleetanner/intro-to-command-line/raw/master/command-line-files.zip); move this to a suitable folder, and unzip it.
 - If you are using GitBash on Windows, copy and run this command
 ```
-git clone https://github.com/altanner/intro-to-command-line.git
+git clone https://github.com/alleetanner/intro-to-command-line.git
 ```
 {{< /admonition >}}
 
-In our terminal, use the command line to move into the course materials folder, `command_line_files`. When you run `ls` in this folder, you should see the list of contents looking like
+In our terminal, use the command line to move into the course materials folder, `command-line-files`. When you run `ls` in this folder, you should see the list of contents looking like
 ```
 example_files     sandpit    some_plays
 ```
