@@ -38,22 +38,17 @@ grep "fish" king-lear.txt
 
 Here we are saying "Run grep, searching for the word *fish*, in the file called king-lear.txt". `grep` will show you the lines with exact matches. As with everything on the command line, `grep` is case sensitive, and it will do exactly what you asked - "fish" will match words with those letters in, not just the word "fish". Let's run `grep` with a flag, in this case, to count the number of lines where there is a match:
 
+
 ```
 grep -c "fish" king-lear.txt
 ```
 
-{{< admonition type="question" title="Questions" open=true >}}
 Try changing what `grep` is searching for.
-- What is the most common noun you can find in King Lear?
+- What is the most common word in `king-lear.txt`, and how many times is it matched by `grep`?
 - Can you find a word which appears only once?
-- Can you search for more than one word? (for example the phrase "and such")
-{{< /admonition >}}
 
-`grep` can take many useful flags. 
-
-
-{{< admonition type="Exercise" open=true >}}
-Try each of these commands flags, and work out what they do:
+{{< admonition type="question" title="Exercise" open=true >}}
+`grep` can take many useful flags. Try each of these commands flags, and work out what they do:
 ```
 grep -i "faith" king-lear.txt
 grep -n "faith" king-lear.txt
@@ -104,7 +99,7 @@ Use `grep` to answer these questions:
 - How many times does Lady Macbeth speak in *Macbeth*?
 - Which act has the most scenes in *Henry VI Part 2*?
 - How many times, in total, do *both* Juliet and Romeo speak in their play? (Bonus: Can you run this `grep` as a single command?)
-- Which play has the word "dog" in the most times? (Don't match "dogs", or any other word containing "dog")
+- Which play has the word "dog" in the most times? (Don't match "dogs", or any other word containing the letters "dog")
 {{< /admonition >}}
 
 We won't go into it here, but `grep` can search in very sophisticated ways not possible with `ctrl-f`, for example finding ambiguous spellings, returning matches a certain number of lines from the actual match, or being able to look ahead or behind to conditionally match. If you are wondering what the command line version of "find and replace" is, look up a command called `sed` ("string editor") - this command is beyond the scope of this course, but is a commonly-used command for automating modification to files.
