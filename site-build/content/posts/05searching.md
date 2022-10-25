@@ -36,7 +36,7 @@ Move into the folder `some_plays` and try this command:
 grep "fish" king-lear.txt
 ```
 
-Here we are saying "Run grep, searching for the word *fish*, in the file called king-lear.txt". `grep` will show you the lines with exact matches. Be careful that grep is case sensitive, and it will do exactly what you asked - "fish" will match words with those letters in, not just the word "fish". Let's run `grep` with a flag, in this case, to count the number of lines where there is a match:
+Here we are saying "Run grep, searching for the word *fish*, in the file called king-lear.txt". `grep` will show you the lines with exact matches. As with everything on the command line, `grep` is case sensitive, and it will do exactly what you asked - "fish" will match words with those letters in, not just the word "fish". Let's run `grep` with a flag, in this case, to count the number of lines where there is a match:
 
 ```
 grep -c "fish" king-lear.txt
@@ -49,31 +49,32 @@ Try changing what `grep` is searching for.
 - Can you search for more than one word? (for example the phrase "and such")
 {{< /admonition >}}
 
-`grep` can take many useful flags. Try each of these commands with flags, and work out what they do:
+`grep` can take many useful flags. 
 
+
+{{< admonition type="Exercise" open=true >}}
+Try each of these commands flags, and work out what they do:
 ```
-grep "faith" king-lear.txt
-grep "Faith" king-lear.txt
 grep -i "faith" king-lear.txt
 grep -n "faith" king-lear.txt
-grep -c "faith" king-lear.txt
-grep -c "Faith" king-lear.txt
-grep -ci "faith" king-lear.txt
-grep "faith" king-lear.txt julius-caesar.txt
+grep -c "villain" king-lear.txt julius-caesar.txt
+grep -c "and" king-lear.txt
+grep -ci "and" king-lear.txt
+grep -ci "and" king-lear.txt romeo-and-juliet.txt much-ado-about-nothing.txt 
+grep -cih "and" king-lear.txt romeo-and-juliet.txt much-ado-about-nothing.txt
+grep -A2 "fish" king-lear.txt
+grep -B5 "fish" king-lear.txt
+grep "scattered kingdom" king-lear.txt
+grep -A1 -B1 "scattered kingdom" king-lear.txt
 ```
 
 {{< admonition type="info" open=true >}}
-Note that we can combine multiple flags, as in that `-ci` command above.
+Note that we can combine multiple flags, as in the `-ci` command above, and we can have multiple search targets (ie, more than one file to search in)
 {{< /admonition >}}
 
-Also, that final command doesn't have flags, but is asking to search two files for the same match. Note that if you want to search for something with a space in it, you will need quotes around your query, for example
-
-```
-grep "this scattered kingdom" king-lear.txt
-```
-
 {{< admonition type="warning" open=true >}}
-If the quotes were absent, `grep this scattered kingdom king-lear.txt`, the command line would think you want to find the word "this", in the files called "scattered", "kingdom", and "king-lear.txt".
+If the quotes were absent, in `grep scattered kingdom king-lear.txt`, the command line would think you want to find the word "this", in two different files called `kingdom`, and `king-lear.txt`. Because there are no files called "kingdom" in this folder, you will see it reports an error, before successfully seaching in `king-lear.txt`.
+{{< /admonition >}}
 {{< /admonition >}}
 
 ### Recursive searching
