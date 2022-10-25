@@ -68,7 +68,7 @@ Note that we can combine multiple flags, as in the `-ci` command above, and we c
 {{< /admonition >}}
 
 {{< admonition type="warning" open=true >}}
-If the quotes were absent, in `grep scattered kingdom king-lear.txt`, the command line would think you want to find the word "this", in two different files called `kingdom`, and `king-lear.txt`. Because there are no files called "kingdom" in this folder, you will see it reports an error, before successfully seaching in `king-lear.txt`.
+If the quotes were absent, in `grep scattered kingdom king-lear.txt`, the command line would think you want to find the word "scattered", in two different files called `kingdom`, and `king-lear.txt`. Because there are no files called "kingdom" in this folder, you will see it reports an error, before successfully seaching in `king-lear.txt`.
 {{< /admonition >}}
 {{< /admonition >}}
 
