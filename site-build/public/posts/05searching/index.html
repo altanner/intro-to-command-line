@@ -29,7 +29,7 @@ Info  Think of grep as ctrl-f (&ldquo;find&rdquo;), that you might use in a docu
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/05searching\/"
-        },"genre": "posts","wordcount":  1216 ,
+        },"genre": "posts","wordcount":  1209 ,
         "url": "https:\/\/alleetanner.github.io\/intro-to-command-line\/posts\/05searching\/","datePublished": "2022-09-15T00:00:00+01:00","dateModified": "2022-09-15T00:00:00+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -79,7 +79,7 @@ Info  Think of grep as ctrl-f (&ldquo;find&rdquo;), that you might use in a docu
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">‣ Searching</h1><h2 class="single-subtitle">Find what you are looking for, both in folders, and inside files</h2><div class="post-meta">
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1216 words&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1209 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -112,27 +112,17 @@ Info  Think of grep as ctrl-f (&ldquo;find&rdquo;), that you might use in a docu
 <pre tabindex="0"><code>grep &#34;fish&#34; king-lear.txt
 </code></pre><p>Here we are saying &ldquo;Run grep, searching for the word <em>fish</em>, in the file called king-lear.txt&rdquo;. <code>grep</code> will show you the lines with exact matches. As with everything on the command line, <code>grep</code> is case sensitive, and it will do exactly what you asked - &ldquo;fish&rdquo; will match words with those letters in, not just the word &ldquo;fish&rdquo;. Let&rsquo;s run <code>grep</code> with a flag, in this case, to count the number of lines where there is a match:</p>
 <pre tabindex="0"><code>grep -c &#34;fish&#34; king-lear.txt
-</code></pre><div class="details admonition question open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-question-circle fa-fw"></i>Questions<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Try changing what <code>grep</code> is searching for.</p>
+</code></pre><p>Try changing what <code>grep</code> is searching for.</p>
 <ul>
-<li>What is the most common noun you can find in King Lear?</li>
+<li>What is the most common word in <code>king-lear.txt</code>, and how many times is it matched by <code>grep</code>?</li>
 <li>Can you find a word which appears only once?</li>
-<li>Can you search for more than one word? (for example the phrase &ldquo;and such&rdquo;)</li>
 </ul>
-</div>
-        </div>
-    </div>
-<p><code>grep</code> can take many useful flags.</p>
-<div class="details admonition Exercise open">
+<div class="details admonition question open">
         <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw"></i><i class="details-icon fas fa-angle-right fa-fw"></i>
+            <i class="icon fas fa-question-circle fa-fw"></i>Exercise<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>Try each of these commands flags, and work out what they do:</p>
+            <div class="admonition-content"><p><code>grep</code> can take many useful flags. Try each of these commands flags, and work out what they do:</p>
 <pre tabindex="0"><code>grep -i &#34;faith&#34; king-lear.txt
 grep -n &#34;faith&#34; king-lear.txt
 grep -c &#34;villain&#34; king-lear.txt julius-caesar.txt
@@ -186,7 +176,7 @@ grep -rc sparrow some_plays
 <li>How many times does Lady Macbeth speak in <em>Macbeth</em>?</li>
 <li>Which act has the most scenes in <em>Henry VI Part 2</em>?</li>
 <li>How many times, in total, do <em>both</em> Juliet and Romeo speak in their play? (Bonus: Can you run this <code>grep</code> as a single command?)</li>
-<li>Which play has the word &ldquo;dog&rdquo; in the most times? (Don&rsquo;t match &ldquo;dogs&rdquo;, or any other word containing &ldquo;dog&rdquo;)</li>
+<li>Which play has the word &ldquo;dog&rdquo; in the most times? (Don&rsquo;t match &ldquo;dogs&rdquo;, or any other word containing the letters &ldquo;dog&rdquo;)</li>
 </ul>
 </div>
         </div>
