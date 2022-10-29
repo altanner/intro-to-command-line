@@ -55,9 +55,9 @@ theme = "LoveIt"
       # URL of the LOGO
       logo = ""
       # title name
-      name = "Introduction to the Command Line"
+      name = "  Introduction to the Command Line"
       # you can add extra information before the name (HTML format is supported), such as icons
-      pre = "<i class=\"fa-solid fa-square-terminal\"></i>"
+      #pre = "<i class=\"fa-solid fa-square-terminal\"></i>"
       # you can add extra information after the name (HTML format is supported), such as icons
       post = ""
       # LoveIt NEW | 0.2.5 whether to use typeit animation for title name
