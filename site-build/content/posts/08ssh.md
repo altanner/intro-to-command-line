@@ -1,5 +1,5 @@
 ---
-title: "‣ Working with remote computers"
+title: "∙ Working with remote computers"
 subtitle: "Work with far away machines from the comfort of your own computer!"
 
 date: 2022-09-18T00:00:00+01:00
