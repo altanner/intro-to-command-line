@@ -1,5 +1,5 @@
 ---
-title: "‣ Searching"
+title: "∙ Searching"
 subtitle: "Find what you are looking for, both in folders, and inside files"
 
 date: 2022-09-15T00:00:00+01:00
