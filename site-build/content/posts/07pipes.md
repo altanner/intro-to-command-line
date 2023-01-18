@@ -1,5 +1,5 @@
 ---
-title: "‣ Pipes"
+title: "∙ Pipes"
 subtitle: "Using command outputs as command inputs"
 
 date: 2022-09-17T00:00:00+01:00
