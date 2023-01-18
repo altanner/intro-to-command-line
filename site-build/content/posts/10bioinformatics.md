@@ -1,5 +1,5 @@
 ---
-title: "‣ Bioinformatics"
+title: "∙ Bioinformatics"
 subtitle: "Managing sequence data on the command line"
 
 date: 2022-09-20T00:00:00+01:00
