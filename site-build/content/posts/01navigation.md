@@ -1,5 +1,5 @@
 ---
-title: "‣ File system navigation"
+title: "∙ File system navigation"
 subtitle: "Understanding where you are, and how to move around"
 
 date: 2022-09-11T00:00:00+01:00
