@@ -45,7 +45,7 @@ In research, we often work on remote machines (&ldquo;computing clusters&rdquo;,
 head -3 plants.txt But what if, instead of printing the output to the terminal, we wanted to put it into a file? This is called &ldquo;redirecting&rdquo;, and is done with the character &gt;
 head -3 plants.txt &gt; first_three_plants.txt The terminal will not give you any output, but what is inside the file first_three_plants.]]></description>
 </item><item>
-    <title>‣ Searching</title>
+    <title>∙ Searching</title>
     <link>https://alleetanner.github.io/intro-to-command-line/posts/05searching/</link>
     <pubDate>Thu, 15 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
@@ -53,7 +53,7 @@ head -3 plants.txt &gt; first_three_plants.txt The terminal will not give you an
     <description><![CDATA[Searching in files A strength of the command line is being able to easily search inside files. Here we will use a command called grep. Strange name I agree, but apparenly back in the depths of time it stood for &ldquo;global regular expression print&rdquo;. Don&rsquo;t worry about what that means! Although, in programming &ldquo;global&rdquo; means &ldquo;everywhere&rdquo; - nothing to do with the world!
 Info  Think of grep as ctrl-f (&ldquo;find&rdquo;), that you might use in a document or a browser, to find particular words.]]></description>
 </item><item>
-    <title>‣ Editing files</title>
+    <title>∙ Editing files</title>
     <link>https://alleetanner.github.io/intro-to-command-line/posts/04editing_files/</link>
     <pubDate>Wed, 14 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
@@ -61,7 +61,7 @@ Info  Think of grep as ctrl-f (&ldquo;find&rdquo;), that you might use in a docu
     <description><![CDATA[Text editors We can create and modify files on the command line using text editors. These are like very minimal word-processors, with no formatting options, but with many powerful ways of editing that are not available in word-processors. There are lots of different command line editors, which range from user-friendly (but less powerful), to more difficult (but powerful and fast, once learned).
 Info  Here are some common editors you might come across, or choose to learn:]]></description>
 </item><item>
-    <title>‣ Viewing the contents of files</title>
+    <title>∙ Viewing the contents of files</title>
     <link>https://alleetanner.github.io/intro-to-command-line/posts/03viewing_files/</link>
     <pubDate>Tue, 13 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
@@ -69,7 +69,7 @@ Info  Here are some common editors you might come across, or choose to learn:]]>
     <description><![CDATA[Viewing files There are two main ways of viewing the contents of files on the command line: &ldquo;printing&rdquo; the output to the terminal window, and viewing file contents with a &ldquo;pager&rdquo;.
 cat Let&rsquo;s look at outputting first with a command called cat. Sadly, this has nothing to do with small furry felines. cat is short for &ldquo;conCATenate&rdquo;, which means &ldquo;join files end to end&rdquo;, but it is commonly used for looking at a single file.]]></description>
 </item><item>
-    <title>‣ Working with files</title>
+    <title>∙ Working with files</title>
     <link>https://alleetanner.github.io/intro-to-command-line/posts/02manipulation/</link>
     <pubDate>Mon, 12 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
@@ -78,7 +78,7 @@ cat Let&rsquo;s look at outputting first with a command called cat. Sadly, this 
 To improve your skills in backing up, version control, and minimising risk in computing, look for our courses on Best Practices in Software Engineering.
    Course materials  From this point forward, you will need to download the course materials; move this to a suitable folder, and unzip it.]]></description>
 </item><item>
-    <title>‣ File system navigation</title>
+    <title>∙ File system navigation</title>
     <link>https://alleetanner.github.io/intro-to-command-line/posts/01navigation/</link>
     <pubDate>Sun, 11 Sep 2022 00:00:00 &#43;0100</pubDate>
     <author>Author</author>
