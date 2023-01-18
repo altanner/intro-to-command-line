@@ -1,6 +1,6 @@
 ---
-title: "‣ Shell scripts"
-subtitle: "Files as a series of commands"
+title: "∙ Shell scripts"
+subtitle: "Files containing commands - a step towards programming"
 
 date: 2022-09-19T00:00:00+01:00
 
