@@ -28,7 +28,7 @@ To improve your skills in backing up, version control, and minimising risk in co
 {{< /admonition >}}
 
 {{< admonition type="info" title="Course materials" open=true >}}
-From this point forward, you will need to [download the course materials](https://github.com/alleetanner/intro-to-command-line/raw/master/command-line-files.zip); move this to a suitable folder, and unzip it.
+From this point forward, you will need to [download the course materials](https://github.com/alleetanner/intro-to-command-line/raw/main/command-line-files.zip); move this to a suitable folder, and unzip it.
 - If you are using GitBash on Windows, copy and run this command
 ```
 git clone https://github.com/alleetanner/intro-to-command-line.git
