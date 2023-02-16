@@ -44,7 +44,7 @@ Personally, I don't find that clear to look at, so let's use our first *flag*, r
 {{< admonition type="question" title="Questions" open=true >}}
 - What do you think the `-l` is short for?
 - What extra information are you given?
-- Try some more flags and work out what they do: `-s`, `-t`, `r`
+- Try some more flags and work out what they do: `-s`, `-t`, `-r`
 - And some flag combinations: `-ls`, `-lrt`
 {{< /admonition >}}
 
