@@ -112,7 +112,7 @@ This folder contains the whole file system of the machine you are working on.
 You might find mysterious folders called things like `opt`, `etc`, `tmp`. Don't worry about these things for now! They are just folders holding the components of your operating system.
 {{< /admonition >}}
 
-Move back to your folder `intro-to-command-line`. From this point forward, we will be working with the [course materials](https://github.com/alleetanner/intro-to-command-line/raw/master/command-line-files.zip) (this is the same file as linked on the home page of this course). Download this file, and using your GUI, move this file into the folder we made in the last section. This might be in your home folder, or your desktop - it doesn't matter where, as long as it makes sense to you! Then unzip the file - double click it, or right-click and "open" it. You will then have a new folder called `command_line_files`.
+Move back to your folder `intro-to-command-line`. From this point forward, we will be working with the [course materials](https://github.com/alleetanner/intro-to-command-line/raw/main/command-line-files.zip) (this is the same file as linked on the home page of this course). Download this file, and using your GUI, move this file into the folder we made in the last section. This might be in your home folder, or your desktop - it doesn't matter where, as long as it makes sense to you! Then unzip the file - double click it, or right-click and "open" it. You will then have a new folder called `command_line_files`.
 
 If you are working on Windows, run this command (since you are using GitBash, we can directly clone the files)
 ```
