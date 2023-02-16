@@ -3,7 +3,7 @@ name: Create static pages and send them docs folder
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
 
@@ -33,5 +33,5 @@ jobs:
         cp -r site-build/public/* docs
         git add --all
         git commit -m "deploy site" || echo "No changes to commit"
-        git push origin master
+        git push origin main
 
