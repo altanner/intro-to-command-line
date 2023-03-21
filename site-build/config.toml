@@ -6,17 +6,6 @@ theme = "LoveIt"
 [menu]
   [[menu.main]]
     weight = 1
-    identifier = "courses"
-    # you can add extra information before the name (HTML format is supported), such as icons
-    pre = "<i class=\"fa-solid fa-house\"></i>"
-    # you can add extra information after the name (HTML format is supported), such as icons
-    post = ""
-    name = "All courses"
-    url = "https://alleetanner.github.io/code-teaching/"
-    # title will be shown when you hover on this menu link
-    title = "Courses"
-  [[menu.main]]
-    weight = 2
     identifier = "posts"
     # you can add extra information before the name (HTML format is supported), such as icons
     pre = "<i class=\"fa-solid fa-circle-ellipsis-vertical\"></i>"
@@ -27,13 +16,24 @@ theme = "LoveIt"
     # title will be shown when you hover on this menu link
     title = "Sections"
   [[menu.main]]
-    weight = 3
+    weight = 2
     identifier = "about"
     pre = "<i class=\"fa-solid fa-circle-question\"></i>"
     post = ""
     name = "About"
     url = "about"
     title = "About"
+  [[menu.main]]
+    weight = 3
+    identifier = "courses"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = "<i class=\"fa-solid fa-house\"></i>"
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "All courses"
+    url = "https://alleetanner.github.io/code-teaching/"
+    # title will be shown when you hover on this menu link
+    title = "Courses"
   [[menu.main]]
     weight = 4
     identifier = "github"
