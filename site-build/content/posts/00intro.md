@@ -42,7 +42,7 @@ When you open a terminal, you will be provided with a line for entering commands
 Your prompt will look different, but here is what it means
 
 ```
-[ your name @ the computer you are logged in to : the current folder ] $
+[ your name @ the computer's name : the current folder ] $
 ```
 
 First is your own user name. On university computers, it might be a code like in your email address, such as `bx22657`. After the `@` comes the computer's name (also known as the "hostname"). This could be something like `Megans_iMac` or `ubuntu`, for example. Note that this is the name of the computer *that you are logged in to*! Usually, on opening a terminal, that is the actual computer in front of you. But, for example when using HPC, it will instead be another computer - a "remote" machine, that you have logged in to. However, in this course, we will only be working on your own machine, the "local" computer. Finally, we have the folder you are working in, after the `:`. Yours might say `~` ("tilde") - find out what that means in the next section.
